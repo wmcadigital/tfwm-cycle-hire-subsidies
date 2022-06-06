@@ -17,7 +17,7 @@ const FormWizard = ({
   const [page, setPage] = useState(0);
   const [values, setValues] = useState(initialValues);
   const navigate = useNavigate();
-
+  
   useEffect(() => {
     if (goToPage !== null) {
       setPage(goToPage);
@@ -52,8 +52,8 @@ const FormWizard = ({
   const handleSubmit = async (values) => {
     const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
-      // console.log("is last page");
-      // console.log(values.formData);
+      console.log("is last page");
+      console.log(values.formData);
 
       (async () => {
         const rawResponse = await fetch(
@@ -88,7 +88,10 @@ const FormWizard = ({
   };
 
   const activePage = Children.toArray(filteredChildren)[page];
+  const isFirstPage = page === 0;
   const isLastPage = page === Children.count(filteredChildren) - 1;
+
+  console.log(isFirstPage);
 
   return (
     <>
@@ -116,7 +119,20 @@ const FormWizard = ({
             <form onSubmit={handleSubmit}>
               {activePage}
               <div>
-                {!isLastPage && (
+                {/* Add green start button to Introduction page */}
+                {isFirstPage && (
+                  <button
+                    type="submit"
+                    className="wmnds-btn wmnds-btn--start"
+                    onClick={(e) => e.target.blur()}
+                  >
+                    Check if you&#39;re eligible
+                    <svg className="wmnds-btn__icon wmnds-btn__icon--right ">
+                      <use xlinkHref="#wmnds-general-chevron-right" href="#wmnds-general-chevron-right"></use>
+                    </svg>
+                  </button>
+                )}
+                {!isLastPage && !isFirstPage && (
                   <button
                     type="submit"
                     className="wmnds-btn"

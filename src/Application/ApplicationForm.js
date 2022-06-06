@@ -8,6 +8,7 @@ import BreadCrumb from "../common/BreadCrumb";
 import FormWizard from "../common/FormWizard";
 
 // Main form
+import Introduction from "./Introduction/Introduction";
 import RegistrationName from "./section1/RegistrationName";
 import DateOfBirth from "./section1/DateOfBirth";
 import EmailAddress from "./section1/EmailAddress";
@@ -66,6 +67,7 @@ const ApplicationForm = () => {
           goToPage={goToPage}
           setGoToPage={setGoToPage}
         >
+          <Introduction />
           <RegistrationName />
           <DateOfBirth validate={validateDateOfBirth} />
           <RegistrationAddress
