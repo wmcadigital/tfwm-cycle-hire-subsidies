@@ -17,6 +17,7 @@ const FormWizard = ({
   const [page, setPage] = useState(0);
   const [values, setValues] = useState(initialValues);
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (goToPage !== null) {
@@ -52,6 +53,7 @@ const FormWizard = ({
   const handleSubmit = async (values) => {
     const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
+      setLoading(true);
       (async () => {
         const rawResponse = await fetch(
           "https://cyclewise-dev-api.azure-api.net/cyclewise/submit-form",
@@ -78,6 +80,7 @@ const FormWizard = ({
         });
       })();
       return onSubmit(values);
+      setLoading(false);
     } else {
       // go to next page
       next(values);
@@ -86,7 +89,6 @@ const FormWizard = ({
 
   const activePage = Children.toArray(filteredChildren)[page];
   const isFirstPage = page === 0;
-  const isSecondPage = page === 1;
   const isLastPage = page === Children.count(filteredChildren) - 1;
 
   return (
@@ -124,7 +126,10 @@ const FormWizard = ({
                   >
                     Check if you&#39;re eligible
                     <svg className="wmnds-btn__icon wmnds-btn__icon--right ">
-                      <use xlinkHref="#wmnds-general-chevron-right" href="#wmnds-general-chevron-right"></use>
+                      <use
+                        xlinkHref="#wmnds-general-chevron-right"
+                        href="#wmnds-general-chevron-right"
+                      ></use>
                     </svg>
                   </button>
                 )}
@@ -141,15 +146,25 @@ const FormWizard = ({
                   <button
                     className="wmnds-btn wmnds-btn--start"
                     type="submit"
-                    disabled={submitting}
+                    disabled={loading}
                   >
                     Accept and send
-                    <svg className="wmnds-btn__icon wmnds-btn__icon--right ">
-                      <use
-                        xlinkHref="#wmnds-general-chevron-right"
-                        href="#wmnds-general-chevron-right"
-                      ></use>
-                    </svg>
+                    {loading ? (
+                      <div
+                        className="wmnds-loader wmnds-loader--btn wmnds-btn__icon wmnds-btn__icon--right"
+                        role="alert"
+                        aria-live="assertive"
+                      >
+                        <p className="wmnds-loader__content"></p>
+                      </div>
+                    ) : (
+                      <svg className="wmnds-btn__icon wmnds-btn__icon--right ">
+                        <use
+                          xlinkHref="#wmnds-general-chevron-right"
+                          href="#wmnds-general-chevron-right"
+                        ></use>
+                      </svg>
+                    )}
                   </button>
                 )}
               </div>
