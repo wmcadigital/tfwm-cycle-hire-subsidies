@@ -1,6 +1,19 @@
+import React, { useEffect } from "react";
+import { useForm, useFormState } from "react-final-form";
 import FormSection from "../../common/FormSection";
 
 const SurveyIntro = () => {
+  const formState = useFormState();
+  const { reset } = useForm();
+  const data = formState.values;
+
+  // reset form values
+  useEffect(() => {
+    if(data !== null){
+      reset({})
+    }
+  },)
+
   return (
     <FormSection>
       <h1>Cycling for Everyone</h1>
