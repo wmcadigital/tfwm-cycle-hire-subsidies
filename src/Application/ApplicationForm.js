@@ -9,6 +9,7 @@ import FormWizard from "../common/FormWizard";
 
 // Main form
 import Introduction from "./Introduction/Introduction";
+import EligibilityCheck from "./section1/EligibilityCheck";
 import RegistrationName from "./section1/RegistrationName";
 import DateOfBirth from "./section1/DateOfBirth";
 import EmailAddress from "./section1/EmailAddress";
@@ -68,6 +69,7 @@ const ApplicationForm = () => {
           setGoToPage={setGoToPage}
         >
           <Introduction />
+          <EligibilityCheck />
           <RegistrationName />
           <DateOfBirth validate={validateDateOfBirth} />
           <RegistrationAddress

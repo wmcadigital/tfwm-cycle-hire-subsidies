@@ -17,7 +17,7 @@ const FormWizard = ({
   const [page, setPage] = useState(0);
   const [values, setValues] = useState(initialValues);
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     if (goToPage !== null) {
       setPage(goToPage);
@@ -52,9 +52,6 @@ const FormWizard = ({
   const handleSubmit = async (values) => {
     const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
-      console.log("is last page");
-      console.log(values.formData);
-
       (async () => {
         const rawResponse = await fetch(
           "https://cyclewise-dev-api.azure-api.net/cyclewise/submit-form",
@@ -89,9 +86,8 @@ const FormWizard = ({
 
   const activePage = Children.toArray(filteredChildren)[page];
   const isFirstPage = page === 0;
+  const isSecondPage = page === 1;
   const isLastPage = page === Children.count(filteredChildren) - 1;
-
-  console.log(isFirstPage);
 
   return (
     <>

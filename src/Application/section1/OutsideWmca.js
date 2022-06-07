@@ -27,11 +27,14 @@ const OutsideWmca = () => {
               {`< Back`}
             </ButtonLink>
           </div>
-          <Question text="Sorry, your postcode is not within our eligible area." />
-          <p>
-            {`To be eligible for this service you must live in the `}
-            West Midlands Combined Authority area.
-          </p>
+          <div className="wmnds-p-lg wmnds-bg-white">
+            <p>Eligibility Checker</p>
+            <Question text="Sorry, your postcode is not within our eligible area." />
+            <p>
+              To be eligible for this service, you must live in an IMD ward 1 or
+              2 in the West Midlands Combined Authority area.
+            </p>
+          </div>
         </div>
       </main>
     </>

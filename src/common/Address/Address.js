@@ -9,7 +9,7 @@ import AddressDetails from "./AddressDetails";
 import fetchAddresses from "./api/fetchAddresses";
 import fetchEligibility from "./api/fetchEligibility";
 
-const Address = ({ prefix, orderNo, addresses, setAddresses }) => {
+const Address = ({ prefix, btnText, orderNo, addresses, setAddresses }) => {
   const [loading, setLoading] = useState(false);
   const formState = useFormState();
 
@@ -57,6 +57,7 @@ const Address = ({ prefix, orderNo, addresses, setAddresses }) => {
       {!addresses.length && (
         <PostCodeSearch
           error={errorPostCode}
+          btnText={btnText}
           getAddresses={getAddresses}
           loading={loading}
           prefix={prefix}
@@ -79,6 +80,7 @@ const Address = ({ prefix, orderNo, addresses, setAddresses }) => {
 
 Address.propTypes = {
   prefix: PropTypes.string.isRequired,
+  btnText: PropTypes.string,
   checkInside: PropTypes.bool,
   orderNo: PropTypes.number,
   addresses: PropTypes.arrayOf(PropTypes.object),
