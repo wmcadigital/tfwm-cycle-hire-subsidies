@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useFormState, useForm } from "react-final-form";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 
 import PostCodeSearch from "./PostCodeSearch";
@@ -9,11 +9,10 @@ import TextInput from "../../common/TextInput";
 import Question from "../../common/Question";
 import { required } from "../../common/validation";
 
-const Address = ({ prefix, btnText, addresses }) => {
+const Address = ({ prefix, btnText }) => {
   const [loading, setLoading] = useState(false);
   const formState = useFormState();
   const formApi = useForm();
-  const stateApi = useFormState();
 
   const errorSearchPostcode = formState.submitFailed
     ? formState.errors[prefix]?.searchPostCode
