@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 // Layout
 import FormContentWrapper from "../common/FormContentWrapper";
 import Header from "../common/Header";
-import BreadCrumb from "../common/BreadCrumb";
 import FormWizard from "../common/FormWizard";
 
 // Main form
@@ -61,7 +60,6 @@ const ApplicationForm = () => {
     <>
       <Header heading="Apply for support with West Midlands Cycle Hire costs" />
       <FormContentWrapper>
-        <BreadCrumb currentPageName="Apply for free cycle hire" />
         <FormWizard
           onSubmit={() => {}}
           initialValues={location?.state?.formValues}
