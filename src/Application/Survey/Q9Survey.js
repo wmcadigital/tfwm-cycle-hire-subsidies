@@ -150,8 +150,8 @@ const Q9Survey = () => {
       </RadioGroup>
 
       <p>
-        Q21 - Does your condition or illness (Q20) reduce your ability to carry
-        out day-to-day activities?
+        Q21 - Does the condition or illness you mentioned in Q20 reduce your
+        ability to carry out day-to-day activities?
       </p>
       <RadioGroup error={q21error}>
         <FieldError text={q21error} />
@@ -186,8 +186,8 @@ const Q9Survey = () => {
       </RadioGroup>
 
       <p>
-        Q22 - Does your condition or illness (Q20) typically impact your ability
-        to do any of the following activities?
+        Q22 - Does the condition or illness you mentioned in Q20 typically
+        impact your ability to do any of the following activities?
       </p>
       <Dropdown
         fieldName="formData.SurveyData.q22.GoOutOnFootUnaided"

@@ -18,10 +18,10 @@ const SurveyIntro = () => {
         Everyone - Cycle Hire on those who have taken part.
       </p>
       <p>
-        These questions should take you no more than 5-10 minutes to fill in.
-        All completed entries will be eligible for entry into a prize draw with
-        the chance to win one prize of £50 in Amazon Vouchers. The closing date
-        for entries is the last day of the month of your applied.
+        These questions should take you no more than 5 minutes to fill in. All
+        completed entries will be eligible for entry into a prize draw with the
+        chance to <b>win one prize of £50 in Amazon Vouchers</b>. The closing
+        date for entries is the last day of the month of you applied.
       </p>
     </FormSection>
   );

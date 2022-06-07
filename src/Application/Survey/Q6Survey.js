@@ -89,7 +89,7 @@ const Q6Survey = () => {
 
       <TextInput
         fieldName="formData.SurveyData.q9"
-        label="Q9 - What are the main reasons that you feel (Q8) cycling on roads in your local area?"
+        label="Q9 - What are the main reasons that you feel the way you said in Q8 about cycling on roads in your local area?"
         validation={required}
         error={q9error}
       />

@@ -176,8 +176,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <>
               I do not own a suitable working bike, I am not able to buy a bike
               through a cycle to work scheme and I am not supported with travel
-              costs for cycling apart from between 27th July 2022 to 8th August
-              2022.
+              costs for cycling.
             </>
           }
         />
@@ -186,8 +185,8 @@ const CheckAnswers = ({ setGoToPage }) => {
           label={
             <>
               Tick the box if you want to be put forward for a chance to win 1
-              prize of £50 in Amazon Vouchers. The closing date for entries is
-              the last day of the month of your applied.
+              prize of £50 in Amazon vouchers. The closing date for entries is
+              the last day of the month you applied.
             </>
           }
         />
