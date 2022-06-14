@@ -31,10 +31,8 @@ const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading }) => {
         type="button"
         onClick={() => getAddresses(input?.value)}
       >
-        {btnText ? (
-          btnText
-        ) : ("Find Address")}
-        
+        {btnText ? btnText : "Find Address"}
+
         {loading ? (
           <div
             className="wmnds-loader wmnds-loader--btn wmnds-btn__icon wmnds-btn__icon--right"

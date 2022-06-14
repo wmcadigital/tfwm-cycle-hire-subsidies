@@ -124,7 +124,7 @@ const FormWizard = ({
                     className="wmnds-btn wmnds-btn--start"
                     onClick={(e) => e.target.blur()}
                   >
-                    Check if you&#39;re eligible
+                    Apply now
                     <svg className="wmnds-btn__icon wmnds-btn__icon--right ">
                       <use
                         xlinkHref="#wmnds-general-chevron-right"
