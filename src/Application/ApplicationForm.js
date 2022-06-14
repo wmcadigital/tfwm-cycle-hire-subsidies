@@ -7,7 +7,6 @@ import Header from "../common/Header";
 import FormWizard from "../common/FormWizard";
 
 // Main form
-import Introduction from "./Introduction/Introduction";
 import EligibilityCheck from "./section1/EligibilityCheck";
 import RegistrationName from "./section1/RegistrationName";
 import DateOfBirth from "./section1/DateOfBirth";
@@ -66,7 +65,6 @@ const ApplicationForm = () => {
           goToPage={goToPage}
           setGoToPage={setGoToPage}
         >
-          <Introduction />
           <EligibilityCheck />
           <RegistrationName />
           <DateOfBirth validate={validateDateOfBirth} />

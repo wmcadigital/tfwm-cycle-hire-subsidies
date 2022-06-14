@@ -41,7 +41,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Your name"
               value={`${formValues["FirstName"]} ${formValues["LastName"]}`}
-              changeValueCallback={() => setGoToPage(2)}
+              changeValueCallback={() => setGoToPage(1)}
             />
           ) : (
             ""
@@ -50,7 +50,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Date of birth"
               value={`${formValues["DateOfBirth"]}`}
-              changeValueCallback={() => setGoToPage(3)}
+              changeValueCallback={() => setGoToPage(2)}
             />
           ) : (
             ""
@@ -59,7 +59,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Your address"
               value={`${formValues["AddressLine1"]} ${formValues["AddressLine2"]} ${formValues["PostCode"]}`}
-              changeValueCallback={() => setGoToPage(4)}
+              changeValueCallback={() => setGoToPage(3)}
             />
           ) : (
             ""
@@ -70,7 +70,7 @@ const CheckAnswers = ({ setGoToPage }) => {
               value={
                 formValues["EmailAddress"] ? formValues["EmailAddress"] : ""
               }
-              changeValueCallback={() => setGoToPage(5)}
+              changeValueCallback={() => setGoToPage(4)}
             />
           ) : (
             ""
@@ -85,7 +85,7 @@ const CheckAnswers = ({ setGoToPage }) => {
                   formValues["Disability"].length
                 )
               }`}
-              changeValueCallback={() => setGoToPage(6)}
+              changeValueCallback={() => setGoToPage(5)}
             />
           ) : (
             ""
@@ -94,7 +94,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Employment Status"
               value={`${formValues["Employmentstatus"]}`}
-              changeValueCallback={() => setGoToPage(7)}
+              changeValueCallback={() => setGoToPage(6)}
             />
           ) : (
             ""
@@ -109,7 +109,7 @@ const CheckAnswers = ({ setGoToPage }) => {
                   formValues["IsStartingANewJob"].length
                 )
               }`}
-              changeValueCallback={() => setGoToPage(8)}
+              changeValueCallback={() => setGoToPage(7)}
             />
           ) : (
             ""
@@ -118,7 +118,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Benefits"
               value={`${formValues["BenefitType"]}`}
-              changeValueCallback={() => setGoToPage(9)}
+              changeValueCallback={() => setGoToPage(8)}
             />
           ) : (
             ""
@@ -127,7 +127,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Proof"
               value={`${formValues.Files[0].Name}`}
-              changeValueCallback={() => setGoToPage(10)}
+              changeValueCallback={() => setGoToPage(9)}
             />
           ) : (
             ""
@@ -144,7 +144,7 @@ const CheckAnswers = ({ setGoToPage }) => {
                   formValues["ReferredbyMedicalService"].length
                 )
               }`}
-              changeValueCallback={() => setGoToPage(11)}
+              changeValueCallback={() => setGoToPage(10)}
             />
           ) : (
             ""
@@ -153,7 +153,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Hear About us"
               value={`${formValues["WhereDidYouHearAboutTheScheme"]}`}
-              changeValueCallback={() => setGoToPage(12)}
+              changeValueCallback={() => setGoToPage(11)}
             />
           ) : (
             ""

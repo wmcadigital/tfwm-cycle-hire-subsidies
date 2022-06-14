@@ -88,7 +88,7 @@ const FormWizard = ({
   };
 
   const activePage = Children.toArray(filteredChildren)[page];
-  const isFirstPage = page === 0;
+  // const isFirstPage = page === 0;
   const isLastPage = page === Children.count(filteredChildren) - 1;
 
   return (
@@ -117,23 +117,7 @@ const FormWizard = ({
             <form onSubmit={handleSubmit}>
               {activePage}
               <div>
-                {/* Add green start button to Introduction page */}
-                {isFirstPage && (
-                  <button
-                    type="submit"
-                    className="wmnds-btn wmnds-btn--start"
-                    onClick={(e) => e.target.blur()}
-                  >
-                    Apply now
-                    <svg className="wmnds-btn__icon wmnds-btn__icon--right ">
-                      <use
-                        xlinkHref="#wmnds-general-chevron-right"
-                        href="#wmnds-general-chevron-right"
-                      ></use>
-                    </svg>
-                  </button>
-                )}
-                {!isLastPage && !isFirstPage && (
+                {!isLastPage && (
                   <button
                     type="submit"
                     className="wmnds-btn"

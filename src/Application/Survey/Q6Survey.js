@@ -23,11 +23,6 @@ const Q6Survey = () => {
       ? stateApi.errors?.formData.SurveyData.q9
       : null;
 
-  const q10error =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q10
-      : null;
-
   const q11error =
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q11
@@ -98,8 +93,6 @@ const Q6Survey = () => {
         fieldName="formData.SurveyData.q10"
         label="Q10 - If you have any comments or suggestions on how your feeling of safety could be improved
         when cycling on roads in your local area please provide more detail below:"
-        validation={required}
-        error={q10error}
       />
 
       <p>

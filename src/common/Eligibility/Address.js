@@ -70,7 +70,7 @@ const Address = ({ prefix, btnText }) => {
         containerClass="hide"
       />
       {formState.values.eligibility == "yes" && (
-        <Question text="Congratulations, you are eligable for this service." />
+        <Question text="Congratulations, you are eligible for this service." />
       )}
     </>
   );
