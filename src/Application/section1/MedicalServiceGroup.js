@@ -27,7 +27,7 @@ const MedicalServiceGroup = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="Were you referred by a medical service?" />
+      <Question text="Were you referred by a medical service? For example a GP or link worker" />
       <RadioGroup error={error}>
         <FieldError text={error} />
         {Object.keys(DisabilityTypes).map((ReferredbyMedicalService, index) => (

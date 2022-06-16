@@ -41,7 +41,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Your name"
               value={`${formValues["FirstName"]} ${formValues["LastName"]}`}
-              changeValueCallback={() => setGoToPage(0)}
+              changeValueCallback={() => setGoToPage(1)}
             />
           ) : (
             ""
@@ -50,7 +50,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Date of birth"
               value={`${formValues["DateOfBirth"]}`}
-              changeValueCallback={() => setGoToPage(1)}
+              changeValueCallback={() => setGoToPage(2)}
             />
           ) : (
             ""
@@ -59,7 +59,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Your address"
               value={`${formValues["AddressLine1"]} ${formValues["AddressLine2"]} ${formValues["PostCode"]}`}
-              changeValueCallback={() => setGoToPage(2)}
+              changeValueCallback={() => setGoToPage(3)}
             />
           ) : (
             ""
@@ -70,7 +70,7 @@ const CheckAnswers = ({ setGoToPage }) => {
               value={
                 formValues["EmailAddress"] ? formValues["EmailAddress"] : ""
               }
-              changeValueCallback={() => setGoToPage(3)}
+              changeValueCallback={() => setGoToPage(4)}
             />
           ) : (
             ""
@@ -85,7 +85,7 @@ const CheckAnswers = ({ setGoToPage }) => {
                   formValues["Disability"].length
                 )
               }`}
-              changeValueCallback={() => setGoToPage(4)}
+              changeValueCallback={() => setGoToPage(5)}
             />
           ) : (
             ""
@@ -94,7 +94,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Employment Status"
               value={`${formValues["Employmentstatus"]}`}
-              changeValueCallback={() => setGoToPage(5)}
+              changeValueCallback={() => setGoToPage(6)}
             />
           ) : (
             ""
@@ -109,7 +109,7 @@ const CheckAnswers = ({ setGoToPage }) => {
                   formValues["IsStartingANewJob"].length
                 )
               }`}
-              changeValueCallback={() => setGoToPage(6)}
+              changeValueCallback={() => setGoToPage(7)}
             />
           ) : (
             ""
@@ -118,7 +118,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Benefits"
               value={`${formValues["BenefitType"]}`}
-              changeValueCallback={() => setGoToPage(7)}
+              changeValueCallback={() => setGoToPage(8)}
             />
           ) : (
             ""
@@ -127,7 +127,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Proof"
               value={`${formValues.Files[0].Name}`}
-              changeValueCallback={() => setGoToPage(8)}
+              changeValueCallback={() => setGoToPage(9)}
             />
           ) : (
             ""
@@ -144,7 +144,7 @@ const CheckAnswers = ({ setGoToPage }) => {
                   formValues["ReferredbyMedicalService"].length
                 )
               }`}
-              changeValueCallback={() => setGoToPage(9)}
+              changeValueCallback={() => setGoToPage(10)}
             />
           ) : (
             ""
@@ -153,7 +153,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Hear About us"
               value={`${formValues["WhereDidYouHearAboutTheScheme"]}`}
-              changeValueCallback={() => setGoToPage(10)}
+              changeValueCallback={() => setGoToPage(11)}
             />
           ) : (
             ""
@@ -176,8 +176,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <>
               I do not own a suitable working bike, I am not able to buy a bike
               through a cycle to work scheme and I am not supported with travel
-              costs for cycling apart from between 27th July 2022 to 8th August
-              2022.
+              costs for cycling.
             </>
           }
         />
@@ -186,8 +185,8 @@ const CheckAnswers = ({ setGoToPage }) => {
           label={
             <>
               Tick the box if you want to be put forward for a chance to win 1
-              prize of £50 in Amazon Vouchers. The closing date for entries is
-              the last day of the month of your applied.
+              prize of £50 in Amazon vouchers. The closing date for entries is
+              the last day of the month you applied.
             </>
           }
         />

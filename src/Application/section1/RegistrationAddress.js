@@ -21,6 +21,7 @@ const RegistrationAddress = ({
       <Question text={question} />
       <Address
         prefix="formData"
+        btnText="Find address"
         checkInside={true}
         orderNo={orderNo}
         addresses={registrationAddresses}

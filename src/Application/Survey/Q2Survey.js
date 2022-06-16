@@ -56,10 +56,6 @@ const Q2Survey = () => {
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q2.OtherReasons
       : null;
-  const error9 =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q2.SpecifyOtherReasons
-      : null;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -143,9 +139,7 @@ const Q2Survey = () => {
       />
       <TextInput
         fieldName="formData.SurveyData.q2.SpecifyOtherReasons"
-        error={error9}
         label="For other reasons (please specify)"
-        validation={required}
       />
     </FormSection>
   );

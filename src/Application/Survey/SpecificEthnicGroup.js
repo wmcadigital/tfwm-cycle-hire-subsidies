@@ -19,12 +19,7 @@ const SpecificEthnicGroup = () => {
   const ethnicityLabel =
     ethnicity === "other" ? null : Ethnicity[ethnicity].label;
   const specificEthnicity = Ethnicity[ethnicity].specific;
-  const question =
-    formValues["registerForYourself"] === "yes"
-      ? `Which of the following best describes your ${ethnicityLabel} background?`
-      : `Which of the following best describes ${formValues["firstName"]}'s ${
-          ethnicityLabel ? `${ethnicityLabel} background` : "background"
-        }?`;
+  const question = "Which of the following best describes your background?";
 
   const error = stateApi.submitFailed
     ? stateApi.errors?.specificEthnicity

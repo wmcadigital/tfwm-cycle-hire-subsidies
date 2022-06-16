@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 // Layout
 import FormContentWrapper from "../common/FormContentWrapper";
 import Header from "../common/Header";
-import BreadCrumb from "../common/BreadCrumb";
 import FormWizard from "../common/FormWizard";
 
 // Main form
+import EligibilityCheck from "./section1/EligibilityCheck";
 import RegistrationName from "./section1/RegistrationName";
 import DateOfBirth from "./section1/DateOfBirth";
 import EmailAddress from "./section1/EmailAddress";
@@ -59,13 +59,13 @@ const ApplicationForm = () => {
     <>
       <Header heading="Apply for support with West Midlands Cycle Hire costs" />
       <FormContentWrapper>
-        <BreadCrumb currentPageName="Apply for free cycle hire" />
         <FormWizard
           onSubmit={() => {}}
           initialValues={location?.state?.formValues}
           goToPage={goToPage}
           setGoToPage={setGoToPage}
         >
+          <EligibilityCheck />
           <RegistrationName />
           <DateOfBirth validate={validateDateOfBirth} />
           <RegistrationAddress

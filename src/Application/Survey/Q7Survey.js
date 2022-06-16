@@ -29,11 +29,6 @@ const Q7Survey = () => {
       ? stateApi.errors?.formData.SurveyData.q12
       : null;
 
-  const q13error =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q13
-      : null;
-
   const q14error =
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q14
@@ -99,9 +94,7 @@ const Q7Survey = () => {
 
       <TextInput
         fieldName="formData.SurveyData.q13"
-        label="Q13 - What are the main reasons that you feel (Q12) walking in your local area?"
-        validation={required}
-        error={q13error}
+        label="Q13 - What are the main reasons that you feel the way you said in Q12 about walking in your local area?"
       />
 
       <TextInput

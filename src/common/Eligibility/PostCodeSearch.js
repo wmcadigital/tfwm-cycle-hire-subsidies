@@ -30,7 +30,6 @@ const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading }) => {
         }`}
         type="button"
         onClick={() => getAddresses(input?.value)}
-        disabled={invalid || loading ? "disabled" : undefined}
       >
         {btnText ? btnText : "Find Address"}
 
@@ -51,6 +50,7 @@ const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading }) => {
 PostCodeSearch.propTypes = {
   prefix: PropTypes.string.isRequired,
   error: PropTypes.string,
+  errorE: PropTypes.string,
   btnText: PropTypes.string,
   getAddresses: PropTypes.func,
   loading: PropTypes.bool,
