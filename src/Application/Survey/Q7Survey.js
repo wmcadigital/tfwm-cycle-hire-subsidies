@@ -29,11 +29,6 @@ const Q7Survey = () => {
       ? stateApi.errors?.formData.SurveyData.q12
       : null;
 
-  const q14error =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q14
-      : null;
-
   const q15error =
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q15
@@ -101,8 +96,6 @@ const Q7Survey = () => {
         fieldName="formData.SurveyData.q14"
         label="Q14 - If you have any comments or suggestions on how your feeling of safety could be improved
         when walking in your local area please provide more detail below:"
-        validation={required}
-        error={q14error}
       />
 
       <p>
