@@ -26,7 +26,7 @@ const Q5Survey = () => {
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q6.CarOrVan
       : null;
-  const error1 = stateApi.submitFailed
+  const error1 = stateApi.submitFailed && stateApi.hasValidationErrors
     ? stateApi.errors?.formData.SurveyData.q6.MotorcycleOrMoped
     : null;
 

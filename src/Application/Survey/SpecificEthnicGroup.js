@@ -21,7 +21,7 @@ const SpecificEthnicGroup = () => {
   const specificEthnicity = Ethnicity[ethnicity].specific;
   const question = "Which of the following best describes your background?";
 
-  const error = stateApi.submitFailed
+  const error = stateApi.submitFailed && stateApi.hasValidationErrors
     ? stateApi.errors?.specificEthnicity
     : null;
 
