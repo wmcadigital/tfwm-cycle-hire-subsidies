@@ -74,13 +74,13 @@ const FormWizard = ({
           });
         });
         // get application number from response
-        const content = await rawResponse.json();
+        // const content = await rawResponse.json();
         navigate("/success", {
           replace: true,
         });
       })();
-      return onSubmit(values);
       setLoading(false);
+      return onSubmit(values);
     } else {
       // go to next page
       next(values);

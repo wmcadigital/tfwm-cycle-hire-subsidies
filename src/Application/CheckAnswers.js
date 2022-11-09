@@ -11,6 +11,7 @@ import CheckboxContainer from "../common/CheckboxContainer";
 
 const CheckAnswers = ({ setGoToPage }) => {
   const stateApi = useFormState();
+  const formValue = stateApi.values;
   const formValues = stateApi.values.formData;
   const formApi = useForm();
 
