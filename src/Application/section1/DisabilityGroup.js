@@ -17,9 +17,10 @@ const DisabilityGroup = () => {
 
   const error = stateApi.submitFailed ? stateApi.errors?.DisabilityQ : null;
 
-  const DisabilityTypeError = stateApi.submitFailed
-    ? stateApi.errors?.DisabilityType
-    : null;
+  const DisabilityTypeError =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.DisabilityType
+      : null;
 
   useEffect(() => {
     if (formValues.DisabilityQ) {

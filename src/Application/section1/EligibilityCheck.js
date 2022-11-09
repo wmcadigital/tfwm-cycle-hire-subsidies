@@ -1,11 +1,8 @@
-import PropTypes from "prop-types";
-
 import FormSection from "../../common/FormSection";
 import Question from "../../common/Question";
 import Address from "../../common/Eligibility/Address";
 
-const EligibilityCheck = ({}) => {
-  
+const EligibilityCheck = () => {
   const question = "Are you eligible?";
 
   return (
