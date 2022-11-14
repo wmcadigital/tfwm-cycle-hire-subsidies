@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useFormState, useForm } from "react-final-form";
+import { useFormState } from "react-final-form";
 
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
@@ -21,9 +21,6 @@ const dropdownOptions = [
 
 const Q5Survey = () => {
   const stateApi = useFormState();
-  const formApi = useForm();
-
-  console.log(stateApi);
 
   const error =
     stateApi.submitFailed && stateApi.hasValidationErrors
@@ -43,11 +40,6 @@ const Q5Survey = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useEffect(() => {
-    console.log("qwerty");
-    formApi.mutators.setFormAttribute("formData.testing", "testing");
-  }, [formApi.mutators]);
 
   return (
     <FormSection>

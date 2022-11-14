@@ -1,0 +1,16 @@
+.GBpK7W_fileUpload {
+  z-index: -1;
+  width: .1px;
+  height: .1px;
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.GBpK7W_fileUploadLabelFocused {
+  background-color: #2a0b3a;
+  outline: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #9d5baf;
+}
+
+/*# sourceMappingURL=index.bd087517.css.map */

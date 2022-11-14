@@ -1,7 +1,18 @@
+import { useEffect } from "react";
 import Header from "../common/Header";
 import BreadCrumb from "../common/BreadCrumb";
+import ReactGa from "react-ga";
 
 const SubmitError = () => {
+
+  useEffect(() => {
+    ReactGa.event({
+      category: "cycle-hire-subsidies",
+      action: "form submitted: error",
+      label: "Error: Bad Request",
+    })
+  })
+
   return (
     <>
       <Header heading="Apply for support with West Midlands Cycle Hire costs" />
