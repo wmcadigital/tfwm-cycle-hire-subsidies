@@ -39,10 +39,10 @@ const Q8Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="About You" />
+      <Question text="About You" isRequired={true} />
       <p>
         Q17 - How many people, including yourself, currently live in your
-        household?
+        household? *
       </p>
       <TextInput
         fieldName="formData.SurveyData.q17.Adults18OrOver"
@@ -65,7 +65,7 @@ const Q8Survey = () => {
         label="Children aged 4 or under"
       />
 
-      <p>Q18 - What is your estimated household annual income?</p>
+      <p>Q18 - What is your estimated household annual income? *</p>
       <RadioGroup error={q18error}>
         <FieldError text={q18error} />
         <RadioButton

@@ -6,7 +6,7 @@ import { required, postCode, composeValidators } from "../validation";
 
 const validatePostCode = composeValidators(required, postCode);
 
-const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading }) => {
+const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading, isRequired }) => {
   const fieldName = `${prefix}.searchPostCode`;
   const { input } = useField(fieldName);
   const invalid = validatePostCode(input?.value);
@@ -14,7 +14,7 @@ const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading }) => {
   return (
     <div className={`wmnds-fe-group ${error && "wmnds-fe-group--error"}`}>
       <label className="wmnds-fe-label" htmlFor={fieldName}>
-        Postcode
+        Postcode {isRequired && <span>*</span>}
       </label>
       <FieldError text={error} />
       <Field
@@ -54,6 +54,7 @@ PostCodeSearch.propTypes = {
   btnText: PropTypes.string,
   getAddresses: PropTypes.func,
   loading: PropTypes.bool,
+  isRequired: PropTypes.bool,
 };
 
 export default PostCodeSearch;

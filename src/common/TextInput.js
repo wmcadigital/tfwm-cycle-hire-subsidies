@@ -10,6 +10,7 @@ const TextInput = ({
   error,
   containerClass,
   defaultValue,
+  isRequired
 }) => (
   <div
     className={`wmnds-fe-group ${error && "wmnds-fe-group--error"} ${
@@ -17,7 +18,7 @@ const TextInput = ({
     }`}
   >
     <label className="wmnds-fe-label" htmlFor={fieldName}>
-      {label}
+      {label} {isRequired && <>*</>}
     </label>
     <FieldError text={error} />
     <Field
@@ -39,6 +40,11 @@ TextInput.propTypes = {
   error: PropTypes.string,
   containerClass: PropTypes.string,
   defaultValue: PropTypes.string,
+  isRequired: PropTypes.bool,
+};
+
+TextInput.defaultProps = {
+  isRequired: false,
 };
 
 export default TextInput;

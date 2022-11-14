@@ -18,7 +18,7 @@ const RegistrationAddress = ({
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text={question} />
+      <Question text={question} isRequired={true} />
       <Address
         prefix="formData"
         btnText="Find address"
@@ -26,6 +26,7 @@ const RegistrationAddress = ({
         orderNo={orderNo}
         addresses={registrationAddresses}
         setAddresses={setRegistrationAddresses}
+        isRequired={true}
       />
     </FormSection>
   );

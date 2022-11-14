@@ -61,7 +61,7 @@ const Q1Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="Your current travel" />
+      <Question text="Your current travel" isRequired={true} />
       <p>
         Q1 - Firstly, we’d like to know a little more about how you currently
         travel. On average, how often would you say that you currently travel
@@ -74,6 +74,7 @@ const Q1Survey = () => {
         label="Car or van (as the driver)"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q1.CarOrVanAsPassenger"
@@ -81,6 +82,7 @@ const Q1Survey = () => {
         label="Car or van (as passenger)"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q1.BusMinibusOrCoach"
@@ -88,6 +90,7 @@ const Q1Survey = () => {
         label="Bus, minibus, or coach"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q1.MetroTram"
@@ -95,6 +98,7 @@ const Q1Survey = () => {
         label="Midland Metro/tram"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q1.Train"
@@ -102,6 +106,7 @@ const Q1Survey = () => {
         label="Train"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q1.TaxiOrMinicab"
@@ -109,6 +114,7 @@ const Q1Survey = () => {
         label="Taxi or minicab"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q1.MotorcycleScooterEscooterOrMoped"
@@ -116,6 +122,7 @@ const Q1Survey = () => {
         label="Motorcycle, scooter, e-scooter or moped"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q1.BicycleEbikeEcycleOrAdaptedCycle"
@@ -123,6 +130,7 @@ const Q1Survey = () => {
         label="Bicycle, e-bike/e-cycle, adapted cycle"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q1.WalkFor10Minutes"
@@ -130,6 +138,7 @@ const Q1Survey = () => {
         label="Walk for at least 10 minutes as part of your journey"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
     </FormSection>
   );

@@ -9,7 +9,7 @@ import TextInput from "../../common/TextInput";
 import Question from "../../common/Question";
 import { required } from "../../common/validation";
 
-const Address = ({ prefix, btnText }) => {
+const Address = ({ prefix, btnText, isRequired }) => {
   const [loading, setLoading] = useState(false);
   const formState = useFormState();
   const formApi = useForm();
@@ -68,9 +68,10 @@ const Address = ({ prefix, btnText }) => {
         error={errorEligibility}
         defaultValue={formState.values.eligible}
         containerClass="hide"
+        isRequired={isRequired}
       />
       {formState.values.eligibility == "yes" && (
-        <Question text="Congratulations, you are eligible for this service." />
+        <Question text="Congratulations, you are eligible for this service." isRequired={false} />
       )}
     </>
   );
@@ -83,11 +84,13 @@ Address.propTypes = {
   orderNo: PropTypes.number,
   addresses: PropTypes.arrayOf(PropTypes.object),
   setAddresses: PropTypes.func,
+  isRequired: PropTypes.bool,
 };
 
 Address.defaultProps = {
   checkInside: false,
   addresses: [],
+  isRequired: false,
 };
 
 export default Address;

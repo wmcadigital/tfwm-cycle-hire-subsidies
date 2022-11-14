@@ -31512,7 +31512,8 @@ const EligibilityCheck = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_addressDefault.default, {
                 prefix: "formData",
                 btnText: "Check eligibility",
-                checkInside: true
+                checkInside: true,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/EligibilityCheck.js",
                 lineNumber: 10,
@@ -31582,18 +31583,30 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-const Question = ({ text  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
-        className: "wmnds-fe-question",
-        children: text
-    }, void 0, false, {
-        fileName: "src/common/Question.js",
-        lineNumber: 5,
-        columnNumber: 7
-    }, undefined)
+const Question = ({ text , isRequired  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
+                className: "wmnds-fe-question",
+                children: text
+            }, void 0, false, {
+                fileName: "src/common/Question.js",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined),
+            isRequired && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Fields marked with an asterisk (*) are required."
+            }, void 0, false, {
+                fileName: "src/common/Question.js",
+                lineNumber: 8,
+                columnNumber: 20
+            }, undefined)
+        ]
+    }, void 0, true)
 ;
 _c = Question;
 Question.propTypes = {
-    text: _propTypesDefault.default.string.isRequired
+    text: _propTypesDefault.default.string.isRequired,
+    isRequired: _propTypesDefault.default.bool
 };
 exports.default = Question;
 var _c;
@@ -31629,7 +31642,7 @@ var _question = require("../../common/Question");
 var _questionDefault = parcelHelpers.interopDefault(_question);
 var _validation = require("../../common/validation");
 var _s = $RefreshSig$();
-const Address = ({ prefix , btnText  })=>{
+const Address = ({ prefix , btnText , isRequired  })=>{
     _s();
     const [loading, setLoading] = _react.useState(false);
     const formState = _reactFinalForm.useFormState();
@@ -31673,7 +31686,7 @@ const Address = ({ prefix , btnText  })=>{
                 prefix: prefix
             }, void 0, false, {
                 fileName: "src/common/Eligibility/Address.js",
-                lineNumber: 45,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -31682,17 +31695,19 @@ const Address = ({ prefix , btnText  })=>{
                 validation: _validation.required,
                 error: errorEligibility,
                 defaultValue: formState.values.eligible,
-                containerClass: "hide"
-            }, void 0, false, {
-                fileName: "src/common/Eligibility/Address.js",
-                lineNumber: 46,
-                columnNumber: 7
-            }, undefined),
-            formState.values.eligibility == "yes" && /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Congratulations, you are eligible for this service."
+                containerClass: "hide",
+                isRequired: isRequired
             }, void 0, false, {
                 fileName: "src/common/Eligibility/Address.js",
                 lineNumber: 47,
+                columnNumber: 7
+            }, undefined),
+            formState.values.eligibility == "yes" && /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "Congratulations, you are eligible for this service.",
+                isRequired: false
+            }, void 0, false, {
+                fileName: "src/common/Eligibility/Address.js",
+                lineNumber: 48,
                 columnNumber: 49
             }, undefined)
         ]
@@ -31712,11 +31727,13 @@ Address.propTypes = {
     checkInside: _propTypesDefault.default.bool,
     orderNo: _propTypesDefault.default.number,
     addresses: _propTypesDefault.default.arrayOf(_propTypesDefault.default.object),
-    setAddresses: _propTypesDefault.default.func
+    setAddresses: _propTypesDefault.default.func,
+    isRequired: _propTypesDefault.default.bool
 };
 Address.defaultProps = {
     checkInside: false,
-    addresses: []
+    addresses: [],
+    isRequired: false
 };
 exports.default = Address;
 var _c;
@@ -31727,7 +31744,7 @@ $RefreshReg$(_c, "Address");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","react-router-dom":"fdOAw","prop-types":"7wKI2","./PostCodeSearch":"gx92I","./api/fetchEligibility":"hD8qd","../../common/TextInput":"7jGrs","../../common/Question":"7HVc9","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gx92I":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","react-router-dom":"fdOAw","prop-types":"7wKI2","./PostCodeSearch":"gx92I","./api/fetchEligibility":"hD8qd","../../common/TextInput":"7jGrs","../../common/Question":"7HVc9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../common/validation":"hOBBd"}],"gx92I":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ae85 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -31756,7 +31773,7 @@ const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading  })=
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
                 className: "wmnds-fe-label",
                 htmlFor: fieldName,
-                children: "Postcode"
+                children: "Postcode *"
             }, void 0, false, {
                 fileName: "src/common/Eligibility/PostCodeSearch.js",
                 lineNumber: 20,
@@ -31982,23 +31999,29 @@ var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 var _fieldError = require("./FieldError");
 var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-const TextInput = ({ fieldName , label , validation , error , containerClass , defaultValue  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+const TextInput = ({ fieldName , label , validation , error , containerClass , defaultValue , isRequired  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         className: `wmnds-fe-group ${error && "wmnds-fe-group--error"} ${containerClass && containerClass}`,
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
                 className: "wmnds-fe-label",
                 htmlFor: fieldName,
-                children: label
-            }, void 0, false, {
+                children: [
+                    label,
+                    " ",
+                    isRequired && /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
+                        children: "*"
+                    }, void 0, false)
+                ]
+            }, void 0, true, {
                 fileName: "src/common/TextInput.js",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
                 text: error
             }, void 0, false, {
                 fileName: "src/common/TextInput.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactFinalForm.Field, {
@@ -32011,13 +32034,13 @@ const TextInput = ({ fieldName , label , validation , error , containerClass , d
                 defaultValue: defaultValue
             }, void 0, false, {
                 fileName: "src/common/TextInput.js",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/common/TextInput.js",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 7
     }, undefined)
 ;
@@ -32031,7 +32054,11 @@ TextInput.propTypes = {
     validation: _propTypesDefault.default.func,
     error: _propTypesDefault.default.string,
     containerClass: _propTypesDefault.default.string,
-    defaultValue: _propTypesDefault.default.string
+    defaultValue: _propTypesDefault.default.string,
+    isRequired: _propTypesDefault.default.bool
+};
+TextInput.defaultProps = {
+    isRequired: false
 };
 exports.default = TextInput;
 var _c;
@@ -32080,7 +32107,8 @@ const RegistrationName = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: question
+                text: question,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/RegistrationName.js",
                 lineNumber: 15,
@@ -32222,7 +32250,8 @@ const DateOfBirth = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: question
+                text: question,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/DateOfBirth.js",
                 lineNumber: 25,
@@ -32384,7 +32413,7 @@ const DateInput = ({ dayFieldName , monthFieldName , yearFieldName , error , lab
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
                             className: "wmnds-fe-label",
                             htmlFor: "LastUsedDateYear",
-                            children: "Year"
+                            children: "Year *"
                         }, void 0, false, {
                             fileName: "src/common/DateInput.js",
                             lineNumber: 39,
@@ -32485,7 +32514,8 @@ const EmailAddress = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: question
+                text: question,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/EmailAddress.js",
                 lineNumber: 16,
@@ -32502,14 +32532,14 @@ const EmailAddress = ()=>{
                 fieldName: "formData.EmailAddress",
                 label: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
                     children: [
-                        "Email address",
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                            children: "For example, name@example.com"
-                        }, void 0, false, void 0, void 0)
+                        "Email address ",
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {}, void 0, false, void 0, void 0),
+                        "For example, name@example.com"
                     ]
                 }, void 0, true),
                 error: errorEmailAddress,
-                validation: _validation.composeValidators(_validation.required, _validation.email)
+                validation: _validation.composeValidators(_validation.required, _validation.email),
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/EmailAddress.js",
                 lineNumber: 18,
@@ -32570,7 +32600,8 @@ const RegistrationAddress = ({ orderNo , registrationAddresses , setRegistration
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: question
+                text: question,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/RegistrationAddress.js",
                 lineNumber: 15,
@@ -32582,7 +32613,8 @@ const RegistrationAddress = ({ orderNo , registrationAddresses , setRegistration
                 checkInside: true,
                 orderNo: orderNo,
                 addresses: registrationAddresses,
-                setAddresses: setRegistrationAddresses
+                setAddresses: setRegistrationAddresses,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/RegistrationAddress.js",
                 lineNumber: 16,
@@ -32676,7 +32708,8 @@ const Address = ({ prefix , btnText , orderNo , addresses: addresses1 , setAddre
                 btnText: btnText,
                 getAddresses: getAddresses,
                 loading: loading,
-                prefix: prefix
+                prefix: prefix,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/common/Address/Address.js",
                 lineNumber: 59,
@@ -32749,7 +32782,7 @@ var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
 var _validation = require("../validation");
 var _s = $RefreshSig$();
 const validatePostCode = _validation.composeValidators(_validation.required, _validation.postCode);
-const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading  })=>{
+const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading , isRequired  })=>{
     _s();
     const fieldName = `${prefix}.searchPostCode`;
     const { input  } = _reactFinalForm.useField(fieldName);
@@ -32760,17 +32793,26 @@ const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading  })=
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
                 className: "wmnds-fe-label",
                 htmlFor: fieldName,
-                children: "Postcode"
-            }, void 0, false, {
+                children: [
+                    "Postcode ",
+                    isRequired && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                        children: "*"
+                    }, void 0, false, {
+                        fileName: "src/common/Address/PostCodeSearch.js",
+                        lineNumber: 22,
+                        columnNumber: 33
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/common/Address/PostCodeSearch.js",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
                 text: error
             }, void 0, false, {
                 fileName: "src/common/Address/PostCodeSearch.js",
-                lineNumber: 23,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactFinalForm.Field, {
@@ -32781,7 +32823,7 @@ const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading  })=
                 className: "wmnds-fe-input"
             }, void 0, false, {
                 fileName: "src/common/Address/PostCodeSearch.js",
-                lineNumber: 24,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -32800,24 +32842,24 @@ const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading  })=
                             className: "wmnds-loader__content"
                         }, void 0, false, {
                             fileName: "src/common/Address/PostCodeSearch.js",
-                            lineNumber: 29,
+                            lineNumber: 30,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/common/Address/PostCodeSearch.js",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 20
                     }, undefined) : null
                 ]
             }, void 0, true, {
                 fileName: "src/common/Address/PostCodeSearch.js",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/common/Address/PostCodeSearch.js",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 10
     }, undefined);
 };
@@ -32832,7 +32874,8 @@ PostCodeSearch.propTypes = {
     error: _propTypesDefault.default.string,
     btnText: _propTypesDefault.default.string,
     getAddresses: _propTypesDefault.default.func,
-    loading: _propTypesDefault.default.bool
+    loading: _propTypesDefault.default.bool,
+    isRequired: _propTypesDefault.default.bool
 };
 exports.default = PostCodeSearch;
 var _c;
@@ -32917,7 +32960,8 @@ const AddressList = ({ prefix , searchPostCode , changePostCodeCallback , addres
                 label: "Select an address",
                 prompt: prompt,
                 options: addressOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/common/Address/AddressList.js",
                 lineNumber: 35,
@@ -32979,7 +33023,7 @@ var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 var _reactFinalForm = require("react-final-form");
 var _fieldError = require("./FieldError");
 var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-const Dropdown = ({ fieldName , label: label1 , prompt , options , validation , error  })=>{
+const Dropdown = ({ fieldName , label: label1 , prompt , options , validation , error , isRequired  })=>{
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         className: `wmnds-fe-group ${error ? "wmnds-fe-group--error" : null}`,
         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -32989,16 +33033,26 @@ const Dropdown = ({ fieldName , label: label1 , prompt , options , validation , 
                     text: error
                 }, void 0, false, {
                     fileName: "src/common/Dropdown.js",
-                    lineNumber: 15,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, undefined),
                 label1 ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
                     className: "wmnds-fe-label",
                     htmlFor: fieldName,
-                    children: label1
-                }, void 0, false, {
+                    children: [
+                        label1,
+                        " ",
+                        isRequired && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            children: "*"
+                        }, void 0, false, {
+                            fileName: "src/common/Dropdown.js",
+                            lineNumber: 18,
+                            columnNumber: 36
+                        }, undefined)
+                    ]
+                }, void 0, true, {
                     fileName: "src/common/Dropdown.js",
-                    lineNumber: 16,
+                    lineNumber: 17,
                     columnNumber: 18
                 }, undefined) : null,
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactFinalForm.Field, {
@@ -33014,7 +33068,7 @@ const Dropdown = ({ fieldName , label: label1 , prompt , options , validation , 
                                     children: prompt
                                 }, void 0, false, {
                                     fileName: "src/common/Dropdown.js",
-                                    lineNumber: 23,
+                                    lineNumber: 24,
                                     columnNumber: 15
                                 }, undefined),
                                 options.map(({ value , label  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
@@ -33022,30 +33076,30 @@ const Dropdown = ({ fieldName , label: label1 , prompt , options , validation , 
                                         children: label
                                     }, value, false, {
                                         fileName: "src/common/Dropdown.js",
-                                        lineNumber: 27,
+                                        lineNumber: 28,
                                         columnNumber: 17
                                     }, undefined)
                                 )
                             ]
                         }, void 0, true, {
                             fileName: "src/common/Dropdown.js",
-                            lineNumber: 22,
+                            lineNumber: 23,
                             columnNumber: 15
                         }, undefined)
                 }, void 0, false, {
                     fileName: "src/common/Dropdown.js",
-                    lineNumber: 19,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/common/Dropdown.js",
-            lineNumber: 14,
+            lineNumber: 15,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/common/Dropdown.js",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 10
     }, undefined);
 };
@@ -33059,11 +33113,13 @@ Dropdown.propTypes = {
         label: _propTypesDefault.default.string
     })),
     validation: _propTypesDefault.default.func,
-    error: _propTypesDefault.default.string
+    error: _propTypesDefault.default.string,
+    isRequired: _propTypesDefault.default.bool
 };
 Dropdown.defaultProps = {
     prompt: "Choose from list",
-    options: []
+    options: [],
+    isRequired: false
 };
 exports.default = Dropdown;
 var _c;
@@ -33116,7 +33172,8 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 containerClass: "wmrards-m-b-md",
                 defaultValue: matchingAddress["line_1"],
                 validation: _validation.required,
-                error: addressLine1Error
+                error: addressLine1Error,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
                 lineNumber: 28,
@@ -33124,7 +33181,9 @@ const AddressDetails = ({ prefix , addresses  })=>{
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
                 fieldName: `${prefix}.AddressLine2`,
-                defaultValue: matchingAddress["line_2"]
+                label: "Address line 2",
+                defaultValue: matchingAddress["line_2"],
+                isRequired: false
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
                 lineNumber: 29,
@@ -33144,7 +33203,8 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 label: "Town or city",
                 defaultValue: matchingAddress["post_town"],
                 validation: _validation.required,
-                error: townOrCityError
+                error: townOrCityError,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
                 lineNumber: 31,
@@ -33155,7 +33215,8 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 label: "County",
                 defaultValue: matchingAddress["county"],
                 validation: _validation.required,
-                error: countyError
+                error: countyError,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
                 lineNumber: 32,
@@ -33166,7 +33227,8 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 label: "Postcode",
                 defaultValue: initialPostCode,
                 validation: validatePostCode,
-                error: postCodeError
+                error: postCodeError,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
                 lineNumber: 33,
@@ -33315,7 +33377,8 @@ const DisabilityGroup = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Do you have a disability?"
+                text: "Do you have a disability?",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/DisabilityGroup.js",
                 lineNumber: 29,
@@ -33345,7 +33408,8 @@ const DisabilityGroup = ()=>{
                         label: "What is your disability?",
                         fieldName: "DisabilityType",
                         validation: _validation.required,
-                        error: DisabilityTypeError
+                        error: DisabilityTypeError,
+                        isRequired: true
                     }, void 0, false, {
                         fileName: "src/Application/section1/DisabilityGroup.js",
                         lineNumber: 33,
@@ -36230,7 +36294,8 @@ const WhereDropdown = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Where did you hear about this scheme?"
+                text: "Where did you hear about this scheme?",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/WhereDropdown.js",
                 lineNumber: 56,
@@ -36241,7 +36306,8 @@ const WhereDropdown = ()=>{
                 error: error,
                 label: "Select one option",
                 options: whereOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/WhereDropdown.js",
                 lineNumber: 57,
@@ -36420,7 +36486,8 @@ const Q1Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Your current travel"
+                text: "Your current travel",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 40,
@@ -36438,7 +36505,8 @@ const Q1Survey = ()=>{
                 error: error,
                 label: "Car or van (as the driver)",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 47,
@@ -36449,7 +36517,8 @@ const Q1Survey = ()=>{
                 error: error1,
                 label: "Car or van (as passenger)",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 48,
@@ -36460,7 +36529,8 @@ const Q1Survey = ()=>{
                 error: error2,
                 label: "Bus, minibus, or coach",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 49,
@@ -36471,7 +36541,8 @@ const Q1Survey = ()=>{
                 error: error3,
                 label: "Midland Metro/tram",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 50,
@@ -36482,7 +36553,8 @@ const Q1Survey = ()=>{
                 error: error4,
                 label: "Train",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 51,
@@ -36493,7 +36565,8 @@ const Q1Survey = ()=>{
                 error: error5,
                 label: "Taxi or minicab",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 52,
@@ -36504,7 +36577,8 @@ const Q1Survey = ()=>{
                 error: error6,
                 label: "Motorcycle, scooter, e-scooter or moped",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 53,
@@ -36515,7 +36589,8 @@ const Q1Survey = ()=>{
                 error: error7,
                 label: "Bicycle, e-bike/e-cycle, adapted cycle",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 54,
@@ -36526,7 +36601,8 @@ const Q1Survey = ()=>{
                 error: error8,
                 label: "Walk for at least 10 minutes as part of your journey",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 55,
@@ -36630,7 +36706,8 @@ const Q2Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Your current travel"
+                text: "Your current travel",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 45,
@@ -36648,7 +36725,8 @@ const Q2Survey = ()=>{
                 error: error,
                 label: "To go to/from your place of work",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 52,
@@ -36659,7 +36737,8 @@ const Q2Survey = ()=>{
                 error: error1,
                 label: "To go to/from your place of education (e.g. school, college, or university)",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 53,
@@ -36670,7 +36749,8 @@ const Q2Survey = ()=>{
                 error: error2,
                 label: "To go somewhere for personal business (e.g. travelling to an appointment)",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 54,
@@ -36681,7 +36761,8 @@ const Q2Survey = ()=>{
                 error: error3,
                 label: "To visit friends or family",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 55,
@@ -36692,7 +36773,8 @@ const Q2Survey = ()=>{
                 error: error4,
                 label: "To go food or grocery shopping",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 56,
@@ -36703,7 +36785,8 @@ const Q2Survey = ()=>{
                 error: error5,
                 label: "To go shopping for things other than food",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 57,
@@ -36714,7 +36797,8 @@ const Q2Survey = ()=>{
                 error: error6,
                 label: "To go somewhere for leisure/social reasons (e.g. to entertainment, to play sport or to visit a pub or restaurant)",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 58,
@@ -36725,7 +36809,8 @@ const Q2Survey = ()=>{
                 error: error7,
                 label: "To do exercise or for recreation",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 59,
@@ -36736,7 +36821,8 @@ const Q2Survey = ()=>{
                 error: error8,
                 label: "For other reasons",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 60,
@@ -36848,7 +36934,8 @@ const Q3Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Your current travel"
+                text: "Your current travel",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q3Survey.js",
                 lineNumber: 45,
@@ -36866,7 +36953,8 @@ const Q3Survey = ()=>{
                 error: error,
                 label: "To go to/from your place of work",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q3Survey.js",
                 lineNumber: 51,
@@ -36877,7 +36965,8 @@ const Q3Survey = ()=>{
                 error: error1,
                 label: "To go to/from your place of education (e.g. school, college, or university)",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q3Survey.js",
                 lineNumber: 52,
@@ -36888,7 +36977,8 @@ const Q3Survey = ()=>{
                 error: error2,
                 label: "To go somewhere for personal business (e.g. travelling to an appointment)",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q3Survey.js",
                 lineNumber: 53,
@@ -36899,7 +36989,8 @@ const Q3Survey = ()=>{
                 error: error3,
                 label: "To visit friends or family",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q3Survey.js",
                 lineNumber: 54,
@@ -36910,7 +37001,8 @@ const Q3Survey = ()=>{
                 error: error4,
                 label: "To go food or grocery shopping",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q3Survey.js",
                 lineNumber: 55,
@@ -36921,7 +37013,8 @@ const Q3Survey = ()=>{
                 error: error5,
                 label: "To go shopping for things other than food",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q3Survey.js",
                 lineNumber: 56,
@@ -36932,7 +37025,8 @@ const Q3Survey = ()=>{
                 error: error6,
                 label: "To go somewhere for leisure/social reasons (e.g. to entertainment, to play sport or to visit a pub or restaurant)",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q3Survey.js",
                 lineNumber: 57,
@@ -36943,7 +37037,8 @@ const Q3Survey = ()=>{
                 error: error7,
                 label: "To do exercise or for recreation",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q3Survey.js",
                 lineNumber: 58,
@@ -36954,7 +37049,8 @@ const Q3Survey = ()=>{
                 error: error8,
                 label: "For other reasons",
                 options: dropdownOptions,
-                validation: _validation.required
+                validation: _validation.required,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q3Survey.js",
                 lineNumber: 59,
@@ -37035,14 +37131,15 @@ const Q4Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Your current travel"
+                text: "Your current travel",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q4Survey.js",
                 lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q4 - On average, how much time do you spend cycling per week? Please include any casual cycling in your local area, any cycling in the countryside or on cycling routes, cycling to or from work or any competitive cycling. Please do not include any time spent cycling on a static or exercise bike."
+                children: "Q4 - On average, how much time do you spend cycling per week? Please include any casual cycling in your local area, any cycling in the countryside or on cycling routes, cycling to or from work or any competitive cycling. Please do not include any time spent cycling on a static or exercise bike. *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q4Survey.js",
                 lineNumber: 21,
@@ -37115,7 +37212,7 @@ const Q4Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q5 - On average, how much time do you spend walking per week? Please include any country walks, walking to and from work or the shops and any other walks you may have done. Please do not include time spent walking around shops."
+                children: "Q5 - On average, how much time do you spend walking per week? Please include any country walks, walking to and from work or the shops and any other walks you may have done. Please do not include time spent walking around shops. *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q4Survey.js",
                 lineNumber: 37,
@@ -37277,14 +37374,15 @@ const Q5Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Your current travel"
+                text: "Your current travel",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q5Survey.js",
                 lineNumber: 36,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q6 - How many vehicles does your household own or have continuous use of at present?"
+                children: "Q6 - How many vehicles does your household own or have continuous use of at present? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q5Survey.js",
                 lineNumber: 37,
@@ -37313,7 +37411,7 @@ const Q5Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q7 - Do you own or have use of any of the following? (this could include vehicles that you own, hire or use that belong to someone else [e.g. a family member or friend)."
+                children: "Q7 - Do you own or have use of any of the following? (this could include vehicles that you own, hire or use that belong to someone else [e.g. a family member or friend). *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q5Survey.js",
                 lineNumber: 44,
@@ -37559,14 +37657,15 @@ const Q6Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Safety and Confidence"
+                text: "Safety and Confidence",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q6Survey.js",
                 lineNumber: 28,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q8 - Currently, how safe do you feel cycling on roads in your local area?"
+                children: "Q8 - Currently, how safe do you feel cycling on roads in your local area? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q6Survey.js",
                 lineNumber: 29,
@@ -37642,7 +37741,8 @@ const Q6Survey = ()=>{
                 fieldName: "formData.SurveyData.q9",
                 label: "Q9 - What are the main reasons that you feel the way you said in Q8 about cycling on roads in your local area?",
                 validation: _validation.required,
-                error: q9error
+                error: q9error,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q6Survey.js",
                 lineNumber: 42,
@@ -37657,7 +37757,7 @@ const Q6Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q11 - And how confident do you feel about cycling on roads in your local area?"
+                children: "Q11 - And how confident do you feel about cycling on roads in your local area? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q6Survey.js",
                 lineNumber: 47,
@@ -37812,14 +37912,15 @@ const Q7Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Safety and Confidence"
+                text: "Safety and Confidence",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q7Survey.js",
                 lineNumber: 32,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q12 - Currently, how safe do you feel walking in your local area?"
+                children: "Q12 - Currently, how safe do you feel walking in your local area? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q7Survey.js",
                 lineNumber: 33,
@@ -37908,7 +38009,7 @@ const Q7Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q15 - And how confident do you feel about walking in your local area?"
+                children: "Q15 - And how confident do you feel about walking in your local area? 8"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q7Survey.js",
                 lineNumber: 48,
@@ -37981,7 +38082,7 @@ const Q7Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q16 - How do you plan to use the cycle hire?"
+                children: "Q16 - How do you plan to use the cycle hire? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q7Survey.js",
                 lineNumber: 59,
@@ -38086,14 +38187,15 @@ const Q8Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "About You"
+                text: "About You",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
                 lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q17 - How many people, including yourself, currently live in your household?"
+                children: "Q17 - How many people, including yourself, currently live in your household? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
                 lineNumber: 27,
@@ -38140,7 +38242,7 @@ const Q8Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q18 - What is your estimated household annual income?"
+                children: "Q18 - What is your estimated household annual income? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
                 lineNumber: 37,
@@ -38356,14 +38458,15 @@ const Q9Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "About You"
+                text: "About You",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
                 lineNumber: 39,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q19 - How is your health in general?"
+                children: "Q19 - How is your health in general? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
                 lineNumber: 40,
@@ -38456,7 +38559,7 @@ const Q9Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q20 - Do you have any physical or mental health conditions or illnesses lasting or expected to last 12 months or more?"
+                children: "Q20 - Do you have any physical or mental health conditions or illnesses lasting or expected to last 12 months or more? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
                 lineNumber: 52,
@@ -38509,7 +38612,7 @@ const Q9Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q21 - Does the condition or illness you mentioned in Q20 reduce your ability to carry out day-to-day activities?"
+                children: "Q21 - Does the condition or illness you mentioned in Q20 reduce your ability to carry out day-to-day activities? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
                 lineNumber: 63,
@@ -38572,7 +38675,7 @@ const Q9Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q22 - Does the condition or illness you mentioned in Q20 typically impact your ability to do any of the following activities?"
+                children: "Q22 - Does the condition or illness you mentioned in Q20 typically impact your ability to do any of the following activities? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
                 lineNumber: 75,
@@ -38689,14 +38792,15 @@ const Q10Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "About You"
+                text: "About You",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q10Survey.js",
                 lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q23 - Are you:"
+                children: "Q23 - Are you: *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q10Survey.js",
                 lineNumber: 21,
@@ -38759,7 +38863,7 @@ const Q10Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q24 - Which of these age groups do you belong to?"
+                children: "Q24 - Which of these age groups do you belong to? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q10Survey.js",
                 lineNumber: 30,

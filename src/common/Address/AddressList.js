@@ -44,6 +44,7 @@ const AddressList = ({
         prompt={prompt}
         options={addressOptions}
         validation={required}
+        isRequired={true}
       />
       <ButtonLink
         callback={() =>
