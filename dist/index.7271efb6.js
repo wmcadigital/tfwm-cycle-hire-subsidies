@@ -28430,38 +28430,6 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
         page,
         fieldsChanged
     ]);
-    handleFormAbandonment = ()=>{
-        //doing this beofre you start will clear the form first
-        window.onload = function() {
-            this.setState({
-                formFields: null
-            });
-        }; // select the form you want to watch
-        var formSelector = document.querySelector('form'); // select the attribute you want to pass into history
-        var attribute = 'name';
-        var history = []; //add the before unloaded event listener to page for the form
-        window.addEventListener('beforeunload', function(e) {
-            window.dataLayer.push({
-                'event': 'formAbandonment',
-                'eventCategory': 'Form Abandonment',
-                'eventAction': history.join(' > ')
-            });
-        }); //setup a timeout function to allow for the pagwe to fully render
-        function pushChanges() {
-            return new Promise((resolve)=>{
-                setTimeout(()=>{
-                    resolve();
-                }, 500);
-            });
-        } //track the attribute of the last form field interacted with 
-        async function pushHistoyChanges() {
-            await pushChanges();
-            formSelector.addEventListener('change', function(e) {
-                history.push(e['target'].getAttribute(attribute));
-            });
-        }
-        pushHistoyChanges();
-    };
     const next = (values)=>{
         if (goToPage) {
             setPage(filteredChildren.length - 1);
@@ -28522,17 +28490,17 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                         children: `< Back`
                     }, void 0, false, {
                         fileName: "src/common/FormWizard.js",
-                        lineNumber: 161,
+                        lineNumber: 120,
                         columnNumber: 24
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/common/FormWizard.js",
-                    lineNumber: 160,
+                    lineNumber: 119,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/common/FormWizard.js",
-                lineNumber: 159,
+                lineNumber: 118,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -28561,7 +28529,7 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                                             children: "Continue"
                                         }, void 0, false, {
                                             fileName: "src/common/FormWizard.js",
-                                            lineNumber: 179,
+                                            lineNumber: 138,
                                             columnNumber: 33
                                         }, undefined),
                                         !isLastPage1 && !isFirstPage && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -28572,7 +28540,7 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                                             children: "Continue"
                                         }, void 0, false, {
                                             fileName: "src/common/FormWizard.js",
-                                            lineNumber: 183,
+                                            lineNumber: 142,
                                             columnNumber: 49
                                         }, undefined),
                                         isLastPage1 && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -28589,12 +28557,12 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                                                         className: "wmnds-loader__content"
                                                     }, void 0, false, {
                                                         fileName: "src/common/FormWizard.js",
-                                                        lineNumber: 190,
+                                                        lineNumber: 149,
                                                         columnNumber: 25
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/common/FormWizard.js",
-                                                    lineNumber: 189,
+                                                    lineNumber: 148,
                                                     columnNumber: 32
                                                 }, undefined) : /*#__PURE__*/ _jsxDevRuntime.jsxDEV("svg", {
                                                     className: "wmnds-btn__icon wmnds-btn__icon--right ",
@@ -28603,24 +28571,24 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                                                         href: "#wmnds-general-chevron-right"
                                                     }, void 0, false, {
                                                         fileName: "src/common/FormWizard.js",
-                                                        lineNumber: 192,
+                                                        lineNumber: 151,
                                                         columnNumber: 25
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/common/FormWizard.js",
-                                                    lineNumber: 191,
+                                                    lineNumber: 150,
                                                     columnNumber: 32
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/common/FormWizard.js",
-                                            lineNumber: 187,
+                                            lineNumber: 146,
                                             columnNumber: 32
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/common/FormWizard.js",
-                                    lineNumber: 178,
+                                    lineNumber: 137,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -28632,28 +28600,28 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                                         children: JSON.stringify(values, 0, 2)
                                     }, void 0, false, {
                                         fileName: "src/common/FormWizard.js",
-                                        lineNumber: 201,
+                                        lineNumber: 160,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/common/FormWizard.js",
-                                    lineNumber: 197,
+                                    lineNumber: 156,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/common/FormWizard.js",
-                            lineNumber: 176,
+                            lineNumber: 135,
                             columnNumber: 15
                         }, undefined)
                 }, void 0, false, {
                     fileName: "src/common/FormWizard.js",
-                    lineNumber: 165,
+                    lineNumber: 124,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/common/FormWizard.js",
-                lineNumber: 164,
+                lineNumber: 123,
                 columnNumber: 7
             }, undefined)
         ]
