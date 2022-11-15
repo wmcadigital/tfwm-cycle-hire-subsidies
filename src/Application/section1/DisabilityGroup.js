@@ -44,7 +44,7 @@ const DisabilityGroup = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="Do you have a disability?" />
+      <Question text="Do you have a disability?" isRequired={true} />
       <RadioGroup error={error}>
         <FieldError text={error} />
         <RadioButton
@@ -60,6 +60,7 @@ const DisabilityGroup = () => {
             fieldName="DisabilityType"
             validation={required}
             error={DisabilityTypeError}
+            isRequired={true}
           />
         ) : null}
         <RadioButton

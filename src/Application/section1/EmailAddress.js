@@ -24,18 +24,19 @@ const EmailAddress = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text={question} />
+      <Question text={question} isRequired={true} />
       <p>We’ll only use this to contact you about your application.</p>
       <TextInput
         fieldName="formData.EmailAddress"
         label={
           <>
-            Email address
-            <p>For example, name@example.com</p>
+            Email address <br />
+            For example, name@example.com
           </>
         }
         error={errorEmailAddress}
         validation={composeValidators(required, email)}
+        isRequired={true}
       />
     </FormSection>
   );

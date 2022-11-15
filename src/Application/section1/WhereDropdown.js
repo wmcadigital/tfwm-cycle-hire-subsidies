@@ -43,13 +43,14 @@ const WhereDropdown = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="Where did you hear about this scheme?" />
+      <Question text="Where did you hear about this scheme?" isRequired={true} />
       <Dropdown
         fieldName="formData.WhereDidYouHearAboutTheScheme"
         error={error}
         label="Select one option"
         options={whereOptions}
         validation={required}
+        isRequired={true}
       />
     </FormSection>
   );

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useFormState, useForm } from "react-final-form";
+import { useFormState } from "react-final-form";
 
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
@@ -21,9 +21,6 @@ const dropdownOptions = [
 
 const Q5Survey = () => {
   const stateApi = useFormState();
-  const formApi = useForm();
-
-  console.log(stateApi);
 
   const error =
     stateApi.submitFailed && stateApi.hasValidationErrors
@@ -44,21 +41,16 @@ const Q5Survey = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    console.log("qwerty");
-    formApi.mutators.setFormAttribute("formData.testing", "testing");
-  }, [formApi.mutators]);
-
   return (
     <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="Your current travel" />
+      <Question text="Your current travel" isRequired={true} />
       <p>
         Q6 - How many vehicles does your household own or have continuous use of
-        at present?
+        at present? *
       </p>
 
       <Dropdown
@@ -78,7 +70,7 @@ const Q5Survey = () => {
       <p>
         Q7 - Do you own or have use of any of the following? (this could include
         vehicles that you own, hire or use that belong to someone else [e.g. a
-        family member or friend).
+        family member or friend). *
       </p>
       <CheckboxContainer error={q7Error}>
         <FieldError text={q7Error} />

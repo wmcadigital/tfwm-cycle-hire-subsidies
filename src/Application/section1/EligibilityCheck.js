@@ -13,6 +13,7 @@ const EligibilityCheck = () => {
         prefix="formData"
         btnText="Check eligibility"
         checkInside={true}
+        isRequired={true}
       />
     </FormSection>
   );

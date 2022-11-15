@@ -1,10 +1,20 @@
+import { useEffect } from "react";
 import Header from "../common/Header";
 import BreadCrumb from "../common/BreadCrumb";
+import ReactGa from "react-ga";
 
 const SubmitSuccess = () => {
   const alignCenter = {
     textAlign: "center",
   };
+
+  useEffect(() => {
+    ReactGa.event({
+      category: "cycle-hire-subsidies",
+      action: "form submitted: success",
+      label: "CycleHireSubsidies",
+    })
+  })
 
   return (
     <>

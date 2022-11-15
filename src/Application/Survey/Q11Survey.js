@@ -32,8 +32,8 @@ const Q10Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="About You" />
-      <p>Q23 - Are you:</p>
+      <Question text="About You" isRequired={true} />
+      <p>Q23 - Are you: *</p>
       <RadioGroup error={q23error}>
         <FieldError text={q23error} />
         <RadioButton
@@ -66,7 +66,7 @@ const Q10Survey = () => {
         />
       </RadioGroup>
 
-      <p>Q24 - Which of these age groups do you belong to?</p>
+      <p>Q24 - Which of these age groups do you belong to? *</p>
       <RadioGroup error={q24error}>
         <FieldError text={q24error} />
         <RadioButton

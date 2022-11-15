@@ -65,8 +65,8 @@ const Q9Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="About You" />
-      <p>Q19 - How is your health in general?</p>
+      <Question text="About You" isRequired={true} />
+      <p>Q19 - How is your health in general? *</p>
       <RadioGroup error={q19error}>
         <FieldError text={q19error} />
         <RadioButton
@@ -122,7 +122,7 @@ const Q9Survey = () => {
 
       <p>
         Q20 - Do you have any physical or mental health conditions or illnesses
-        lasting or expected to last 12 months or more?
+        lasting or expected to last 12 months or more? *
       </p>
       <RadioGroup error={q20error}>
         <FieldError text={q20error} />
@@ -151,7 +151,7 @@ const Q9Survey = () => {
 
       <p>
         Q21 - Does the condition or illness you mentioned in Q20 reduce your
-        ability to carry out day-to-day activities?
+        ability to carry out day-to-day activities? *
       </p>
       <RadioGroup error={q21error}>
         <FieldError text={q21error} />
@@ -187,7 +187,7 @@ const Q9Survey = () => {
 
       <p>
         Q22 - Does the condition or illness you mentioned in Q20 typically
-        impact your ability to do any of the following activities?
+        impact your ability to do any of the following activities? *
       </p>
       <Dropdown
         fieldName="formData.SurveyData.q22.GoOutOnFootUnaided"

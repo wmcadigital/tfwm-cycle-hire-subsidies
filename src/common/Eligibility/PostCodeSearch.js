@@ -14,7 +14,7 @@ const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading }) => {
   return (
     <div className={`wmnds-fe-group ${error && "wmnds-fe-group--error"}`}>
       <label className="wmnds-fe-label" htmlFor={fieldName}>
-        Postcode
+        Postcode *
       </label>
       <FieldError text={error} />
       <Field

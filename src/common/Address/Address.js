@@ -61,6 +61,7 @@ const Address = ({ prefix, btnText, orderNo, addresses, setAddresses }) => {
           getAddresses={getAddresses}
           loading={loading}
           prefix={prefix}
+          isRequired={true}
         />
       )}
       {addresses.length && !addressSelectedOrManual ? (

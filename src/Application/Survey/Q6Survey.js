@@ -48,10 +48,10 @@ const Q6Survey = () => {
         sectionName="LACF Survey"
       />
 
-      <Question text="Safety and Confidence" />
+      <Question text="Safety and Confidence" isRequired={true} />
       <p>
         Q8 - Currently, how safe do you feel cycling on roads in your local
-        area?
+        area? *
       </p>
       <RadioGroup error={q8error}>
         <FieldError text={q8error} />
@@ -97,6 +97,7 @@ const Q6Survey = () => {
         label="Q9 - What are the main reasons that you feel the way you said in Q8 about cycling on roads in your local area?"
         validation={required}
         error={q9error}
+        isRequired={true}
       />
 
       <TextInput
@@ -107,7 +108,7 @@ const Q6Survey = () => {
 
       <p>
         Q11 - And how confident do you feel about cycling on roads in your local
-        area?
+        area? *
       </p>
       <RadioGroup error={q11error}>
         <FieldError text={q11error} />
