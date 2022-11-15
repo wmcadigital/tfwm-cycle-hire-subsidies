@@ -51,47 +51,6 @@ const FormWizard = ({
     };
   }, [page, fieldsChanged]);
 
-
-
-  handleFormAbandonment = () => {
-    //doing this beofre you start will clear the form first
-     window.onload = function() {
-       this.setState({
-         formFields: null,
-       });
-     }
-     // select the form you want to watch
-     var formSelector = document.querySelector('form');
-     // select the attribute you want to pass into history
-     var attribute = 'name';
-     var history = [];
-     
-     //add the before unloaded event listener to page for the form
-     window.addEventListener('beforeunload', function(e) {
-           window.dataLayer.push({
-             'event' : 'formAbandonment',
-             'eventCategory' : 'Form Abandonment',
-             'eventAction' : history.join(' > ')
-           });
-       });
-     //setup a timeout function to allow for the pagwe to fully render
-     function pushChanges() {
-       return new Promise(resolve => {
-         setTimeout(() => {
-           resolve();
-         }, 500);
-       });
-     }
-     //track the attribute of the last form field interacted with 
-     async function pushHistoyChanges() {
-       await pushChanges();
-       formSelector.addEventListener('change', function(e) {
-         history.push(e['target'].getAttribute(attribute));
-       });
-     }
-     pushHistoyChanges();
-    }
-
   const next = (values) => {
     if (goToPage) {
       setPage(filteredChildren.length - 1);
