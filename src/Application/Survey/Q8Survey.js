@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useFormState } from "react-final-form";
+import { useFormState, useForm } from "react-final-form";
 
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
@@ -12,13 +12,22 @@ import { required } from "../../common/validation";
 
 const Q8Survey = () => {
   const stateApi = useFormState();
+  const formApi = useForm();
 
-  const q17error = stateApi.submitFailed ? stateApi.errors?.DisabilityQ : null;
+  // const q17error = stateApi.submitFailed ? stateApi.errors?.DisabilityQ : null;
 
   const q18error =
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q18
       : null;
+
+  // copy q16 value to survey data
+  useEffect(() => {
+    formApi.mutators.setFormAttribute(
+      "formData.SurveyData.q16",
+      stateApi.values.q16
+    );
+  }, [formApi.mutators]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -30,10 +39,10 @@ const Q8Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="About You" />
+      <Question text="About You" isRequired={true} />
       <p>
         Q17 - How many people, including yourself, currently live in your
-        household?
+        household? *
       </p>
       <TextInput
         fieldName="formData.SurveyData.q17.Adults18OrOver"
@@ -56,7 +65,7 @@ const Q8Survey = () => {
         label="Children aged 4 or under"
       />
 
-      <p>Q18 - What is your estimated household annual income?</p>
+      <p>Q18 - What is your estimated household annual income? *</p>
       <RadioGroup error={q18error}>
         <FieldError text={q18error} />
         <RadioButton

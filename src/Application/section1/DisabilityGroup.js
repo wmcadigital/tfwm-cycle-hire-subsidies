@@ -17,9 +17,10 @@ const DisabilityGroup = () => {
 
   const error = stateApi.submitFailed ? stateApi.errors?.DisabilityQ : null;
 
-  const DisabilityTypeError = stateApi.submitFailed
-    ? stateApi.errors?.DisabilityType
-    : null;
+  const DisabilityTypeError =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.DisabilityType
+      : null;
 
   useEffect(() => {
     if (formValues.DisabilityQ) {
@@ -43,7 +44,7 @@ const DisabilityGroup = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="Do you have a disability?" />
+      <Question text="Do you have a disability?" isRequired={true} />
       <RadioGroup error={error}>
         <FieldError text={error} />
         <RadioButton
@@ -59,6 +60,7 @@ const DisabilityGroup = () => {
             fieldName="DisabilityType"
             validation={required}
             error={DisabilityTypeError}
+            isRequired={true}
           />
         ) : null}
         <RadioButton

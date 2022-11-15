@@ -1,5 +1,7 @@
 import { useState, useEffect, Children } from "react";
 import { useNavigate } from "react-router-dom";
+import ReactGa from "react-ga";
+import useAnalyticsEventTracker from "../Application/useAnalyticsEventTracker";
 
 import PropTypes from "prop-types";
 import { Form } from "react-final-form";
@@ -18,12 +20,36 @@ const FormWizard = ({
   const [values, setValues] = useState(initialValues);
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
+  const [fieldsChanged, setFieldsChanged] = useState([]); // Track fields the user has touched/changed
 
   useEffect(() => {
     if (goToPage !== null) {
       setPage(goToPage);
     }
   }, [goToPage]);
+
+  useEffect(() => {
+    ReactGa.pageview(window.location.host);
+  });
+
+  // This useEffect is used to track form changes and update the fieldsChanged state as the user progresses
+  useEffect(() => {
+    const form = document.querySelector("form"); // Get DOM node of form
+    // Function to work out last changed element in form
+    const lastChangedEle = (e) => {
+      // Update fields changed array with step number and last changed field name i.e. Step1: CustomerType > Step3: CardNumber
+      setFieldsChanged([
+        ...fieldsChanged,
+        `Step ${page}: ${e.target.name}`,
+      ]);
+    };
+    // Listen to changes in form and run above function
+    if (form) form.addEventListener("change", lastChangedEle);
+    // On unmount, remove listener
+    return () => {
+      if (form) form.removeEventListener("change", lastChangedEle);
+    };
+  }, [page, fieldsChanged]);
 
   const next = (values) => {
     if (goToPage) {
@@ -74,13 +100,13 @@ const FormWizard = ({
           });
         });
         // get application number from response
-        const content = await rawResponse.json();
+        // const content = await rawResponse.json();
         navigate("/success", {
           replace: true,
         });
       })();
-      return onSubmit(values);
       setLoading(false);
+      return onSubmit(values);
     } else {
       // go to next page
       next(values);
@@ -88,7 +114,7 @@ const FormWizard = ({
   };
 
   const activePage = Children.toArray(filteredChildren)[page];
-  // const isFirstPage = page === 0;
+  const isFirstPage = page === 0;
   const isLastPage = page === Children.count(filteredChildren) - 1;
 
   return (
@@ -117,11 +143,32 @@ const FormWizard = ({
             <form onSubmit={handleSubmit}>
               {activePage}
               <div>
-                {!isLastPage && (
+                {isFirstPage && (
                   <button
                     type="submit"
                     className="wmnds-btn"
-                    onClick={(e) => e.target.blur()}
+                    // onClick={(e) => e.target.blur()}
+                    onClick={useAnalyticsEventTracker.bind(
+                      this,
+                      "cycle-hire-subsidies",
+                      "form started",
+                      "true"
+                    )}
+                  >
+                    Continue
+                  </button>
+                )}
+                {!isLastPage && !isFirstPage && (
+                  <button
+                    type="submit"
+                    className="wmnds-btn"
+                    // onClick={(e) => e.target.blur()}
+                    onClick={useAnalyticsEventTracker.bind(
+                      this,
+                      "cycle-hire-subsidies",
+                      "form abandoned",
+                      fieldsChanged
+                    )}
                   >
                     Continue
                   </button>

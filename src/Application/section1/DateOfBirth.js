@@ -47,7 +47,7 @@ const DateOfBirth = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text={question} />
+      <Question text={question} isRequired={true} />
       <DateInput
         dayFieldName="bdayDay"
         monthFieldName="bdayMonth"

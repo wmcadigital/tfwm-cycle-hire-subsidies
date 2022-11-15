@@ -66,7 +66,7 @@ const DateInput = ({
         </div>
         <div className="wmnds-fe-date-input__year">
           <label className="wmnds-fe-label" htmlFor="LastUsedDateYear">
-            Year
+            Year *
           </label>
           <Field name={yearFieldName}>
             {({ input }) => (

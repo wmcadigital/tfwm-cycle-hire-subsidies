@@ -32,13 +32,13 @@ const Q4Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="Your current travel" />
+      <Question text="Your current travel" isRequired={true} />
       <p>
         Q4 - On average, how much time do you spend cycling per week? Please
         include any casual cycling in your local area, any cycling in the
         countryside or on cycling routes, cycling to or from work or any
         competitive cycling. Please do not include any time spent cycling on a
-        static or exercise bike.
+        static or exercise bike. *
       </p>
       <RadioGroup error={q4error}>
         <FieldError text={q4error} />
@@ -83,7 +83,7 @@ const Q4Survey = () => {
         Q5 - On average, how much time do you spend walking per week? Please
         include any country walks, walking to and from work or the shops and any
         other walks you may have done. Please do not include time spent walking
-        around shops.
+        around shops. *
       </p>
       <RadioGroup error={q5error}>
         <FieldError text={q5error} />

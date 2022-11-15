@@ -3,14 +3,14 @@ import { Field } from "react-final-form";
 
 import FieldError from "./FieldError";
 
-const Dropdown = ({ fieldName, label, prompt, options, validation, error }) => {
+const Dropdown = ({ fieldName, label, prompt, options, validation, error, isRequired }) => {
   return (
     <div className={`wmnds-fe-group ${error ? "wmnds-fe-group--error" : null}`}>
       <div className="wmnds-fe-dropdown">
         <FieldError text={error} />
         {label ? (
           <label className="wmnds-fe-label" htmlFor={fieldName}>
-            {label}
+            {label} {isRequired && <span>*</span>}
           </label>
         ) : null}
         <Field name={fieldName} validate={validation}>
@@ -46,11 +46,13 @@ Dropdown.propTypes = {
   ),
   validation: PropTypes.func,
   error: PropTypes.string,
+  isRequired: PropTypes.bool,
 };
 
 Dropdown.defaultProps = {
   prompt: "Choose from list",
   options: [],
+  isRequired: false,
 };
 
 export default Dropdown;

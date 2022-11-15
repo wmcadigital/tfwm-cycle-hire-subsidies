@@ -26,9 +26,11 @@ const Q5Survey = () => {
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q6.CarOrVan
       : null;
-  const error1 = stateApi.submitFailed
-    ? stateApi.errors?.formData.SurveyData.q6.MotorcycleOrMoped
-    : null;
+
+  const error1 =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q6.MotorcycleOrMoped
+      : null;
 
   const q7Error =
     stateApi.submitFailed && stateApi.hasValidationErrors
@@ -45,10 +47,10 @@ const Q5Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="Your current travel" />
+      <Question text="Your current travel" isRequired={true} />
       <p>
         Q6 - How many vehicles does your household own or have continuous use of
-        at present?
+        at present? *
       </p>
 
       <Dropdown
@@ -68,7 +70,7 @@ const Q5Survey = () => {
       <p>
         Q7 - Do you own or have use of any of the following? (this could include
         vehicles that you own, hire or use that belong to someone else [e.g. a
-        family member or friend).
+        family member or friend). *
       </p>
       <CheckboxContainer error={q7Error}>
         <FieldError text={q7Error} />

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useFormState } from "react-final-form";
+import { useFormState, useForm } from "react-final-form";
 
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
@@ -12,6 +12,7 @@ import { required } from "../../common/validation";
 
 const Q6Survey = () => {
   const stateApi = useFormState();
+  const formApi = useForm();
 
   const q8error =
     stateApi.submitFailed && stateApi.hasValidationErrors
@@ -28,6 +29,14 @@ const Q6Survey = () => {
       ? stateApi.errors?.formData.SurveyData.q11
       : null;
 
+  // copy q7 value to survey data
+  useEffect(() => {
+    formApi.mutators.setFormAttribute(
+      "formData.SurveyData.q7",
+      stateApi.values.q7
+    );
+  }, [formApi.mutators]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -38,10 +47,11 @@ const Q6Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="Safety and Confidence" />
+
+      <Question text="Safety and Confidence" isRequired={true} />
       <p>
         Q8 - Currently, how safe do you feel cycling on roads in your local
-        area?
+        area? *
       </p>
       <RadioGroup error={q8error}>
         <FieldError text={q8error} />
@@ -87,6 +97,7 @@ const Q6Survey = () => {
         label="Q9 - What are the main reasons that you feel the way you said in Q8 about cycling on roads in your local area?"
         validation={required}
         error={q9error}
+        isRequired={true}
       />
 
       <TextInput
@@ -97,7 +108,7 @@ const Q6Survey = () => {
 
       <p>
         Q11 - And how confident do you feel about cycling on roads in your local
-        area?
+        area? *
       </p>
       <RadioGroup error={q11error}>
         <FieldError text={q11error} />

@@ -43,10 +43,13 @@ const AddressDetails = ({ prefix, addresses }) => {
         defaultValue={matchingAddress["line_1"]}
         validation={required}
         error={addressLine1Error}
+        isRequired={true}
       />
       <TextInput
         fieldName={`${prefix}.AddressLine2`}
+        label="Address line 2"
         defaultValue={matchingAddress["line_2"]}
+        isRequired={false}
       />
       <TextInput
         fieldName={`${prefix}.AddressLine3`}
@@ -59,6 +62,7 @@ const AddressDetails = ({ prefix, addresses }) => {
         defaultValue={matchingAddress["post_town"]}
         validation={required}
         error={townOrCityError}
+        isRequired={true}
       />
       <TextInput
         fieldName={`${prefix}.County`}
@@ -66,6 +70,7 @@ const AddressDetails = ({ prefix, addresses }) => {
         defaultValue={matchingAddress["county"]}
         validation={required}
         error={countyError}
+        isRequired={true}
       />
       <TextInput
         fieldName={`${prefix}.PostCode`}
@@ -73,6 +78,7 @@ const AddressDetails = ({ prefix, addresses }) => {
         defaultValue={initialPostCode}
         validation={validatePostCode}
         error={postCodeError}
+        isRequired={true}
       />
       <TextInput
         fieldName={`${prefix}.SummaryLine`}

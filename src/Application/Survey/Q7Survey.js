@@ -46,8 +46,8 @@ const Q7Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="Safety and Confidence" />
-      <p>Q12 - Currently, how safe do you feel walking in your local area?</p>
+      <Question text="Safety and Confidence" isRequired={true} />
+      <p>Q12 - Currently, how safe do you feel walking in your local area? *</p>
       <RadioGroup error={q12error}>
         <FieldError text={q12error} />
         <RadioButton
@@ -99,7 +99,7 @@ const Q7Survey = () => {
       />
 
       <p>
-        Q15 - And how confident do you feel about walking in your local area?
+        Q15 - And how confident do you feel about walking in your local area? 8
       </p>
       <RadioGroup error={q15error}>
         <FieldError text={q15error} />
@@ -139,7 +139,7 @@ const Q7Survey = () => {
           fieldName="formData.SurveyData.q15"
         />
       </RadioGroup>
-      <p>Q16 - How do you plan to use the cycle hire?</p>
+      <p>Q16 - How do you plan to use the cycle hire? *</p>
       <CheckboxContainer error={q16Error}>
         <FieldError text={q16Error} />
         {Object.keys(Q16dropdownOptions).map((option) => (

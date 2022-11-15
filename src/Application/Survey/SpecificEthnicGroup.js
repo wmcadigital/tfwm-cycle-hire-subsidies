@@ -16,14 +16,13 @@ const SpecificEthnicGroup = () => {
 
   const formValues = stateApi.values;
   const ethnicity = formValues["ethnicity"];
-  const ethnicityLabel =
-    ethnicity === "other" ? null : Ethnicity[ethnicity].label;
   const specificEthnicity = Ethnicity[ethnicity].specific;
   const question = "Which of the following best describes your background?";
 
-  const error = stateApi.submitFailed
-    ? stateApi.errors?.specificEthnicity
-    : null;
+  const error =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.specificEthnicity
+      : null;
 
   useEffect(() => {
     if (formValues.ethnicity) {

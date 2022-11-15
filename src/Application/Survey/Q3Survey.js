@@ -67,7 +67,7 @@ const Q3Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="Your current travel" />
+      <Question text="Your current travel" isRequired={true} />
       <p>
         Q3 - On average, how often would you say you walk for at least 10
         minutes as part of your journey, for each of the following reasons:
@@ -79,6 +79,7 @@ const Q3Survey = () => {
         label="To go to/from your place of work"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q3.PlaceOfEducation"
@@ -86,6 +87,7 @@ const Q3Survey = () => {
         label="To go to/from your place of education (e.g. school, college, or university)"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q3.PersonalBusiness"
@@ -93,6 +95,7 @@ const Q3Survey = () => {
         label="To go somewhere for personal business (e.g. travelling to an appointment)"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q3.FriendsOrFamily"
@@ -100,6 +103,7 @@ const Q3Survey = () => {
         label="To visit friends or family"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q3.FoodOrGroceryShopping"
@@ -107,6 +111,7 @@ const Q3Survey = () => {
         label="To go food or grocery shopping"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q3.OtherShopping"
@@ -114,6 +119,7 @@ const Q3Survey = () => {
         label="To go shopping for things other than food"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q3.SocialTravel"
@@ -121,6 +127,7 @@ const Q3Survey = () => {
         label="To go somewhere for leisure/social reasons (e.g. to entertainment, to play sport or to visit a pub or restaurant)"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q3.ExerciseOrRecreation"
@@ -128,6 +135,7 @@ const Q3Survey = () => {
         label="To do exercise or for recreation"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
         fieldName="formData.SurveyData.q3.OtherReasons"
@@ -135,6 +143,7 @@ const Q3Survey = () => {
         label="For other reasons"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <TextInput
         fieldName="formData.SurveyData.q3.SpecifyOtherReasons"
