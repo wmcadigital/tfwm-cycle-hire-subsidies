@@ -11,7 +11,6 @@ import CheckboxContainer from "../common/CheckboxContainer";
 
 const CheckAnswers = ({ setGoToPage }) => {
   const stateApi = useFormState();
-  const formValue = stateApi.values;
   const formValues = stateApi.values.formData;
   const formApi = useForm();
 
@@ -31,7 +30,7 @@ const CheckAnswers = ({ setGoToPage }) => {
       "formData.Umprn",
       stateApi.values.umprn.toString()
     );
-  }, [formApi.mutators]);
+  }, [formApi.mutators, stateApi.values.udprn, stateApi.values.umprn]);
 
   return (
     <>
@@ -95,7 +94,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Employment Status"
               value={`${formValues["Employmentstatus"]}`}
-              changeValueCallback={() => setGoToPage(6)}
+              changeValueCallback={() => setGoToPage(7)}
             />
           ) : (
             ""
@@ -110,7 +109,7 @@ const CheckAnswers = ({ setGoToPage }) => {
                   formValues["IsStartingANewJob"].length
                 )
               }`}
-              changeValueCallback={() => setGoToPage(7)}
+              changeValueCallback={() => setGoToPage(6)}
             />
           ) : (
             ""
@@ -119,7 +118,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Benefits"
               value={`${formValues["BenefitType"]}`}
-              changeValueCallback={() => setGoToPage(8)}
+              changeValueCallback={() => setGoToPage(7)}
             />
           ) : (
             ""
@@ -128,7 +127,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Proof"
               value={`${formValues.Files[0].Name}`}
-              changeValueCallback={() => setGoToPage(9)}
+              changeValueCallback={() => setGoToPage(8)}
             />
           ) : (
             ""
@@ -145,7 +144,7 @@ const CheckAnswers = ({ setGoToPage }) => {
                   formValues["ReferredbyMedicalService"].length
                 )
               }`}
-              changeValueCallback={() => setGoToPage(10)}
+              changeValueCallback={() => setGoToPage(9)}
             />
           ) : (
             ""
@@ -168,6 +167,21 @@ const CheckAnswers = ({ setGoToPage }) => {
           </tr>
         </tbody>
       </Table>
+      <h3>Re-contact</h3>
+      <p>
+        We would like to be able to ask you about your experience of
+        participating in Cycling for Everyone at a later date. If you agree, we
+        will ask you for your contact details – name, email and phone number –
+        so that we can get in touch. We will keep your contact details securely
+        for a maximum of 18 months after the end of the activity and will not
+        use them for any other purpose.
+      </p>
+      <CheckboxContainer>
+        <Checkbox
+          fieldName="formData.ReContact"
+          label={<>Yes, willing to be re-contacted</>}
+        />
+      </CheckboxContainer>
       <h3>Self-certification</h3>
       <CheckboxContainer error={agreeLegalError}>
         <FieldError text={agreeLegalError} />
