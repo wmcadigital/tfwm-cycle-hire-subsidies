@@ -24,18 +24,15 @@ import WhereDropdown from "./section1/WhereDropdown";
 import SurveyIntro from "./Survey/SuveyIntro";
 import Q1Survey from "./Survey/Q1Survey";
 import Q2Survey from "./Survey/Q2Survey";
-import Q3Survey from "./Survey/Q3Survey";
-import Q4Survey from "./Survey/Q4Survey";
-import Q5Survey from "./Survey/Q5Survey";
-import Q6Survey from "./Survey/Q6Survey";
-import Q7Survey from "./Survey/Q7Survey";
+import Q3Q4Survey from "./Survey/Q3Q4Survey";
+import Q5Q6Survey from "./Survey/Q5Q6Survey";
+import Q7Q8Q9Q10Survey from "./Survey/Q7Q8Q9Q10Survey";
 import Q8Survey from "./Survey/Q8Survey";
 import Q9Survey from "./Survey/Q9Survey";
-import Q10Survey from "./Survey/Q10Survey";
+import Q11Q12Survey from "./Survey/Q11Q12Survey";
+import Q13Survey from "./Survey/Q13Survey";
 import EthnicGroup from "./Survey/EthnicGroup";
 import SpecificEthnicGroup from "./Survey/SpecificEthnicGroup";
-
-import { validateSelectOneOption } from "../common/validation";
 
 import CheckAnswers from "./CheckAnswers";
 import {
@@ -76,24 +73,19 @@ const ApplicationForm = () => {
           />
           <EmailAddress />
           <DisabilityGroup />
-          <EmploymentStatusGroup />
           <NewJobGroup />
           <BenefitsGroup />
           <ProofUpload />
           <MedicalServiceGroup />
-          <WhereDropdown />
-
           <SurveyIntro />
           <Q1Survey />
           <Q2Survey />
-          <Q3Survey />
-          <Q4Survey />
-          <Q5Survey validate={validateSelectOneOption("q7", "selectQ7")} />
-          <Q6Survey />
-          <Q7Survey validate={validateSelectOneOption("q16", "selectQ16")} />
-          <Q8Survey />
-          <Q9Survey />
-          <Q10Survey />
+          <Q3Q4Survey />
+          <Q5Q6Survey />
+          <Q7Q8Q9Q10Survey />
+          <WhereDropdown />
+          <Q11Q12Survey />
+          <Q13Survey />
           <EthnicGroup
             setEthnicGroup={setEthnicGroup}
             setGoToPage={setGoToPage}
@@ -101,7 +93,9 @@ const ApplicationForm = () => {
           {ethnicGroup !== "preferNotToSay" ? (
             <SpecificEthnicGroup />
           ) : undefined}
-
+          <Q9Survey />
+          <EmploymentStatusGroup />
+          <Q8Survey />
           <CheckAnswers
             setGoToPage={setGoToPage}
             validate={validateCheckAnswers}

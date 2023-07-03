@@ -26,6 +26,38 @@ const SurveyIntro = () => {
         <b>win one prize of £50 in Amazon Vouchers</b>. The closing date for
         entries is the last day of the month you applied.
       </p>
+      <h3>Consent</h3>
+      <p>
+        We want to ensure that we talk to as many different types of people as
+        possible and therefore would like to ask some questions about you, your
+        travel patterns and lifestyle. Transport for West Midlands (TfWM); part
+        of the West Midland Combined Authority (WMCA) is responsible for any
+        information that you provide us. We ensure that this information will be
+        processed in accordance with data protection legislation.
+      </p>
+      <p>
+        We are committed to protecting your privacy and will use your personal
+        information fairly. The personal data that we will collect about you as
+        part of this study are: Age, Email, telephone number, Postcode, Ethnic
+        Background and Disability. We will safely store your personal data for a
+        maximum of 18 months. For further information on how we handle
+        information/data, and your information rights{" "}
+        <a
+          href="www.tfwm.org.uk/policies/privacy-and-cookies-policy"
+          target="_blank"
+        >
+          visit our Privacy Policy
+        </a>
+        .
+      </p>
+      <p>
+        By choosing to continue with this survey, you are giving your informed
+        consent to take part in our research. You understand that you may remove
+        yourself from the study by closing the window before submitting. If you
+        wish to discuss this questionnaire in further detail or you want
+        information on how your data will be collected, stored and used, please
+        email: transportresearch@tfwm.org.uk.
+      </p>
     </FormSection>
   );
 };

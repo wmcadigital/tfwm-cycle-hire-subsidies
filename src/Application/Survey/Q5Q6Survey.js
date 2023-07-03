@@ -19,20 +19,20 @@ const dropdownOptions = [
   { value: "Three or more", label: "Three or more" },
 ];
 
-const Q5Survey = () => {
+const Q5Q6Survey = () => {
   const stateApi = useFormState();
 
   const error =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q6.CarOrVan
+      ? stateApi.errors?.formData.SurveyData.q5.CarOrVan
       : null;
 
   const error1 =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q6.MotorcycleOrMoped
+      ? stateApi.errors?.formData.SurveyData.q5.MotorcycleOrMoped
       : null;
 
-  const q7Error =
+  const q6Error =
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.selectQ7
       : null;
@@ -47,38 +47,40 @@ const Q5Survey = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <Question text="Your current travel" isRequired={true} />
+      <Question text="Vehicle ownership" isRequired={true} />
       <p>
-        Q6 - How many vehicles does your household own or have continuous use of
+        Q5 - How many vehicles does your household own or have continuous use of
         at present? *
       </p>
 
       <Dropdown
-        fieldName="formData.SurveyData.q6.CarOrVan"
+        fieldName="formData.SurveyData.q5.CarOrVan"
         error={error}
         label="Car or van"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <Dropdown
-        fieldName="formData.SurveyData.q6.MotorcycleOrMoped"
+        fieldName="formData.SurveyData.q5.MotorcycleOrMoped"
         error={error1}
         label="Motorcycle or moped"
         options={dropdownOptions}
         validation={required}
+        isRequired={true}
       />
       <p>
-        Q7 - Do you own or have use of any of the following? (this could include
+        Q6 - Do you own or have use of any of the following? (this could include
         vehicles that you own, hire or use that belong to someone else [e.g. a
         family member or friend). *
       </p>
-      <CheckboxContainer error={q7Error}>
-        <FieldError text={q7Error} />
+      <CheckboxContainer error={q6Error}>
+        <FieldError text={q6Error} />
         {Object.keys(options).map((option) => (
           <Checkbox
             key={options[option]}
             label={options[option]}
-            fieldName={`q7.${option}`}
+            fieldName={`q6.${option}`}
           />
         ))}
       </CheckboxContainer>
@@ -86,4 +88,4 @@ const Q5Survey = () => {
   );
 };
 
-export default Q5Survey;
+export default Q5Q6Survey;

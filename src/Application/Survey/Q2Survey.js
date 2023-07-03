@@ -28,26 +28,26 @@ const Q2Survey = () => {
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q2.PlaceOfEducation
       : null;
-  const error2 =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q2.PersonalBusiness
-      : null;
-  const error3 =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q2.FriendsOrFamily
-      : null;
-  const error4 =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q2.FoodOrGroceryShopping
-      : null;
-  const error5 =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q2.OtherShopping
-      : null;
-  const error6 =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q2.SocialTravel
-      : null;
+  // const error2 =
+  //   stateApi.submitFailed && stateApi.hasValidationErrors
+  //     ? stateApi.errors?.formData.SurveyData.q2.PersonalBusiness
+  //     : null;
+  // const error3 =
+  //   stateApi.submitFailed && stateApi.hasValidationErrors
+  //     ? stateApi.errors?.formData.SurveyData.q2.FriendsOrFamily
+  //     : null;
+  // const error4 =
+  //   stateApi.submitFailed && stateApi.hasValidationErrors
+  //     ? stateApi.errors?.formData.SurveyData.q2.FoodOrGroceryShopping
+  //     : null;
+  // const error5 =
+  //   stateApi.submitFailed && stateApi.hasValidationErrors
+  //     ? stateApi.errors?.formData.SurveyData.q2.OtherShopping
+  //     : null;
+  // const error6 =
+  //   stateApi.submitFailed && stateApi.hasValidationErrors
+  //     ? stateApi.errors?.formData.SurveyData.q2.SocialTravel
+  //     : null;
   const error7 =
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q2.ExerciseOrRecreation
@@ -90,7 +90,7 @@ const Q2Survey = () => {
         validation={required}
         isRequired={true}
       />
-      <Dropdown
+      {/* <Dropdown
         fieldName="formData.SurveyData.q2.PersonalBusiness"
         error={error2}
         label="To go somewhere for personal business (e.g. travelling to an appointment)"
@@ -129,7 +129,7 @@ const Q2Survey = () => {
         options={dropdownOptions}
         validation={required}
         isRequired={true}
-      />
+      /> */}
       <Dropdown
         fieldName="formData.SurveyData.q2.ExerciseOrRecreation"
         error={error7}
