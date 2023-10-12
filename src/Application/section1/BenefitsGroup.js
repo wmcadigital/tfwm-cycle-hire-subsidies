@@ -34,6 +34,10 @@ const BenefitTypes = {
     radioLabel: "Yes - Other income assessed benefit",
     detailLabel: "Yes - Other income assessed benefit",
   },
+  yesStudentIncomeAssessedSupport: {
+    radioLabel: "Yes - Student income assessed support",
+    detailLabel: "Yes - Student income assessed support",
+  },
 };
 
 const BenefitsGroup = () => {
@@ -50,7 +54,7 @@ const BenefitsGroup = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="Do you receive benefits?" />
+      <Question text="Do you receive benefits? *" isRequired={true} />
       <RadioGroup error={error}>
         <FieldError text={error} />
         {Object.keys(BenefitTypes).map((BenefitType, index) => (

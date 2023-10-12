@@ -10,7 +10,8 @@ const TextInput = ({
   error,
   containerClass,
   defaultValue,
-  isRequired
+  isRequired,
+  disab
 }) => (
   <div
     className={`wmnds-fe-group ${error && "wmnds-fe-group--error"} ${
@@ -29,6 +30,7 @@ const TextInput = ({
       type="text"
       className="wmnds-fe-input"
       defaultValue={defaultValue}
+      disabled={disab}
     />
   </div>
 );
@@ -41,10 +43,12 @@ TextInput.propTypes = {
   containerClass: PropTypes.string,
   defaultValue: PropTypes.string,
   isRequired: PropTypes.bool,
+  disab: PropTypes.bool,
 };
 
 TextInput.defaultProps = {
   isRequired: false,
+  disab: false,
 };
 
 export default TextInput;

@@ -6,7 +6,7 @@ import { required, postCode, composeValidators } from "../validation";
 
 const validatePostCode = composeValidators(required, postCode);
 
-const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading, isRequired }) => {
+const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading, isRequired, disab }) => {
   const fieldName = `${prefix}.searchPostCode`;
   const { input } = useField(fieldName);
   const invalid = validatePostCode(input?.value);
@@ -23,6 +23,7 @@ const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading, isRequi
         component="input"
         type="text"
         className="wmnds-fe-input"
+        disabled={disab}
       />
       <button
         className={`wmnds-m-t-md wmnds-btn wmnds-btn--primary ${
@@ -55,6 +56,11 @@ PostCodeSearch.propTypes = {
   getAddresses: PropTypes.func,
   loading: PropTypes.bool,
   isRequired: PropTypes.bool,
+  disab: PropTypes.bool,
+};
+
+PostCodeSearch.defaultProps = {
+  disab: false,
 };
 
 export default PostCodeSearch;
