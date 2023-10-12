@@ -1006,7 +1006,7 @@ var _outsideWmca = require("./Application/section1/OutsideWmca");
 var _outsideWmcaDefault = parcelHelpers.interopDefault(_outsideWmca);
 var _submitSuccess = require("./Application/SubmitSuccess");
 var _submitSuccessDefault = parcelHelpers.interopDefault(_submitSuccess);
-var _submitError = require("./Application/SubmitError");
+var _submitError = require("./Application/SubmitError"); // import AppEnd from "./Application/section1/AppEnd";
 var _submitErrorDefault = parcelHelpers.interopDefault(_submitError);
 const TRACKING_ID = "UA-3407557-5";
 _reactGaDefault.default.initialize(TRACKING_ID);
@@ -1019,7 +1019,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_applicationFormDefault.default, {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 15,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
@@ -1027,7 +1027,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_outsideWmcaDefault.default, {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 16,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
@@ -1035,7 +1035,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_submitSuccessDefault.default, {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 17,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
@@ -1043,18 +1043,18 @@ const App = ()=>{
                     element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_submitErrorDefault.default, {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 18,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 14,
+            lineNumber: 15,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 10
     }, undefined);
 };
@@ -1064,12 +1064,12 @@ const root = _client.createRoot(container);
 root.render(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_react.StrictMode, {
     children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(App, {}, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 26,
+        lineNumber: 30,
         columnNumber: 5
     }, undefined)
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 25,
+    lineNumber: 29,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -26903,30 +26903,27 @@ var _q1Survey = require("./Survey/Q1Survey");
 var _q1SurveyDefault = parcelHelpers.interopDefault(_q1Survey);
 var _q2Survey = require("./Survey/Q2Survey");
 var _q2SurveyDefault = parcelHelpers.interopDefault(_q2Survey);
-var _q3Survey = require("./Survey/Q3Survey");
-var _q3SurveyDefault = parcelHelpers.interopDefault(_q3Survey);
-var _q4Survey = require("./Survey/Q4Survey");
-var _q4SurveyDefault = parcelHelpers.interopDefault(_q4Survey);
-var _q5Survey = require("./Survey/Q5Survey");
-var _q5SurveyDefault = parcelHelpers.interopDefault(_q5Survey);
-var _q6Survey = require("./Survey/Q6Survey");
-var _q6SurveyDefault = parcelHelpers.interopDefault(_q6Survey);
-var _q7Survey = require("./Survey/Q7Survey");
-var _q7SurveyDefault = parcelHelpers.interopDefault(_q7Survey);
+var _q3Q4Survey = require("./Survey/Q3Q4Survey");
+var _q3Q4SurveyDefault = parcelHelpers.interopDefault(_q3Q4Survey);
+var _q5Q6Survey = require("./Survey/Q5Q6Survey");
+var _q5Q6SurveyDefault = parcelHelpers.interopDefault(_q5Q6Survey);
+var _q7Q8Q9Q10Survey = require("./Survey/Q7Q8Q9Q10Survey");
+var _q7Q8Q9Q10SurveyDefault = parcelHelpers.interopDefault(_q7Q8Q9Q10Survey);
 var _q8Survey = require("./Survey/Q8Survey");
 var _q8SurveyDefault = parcelHelpers.interopDefault(_q8Survey);
 var _q9Survey = require("./Survey/Q9Survey");
 var _q9SurveyDefault = parcelHelpers.interopDefault(_q9Survey);
-var _q10Survey = require("./Survey/Q10Survey");
-var _q10SurveyDefault = parcelHelpers.interopDefault(_q10Survey);
+var _q11Q12Survey = require("./Survey/Q11Q12Survey");
+var _q11Q12SurveyDefault = parcelHelpers.interopDefault(_q11Q12Survey);
+var _q13Survey = require("./Survey/Q13Survey");
+var _q13SurveyDefault = parcelHelpers.interopDefault(_q13Survey);
 var _ethnicGroup = require("./Survey/EthnicGroup");
 var _ethnicGroupDefault = parcelHelpers.interopDefault(_ethnicGroup);
 var _specificEthnicGroup = require("./Survey/SpecificEthnicGroup");
 var _specificEthnicGroupDefault = parcelHelpers.interopDefault(_specificEthnicGroup);
-var _validation = require("../common/validation");
 var _checkAnswers = require("./CheckAnswers");
 var _checkAnswersDefault = parcelHelpers.interopDefault(_checkAnswers);
-var _validation1 = require("./validation");
+var _validation = require("./validation");
 var _s = $RefreshSig$();
 const ApplicationForm = ()=>{
     _s();
@@ -26945,7 +26942,7 @@ const ApplicationForm = ()=>{
                 heading: "Apply for support with West Midlands Cycle Hire costs"
             }, void 0, false, {
                 fileName: "src/Application/ApplicationForm.js",
-                lineNumber: 47,
+                lineNumber: 45,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formContentWrapperDefault.default, {
@@ -26957,111 +26954,125 @@ const ApplicationForm = ()=>{
                     children: [
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_eligibilityCheckDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 50,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registrationNameDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 51,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dateOfBirthDefault.default, {
-                            validate: _validation1.validateDateOfBirth
+                            validate: _validation.validateDateOfBirth
                         }, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 52,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registrationAddressDefault.default, {
                             orderNo: 2,
                             registrationAddresses: registrationAddresses,
                             setRegistrationAddresses: setRegistrationAddresses,
-                            validate: _validation1.addressIdPresent("formData")
+                            validate: _validation.addressIdPresent("formData")
                         }, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 53,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_emailAddressDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 54,
+                            lineNumber: 52,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_disabilityGroupDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 55,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_employmentStatusGroupDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 56,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_newJobGroupDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 57,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_benefitsGroupDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 58,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_proofUploadDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 59,
+                            lineNumber: 56,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_medicalServiceGroupDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 60,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_whereDropdownDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 61,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_suveyIntroDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 63,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q1SurveyDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 64,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q2SurveyDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 60,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q3Q4SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 61,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q5Q6SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 62,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q7Q8Q9Q10SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 63,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_whereDropdownDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 64,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q11Q12SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
                             lineNumber: 65,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q3SurveyDefault.default, {}, void 0, false, {
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q13SurveyDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
                             lineNumber: 66,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q4SurveyDefault.default, {}, void 0, false, {
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_ethnicGroupDefault.default, {
+                            setEthnicGroup: setEthnicGroup,
+                            setGoToPage: setGoToPage
+                        }, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
                             lineNumber: 67,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q5SurveyDefault.default, {
-                            validate: _validation.validateSelectOneOption("q7", "selectQ7")
-                        }, void 0, false, {
+                        ethnicGroup !== "preferNotToSay" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_specificEthnicGroupDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
                             lineNumber: 68,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q6SurveyDefault.default, {}, void 0, false, {
+                            columnNumber: 47
+                        }, undefined) : undefined,
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q9SurveyDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
                             lineNumber: 69,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q7SurveyDefault.default, {
-                            validate: _validation.validateSelectOneOption("q16", "selectQ16")
-                        }, void 0, false, {
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_employmentStatusGroupDefault.default, {}, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
                             lineNumber: 70,
                             columnNumber: 11
@@ -27071,46 +27082,23 @@ const ApplicationForm = ()=>{
                             lineNumber: 71,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q9SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 72,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q10SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 73,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_ethnicGroupDefault.default, {
-                            setEthnicGroup: setEthnicGroup,
-                            setGoToPage: setGoToPage
-                        }, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 74,
-                            columnNumber: 11
-                        }, undefined),
-                        ethnicGroup !== "preferNotToSay" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_specificEthnicGroupDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 75,
-                            columnNumber: 47
-                        }, undefined) : undefined,
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswersDefault.default, {
                             setGoToPage: setGoToPage,
-                            validate: _validation1.validateCheckAnswers
+                            validate: _validation.validateCheckAnswers
                         }, void 0, false, {
                             fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 77,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Application/ApplicationForm.js",
-                    lineNumber: 49,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Application/ApplicationForm.js",
-                lineNumber: 48,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27131,7 +27119,7 @@ $RefreshReg$(_c, "ApplicationForm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"fdOAw","react":"21dqq","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/FormWizard":"iUhmL","./section1/EligibilityCheck":"fewp0","./section1/RegistrationName":"gXGlw","./section1/DateOfBirth":"5xRL3","./section1/EmailAddress":"2RxlZ","./section1/RegistrationAddress":"4BRaX","./section1/DisabilityGroup":"8xBrw","./section1/EmploymentStatusGroup":"h9xpk","./section1/NewJobGroup":"hl18Y","./section1/BenefitsGroup":"cOwEI","./section1/ProofUpload":"dQdVT","./section1/MedicalServiceGroup":"1HmNw","./section1/WhereDropdown":"jOUHd","./Survey/SuveyIntro":"bZGlR","./Survey/Q1Survey":"dwEwy","./Survey/Q2Survey":"3luse","./Survey/Q3Survey":"lKBcO","./Survey/Q4Survey":"euhe5","./Survey/Q5Survey":"k7pZj","./Survey/Q6Survey":"1Nfua","./Survey/Q7Survey":"2d5kw","./Survey/Q8Survey":"3wkcB","./Survey/Q9Survey":"7vdnY","./Survey/Q10Survey":"kVk5N","./Survey/EthnicGroup":"94VVT","./Survey/SpecificEthnicGroup":"8Qgap","../common/validation":"hOBBd","./CheckAnswers":"7scGv","./validation":"lA1h2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"21BDb":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"fdOAw","react":"21dqq","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/FormWizard":"iUhmL","./section1/EligibilityCheck":"fewp0","./section1/RegistrationName":"gXGlw","./section1/DateOfBirth":"5xRL3","./section1/EmailAddress":"2RxlZ","./section1/RegistrationAddress":"4BRaX","./section1/DisabilityGroup":"8xBrw","./section1/EmploymentStatusGroup":"h9xpk","./section1/NewJobGroup":"hl18Y","./section1/BenefitsGroup":"cOwEI","./section1/ProofUpload":"dQdVT","./section1/MedicalServiceGroup":"1HmNw","./section1/WhereDropdown":"jOUHd","./Survey/SuveyIntro":"bZGlR","./Survey/Q1Survey":"dwEwy","./Survey/Q2Survey":"3luse","./Survey/Q8Survey":"3wkcB","./Survey/Q9Survey":"7vdnY","./Survey/EthnicGroup":"94VVT","./Survey/SpecificEthnicGroup":"8Qgap","./CheckAnswers":"7scGv","./validation":"lA1h2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Survey/Q3Q4Survey":"3VimS","./Survey/Q5Q6Survey":"4PBID","./Survey/Q7Q8Q9Q10Survey":"15gSW","./Survey/Q11Q12Survey":"66NQt","./Survey/Q13Survey":"gAWIL"}],"21BDb":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2865 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -31477,6 +31465,13 @@ const EligibilityCheck = ()=>{
                 lineNumber: 9,
                 columnNumber: 7
             }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Check if you live in an eligible area then click continue to apply."
+            }, void 0, false, {
+                fileName: "src/Application/section1/EligibilityCheck.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_addressDefault.default, {
                 prefix: "formData",
                 btnText: "Check eligibility",
@@ -31484,7 +31479,7 @@ const EligibilityCheck = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/EligibilityCheck.js",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined)
         ]
@@ -31553,20 +31548,21 @@ var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 const Question = ({ text , isRequired  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
         children: [
+            isRequired && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                className: "wmnds-m-t-sm",
+                children: "Fields marked with an asterisk (*) are required."
+            }, void 0, false, {
+                fileName: "src/common/Question.js",
+                lineNumber: 7,
+                columnNumber: 20
+            }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
                 className: "wmnds-fe-question",
                 children: text
             }, void 0, false, {
                 fileName: "src/common/Question.js",
-                lineNumber: 7,
-                columnNumber: 5
-            }, undefined),
-            isRequired && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Fields marked with an asterisk (*) are required."
-            }, void 0, false, {
-                fileName: "src/common/Question.js",
                 lineNumber: 8,
-                columnNumber: 20
+                columnNumber: 5
             }, undefined)
         ]
     }, void 0, true)
@@ -31671,7 +31667,7 @@ const Address = ({ prefix , btnText , isRequired  })=>{
                 columnNumber: 7
             }, undefined),
             formState.values.eligibility == "yes" && /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Congratulations, you are eligible for this service.",
+                text: "Congratulations. Click continue to apply.",
                 isRequired: false
             }, void 0, false, {
                 fileName: "src/common/Eligibility/Address.js",
@@ -31712,7 +31708,7 @@ $RefreshReg$(_c, "Address");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","react-router-dom":"fdOAw","prop-types":"7wKI2","./PostCodeSearch":"gx92I","./api/fetchEligibility":"hD8qd","../../common/TextInput":"7jGrs","../../common/Question":"7HVc9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../common/validation":"hOBBd"}],"gx92I":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","react-router-dom":"fdOAw","prop-types":"7wKI2","./PostCodeSearch":"gx92I","./api/fetchEligibility":"hD8qd","../../common/TextInput":"7jGrs","../../common/Question":"7HVc9","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gx92I":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ae85 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -31967,7 +31963,7 @@ var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 var _fieldError = require("./FieldError");
 var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-const TextInput = ({ fieldName , label , validation , error , containerClass , defaultValue , isRequired  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+const TextInput = ({ fieldName , label , validation , error , containerClass , defaultValue , isRequired , disab  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         className: `wmnds-fe-group ${error && "wmnds-fe-group--error"} ${containerClass && containerClass}`,
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -31982,14 +31978,14 @@ const TextInput = ({ fieldName , label , validation , error , containerClass , d
                 ]
             }, void 0, true, {
                 fileName: "src/common/TextInput.js",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
                 text: error
             }, void 0, false, {
                 fileName: "src/common/TextInput.js",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactFinalForm.Field, {
@@ -31999,16 +31995,17 @@ const TextInput = ({ fieldName , label , validation , error , containerClass , d
                 component: "input",
                 type: "text",
                 className: "wmnds-fe-input",
-                defaultValue: defaultValue
+                defaultValue: defaultValue,
+                disabled: disab
             }, void 0, false, {
                 fileName: "src/common/TextInput.js",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/common/TextInput.js",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 7
     }, undefined)
 ;
@@ -32023,10 +32020,12 @@ TextInput.propTypes = {
     error: _propTypesDefault.default.string,
     containerClass: _propTypesDefault.default.string,
     defaultValue: _propTypesDefault.default.string,
-    isRequired: _propTypesDefault.default.bool
+    isRequired: _propTypesDefault.default.bool,
+    disab: _propTypesDefault.default.bool
 };
 TextInput.defaultProps = {
-    isRequired: false
+    isRequired: false,
+    disab: false
 };
 exports.default = TextInput;
 var _c;
@@ -32086,7 +32085,8 @@ const RegistrationName = ()=>{
                 fieldName: "formData.FirstName",
                 label: "First Name",
                 validation: _validation.composeValidators(_validation.required, _validation.name),
-                error: errorFirstName
+                error: errorFirstName,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/RegistrationName.js",
                 lineNumber: 16,
@@ -32096,7 +32096,8 @@ const RegistrationName = ()=>{
                 fieldName: "formData.LastName",
                 label: "Last Name",
                 validation: _validation.composeValidators(_validation.required, _validation.name),
-                error: errorLastName
+                error: errorLastName,
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/RegistrationName.js",
                 lineNumber: 17,
@@ -32677,7 +32678,8 @@ const Address = ({ prefix , btnText , orderNo , addresses: addresses1 , setAddre
                 getAddresses: getAddresses,
                 loading: loading,
                 prefix: prefix,
-                isRequired: true
+                isRequired: true,
+                disab: true
             }, void 0, false, {
                 fileName: "src/common/Address/Address.js",
                 lineNumber: 59,
@@ -32750,7 +32752,7 @@ var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
 var _validation = require("../validation");
 var _s = $RefreshSig$();
 const validatePostCode = _validation.composeValidators(_validation.required, _validation.postCode);
-const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading , isRequired  })=>{
+const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading , isRequired , disab  })=>{
     _s();
     const fieldName = `${prefix}.searchPostCode`;
     const { input  } = _reactFinalForm.useField(fieldName);
@@ -32767,20 +32769,20 @@ const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading , is
                         children: "*"
                     }, void 0, false, {
                         fileName: "src/common/Address/PostCodeSearch.js",
-                        lineNumber: 22,
+                        lineNumber: 23,
                         columnNumber: 33
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/common/Address/PostCodeSearch.js",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
                 text: error
             }, void 0, false, {
                 fileName: "src/common/Address/PostCodeSearch.js",
-                lineNumber: 24,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactFinalForm.Field, {
@@ -32788,10 +32790,11 @@ const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading , is
                 validate: validatePostCode,
                 component: "input",
                 type: "text",
-                className: "wmnds-fe-input"
+                className: "wmnds-fe-input",
+                disabled: disab
             }, void 0, false, {
                 fileName: "src/common/Address/PostCodeSearch.js",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -32810,24 +32813,24 @@ const PostCodeSearch = ({ prefix , error , btnText , getAddresses , loading , is
                             className: "wmnds-loader__content"
                         }, void 0, false, {
                             fileName: "src/common/Address/PostCodeSearch.js",
-                            lineNumber: 30,
+                            lineNumber: 31,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/common/Address/PostCodeSearch.js",
-                        lineNumber: 29,
+                        lineNumber: 30,
                         columnNumber: 20
                     }, undefined) : null
                 ]
             }, void 0, true, {
                 fileName: "src/common/Address/PostCodeSearch.js",
-                lineNumber: 26,
+                lineNumber: 27,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/common/Address/PostCodeSearch.js",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 10
     }, undefined);
 };
@@ -32843,7 +32846,11 @@ PostCodeSearch.propTypes = {
     btnText: _propTypesDefault.default.string,
     getAddresses: _propTypesDefault.default.func,
     loading: _propTypesDefault.default.bool,
-    isRequired: _propTypesDefault.default.bool
+    isRequired: _propTypesDefault.default.bool,
+    disab: _propTypesDefault.default.bool
+};
+PostCodeSearch.defaultProps = {
+    disab: false
 };
 exports.default = PostCodeSearch;
 var _c;
@@ -33196,7 +33203,8 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 defaultValue: initialPostCode,
                 validation: validatePostCode,
                 error: postCodeError,
-                isRequired: true
+                isRequired: true,
+                disab: true
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
                 lineNumber: 33,
@@ -33345,7 +33353,7 @@ const DisabilityGroup = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Do you have a disability?",
+                text: "Do you have a disability? *",
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/DisabilityGroup.js",
@@ -33366,7 +33374,8 @@ const DisabilityGroup = ()=>{
                         label: "Yes",
                         validation: _validation.required,
                         value: "yes",
-                        fieldName: "DisabilityQ"
+                        fieldName: "DisabilityQ",
+                        isRequired: true
                     }, 1, false, {
                         fileName: "src/Application/section1/DisabilityGroup.js",
                         lineNumber: 32,
@@ -33391,6 +33400,16 @@ const DisabilityGroup = ()=>{
                     }, 2, false, {
                         fileName: "src/Application/section1/DisabilityGroup.js",
                         lineNumber: 34,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Prefer not to say",
+                        validation: _validation.required,
+                        value: "prefer not to say",
+                        fieldName: "DisabilityQ"
+                    }, 3, false, {
+                        fileName: "src/Application/section1/DisabilityGroup.js",
+                        lineNumber: 35,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -33534,6 +33553,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _reactFinalForm = require("react-final-form");
 var _formSection = require("../../common/FormSection");
 var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
@@ -33545,22 +33565,28 @@ var _question = require("../../common/Question");
 var _questionDefault = parcelHelpers.interopDefault(_question);
 var _radioButton = require("../../common/RadioButton");
 var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
+var _textInput = require("../../common/TextInput");
+var _textInputDefault = parcelHelpers.interopDefault(_textInput);
 var _fieldError = require("../../common/FieldError");
 var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
 var _validation = require("../../common/validation");
 var _s = $RefreshSig$();
 const EmploymentStatusTypes = {
     fullTimeEmployment: {
-        radioLabel: "Full-time Employment",
-        detailLabel: "Full-time Employment"
+        radioLabel: "Full-time paid employment",
+        detailLabel: "Full-time paid employment"
     },
     partTimeEmployment: {
-        radioLabel: "Part-time Employment",
-        detailLabel: "Part-time Employment"
+        radioLabel: "Part-time paid employment",
+        detailLabel: "Part-time paid employment"
     },
-    selfEmployed: {
-        radioLabel: "Self-employed",
-        detailLabel: "Self-employed"
+    fullTimeSelfEmployment: {
+        radioLabel: "Full-time self-employment",
+        detailLabel: "Full-time self-employment"
+    },
+    partTimeSelfEmployment: {
+        radioLabel: "Part-time self-employment",
+        detailLabel: "Part-time self-employment"
     },
     unemployed: {
         radioLabel: "Unemployed",
@@ -33570,23 +33596,40 @@ const EmploymentStatusTypes = {
         radioLabel: "Retired",
         detailLabel: "Retired"
     },
+    looking: {
+        radioLabel: "Looking after the home or family",
+        detailLabel: "Looking after the home or family"
+    },
     student: {
-        radioLabel: "Student",
-        detailLabel: "Student"
+        radioLabel: "Full-time student",
+        detailLabel: "Full-time student"
+    },
+    tempSick: {
+        radioLabel: "Temporarily sick or disabled",
+        detailLabel: "Temporarily sick or disabled"
+    },
+    longSick: {
+        radioLabel: "Long term sick or disabled",
+        detailLabel: "Long term sick or disabled"
     },
     other: {
         radioLabel: "Other",
         detailLabel: "Other"
-    },
-    preferNotToSay: {
-        radioLabel: "Prefer not to say",
-        detailLabel: "Prefer not to say"
-    }
+    } // preferNotToSay: {
 };
 const EmploymentStatusGroup = ()=>{
     _s();
     const stateApi = _reactFinalForm.useFormState();
+    const formValues = stateApi.values;
+    const formApi = _reactFinalForm.useForm();
     const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.Employmentstatus : null;
+    const q17berror = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q17b : null; // copy q17 value to survey data
+    _react.useEffect(()=>{
+        formApi.mutators.setFormAttribute("formData.SurveyData.q17", stateApi.values.q17);
+    }, [
+        formApi.mutators,
+        stateApi.values.q17
+    ]);
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
@@ -33594,14 +33637,15 @@ const EmploymentStatusGroup = ()=>{
                 sectionName: "About you"
             }, void 0, false, {
                 fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                lineNumber: 48,
+                lineNumber: 73,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "What is your employment status?"
+                text: "What is your employment status? *",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                lineNumber: 49,
+                lineNumber: 74,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
@@ -33611,36 +33655,48 @@ const EmploymentStatusGroup = ()=>{
                         text: error
                     }, void 0, false, {
                         fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                        lineNumber: 51,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, undefined),
                     Object.keys(EmploymentStatusTypes).map((Employmentstatus, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                             label: EmploymentStatusTypes[Employmentstatus].radioLabel,
                             validation: _validation.required,
                             value: EmploymentStatusTypes[Employmentstatus].radioLabel,
-                            fieldName: "formData.Employmentstatus"
+                            fieldName: "q17"
                         }, index, false, {
                             fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                            lineNumber: 52,
+                            lineNumber: 77,
                             columnNumber: 78
                         }, undefined)
                     )
                 ]
             }, void 0, true, {
                 fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                lineNumber: 50,
+                lineNumber: 75,
                 columnNumber: 7
-            }, undefined)
+            }, undefined),
+            formValues.q17 === "Other" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q17b",
+                label: "Q8b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?",
+                validation: _validation.required,
+                error: q17berror,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/section1/EmploymentStatusGroup.js",
+                lineNumber: 79,
+                columnNumber: 37
+            }, undefined) : null
         ]
     }, void 0, true, {
         fileName: "src/Application/section1/EmploymentStatusGroup.js",
-        lineNumber: 47,
+        lineNumber: 72,
         columnNumber: 10
     }, undefined);
 };
-_s(EmploymentStatusGroup, "ctm9ui0AD13+E/drNHXH99A0tz8=", false, function() {
+_s(EmploymentStatusGroup, "sdE+Z4nklBNhskHU5PHmdhalm40=", false, function() {
     return [
-        _reactFinalForm.useFormState
+        _reactFinalForm.useFormState,
+        _reactFinalForm.useForm
     ];
 });
 _c = EmploymentStatusGroup;
@@ -33653,7 +33709,7 @@ $RefreshReg$(_c, "EmploymentStatusGroup");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/RadioGroup":"ejgLk","../../common/Question":"7HVc9","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hl18Y":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/RadioGroup":"ejgLk","../../common/Question":"7HVc9","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../../common/TextInput":"7jGrs"}],"hl18Y":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1efc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -33703,7 +33759,8 @@ const NewJobGroup = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Are you starting a new job?"
+                text: "Are you starting a new job? *",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/NewJobGroup.js",
                 lineNumber: 25,
@@ -33811,6 +33868,10 @@ const BenefitTypes = {
     yesOtherIncomeAssessedBenefit: {
         radioLabel: "Yes - Other income assessed benefit",
         detailLabel: "Yes - Other income assessed benefit"
+    },
+    yesStudentIncomeAssessedSupport: {
+        radioLabel: "Yes - Student income assessed support",
+        detailLabel: "Yes - Student income assessed support"
     }
 };
 const BenefitsGroup = ()=>{
@@ -33824,14 +33885,15 @@ const BenefitsGroup = ()=>{
                 sectionName: "About you"
             }, void 0, false, {
                 fileName: "src/Application/section1/BenefitsGroup.js",
-                lineNumber: 44,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Do you receive benefits?"
+                text: "Do you receive benefits? *",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/BenefitsGroup.js",
-                lineNumber: 45,
+                lineNumber: 49,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
@@ -33841,7 +33903,7 @@ const BenefitsGroup = ()=>{
                         text: error
                     }, void 0, false, {
                         fileName: "src/Application/section1/BenefitsGroup.js",
-                        lineNumber: 47,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, undefined),
                     Object.keys(BenefitTypes).map((BenefitType, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
@@ -33851,20 +33913,20 @@ const BenefitsGroup = ()=>{
                             fieldName: "formData.BenefitType"
                         }, index, false, {
                             fileName: "src/Application/section1/BenefitsGroup.js",
-                            lineNumber: 48,
+                            lineNumber: 52,
                             columnNumber: 64
                         }, undefined)
                     )
                 ]
             }, void 0, true, {
                 fileName: "src/Application/section1/BenefitsGroup.js",
-                lineNumber: 46,
+                lineNumber: 50,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Application/section1/BenefitsGroup.js",
-        lineNumber: 43,
+        lineNumber: 47,
         columnNumber: 10
     }, undefined);
 };
@@ -33994,21 +34056,21 @@ const ProofUpload = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
-                        children: "child benefit"
+                        children: "housing benefit"
                     }, void 0, false, {
                         fileName: "src/Application/section1/ProofUpload.js",
                         lineNumber: 23,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
-                        children: "housing benefit"
+                        children: "job seekers allowance (JSA)"
                     }, void 0, false, {
                         fileName: "src/Application/section1/ProofUpload.js",
                         lineNumber: 24,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
-                        children: "job seekers allowance (JSA)"
+                        children: "student income assessed support letter"
                     }, void 0, false, {
                         fileName: "src/Application/section1/ProofUpload.js",
                         lineNumber: 25,
@@ -36096,6 +36158,10 @@ const DisabilityTypes = {
     no: {
         radioLabel: "No",
         detailLabel: "no"
+    },
+    prefer: {
+        radioLabel: "Prefer not to say",
+        detailLabel: "Prefer not to say"
     }
 };
 const MedicalServiceGroup = ()=>{
@@ -36109,14 +36175,15 @@ const MedicalServiceGroup = ()=>{
                 sectionName: "About you"
             }, void 0, false, {
                 fileName: "src/Application/section1/MedicalServiceGroup.js",
-                lineNumber: 24,
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Were you referred by a medical service? For example a GP or link worker"
+                text: "Were you referred by a medical service? For example a GP or link worker *",
+                isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/MedicalServiceGroup.js",
-                lineNumber: 25,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
@@ -36126,7 +36193,7 @@ const MedicalServiceGroup = ()=>{
                         text: error
                     }, void 0, false, {
                         fileName: "src/Application/section1/MedicalServiceGroup.js",
-                        lineNumber: 27,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, undefined),
                     Object.keys(DisabilityTypes).map((ReferredbyMedicalService, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
@@ -36136,20 +36203,20 @@ const MedicalServiceGroup = ()=>{
                             fieldName: "formData.ReferredbyMedicalService"
                         }, index, false, {
                             fileName: "src/Application/section1/MedicalServiceGroup.js",
-                            lineNumber: 28,
+                            lineNumber: 32,
                             columnNumber: 80
                         }, undefined)
                     )
                 ]
             }, void 0, true, {
                 fileName: "src/Application/section1/MedicalServiceGroup.js",
-                lineNumber: 26,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Application/section1/MedicalServiceGroup.js",
-        lineNumber: 23,
+        lineNumber: 27,
         columnNumber: 10
     }, undefined);
 };
@@ -36178,6 +36245,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _reactFinalForm = require("react-final-form");
 var _formSection = require("../../common/FormSection");
 var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
@@ -36187,6 +36255,8 @@ var _question = require("../../common/Question");
 var _questionDefault = parcelHelpers.interopDefault(_question);
 var _dropdown = require("../../common/Dropdown");
 var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
+var _textInput = require("../../common/TextInput");
+var _textInputDefault = parcelHelpers.interopDefault(_textInput);
 var _validation = require("../../common/validation");
 var _s = $RefreshSig$();
 const whereOptions = [
@@ -36250,7 +36320,16 @@ const whereOptions = [
 const WhereDropdown = ()=>{
     _s();
     const stateApi = _reactFinalForm.useFormState();
-    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.WhereDidYouHearAboutTheScheme : null;
+    const formValues = stateApi.values;
+    const formApi = _reactFinalForm.useForm();
+    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.Q10 : null;
+    const errorOther = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.Q10b : null; // copy q8 value to survey data
+    _react.useEffect(()=>{
+        formApi.mutators.setFormAttribute("formData.SurveyData.q10", stateApi.values.q10);
+    }, [
+        formApi.mutators,
+        stateApi.values.q10
+    ]);
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
@@ -36258,7 +36337,7 @@ const WhereDropdown = ()=>{
                 sectionName: "About you"
             }, void 0, false, {
                 fileName: "src/Application/section1/WhereDropdown.js",
-                lineNumber: 55,
+                lineNumber: 64,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
@@ -36266,11 +36345,11 @@ const WhereDropdown = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/WhereDropdown.js",
-                lineNumber: 56,
+                lineNumber: 65,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.WhereDidYouHearAboutTheScheme",
+                fieldName: "q10",
                 error: error,
                 label: "Select one option",
                 options: whereOptions,
@@ -36278,19 +36357,31 @@ const WhereDropdown = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/WhereDropdown.js",
-                lineNumber: 57,
+                lineNumber: 66,
                 columnNumber: 7
-            }, undefined)
+            }, undefined),
+            formValues.q10 === "Other" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q10b",
+                label: "Q10b - Please provide more details eg location, website:",
+                validation: _validation.required,
+                error: errorOther,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/section1/WhereDropdown.js",
+                lineNumber: 67,
+                columnNumber: 37
+            }, undefined) : null
         ]
     }, void 0, true, {
         fileName: "src/Application/section1/WhereDropdown.js",
-        lineNumber: 54,
+        lineNumber: 63,
         columnNumber: 10
     }, undefined);
 };
-_s(WhereDropdown, "ctm9ui0AD13+E/drNHXH99A0tz8=", false, function() {
+_s(WhereDropdown, "sdE+Z4nklBNhskHU5PHmdhalm40=", false, function() {
     return [
-        _reactFinalForm.useFormState
+        _reactFinalForm.useFormState,
+        _reactFinalForm.useForm
     ];
 });
 _c = WhereDropdown;
@@ -36303,7 +36394,7 @@ $RefreshReg$(_c, "WhereDropdown");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bZGlR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../../common/TextInput":"7jGrs"}],"bZGlR":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f1ff = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36329,21 +36420,21 @@ const SurveyIntro = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
-                children: "Cycling for Everyone Cycle Hire activity survey."
+                children: "Cycling for Everyone Cycle and scoot activity survey."
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
                 lineNumber: 7,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Thank you for choosing to participate in Cycling for Everyone - Cycle Hire. Before you participate in the cycle hire scheme, Transport for West Midlands would like to ask you some questions about your current travel and the journeys that you typically make."
+                children: "Thank you for choosing to participate in Cycling for Everyone - Cycle and scoot. Before you participate in the cycle hire scheme, Transport for West Midlands would like to ask you some questions about your current travel and the journeys that you typically make."
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
                 lineNumber: 8,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "This information will be extremely useful in helping us to understand the impact of Cycling for Everyone - Cycle Hire on those who have taken part."
+                children: "This information will be extremely useful in helping us to understand the impact of Cycling for Everyone cycle and scoot on those who have taken part."
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
                 lineNumber: 14,
@@ -36365,6 +36456,54 @@ const SurveyIntro = ()=>{
             }, void 0, true, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
                 lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "If you decide not to take part in this survey, please close the window before submitting. This will cancel your application for Cycle for Everyone."
+            }, void 0, false, {
+                fileName: "src/Application/Survey/SuveyIntro.js",
+                lineNumber: 25,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
+                children: "Consent"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/SuveyIntro.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "We want to ensure that we talk to as many different types of people as possible and therefore would like to ask some questions about you, your travel patterns and lifestyle. Transport for West Midlands (TfWM); part of the West Midland Combined Authority (WMCA) is responsible for any information that you provide us. We ensure that this information will be processed in accordance with data protection legislation."
+            }, void 0, false, {
+                fileName: "src/Application/Survey/SuveyIntro.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: [
+                    "We are committed to protecting your privacy and will use your personal information fairly. The personal data that we will collect about you as part of this study are: Age, Email, telephone number, Postcode, Ethnic Background and Disability. We will safely store your personal data for a maximum of 18 months. For further information on how we handle information/data, and your information rights",
+                    " ",
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                        href: "www.tfwm.org.uk/policies/privacy-and-cookies-policy",
+                        target: "_blank",
+                        children: "visit our Privacy Policy"
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/SuveyIntro.js",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, undefined),
+                    "."
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/SuveyIntro.js",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "By choosing to continue with this survey, you are giving your informed consent to take part in our research. You understand that you may remove yourself from the study by closing the window before submitting. If you wish to discuss this questionnaire in further detail or you want information on how your data will be collected, stored and used, please email: transportresearch@tfwm.org.uk."
+            }, void 0, false, {
+                fileName: "src/Application/Survey/SuveyIntro.js",
+                lineNumber: 51,
                 columnNumber: 7
             }, undefined)
         ]
@@ -36652,12 +36791,26 @@ const Q2Survey = ()=>{
     _s();
     const stateApi = _reactFinalForm.useFormState();
     const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q2.PlaceOfWork : null;
-    const error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q2.PlaceOfEducation : null;
-    const error2 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q2.PersonalBusiness : null;
-    const error3 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q2.FriendsOrFamily : null;
-    const error4 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q2.FoodOrGroceryShopping : null;
-    const error5 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q2.OtherShopping : null;
-    const error6 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q2.SocialTravel : null;
+    const error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q2.PlaceOfEducation : null; // const error2 =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q2.PersonalBusiness
+    //     : null;
+    // const error3 =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q2.FriendsOrFamily
+    //     : null;
+    // const error4 =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q2.FoodOrGroceryShopping
+    //     : null;
+    // const error5 =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q2.OtherShopping
+    //     : null;
+    // const error6 =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q2.SocialTravel
+    //     : null;
     const error7 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q2.ExerciseOrRecreation : null;
     const error8 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q2.OtherReasons : null;
     _react.useEffect(()=>{
@@ -36670,7 +36823,7 @@ const Q2Survey = ()=>{
                 sectionName: "LACF Survey"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 44,
+                lineNumber: 59,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
@@ -36678,14 +36831,14 @@ const Q2Survey = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 45,
+                lineNumber: 60,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                 children: "Q2 - On average, how often would you say you travel by any form of cycle/e-cycle such as bicycle, tricycle, handcycle, adapted cycle, cargo bike for each of the following reasons:"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 46,
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
@@ -36697,7 +36850,7 @@ const Q2Survey = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 52,
+                lineNumber: 67,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
@@ -36709,67 +36862,7 @@ const Q2Survey = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 53,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q2.PersonalBusiness",
-                error: error2,
-                label: "To go somewhere for personal business (e.g. travelling to an appointment)",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 54,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q2.FriendsOrFamily",
-                error: error3,
-                label: "To visit friends or family",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 55,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q2.FoodOrGroceryShopping",
-                error: error4,
-                label: "To go food or grocery shopping",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 56,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q2.OtherShopping",
-                error: error5,
-                label: "To go shopping for things other than food",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 57,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q2.SocialTravel",
-                error: error6,
-                label: "To go somewhere for leisure/social reasons (e.g. to entertainment, to play sport or to visit a pub or restaurant)",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 58,
+                lineNumber: 68,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
@@ -36781,7 +36874,7 @@ const Q2Survey = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 59,
+                lineNumber: 111,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
@@ -36793,7 +36886,7 @@ const Q2Survey = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 60,
+                lineNumber: 112,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -36801,13 +36894,13 @@ const Q2Survey = ()=>{
                 label: "For other reasons (please specify)"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
-                lineNumber: 61,
+                lineNumber: 113,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Application/Survey/Q2Survey.js",
-        lineNumber: 43,
+        lineNumber: 58,
         columnNumber: 10
     }, undefined);
 };
@@ -36826,1284 +36919,7 @@ $RefreshReg$(_c, "Q2Survey");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/TextInput":"7jGrs","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lKBcO":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8c59 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8c59.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _dropdown = require("../../common/Dropdown");
-var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
-var _textInput = require("../../common/TextInput");
-var _textInputDefault = parcelHelpers.interopDefault(_textInput);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const dropdownOptions = [
-    {
-        value: "5 or more days a week",
-        label: "5 or more days a week"
-    },
-    {
-        value: "3 or 4 days a week",
-        label: "3 or 4 days a week"
-    },
-    {
-        value: "1 or 2 days a week",
-        label: "1 or 2 days a week"
-    },
-    {
-        value: "Once or twice a month",
-        label: "Once or twice a month"
-    },
-    {
-        value: "Less than once a month",
-        label: "Less than once a month"
-    },
-    {
-        value: "Never",
-        label: "Never"
-    }
-];
-const Q3Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3.PlaceOfWork : null;
-    const error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3.PlaceOfEducation : null;
-    const error2 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3.PersonalBusiness : null;
-    const error3 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3.FriendsOrFamily : null;
-    const error4 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3.FoodOrGroceryShopping : null;
-    const error5 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3.OtherShopping : null;
-    const error6 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3.SocialTravel : null;
-    const error7 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3.ExerciseOrRecreation : null;
-    const error8 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3.OtherReasons : null;
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 44,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Your current travel",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 45,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q3 - On average, how often would you say you walk for at least 10 minutes as part of your journey, for each of the following reasons:"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 46,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q3.PlaceOfWork",
-                error: error,
-                label: "To go to/from your place of work",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 51,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q3.PlaceOfEducation",
-                error: error1,
-                label: "To go to/from your place of education (e.g. school, college, or university)",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 52,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q3.PersonalBusiness",
-                error: error2,
-                label: "To go somewhere for personal business (e.g. travelling to an appointment)",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 53,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q3.FriendsOrFamily",
-                error: error3,
-                label: "To visit friends or family",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 54,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q3.FoodOrGroceryShopping",
-                error: error4,
-                label: "To go food or grocery shopping",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 55,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q3.OtherShopping",
-                error: error5,
-                label: "To go shopping for things other than food",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 56,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q3.SocialTravel",
-                error: error6,
-                label: "To go somewhere for leisure/social reasons (e.g. to entertainment, to play sport or to visit a pub or restaurant)",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 57,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q3.ExerciseOrRecreation",
-                error: error7,
-                label: "To do exercise or for recreation",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 58,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q3.OtherReasons",
-                error: error8,
-                label: "For other reasons",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 59,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q3.SpecifyOtherReasons",
-                label: "For other reasons (please specify)"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Survey.js",
-                lineNumber: 60,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q3Survey.js",
-        lineNumber: 43,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q3Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
-    return [
-        _reactFinalForm.useFormState
-    ];
-});
-_c = Q3Survey;
-exports.default = Q3Survey;
-var _c;
-$RefreshReg$(_c, "Q3Survey");
-
-  $parcel$ReactRefreshHelpers$8c59.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/TextInput":"7jGrs","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"euhe5":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8b1e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8b1e.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _radioGroup = require("../../common/RadioGroup");
-var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
-var _radioButton = require("../../common/RadioButton");
-var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const Q4Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const q4error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4 : null;
-    const q5error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4 : null;
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q4Survey.js",
-                lineNumber: 19,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Your current travel",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q4Survey.js",
-                lineNumber: 20,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q4 - On average, how much time do you spend cycling per week? Please include any casual cycling in your local area, any cycling in the countryside or on cycling routes, cycling to or from work or any competitive cycling. Please do not include any time spent cycling on a static or exercise bike. *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q4Survey.js",
-                lineNumber: 21,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q4error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q4error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 29,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Two or more hours per week",
-                        validation: _validation.required,
-                        value: "Two or more hours per week",
-                        fieldName: "formData.SurveyData.q4"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 30,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Between one and two hours per week",
-                        validation: _validation.required,
-                        value: "Between one and two hours per week",
-                        fieldName: "formData.SurveyData.q4"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 31,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Between 30 minutes and one hour per week",
-                        validation: _validation.required,
-                        value: "Between 30 minutes and one hour per week",
-                        fieldName: "formData.SurveyData.q4"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Less than 30 minutes per week",
-                        validation: _validation.required,
-                        value: "Less than 30 minutes per week",
-                        fieldName: "formData.SurveyData.q4"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Don't know/unsure",
-                        validation: _validation.required,
-                        value: "Don't know/unsure",
-                        fieldName: "formData.SurveyData.q4"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q4Survey.js",
-                lineNumber: 28,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q5 - On average, how much time do you spend walking per week? Please include any country walks, walking to and from work or the shops and any other walks you may have done. Please do not include time spent walking around shops. *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q4Survey.js",
-                lineNumber: 37,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q5error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q5error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 44,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Two or more hours per week",
-                        validation: _validation.required,
-                        value: "Two or more hours per week",
-                        fieldName: "formData.SurveyData.q5"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 45,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Between one and two hours per week",
-                        validation: _validation.required,
-                        value: "Between one and two hours per week",
-                        fieldName: "formData.SurveyData.q5"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 46,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Between 30 minutes and one hour per week",
-                        validation: _validation.required,
-                        value: "Between 30 minutes and one hour per week",
-                        fieldName: "formData.SurveyData.q5"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 47,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Less than 30 minutes per week",
-                        validation: _validation.required,
-                        value: "Less than 30 minutes per week",
-                        fieldName: "formData.SurveyData.q5"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 48,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Don't know/unsure",
-                        validation: _validation.required,
-                        value: "Don't know/unsure",
-                        fieldName: "formData.SurveyData.q5"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q4Survey.js",
-                        lineNumber: 49,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q4Survey.js",
-                lineNumber: 43,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q4Survey.js",
-        lineNumber: 18,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q4Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
-    return [
-        _reactFinalForm.useFormState
-    ];
-});
-_c = Q4Survey;
-exports.default = Q4Survey;
-var _c;
-$RefreshReg$(_c, "Q4Survey");
-
-  $parcel$ReactRefreshHelpers$8b1e.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"k7pZj":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2445 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2445.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _dropdown = require("../../common/Dropdown");
-var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
-var _checkbox = require("../../common/Checkbox");
-var _checkboxDefault = parcelHelpers.interopDefault(_checkbox);
-var _checkboxContainer = require("../../common/CheckboxContainer");
-var _checkboxContainerDefault = parcelHelpers.interopDefault(_checkboxContainer);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _q5DropdownOptions = require("./Q5dropdownOptions");
-var _q5DropdownOptionsDefault = parcelHelpers.interopDefault(_q5DropdownOptions);
-var _s = $RefreshSig$();
-const dropdownOptions = [
-    {
-        value: "None",
-        label: "None"
-    },
-    {
-        value: "One",
-        label: "One"
-    },
-    {
-        value: "Two",
-        label: "Two"
-    },
-    {
-        value: "Three or more",
-        label: "Three or more"
-    }
-];
-const Q5Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q6.CarOrVan : null;
-    const error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q6.MotorcycleOrMoped : null;
-    const q7Error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.selectQ7 : null;
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Survey.js",
-                lineNumber: 35,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Your current travel",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Survey.js",
-                lineNumber: 36,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q6 - How many vehicles does your household own or have continuous use of at present? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Survey.js",
-                lineNumber: 37,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q6.CarOrVan",
-                error: error,
-                label: "Car or van",
-                options: dropdownOptions,
-                validation: _validation.required
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Survey.js",
-                lineNumber: 42,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q6.MotorcycleOrMoped",
-                error: error1,
-                label: "Motorcycle or moped",
-                options: dropdownOptions,
-                validation: _validation.required
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Survey.js",
-                lineNumber: 43,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q7 - Do you own or have use of any of the following? (this could include vehicles that you own, hire or use that belong to someone else [e.g. a family member or friend). *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Survey.js",
-                lineNumber: 44,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
-                error: q7Error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q7Error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q5Survey.js",
-                        lineNumber: 50,
-                        columnNumber: 9
-                    }, undefined),
-                    Object.keys(_q5DropdownOptionsDefault.default).map((option)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
-                            label: _q5DropdownOptionsDefault.default[option],
-                            fieldName: `q7.${option}`
-                        }, _q5DropdownOptionsDefault.default[option], false, {
-                            fileName: "src/Application/Survey/Q5Survey.js",
-                            lineNumber: 51,
-                            columnNumber: 45
-                        }, undefined)
-                    )
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q5Survey.js",
-                lineNumber: 49,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q5Survey.js",
-        lineNumber: 34,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q5Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
-    return [
-        _reactFinalForm.useFormState
-    ];
-});
-_c = Q5Survey;
-exports.default = Q5Survey;
-var _c;
-$RefreshReg$(_c, "Q5Survey");
-
-  $parcel$ReactRefreshHelpers$2445.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/Checkbox":"7IcBJ","../../common/CheckboxContainer":"2miun","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","./Q5dropdownOptions":"lgpMQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7IcBJ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2456 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2456.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactFinalForm = require("react-final-form");
-var _propTypes = require("prop-types");
-var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-const Checkbox = ({ fieldName , label  })=>{
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
-        className: "wmnds-fe-checkboxes__container",
-        children: [
-            label,
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactFinalForm.Field, {
-                className: `wmnds-fe-checkboxes__input`,
-                name: fieldName,
-                component: "input",
-                type: "checkbox"
-            }, void 0, false, {
-                fileName: "src/common/Checkbox.js",
-                lineNumber: 10,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                className: "wmnds-fe-checkboxes__checkmark",
-                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("svg", {
-                    className: "wmnds-fe-checkboxes__icon",
-                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("use", {
-                        xlinkHref: "#wmnds-general-checkmark",
-                        href: "#wmnds-general-checkmark"
-                    }, void 0, false, {
-                        fileName: "src/common/Checkbox.js",
-                        lineNumber: 13,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/common/Checkbox.js",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/common/Checkbox.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/common/Checkbox.js",
-        lineNumber: 8,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Checkbox;
-Checkbox.propTypes = {
-    fieldName: _propTypesDefault.default.string.isRequired,
-    label: _propTypesDefault.default.oneOfType([
-        _propTypesDefault.default.string,
-        _propTypesDefault.default.element
-    ])
-};
-exports.default = Checkbox;
-var _c;
-$RefreshReg$(_c, "Checkbox");
-
-  $parcel$ReactRefreshHelpers$2456.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2miun":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a311 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a311.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _propTypes = require("prop-types");
-var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-const CheckboxContainer = ({ error , description , children  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        className: "wmnds-fe-group",
-        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-            className: `wmnds-fe-checkboxes ${error && "wmnds-fe-group--error"}`,
-            children: [
-                description && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "wmnds-fe-checkboxes__desc",
-                    children: description
-                }, void 0, false, {
-                    fileName: "src/common/CheckboxContainer.js",
-                    lineNumber: 9,
-                    columnNumber: 23
-                }, undefined),
-                children
-            ]
-        }, void 0, true, {
-            fileName: "src/common/CheckboxContainer.js",
-            lineNumber: 8,
-            columnNumber: 5
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/common/CheckboxContainer.js",
-        lineNumber: 7,
-        columnNumber: 7
-    }, undefined)
-;
-_c = CheckboxContainer;
-CheckboxContainer.propTypes = {
-    error: _propTypesDefault.default.string,
-    description: _propTypesDefault.default.string,
-    children: _propTypesDefault.default.node
-};
-exports.default = CheckboxContainer;
-var _c;
-$RefreshReg$(_c, "CheckboxContainer");
-
-  $parcel$ReactRefreshHelpers$a311.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lgpMQ":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const Q5dropdownOptions = {
-    bicycle: "Bicycle",
-    ebikeEcycle: "e-bike/e-cycle",
-    adaptedcycle: "Adapted cycle",
-    adaptedebikeecycle: "Adapted e-bike/e-cycle",
-    none: "None of the above"
-};
-exports.default = Q5dropdownOptions;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1Nfua":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$3e90 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$3e90.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _radioGroup = require("../../common/RadioGroup");
-var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
-var _radioButton = require("../../common/RadioButton");
-var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
-var _textInput = require("../../common/TextInput");
-var _textInputDefault = parcelHelpers.interopDefault(_textInput);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const Q6Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const formApi = _reactFinalForm.useForm();
-    const q8error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q8 : null;
-    const q9error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q9 : null;
-    const q11error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q11 : null; // copy q7 value to survey data
-    _react.useEffect(()=>{
-        formApi.mutators.setFormAttribute("formData.SurveyData.q7", stateApi.values.q7);
-    }, [
-        formApi.mutators
-    ]);
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q6Survey.js",
-                lineNumber: 26,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Safety and Confidence",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q6Survey.js",
-                lineNumber: 28,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q8 - Currently, how safe do you feel cycling on roads in your local area? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q6Survey.js",
-                lineNumber: 29,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q8error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q8error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Very safe",
-                        validation: _validation.required,
-                        value: "Very safe",
-                        fieldName: "formData.SurveyData.q8"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Safe",
-                        validation: _validation.required,
-                        value: "Safe",
-                        fieldName: "formData.SurveyData.q8"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not very safe",
-                        validation: _validation.required,
-                        value: "Not very safe",
-                        fieldName: "formData.SurveyData.q8"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 37,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not at all safe",
-                        validation: _validation.required,
-                        value: "Not at all safe",
-                        fieldName: "formData.SurveyData.q8"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 38,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Don't know/unsure",
-                        validation: _validation.required,
-                        value: "Don't know/unsure",
-                        fieldName: "formData.SurveyData.q8"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 39,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q6Survey.js",
-                lineNumber: 33,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q9",
-                label: "Q9 - What are the main reasons that you feel the way you said in Q8 about cycling on roads in your local area?",
-                validation: _validation.required,
-                error: q9error,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q6Survey.js",
-                lineNumber: 42,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q10",
-                label: "Q10 - If you have any comments or suggestions on how your feeling of safety could be improved when cycling on roads in your local area please provide more detail below:"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q6Survey.js",
-                lineNumber: 44,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q11 - And how confident do you feel about cycling on roads in your local area? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q6Survey.js",
-                lineNumber: 47,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q11error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q11error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Very confident",
-                        validation: _validation.required,
-                        value: "Very confident",
-                        fieldName: "formData.SurveyData.q11"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Fairly confident",
-                        validation: _validation.required,
-                        value: "Fairly confident",
-                        fieldName: "formData.SurveyData.q11"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 54,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not very confident",
-                        validation: _validation.required,
-                        value: "Not very confident",
-                        fieldName: "formData.SurveyData.q11"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 55,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not at all confident",
-                        validation: _validation.required,
-                        value: "Not at all confident",
-                        fieldName: "formData.SurveyData.q11"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 56,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Don't know/unsure",
-                        validation: _validation.required,
-                        value: "Don't know/unsure",
-                        fieldName: "formData.SurveyData.q11"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q6Survey.js",
-                        lineNumber: 57,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q6Survey.js",
-                lineNumber: 51,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q6Survey.js",
-        lineNumber: 25,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q6Survey, "dwjk7yLqRbLDoD5AT9Ln43pRxn8=", false, function() {
-    return [
-        _reactFinalForm.useFormState,
-        _reactFinalForm.useForm
-    ];
-});
-_c = Q6Survey;
-exports.default = Q6Survey;
-var _c;
-$RefreshReg$(_c, "Q6Survey");
-
-  $parcel$ReactRefreshHelpers$3e90.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/TextInput":"7jGrs","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2d5kw":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9967 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9967.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _radioGroup = require("../../common/RadioGroup");
-var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
-var _radioButton = require("../../common/RadioButton");
-var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
-var _textInput = require("../../common/TextInput");
-var _textInputDefault = parcelHelpers.interopDefault(_textInput);
-var _checkbox = require("../../common/Checkbox");
-var _checkboxDefault = parcelHelpers.interopDefault(_checkbox);
-var _checkboxContainer = require("../../common/CheckboxContainer");
-var _checkboxContainerDefault = parcelHelpers.interopDefault(_checkboxContainer);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const Q7Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const Q16dropdownOptions = {
-        work: "Work",
-        education: "Education",
-        familyBikeRides: "Family Bike Rides",
-        leisureRecreation: "Leisure/recreation",
-        cycleTraining: "Cycle Training",
-        cycleClub: "Cycle Club"
-    };
-    const q12error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q12 : null;
-    const q15error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q15 : null;
-    const q16Error = stateApi.submitFailed ? stateApi.errors?.selectQ16 : null;
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Survey.js",
-                lineNumber: 31,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Safety and Confidence",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Survey.js",
-                lineNumber: 32,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q12 - Currently, how safe do you feel walking in your local area? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Survey.js",
-                lineNumber: 33,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q12error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q12error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Very safe",
-                        validation: _validation.required,
-                        value: "Very safe",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Safe",
-                        validation: _validation.required,
-                        value: "Safe",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 37,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not very safe",
-                        validation: _validation.required,
-                        value: "Not very safe",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 38,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not at all safe",
-                        validation: _validation.required,
-                        value: "Not at all safe",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 39,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Don't know/unsure",
-                        validation: _validation.required,
-                        value: "Don't know/unsure",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 40,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q7Survey.js",
-                lineNumber: 34,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q13",
-                label: "Q13 - What are the main reasons that you feel the way you said in Q12 about walking in your local area?"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Survey.js",
-                lineNumber: 43,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q14",
-                label: "Q14 - If you have any comments or suggestions on how your feeling of safety could be improved when walking in your local area please provide more detail below:"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Survey.js",
-                lineNumber: 45,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q15 - And how confident do you feel about walking in your local area? 8"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Survey.js",
-                lineNumber: 48,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q15error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q15error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Very confident",
-                        validation: _validation.required,
-                        value: "Very confident",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Fairly confident",
-                        validation: _validation.required,
-                        value: "Fairly confident",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 54,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not very confident",
-                        validation: _validation.required,
-                        value: "Not very confident",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 55,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not at all confident",
-                        validation: _validation.required,
-                        value: "Not at all confident",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 56,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Don't know/unsure",
-                        validation: _validation.required,
-                        value: "Don't know/unsure",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 57,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q7Survey.js",
-                lineNumber: 51,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q16 - How do you plan to use the cycle hire? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Survey.js",
-                lineNumber: 59,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
-                error: q16Error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q16Error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q7Survey.js",
-                        lineNumber: 61,
-                        columnNumber: 9
-                    }, undefined),
-                    Object.keys(Q16dropdownOptions).map((option)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
-                            label: Q16dropdownOptions[option],
-                            fieldName: `q16.${option}`
-                        }, Q16dropdownOptions[option], false, {
-                            fileName: "src/Application/Survey/Q7Survey.js",
-                            lineNumber: 62,
-                            columnNumber: 56
-                        }, undefined)
-                    )
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q7Survey.js",
-                lineNumber: 60,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q7Survey.js",
-        lineNumber: 30,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q7Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
-    return [
-        _reactFinalForm.useFormState
-    ];
-});
-_c = Q7Survey;
-exports.default = Q7Survey;
-var _c;
-$RefreshReg$(_c, "Q7Survey");
-
-  $parcel$ReactRefreshHelpers$9967.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/TextInput":"7jGrs","../../common/Checkbox":"7IcBJ","../../common/CheckboxContainer":"2miun","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3wkcB":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/TextInput":"7jGrs","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3wkcB":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bd52 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38135,7 +36951,7 @@ const Q8Survey = ()=>{
     _s();
     const stateApi = _reactFinalForm.useFormState();
     const formApi = _reactFinalForm.useForm(); // const q17error = stateApi.submitFailed ? stateApi.errors?.DisabilityQ : null;
-    const q18error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q18 : null; // copy q16 value to survey data
+    const q19error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q19 : null; // copy q16 value to survey data
     _react.useEffect(()=>{
         formApi.mutators.setFormAttribute("formData.SurveyData.q16", stateApi.values.q16);
     }, [
@@ -38163,14 +36979,14 @@ const Q8Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q17 - How many people, including yourself, currently live in your household? *"
+                children: "Q18 - How many people, including yourself, currently live in your household? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
                 lineNumber: 27,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q17.Adults18OrOver",
+                fieldName: "formData.SurveyData.q19.Adults18OrOver",
                 label: "Adults aged 18 or over"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
@@ -38178,7 +36994,7 @@ const Q8Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q17.Children16Or17",
+                fieldName: "formData.SurveyData.q19.Children16Or17",
                 label: "Children aged 16 or 17"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
@@ -38186,7 +37002,7 @@ const Q8Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q17.Children12To15",
+                fieldName: "formData.SurveyData.q19.Children12To15",
                 label: "Children aged 12 to 15"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
@@ -38194,7 +37010,7 @@ const Q8Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q17.Children5To11",
+                fieldName: "formData.SurveyData.q19.Children5To11",
                 label: "Children aged 5 to 11"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
@@ -38202,7 +37018,7 @@ const Q8Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q17.Children4OrUnder",
+                fieldName: "formData.SurveyData.q19.Children4OrUnder",
                 label: "Children aged 4 or under"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
@@ -38210,17 +37026,17 @@ const Q8Survey = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q18 - What is your estimated household annual income? *"
+                children: "Q19 - What is your estimated household annual income? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
                 lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q18error,
+                error: q19error,
                 children: [
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q18error
+                        text: q19error
                     }, void 0, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 39,
@@ -38230,7 +37046,7 @@ const Q8Survey = ()=>{
                         label: "Less than \xa310,000",
                         validation: _validation.required,
                         value: "Less than \xa310,000",
-                        fieldName: "formData.SurveyData.q18"
+                        fieldName: "formData.SurveyData.q19"
                     }, 2, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 40,
@@ -38240,7 +37056,7 @@ const Q8Survey = ()=>{
                         label: "\xa310,000\u2013\xa319,999",
                         validation: _validation.required,
                         value: "\xa310,000\u2013\xa319,999",
-                        fieldName: "formData.SurveyData.q18"
+                        fieldName: "formData.SurveyData.q19"
                     }, 3, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 41,
@@ -38250,7 +37066,7 @@ const Q8Survey = ()=>{
                         label: "\xa320,000\u2013\xa329,999",
                         validation: _validation.required,
                         value: "\xa320,000\u2013\xa329,999",
-                        fieldName: "formData.SurveyData.q18"
+                        fieldName: "formData.SurveyData.q19"
                     }, 4, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 42,
@@ -38260,7 +37076,7 @@ const Q8Survey = ()=>{
                         label: "\xa330,000\u2013\xa339,999",
                         validation: _validation.required,
                         value: "\xa330,000\u2013\xa339,999",
-                        fieldName: "formData.SurveyData.q18"
+                        fieldName: "formData.SurveyData.q19"
                     }, 5, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 43,
@@ -38270,7 +37086,7 @@ const Q8Survey = ()=>{
                         label: "\xa340,000\u2013\xa349,999",
                         validation: _validation.required,
                         value: "\xa340,000\u2013\xa349,999",
-                        fieldName: "formData.SurveyData.q18"
+                        fieldName: "formData.SurveyData.q19"
                     }, 6, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 44,
@@ -38280,7 +37096,7 @@ const Q8Survey = ()=>{
                         label: "\xa350,000\u2013\xa359,999",
                         validation: _validation.required,
                         value: "\xa350,000\u2013\xa359,999",
-                        fieldName: "formData.SurveyData.q18"
+                        fieldName: "formData.SurveyData.q19"
                     }, 7, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 45,
@@ -38291,7 +37107,7 @@ const Q8Survey = ()=>{
                         label: "\xa360,000\u2013\xa374,999",
                         validation: _validation.required,
                         value: "\xa360,000\u2013\xa374,999",
-                        fieldName: "formData.SurveyData.q18"
+                        fieldName: "formData.SurveyData.q19"
                     }, 8, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 46,
@@ -38301,7 +37117,7 @@ const Q8Survey = ()=>{
                         label: "\xa375,000\u2013\xa399,999",
                         validation: _validation.required,
                         value: "\xa375,000\u2013\xa399,999",
-                        fieldName: "formData.SurveyData.q18"
+                        fieldName: "formData.SurveyData.q19"
                     }, 9, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 47,
@@ -38311,7 +37127,7 @@ const Q8Survey = ()=>{
                         label: "\xa3100,000 or more",
                         validation: _validation.required,
                         value: "\xa3100,000 or more",
-                        fieldName: "formData.SurveyData.q18"
+                        fieldName: "formData.SurveyData.q19"
                     }, 10, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 48,
@@ -38321,7 +37137,7 @@ const Q8Survey = ()=>{
                         label: "Prefer not to say",
                         validation: _validation.required,
                         value: "Prefer not to say",
-                        fieldName: "formData.SurveyData.q18"
+                        fieldName: "formData.SurveyData.q19"
                     }, 11, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
                         lineNumber: 49,
@@ -38387,31 +37203,33 @@ var _s = $RefreshSig$();
 const Q9Survey = ()=>{
     _s();
     const stateApi = _reactFinalForm.useFormState();
-    const q19error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q19 : null;
-    const q20error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q20 : null;
-    const q21error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q21 : null;
-    const q22error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q22.GoOutOnFootUnaided : null;
-    const q22error2 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q22.RideABicycle : null;
-    const q22error3 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q22.TravelOnLocalBusesTrainsTrams : null;
-    const q22error4 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q22.GetInOrOutOfACar : null;
-    const dropdownOptions = [
-        {
-            value: "Yes, always",
-            label: "Yes, always"
-        },
-        {
-            value: "Yes, sometimes",
-            label: "Yes, sometimes"
-        },
-        {
-            value: "No",
-            label: "No"
-        },
-        {
-            value: "Prefer not to say",
-            label: "Prefer not to say"
-        }
-    ];
+    const q15error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q15 : null;
+    const q16error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q16 : null; // const q21error =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q21
+    //     : null;
+    // const q22error1 =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q22.GoOutOnFootUnaided
+    //     : null;
+    // const q22error2 =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q22.RideABicycle
+    //     : null;
+    // const q22error3 =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q22.TravelOnLocalBusesTrainsTrams
+    //     : null;
+    // const q22error4 =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q22.GetInOrOutOfACar
+    //     : null;
+    // const dropdownOptions = [
+    //   { value: "Yes, always", label: "Yes, always" },
+    //   { value: "Yes, sometimes", label: "Yes, sometimes" },
+    //   { value: "No", label: "No" },
+    //   { value: "Prefer not to say", label: "Prefer not to say" },
+    // ];
     _react.useEffect(()=>{
         window.scrollTo(0, 0);
     }, []);
@@ -38422,7 +37240,7 @@ const Q9Survey = ()=>{
                 sectionName: "LACF Survey"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 38,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
@@ -38430,273 +37248,159 @@ const Q9Survey = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 39,
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q19 - How is your health in general? *"
+                children: "Q15 - How is your health in general? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 40,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q19error,
+                error: q15error,
                 children: [
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q19error
+                        text: q15error
                     }, void 0, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 42,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Very good",
                         validation: _validation.required,
                         value: "Very good",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q15"
                     }, 1, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 43,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Good",
                         validation: _validation.required,
                         value: "Good",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q15"
                     }, 2, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 44,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Fair",
                         validation: _validation.required,
                         value: "Fair",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q15"
                     }, 3, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 45,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Bad",
                         validation: _validation.required,
                         value: "Bad",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q15"
                     }, 4, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 46,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Very bad",
                         validation: _validation.required,
                         value: "Very bad",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q15"
                     }, 5, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 47,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Don\u2019t know/unsure",
                         validation: _validation.required,
                         value: "Don\u2019t know/unsure",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q15"
                     }, 6, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 48,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Prefer not to say",
                         validation: _validation.required,
                         value: "Prefer not to say",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q15"
                     }, 7, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 49,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 41,
+                lineNumber: 49,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q20 - Do you have any physical or mental health conditions or illnesses lasting or expected to last 12 months or more? *"
+                children: "Q16 - Do you have any physical or mental health conditions or illnesses lasting or expected to last 12 months or more? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 52,
+                lineNumber: 60,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q20error,
+                error: q16error,
                 children: [
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q20error
+                        text: q16error
                     }, void 0, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 57,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Yes",
                         validation: _validation.required,
                         value: "Yes",
-                        fieldName: "formData.SurveyData.q20"
+                        fieldName: "formData.SurveyData.q16"
                     }, 1, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 58,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "No",
                         validation: _validation.required,
                         value: "No",
-                        fieldName: "formData.SurveyData.q20"
+                        fieldName: "formData.SurveyData.q16"
                     }, 2, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 59,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Prefer not to say",
                         validation: _validation.required,
                         value: "Prefer not to say",
-                        fieldName: "formData.SurveyData.q20"
+                        fieldName: "formData.SurveyData.q16"
                     }, 3, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 60,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 56,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q21 - Does the condition or illness you mentioned in Q20 reduce your ability to carry out day-to-day activities? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 63,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q21error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q21error
-                    }, void 0, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
                         lineNumber: 68,
                         columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Yes, a lot",
-                        validation: _validation.required,
-                        value: "Yes, a lot",
-                        fieldName: "formData.SurveyData.q21"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 69,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Yes, a little",
-                        validation: _validation.required,
-                        value: "Yes, a little",
-                        fieldName: "formData.SurveyData.q21"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 70,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not at all",
-                        validation: _validation.required,
-                        value: "Not at all",
-                        fieldName: "formData.SurveyData.q21"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 71,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not applicable",
-                        validation: _validation.required,
-                        value: "Not applicable",
-                        fieldName: "formData.SurveyData.q21"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 72,
-                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 67,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q22 - Does the condition or illness you mentioned in Q20 typically impact your ability to do any of the following activities? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 75,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q22.GoOutOnFootUnaided",
-                error: q22error1,
-                label: "Go out on foot unaided",
-                options: dropdownOptions,
-                validation: _validation.required
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 79,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q22.RideABicycle",
-                error: q22error2,
-                label: "Ride a bicycle",
-                options: dropdownOptions,
-                validation: _validation.required
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 80,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q22.TravelOnLocalBusesTrainsTrams",
-                error: q22error3,
-                label: "Travel on local buses/trains/trams",
-                options: dropdownOptions,
-                validation: _validation.required
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 81,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q22.GetInOrOutOfACar",
-                error: q22error4,
-                label: "Get in or out of a car",
-                options: dropdownOptions,
-                validation: _validation.required
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 82,
+                lineNumber: 64,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Application/Survey/Q9Survey.js",
-        lineNumber: 37,
+        lineNumber: 45,
         columnNumber: 10
     }, undefined);
 };
@@ -38715,258 +37419,7 @@ $RefreshReg$(_c, "Q9Survey");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/Dropdown":"hdw8v","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kVk5N":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7ee1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7ee1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _radioGroup = require("../../common/RadioGroup");
-var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
-var _radioButton = require("../../common/RadioButton");
-var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const Q10Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const q23error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.Gender : null;
-    const q24error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q24 : null;
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q10Survey.js",
-                lineNumber: 19,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "About You",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q10Survey.js",
-                lineNumber: 20,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q23 - Are you: *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q10Survey.js",
-                lineNumber: 21,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q23error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q23error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 23,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Male",
-                        validation: _validation.required,
-                        value: "Male",
-                        fieldName: "formData.Gender"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 24,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Female",
-                        validation: _validation.required,
-                        value: "Female",
-                        fieldName: "formData.Gender"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 25,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Prefer to self-describe",
-                        validation: _validation.required,
-                        value: "Prefer to self-describe",
-                        fieldName: "formData.Gender"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 26,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Prefer not to say",
-                        validation: _validation.required,
-                        value: "Prefer not to say",
-                        fieldName: "formData.Gender"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 27,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q10Survey.js",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q24 - Which of these age groups do you belong to? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q10Survey.js",
-                lineNumber: 30,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q24error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q24error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "14 \u2013 15",
-                        validation: _validation.required,
-                        value: "14 \u2013 15",
-                        fieldName: "formData.SurveyData.q24"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "16 \u2013 17",
-                        validation: _validation.required,
-                        value: "16 \u2013 17",
-                        fieldName: "formData.SurveyData.q24"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "18 \u2013 24",
-                        validation: _validation.required,
-                        value: "18 \u2013 24",
-                        fieldName: "formData.SurveyData.q24"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "25 \u2013 34",
-                        validation: _validation.required,
-                        value: "25 \u2013 34",
-                        fieldName: "formData.SurveyData.q24"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "35 \u2013 44",
-                        validation: _validation.required,
-                        value: "35 \u2013 44",
-                        fieldName: "formData.SurveyData.q24"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 37,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "45 \u2013 54",
-                        validation: _validation.required,
-                        value: "45 \u2013 54",
-                        fieldName: "formData.SurveyData.q24"
-                    }, 6, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 38,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "55 \u2013 64",
-                        validation: _validation.required,
-                        value: "55 \u2013 64",
-                        fieldName: "formData.SurveyData.q24"
-                    }, 7, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 39,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "65+",
-                        validation: _validation.required,
-                        value: "65+",
-                        fieldName: "formData.SurveyData.q24"
-                    }, 8, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 40,
-                        columnNumber: 9
-                    }, undefined),
-                    " ",
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Prefer not to say",
-                        validation: _validation.required,
-                        value: "Prefer not to say",
-                        fieldName: "formData.SurveyData.q24"
-                    }, 9, false, {
-                        fileName: "src/Application/Survey/Q10Survey.js",
-                        lineNumber: 41,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q10Survey.js",
-                lineNumber: 31,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q10Survey.js",
-        lineNumber: 18,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q10Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
-    return [
-        _reactFinalForm.useFormState
-    ];
-});
-_c = Q10Survey;
-exports.default = Q10Survey;
-var _c;
-$RefreshReg$(_c, "Q10Survey");
-
-  $parcel$ReactRefreshHelpers$7ee1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"94VVT":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/Dropdown":"hdw8v","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"94VVT":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$811f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39032,7 +37485,7 @@ const EthnicGroup = ({ setEthnicGroup , setGoToPage  })=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q25 - How would you describe your ethnic group? Choose one option that best describes your ethnic group or background"
+                children: "Q14 - How would you describe your ethnic group? Choose one option that best describes your ethnic group or background"
             }, void 0, false, {
                 fileName: "src/Application/Survey/EthnicGroup.js",
                 lineNumber: 35,
@@ -39369,7 +37822,6 @@ var _s = $RefreshSig$();
 const CheckAnswers = ({ setGoToPage  })=>{
     _s();
     const stateApi = _reactFinalForm.useFormState();
-    const formValue = stateApi.values;
     const formValues = stateApi.values.formData;
     const formApi = _reactFinalForm.useForm();
     const agreeSelfCert = stateApi.submitFailed ? stateApi.errors?.legal : null;
@@ -39379,7 +37831,9 @@ const CheckAnswers = ({ setGoToPage  })=>{
         formApi.mutators.setFormAttribute("formData.Udprn", stateApi.values.udprn.toString());
         formApi.mutators.setFormAttribute("formData.Umprn", stateApi.values.umprn.toString());
     }, [
-        formApi.mutators
+        formApi.mutators,
+        stateApi.values.udprn,
+        stateApi.values.umprn
     ]);
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
         children: [
@@ -39387,7 +37841,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                 text: "Check your answers"
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 26,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_tableDefault.default, {
@@ -39399,7 +37853,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                             changeValueCallback: ()=>setGoToPage(1)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 29,
+                            lineNumber: 28,
                             columnNumber: 35
                         }, undefined) : "",
                         formValues.DateOfBirth ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
@@ -39408,7 +37862,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                             changeValueCallback: ()=>setGoToPage(2)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 30,
+                            lineNumber: 29,
                             columnNumber: 37
                         }, undefined) : "",
                         formValues.AddressLine1 ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
@@ -39417,7 +37871,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                             changeValueCallback: ()=>setGoToPage(3)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 31,
+                            lineNumber: 30,
                             columnNumber: 38
                         }, undefined) : "",
                         formValues.EmailAddress ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
@@ -39426,7 +37880,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                             changeValueCallback: ()=>setGoToPage(4)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 32,
+                            lineNumber: 31,
                             columnNumber: 38
                         }, undefined) : "",
                         formValues.Disability ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
@@ -39435,52 +37889,52 @@ const CheckAnswers = ({ setGoToPage  })=>{
                             changeValueCallback: ()=>setGoToPage(5)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 33,
+                            lineNumber: 32,
                             columnNumber: 36
                         }, undefined) : "",
                         formValues.Employmentstatus ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
                             label: "Employment Status",
                             value: `${formValues["Employmentstatus"]}`,
-                            changeValueCallback: ()=>setGoToPage(6)
+                            changeValueCallback: ()=>setGoToPage(7)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 34,
+                            lineNumber: 33,
                             columnNumber: 42
                         }, undefined) : "",
                         formValues.IsStartingANewJob ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
                             label: "New Job",
                             value: `${formValues["IsStartingANewJob"].slice(0, 1).toUpperCase() + formValues["IsStartingANewJob"].slice(1, formValues["IsStartingANewJob"].length)}`,
-                            changeValueCallback: ()=>setGoToPage(7)
+                            changeValueCallback: ()=>setGoToPage(6)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 35,
+                            lineNumber: 34,
                             columnNumber: 43
                         }, undefined) : "",
                         formValues.BenefitType ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
                             label: "Benefits",
                             value: `${formValues["BenefitType"]}`,
-                            changeValueCallback: ()=>setGoToPage(8)
+                            changeValueCallback: ()=>setGoToPage(7)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 36,
+                            lineNumber: 35,
                             columnNumber: 37
                         }, undefined) : "",
                         formValues.Files ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
                             label: "Proof",
                             value: `${formValues.Files[0].Name}`,
-                            changeValueCallback: ()=>setGoToPage(9)
+                            changeValueCallback: ()=>setGoToPage(8)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 37,
+                            lineNumber: 36,
                             columnNumber: 31
                         }, undefined) : "",
                         formValues.ReferredbyMedicalService ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
                             label: "Medical Service Referral",
                             value: `${formValues["ReferredbyMedicalService"].slice(0, 1).toUpperCase() + formValues["ReferredbyMedicalService"].slice(1, formValues["ReferredbyMedicalService"].length)}`,
-                            changeValueCallback: ()=>setGoToPage(10)
+                            changeValueCallback: ()=>setGoToPage(9)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 38,
+                            lineNumber: 37,
                             columnNumber: 50
                         }, undefined) : "",
                         formValues.WhereDidYouHearAboutTheScheme ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
@@ -39489,7 +37943,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                             changeValueCallback: ()=>setGoToPage(11)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 39,
+                            lineNumber: 38,
                             columnNumber: 55
                         }, undefined) : "",
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
@@ -39500,7 +37954,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                                     children: "LACF Activity Baseline"
                                 }, void 0, false, {
                                     fileName: "src/Application/CheckAnswers.js",
-                                    lineNumber: 41,
+                                    lineNumber: 40,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
@@ -39508,38 +37962,68 @@ const CheckAnswers = ({ setGoToPage  })=>{
                                     children: "Completed"
                                 }, void 0, false, {
                                     fileName: "src/Application/CheckAnswers.js",
-                                    lineNumber: 44,
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                     className: "wmnds-text-align-right"
                                 }, void 0, false, {
                                     fileName: "src/Application/CheckAnswers.js",
-                                    lineNumber: 45,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 40,
+                            lineNumber: 39,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Application/CheckAnswers.js",
-                    lineNumber: 28,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 27,
+                lineNumber: 26,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
+                children: "Re-contact"
+            }, void 0, false, {
+                fileName: "src/Application/CheckAnswers.js",
+                lineNumber: 48,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "We would like to be able to ask you about your experience of participating in Cycling for Everyone at a later date. If you agree, we will ask you for your contact details \u2013 name, email and phone number \u2013 so that we can get in touch. We will keep your contact details securely for a maximum of 18 months after the end of the activity and will not use them for any other purpose."
+            }, void 0, false, {
+                fileName: "src/Application/CheckAnswers.js",
+                lineNumber: 49,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
+                    fieldName: "formData.ReContact",
+                    label: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
+                        children: "Yes, willing to be re-contacted"
+                    }, void 0, false)
+                }, void 0, false, {
+                    fileName: "src/Application/CheckAnswers.js",
+                    lineNumber: 58,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Application/CheckAnswers.js",
+                lineNumber: 57,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "Self-certification"
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 49,
+                lineNumber: 60,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
@@ -39549,7 +38033,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         text: agreeLegalError
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 51,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
@@ -39559,7 +38043,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         }, void 0, false)
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 52,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
@@ -39569,27 +38053,27 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         }, void 0, false)
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 57,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 50,
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "Now send your request"
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 64,
+                lineNumber: 75,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                 children: "By submitting this request you are confirming that, to the best of your knowledge, the details you are providing are correct."
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 65,
+                lineNumber: 76,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
@@ -39599,7 +38083,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         text: agreeSelfCert
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 70,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
@@ -39618,7 +38102,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 71,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
@@ -39637,13 +38121,13 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 77,
+                        lineNumber: 88,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 69,
+                lineNumber: 80,
                 columnNumber: 7
             }, undefined)
         ]
@@ -39668,7 +38152,81 @@ $RefreshReg$(_c, "CheckAnswers");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","prop-types":"7wKI2","../common/Question":"7HVc9","../common/Checkbox":"7IcBJ","../common/FieldError":"4W7oE","../common/Table":"1yGpO","../common/CheckAnswerRow":"ei338","../common/CheckboxContainer":"2miun","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1yGpO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","prop-types":"7wKI2","../common/Question":"7HVc9","../common/Checkbox":"7IcBJ","../common/FieldError":"4W7oE","../common/Table":"1yGpO","../common/CheckAnswerRow":"ei338","../common/CheckboxContainer":"2miun","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7IcBJ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2456 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2456.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactFinalForm = require("react-final-form");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+const Checkbox = ({ fieldName , label  })=>{
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+        className: "wmnds-fe-checkboxes__container",
+        children: [
+            label,
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactFinalForm.Field, {
+                className: `wmnds-fe-checkboxes__input`,
+                name: fieldName,
+                component: "input",
+                type: "checkbox"
+            }, void 0, false, {
+                fileName: "src/common/Checkbox.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                className: "wmnds-fe-checkboxes__checkmark",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("svg", {
+                    className: "wmnds-fe-checkboxes__icon",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("use", {
+                        xlinkHref: "#wmnds-general-checkmark",
+                        href: "#wmnds-general-checkmark"
+                    }, void 0, false, {
+                        fileName: "src/common/Checkbox.js",
+                        lineNumber: 13,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/common/Checkbox.js",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/common/Checkbox.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/common/Checkbox.js",
+        lineNumber: 8,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Checkbox;
+Checkbox.propTypes = {
+    fieldName: _propTypesDefault.default.string.isRequired,
+    label: _propTypesDefault.default.oneOfType([
+        _propTypesDefault.default.string,
+        _propTypesDefault.default.element
+    ])
+};
+exports.default = Checkbox;
+var _c;
+$RefreshReg$(_c, "Checkbox");
+
+  $parcel$ReactRefreshHelpers$2456.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1yGpO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a144 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39813,6 +38371,59 @@ $RefreshReg$(_c1, "CheckAnswerRow");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2miun":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a311 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a311.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+const CheckboxContainer = ({ error , description , children  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "wmnds-fe-group",
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: `wmnds-fe-checkboxes ${error && "wmnds-fe-group--error"}`,
+            children: [
+                description && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "wmnds-fe-checkboxes__desc",
+                    children: description
+                }, void 0, false, {
+                    fileName: "src/common/CheckboxContainer.js",
+                    lineNumber: 9,
+                    columnNumber: 23
+                }, undefined),
+                children
+            ]
+        }, void 0, true, {
+            fileName: "src/common/CheckboxContainer.js",
+            lineNumber: 8,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/common/CheckboxContainer.js",
+        lineNumber: 7,
+        columnNumber: 7
+    }, undefined)
+;
+_c = CheckboxContainer;
+CheckboxContainer.propTypes = {
+    error: _propTypesDefault.default.string,
+    description: _propTypesDefault.default.string,
+    children: _propTypesDefault.default.node
+};
+exports.default = CheckboxContainer;
+var _c;
+$RefreshReg$(_c, "CheckboxContainer");
+
+  $parcel$ReactRefreshHelpers$a311.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
 },{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lA1h2":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -39879,7 +38490,1032 @@ const validateQ7 = (values)=>{
  //     return errors;
  //   };
 
-},{"../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eWxzz":[function(require,module,exports) {
+},{"../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3VimS":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c1ae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c1ae.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _radioGroup = require("../../common/RadioGroup");
+var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
+var _radioButton = require("../../common/RadioButton");
+var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
+var _dropdown = require("../../common/Dropdown");
+var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
+var _s = $RefreshSig$();
+const Q3Q4Survey = ()=>{
+    _s();
+    const stateApi = _reactFinalForm.useFormState();
+    const dropdownOptions = [
+        {
+            value: "5 or more days a week",
+            label: "5 or more days a week"
+        },
+        {
+            value: "3 or 4 days a week",
+            label: "3 or 4 days a week"
+        },
+        {
+            value: "1 or 2 days a week",
+            label: "1 or 2 days a week"
+        },
+        {
+            value: "Once or twice a month",
+            label: "Once or twice a month"
+        },
+        {
+            value: "Less than once a month",
+            label: "Less than once a month"
+        },
+        {
+            value: "Never",
+            label: "Never"
+        }
+    ];
+    const q3error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3 : null;
+    const q4error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4.PlaceOfWork : null;
+    const q4error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4.PlaceOfEducation : null;
+    const q4error2 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4.ExerciseOrRecreation : null;
+    const q4error3 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4.OtherReasons : null;
+    _react.useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, []);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "LACF Survey"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 42,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "Your current travel",
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q3 - On average, how much time do you spend cycling per week? Please include any casual cycling in your local area, any cycling in the countryside or on cycling routes, cycling to or from work or any competitive cycling. Please do not include any time spent cycling on a static or exercise bike. *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 44,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q3error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q3error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 52,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Two or more hours per week",
+                        validation: _validation.required,
+                        value: "Two or more hours per week",
+                        fieldName: "formData.SurveyData.q3"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Between one and two hours per week",
+                        validation: _validation.required,
+                        value: "Between one and two hours per week",
+                        fieldName: "formData.SurveyData.q3"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 54,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Between 30 minutes and one hour per week",
+                        validation: _validation.required,
+                        value: "Between 30 minutes and one hour per week",
+                        fieldName: "formData.SurveyData.q3"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 55,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Less than 30 minutes per week",
+                        validation: _validation.required,
+                        value: "Less than 30 minutes per week",
+                        fieldName: "formData.SurveyData.q3"
+                    }, 4, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 56,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Don't know/unsure",
+                        validation: _validation.required,
+                        value: "Don't know/unsure",
+                        fieldName: "formData.SurveyData.q3"
+                    }, 5, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 57,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 51,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q4 - On average, how often would you say you walk for at least 10 minutes as part of your journey, for each of the following reasons:"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 60,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q4.PlaceOfWork",
+                error: q4error,
+                label: "To go to/from your place of work",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 65,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q4.PlaceOfEducation",
+                error: q4error1,
+                label: "To go to/from your place of education (e.g. school, college, or university)",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 66,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q4.ExerciseOrRecreation",
+                error: q4error2,
+                label: "To do exercise or for recreation",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 67,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q4.OtherReasons",
+                error: q4error3,
+                label: "For other reasons",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 68,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Application/Survey/Q3Q4Survey.js",
+        lineNumber: 41,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Q3Q4Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
+    return [
+        _reactFinalForm.useFormState
+    ];
+});
+_c = Q3Q4Survey;
+exports.default = Q3Q4Survey;
+var _c;
+$RefreshReg$(_c, "Q3Q4Survey");
+
+  $parcel$ReactRefreshHelpers$c1ae.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/Dropdown":"hdw8v","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4PBID":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4fee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4fee.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _dropdown = require("../../common/Dropdown");
+var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
+var _checkbox = require("../../common/Checkbox");
+var _checkboxDefault = parcelHelpers.interopDefault(_checkbox);
+var _checkboxContainer = require("../../common/CheckboxContainer");
+var _checkboxContainerDefault = parcelHelpers.interopDefault(_checkboxContainer);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
+var _q5DropdownOptions = require("./Q5dropdownOptions");
+var _q5DropdownOptionsDefault = parcelHelpers.interopDefault(_q5DropdownOptions);
+var _s = $RefreshSig$();
+const dropdownOptions = [
+    {
+        value: "None",
+        label: "None"
+    },
+    {
+        value: "One",
+        label: "One"
+    },
+    {
+        value: "Two",
+        label: "Two"
+    },
+    {
+        value: "Three or more",
+        label: "Three or more"
+    }
+];
+const Q5Q6Survey = ()=>{
+    _s();
+    const stateApi = _reactFinalForm.useFormState();
+    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q5.CarOrVan : null;
+    const error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q5.MotorcycleOrMoped : null;
+    const q6Error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.selectQ7 : null;
+    _react.useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, []);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "LACF Survey"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 35,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "Vehicle ownership",
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 36,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q5 - How many vehicles does your household own or have continuous use of at present? *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 37,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q5.CarOrVan",
+                error: error,
+                label: "Car or van",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 42,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q5.MotorcycleOrMoped",
+                error: error1,
+                label: "Motorcycle or moped",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q6 - Do you own or have use of any of the following? (this could include vehicles that you own, hire or use that belong to someone else [e.g. a family member or friend). *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 44,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
+                error: q6Error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q6Error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q5Q6Survey.js",
+                        lineNumber: 50,
+                        columnNumber: 9
+                    }, undefined),
+                    Object.keys(_q5DropdownOptionsDefault.default).map((option)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
+                            label: _q5DropdownOptionsDefault.default[option],
+                            fieldName: `q6.${option}`
+                        }, _q5DropdownOptionsDefault.default[option], false, {
+                            fileName: "src/Application/Survey/Q5Q6Survey.js",
+                            lineNumber: 51,
+                            columnNumber: 45
+                        }, undefined)
+                    )
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 49,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Application/Survey/Q5Q6Survey.js",
+        lineNumber: 34,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Q5Q6Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
+    return [
+        _reactFinalForm.useFormState
+    ];
+});
+_c = Q5Q6Survey;
+exports.default = Q5Q6Survey;
+var _c;
+$RefreshReg$(_c, "Q5Q6Survey");
+
+  $parcel$ReactRefreshHelpers$4fee.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/Checkbox":"7IcBJ","../../common/CheckboxContainer":"2miun","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","./Q5dropdownOptions":"lgpMQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lgpMQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const Q5dropdownOptions = {
+    bicycle: "Bicycle",
+    ebikeEcycle: "e-bike/e-cycle",
+    adaptedcycle: "Adapted cycle",
+    adaptedebikeecycle: "Adapted e-bike/e-cycle",
+    none: "None of the above"
+};
+exports.default = Q5dropdownOptions;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"15gSW":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5827 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5827.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _radioGroup = require("../../common/RadioGroup");
+var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
+var _radioButton = require("../../common/RadioButton");
+var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
+var _textInput = require("../../common/TextInput");
+var _textInputDefault = parcelHelpers.interopDefault(_textInput);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
+var _s = $RefreshSig$();
+const Q7Q8Q9Q10Survey = ()=>{
+    _s();
+    const stateApi = _reactFinalForm.useFormState();
+    const formValues = stateApi.values;
+    const formApi = _reactFinalForm.useForm();
+    const q7error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q7 : null;
+    const q8error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.q8 : null;
+    const q8berror = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q8b : null; // copy q8 value to survey data
+    _react.useEffect(()=>{
+        formApi.mutators.setFormAttribute("formData.SurveyData.q8", stateApi.values.q8);
+    }, [
+        formApi.mutators,
+        stateApi.values.q8
+    ]);
+    _react.useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, []);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "LACF Survey"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "Safety and Confidence",
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 29,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q7 - Currently, how would you rate your cycling skills? *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q7error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q7error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Good",
+                        validation: _validation.required,
+                        value: "Good",
+                        fieldName: "formData.SurveyData.q7"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Moderate",
+                        validation: _validation.required,
+                        value: "Moderate",
+                        fieldName: "formData.SurveyData.q7"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Poor",
+                        validation: _validation.required,
+                        value: "Poor",
+                        fieldName: "formData.SurveyData.q7"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Don't know/unsure",
+                        validation: _validation.required,
+                        value: "Don't know/unsure",
+                        fieldName: "formData.SurveyData.q7"
+                    }, 5, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q8 - Currently, how safe do you feel cycling on roads in your local area? *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q8error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q8error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Very safe",
+                        validation: _validation.required,
+                        value: "Very safe",
+                        fieldName: "q8"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Safe",
+                        validation: _validation.required,
+                        value: "Safe",
+                        fieldName: "q8"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Not very safe",
+                        validation: _validation.required,
+                        value: "Not very safe",
+                        fieldName: "q8"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Not at all safe",
+                        validation: _validation.required,
+                        value: "Not at all safe",
+                        fieldName: "q8"
+                    }, 4, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 48,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Don't know/unsure",
+                        validation: _validation.required,
+                        value: "Don't know/unsure",
+                        fieldName: "q8"
+                    }, 5, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            formValues.q8 === "Not very safe" || formValues.q8 === "Not at all safe" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q8b",
+                label: "Q8b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?",
+                validation: _validation.required,
+                error: q8berror,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 51,
+                columnNumber: 83
+            }, undefined) : null,
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q9",
+                label: "Q9 - If you have any comments or suggestions on how your feeling of safety could be improved when cycling on roads in your local area please provide more detail below:"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 52,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q10",
+                label: "Q10 - If you have any comments or suggestions on how your feeling of safety could be improved when cycling on roads in your local area please provide more detail below:"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 55,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+        lineNumber: 26,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Q7Q8Q9Q10Survey, "dwjk7yLqRbLDoD5AT9Ln43pRxn8=", false, function() {
+    return [
+        _reactFinalForm.useFormState,
+        _reactFinalForm.useForm
+    ];
+});
+_c = Q7Q8Q9Q10Survey;
+exports.default = Q7Q8Q9Q10Survey;
+var _c;
+$RefreshReg$(_c, "Q7Q8Q9Q10Survey");
+
+  $parcel$ReactRefreshHelpers$5827.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/TextInput":"7jGrs","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"66NQt":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b47c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b47c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _radioGroup = require("../../common/RadioGroup");
+var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
+var _radioButton = require("../../common/RadioButton");
+var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
+var _textInput = require("../../common/TextInput");
+var _textInputDefault = parcelHelpers.interopDefault(_textInput);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
+var _s = $RefreshSig$();
+const Q11Q12Survey = ()=>{
+    _s();
+    const stateApi = _reactFinalForm.useFormState();
+    const formValues = stateApi.values;
+    const formApi = _reactFinalForm.useForm();
+    const q11error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q11 : null;
+    const q11berror = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q11b : null;
+    const q12error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q12 : null;
+    _react.useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, []); // copy q11 value to survey data
+    _react.useEffect(()=>{
+        formApi.mutators.setFormAttribute("formData.SurveyData.q11", stateApi.values.q11);
+    }, [
+        formApi.mutators,
+        stateApi.values.q11
+    ]);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "LACF Survey"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "About You",
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q11 - Are you: *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 29,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q11error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q11error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Male",
+                        validation: _validation.required,
+                        value: "Male",
+                        fieldName: "q11"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Female",
+                        validation: _validation.required,
+                        value: "Female",
+                        fieldName: "q11"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Prefer to self-describe",
+                        validation: _validation.required,
+                        value: "Prefer to self-describe",
+                        fieldName: "q11"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Prefer not to say",
+                        validation: _validation.required,
+                        value: "Prefer not to say",
+                        fieldName: "q11"
+                    }, 4, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            formValues.q11 === "Prefer to self-describe" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q11b",
+                label: "Q11b - Please self-describe:",
+                validation: _validation.required,
+                error: q11berror,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 37,
+                columnNumber: 55
+            }, undefined) : null,
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q12 - Which of these age groups do you belong to? *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 38,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q12error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q12error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 40,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "16 \u2013 17",
+                        validation: _validation.required,
+                        value: "16 \u2013 17",
+                        fieldName: "formData.SurveyData.q12"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 50,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "18 \u2013 24",
+                        validation: _validation.required,
+                        value: "18 \u2013 24",
+                        fieldName: "formData.SurveyData.q12"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 51,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "25 \u2013 34",
+                        validation: _validation.required,
+                        value: "25 \u2013 34",
+                        fieldName: "formData.SurveyData.q12"
+                    }, 4, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 52,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "35 \u2013 44",
+                        validation: _validation.required,
+                        value: "35 \u2013 44",
+                        fieldName: "formData.SurveyData.q12"
+                    }, 5, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "45 \u2013 54",
+                        validation: _validation.required,
+                        value: "45 \u2013 54",
+                        fieldName: "formData.SurveyData.q12"
+                    }, 6, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 54,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "55 \u2013 64",
+                        validation: _validation.required,
+                        value: "55 \u2013 64",
+                        fieldName: "formData.SurveyData.q12"
+                    }, 7, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 55,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "65+",
+                        validation: _validation.required,
+                        value: "65+",
+                        fieldName: "formData.SurveyData.q12"
+                    }, 8, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 56,
+                        columnNumber: 9
+                    }, undefined),
+                    " ",
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Prefer not to say",
+                        validation: _validation.required,
+                        value: "Prefer not to say",
+                        fieldName: "formData.SurveyData.q12"
+                    }, 9, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 57,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Application/Survey/Q11Q12Survey.js",
+        lineNumber: 26,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Q11Q12Survey, "dwjk7yLqRbLDoD5AT9Ln43pRxn8=", false, function() {
+    return [
+        _reactFinalForm.useFormState,
+        _reactFinalForm.useForm
+    ];
+});
+_c = Q11Q12Survey;
+exports.default = Q11Q12Survey;
+var _c;
+$RefreshReg$(_c, "Q11Q12Survey");
+
+  $parcel$ReactRefreshHelpers$b47c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/TextInput":"7jGrs","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gAWIL":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0c86 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0c86.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _textInput = require("../../common/TextInput");
+var _textInputDefault = parcelHelpers.interopDefault(_textInput);
+var _validation = require("../../common/validation");
+var _s = $RefreshSig$();
+const dropdownOptions = [
+    {
+        value: "5 or more days a week",
+        label: "5 or more days a week"
+    },
+    {
+        value: "3 or 4 days a week",
+        label: "3 or 4 days a week"
+    },
+    {
+        value: "1 or 2 days a week",
+        label: "1 or 2 days a week"
+    },
+    {
+        value: "Once or twice a month",
+        label: "Once or twice a month"
+    },
+    {
+        value: "Less than once a month",
+        label: "Less than once a month"
+    },
+    {
+        value: "Never",
+        label: "Never"
+    }
+];
+const Q13Survey = ()=>{
+    _s();
+    const stateApi = _reactFinalForm.useFormState(); // const error =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q3.PlaceOfWork
+    //     : null;
+    _react.useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, []);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "LACF Survey"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q13Survey.js",
+                lineNumber: 38,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "About You",
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q13Survey.js",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.PostCode",
+                label: "Q13 - What is your home postcode?",
+                validation: _validation.required,
+                disabled: "disabled"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q13Survey.js",
+                lineNumber: 40,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Application/Survey/Q13Survey.js",
+        lineNumber: 37,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Q13Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
+    return [
+        _reactFinalForm.useFormState
+    ];
+});
+_c = Q13Survey;
+exports.default = Q13Survey;
+var _c;
+$RefreshReg$(_c, "Q13Survey");
+
+  $parcel$ReactRefreshHelpers$0c86.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/TextInput":"7jGrs","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eWxzz":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$797d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

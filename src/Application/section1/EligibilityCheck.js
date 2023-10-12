@@ -9,6 +9,7 @@ const EligibilityCheck = () => {
     <FormSection>
       <p>Eligibility Checker</p>
       <Question text={question} />
+      <p>Check if you live in an eligible area then click continue to apply.</p>
       <Address
         prefix="formData"
         btnText="Check eligibility"

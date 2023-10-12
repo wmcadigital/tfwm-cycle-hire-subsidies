@@ -79,6 +79,7 @@ const AddressDetails = ({ prefix, addresses }) => {
         validation={validatePostCode}
         error={postCodeError}
         isRequired={true}
+        disab={true}
       />
       <TextInput
         fieldName={`${prefix}.SummaryLine`}

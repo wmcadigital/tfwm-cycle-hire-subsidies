@@ -33,12 +33,14 @@ const RegistrationName = () => {
         label="First Name"
         validation={composeValidators(required, name)}
         error={errorFirstName}
+        isRequired={true}
       />
       <TextInput
         fieldName="formData.LastName"
         label="Last Name"
         validation={composeValidators(required, name)}
         error={errorLastName}
+        isRequired={true}
       />
     </FormSection>
   );

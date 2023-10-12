@@ -24,9 +24,9 @@ const ProofUpload = () => {
       <ul>
         <li>employment support allowance (ESA)</li>
         <li>universal credit</li>
-        <li>child benefit</li>
         <li>housing benefit</li>
         <li>job seekers allowance (JSA)</li>
+        <li>student income assessed support letter</li>
         <li>other income assessed benefit</li>
       </ul>
       <p>Your proof can be a screenshot of an email or a photo of a letter.</p>

@@ -8,23 +8,28 @@ const SurveyIntro = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <h2>Cycling for Everyone Cycle Hire activity survey.</h2>
+      <h2>Cycling for Everyone Cycle and scoot activity survey.</h2>
       <p>
         Thank you for choosing to participate in Cycling for Everyone - Cycle
-        Hire. Before you participate in the cycle hire scheme, Transport for
-        West Midlands would like to ask you some questions about your current
-        travel and the journeys that you typically make.
+        and scoot. Before you participate in the cycle hire scheme, Transport
+        for West Midlands would like to ask you some questions about your
+        current travel and the journeys that you typically make.
       </p>
       <p>
         This information will be extremely useful in helping us to understand
-        the impact of Cycling for Everyone - Cycle Hire on those who have taken
-        part.
+        the impact of Cycling for Everyone cycle and scoot on those who have
+        taken part.
       </p>
       <p>
         It should take you no more than 5 minutes to fill in. All completed
         entries will be eligible for entry into a prize draw with the chance to{" "}
         <b>win one prize of £50 in Amazon Vouchers</b>. The closing date for
         entries is the last day of the month you applied.
+      </p>
+      <p>
+        If you decide not to take part in this survey, please close the window
+        before submitting. This will cancel your application for Cycle for
+        Everyone.
       </p>
       <h3>Consent</h3>
       <p>

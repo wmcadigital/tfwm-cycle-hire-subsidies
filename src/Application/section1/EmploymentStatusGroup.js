@@ -81,7 +81,7 @@ const EmploymentStatusGroup = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="What is your employment status?" />
+      <Question text="What is your employment status? *" isRequired={true} />
       <RadioGroup error={error}>
         <FieldError text={error} />
         {Object.keys(EmploymentStatusTypes).map((Employmentstatus, index) => (
