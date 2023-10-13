@@ -4,22 +4,57 @@ import { useFormState } from "react-final-form";
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
 import Question from "../../common/Question";
-import RadioGroup from "../../common/RadioGroup";
-import RadioButton from "../../common/RadioButton";
-import FieldError from "../../common/FieldError";
+import Dropdown from "../../common/Dropdown";
+import TextInput from "../../common/TextInput";
 import { required } from "../../common/validation";
+
+const dropdownOptions = [
+  { value: "5 or more days a week", label: "5 or more days a week" },
+  { value: "3 or 4 days a week", label: "3 or 4 days a week" },
+  { value: "1 or 2 days a week", label: "1 or 2 days a week" },
+  { value: "Once or twice a month", label: "Once or twice a month" },
+  { value: "Less than once a month", label: "Less than once a month" },
+  { value: "Never", label: "Never" },
+];
 
 const Q4Survey = () => {
   const stateApi = useFormState();
 
-  const q4error =
+  const error =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q4
+      ? stateApi.errors?.formData.SurveyData.q3.PlaceOfWork
       : null;
-
-  const q5error =
+  const error1 =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q4
+      ? stateApi.errors?.formData.SurveyData.q3.PlaceOfEducation
+      : null;
+  const error2 =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q3.PersonalBusiness
+      : null;
+  const error3 =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q3.FriendsOrFamily
+      : null;
+  const error4 =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q3.FoodOrGroceryShopping
+      : null;
+  const error5 =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q3.OtherShopping
+      : null;
+  const error6 =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q3.SocialTravel
+      : null;
+  const error7 =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q3.ExerciseOrRecreation
+      : null;
+  const error8 =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q3.OtherReasons
       : null;
 
   useEffect(() => {
@@ -34,95 +69,86 @@ const Q4Survey = () => {
       />
       <Question text="Your current travel" isRequired={true} />
       <p>
-        Q4 - On average, how much time do you spend cycling per week? Please
-        include any casual cycling in your local area, any cycling in the
-        countryside or on cycling routes, cycling to or from work or any
-        competitive cycling. Please do not include any time spent cycling on a
-        static or exercise bike. *
+        Q3 - On average, how often would you say you walk for at least 10
+        minutes as part of your journey, for each of the following reasons:
       </p>
-      <RadioGroup error={q4error}>
-        <FieldError text={q4error} />
-        <RadioButton
-          key={1}
-          label="Two or more hours per week"
-          validation={required}
-          value="Two or more hours per week"
-          fieldName="formData.SurveyData.q4"
-        />
-        <RadioButton
-          key={2}
-          label="Between one and two hours per week"
-          validation={required}
-          value="Between one and two hours per week"
-          fieldName="formData.SurveyData.q4"
-        />
-        <RadioButton
-          key={3}
-          label="Between 30 minutes and one hour per week"
-          validation={required}
-          value="Between 30 minutes and one hour per week"
-          fieldName="formData.SurveyData.q4"
-        />
-        <RadioButton
-          key={4}
-          label="Less than 30 minutes per week"
-          validation={required}
-          value="Less than 30 minutes per week"
-          fieldName="formData.SurveyData.q4"
-        />
-        <RadioButton
-          key={5}
-          label="Don't know/unsure"
-          validation={required}
-          value="Don't know/unsure"
-          fieldName="formData.SurveyData.q4"
-        />
-      </RadioGroup>
 
-      <p>
-        Q5 - On average, how much time do you spend walking per week? Please
-        include any country walks, walking to and from work or the shops and any
-        other walks you may have done. Please do not include time spent walking
-        around shops. *
-      </p>
-      <RadioGroup error={q5error}>
-        <FieldError text={q5error} />
-        <RadioButton
-          key={1}
-          label="Two or more hours per week"
-          validation={required}
-          value="Two or more hours per week"
-          fieldName="formData.SurveyData.q5"
-        />
-        <RadioButton
-          key={2}
-          label="Between one and two hours per week"
-          validation={required}
-          value="Between one and two hours per week"
-          fieldName="formData.SurveyData.q5"
-        />
-        <RadioButton
-          key={3}
-          label="Between 30 minutes and one hour per week"
-          validation={required}
-          value="Between 30 minutes and one hour per week"
-          fieldName="formData.SurveyData.q5"
-        />
-        <RadioButton
-          key={4}
-          label="Less than 30 minutes per week"
-          validation={required}
-          value="Less than 30 minutes per week"
-          fieldName="formData.SurveyData.q5"
-        />
-        <RadioButton
-          key={5}
-          label="Don't know/unsure"
-          validation={required}
-          value="Don't know/unsure"
-          fieldName="formData.SurveyData.q5"
-        />
-      </RadioGroup>
+      <Dropdown
+        fieldName="formData.SurveyData.q3.PlaceOfWork"
+        error={error}
+        label="To go to/from your place of work"
+        options={dropdownOptions}
+        validation={required}
+        isRequired={true}
+      />
+      <Dropdown
+        fieldName="formData.SurveyData.q3.PlaceOfEducation"
+        error={error1}
+        label="To go to/from your place of education (e.g. school, college, or university)"
+        options={dropdownOptions}
+        validation={required}
+        isRequired={true}
+      />
+      <Dropdown
+        fieldName="formData.SurveyData.q3.PersonalBusiness"
+        error={error2}
+        label="To go somewhere for personal business (e.g. travelling to an appointment)"
+        options={dropdownOptions}
+        validation={required}
+        isRequired={true}
+      />
+      <Dropdown
+        fieldName="formData.SurveyData.q3.FriendsOrFamily"
+        error={error3}
+        label="To visit friends or family"
+        options={dropdownOptions}
+        validation={required}
+        isRequired={true}
+      />
+      <Dropdown
+        fieldName="formData.SurveyData.q3.FoodOrGroceryShopping"
+        error={error4}
+        label="To go food or grocery shopping"
+        options={dropdownOptions}
+        validation={required}
+        isRequired={true}
+      />
+      <Dropdown
+        fieldName="formData.SurveyData.q3.OtherShopping"
+        error={error5}
+        label="To go shopping for things other than food"
+        options={dropdownOptions}
+        validation={required}
+        isRequired={true}
+      />
+      <Dropdown
+        fieldName="formData.SurveyData.q3.SocialTravel"
+        error={error6}
+        label="To go somewhere for leisure/social reasons (e.g. to entertainment, to play sport or to visit a pub or restaurant)"
+        options={dropdownOptions}
+        validation={required}
+        isRequired={true}
+      />
+      <Dropdown
+        fieldName="formData.SurveyData.q3.ExerciseOrRecreation"
+        error={error7}
+        label="To do exercise or for recreation"
+        options={dropdownOptions}
+        validation={required}
+        isRequired={true}
+      />
+      <Dropdown
+        fieldName="formData.SurveyData.q3.OtherReasons"
+        error={error8}
+        label="For other reasons"
+        options={dropdownOptions}
+        validation={required}
+        isRequired={true}
+      />
+      <TextInput
+        fieldName="formData.SurveyData.q3.SpecifyOtherReasons"
+        label="For other reasons (please specify)"
+      />
     </FormSection>
   );
 };

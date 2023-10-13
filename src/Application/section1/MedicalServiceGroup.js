@@ -11,6 +11,7 @@ import { required } from "../../common/validation";
 const DisabilityTypes = {
   yes: { radioLabel: "Yes", detailLabel: "yes" },
   no: { radioLabel: "No", detailLabel: "no" },
+  prefer: { radioLabel: "Prefer not to say", detailLabel: "Prefer not to say" },
 };
 
 const MedicalServiceGroup = () => {
@@ -27,7 +28,7 @@ const MedicalServiceGroup = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="Were you referred by a medical service? For example a GP or link worker" />
+      <Question text="Were you referred by a medical service? For example a GP or link worker *" isRequired={true} />
       <RadioGroup error={error}>
         <FieldError text={error} />
         {Object.keys(DisabilityTypes).map((ReferredbyMedicalService, index) => (

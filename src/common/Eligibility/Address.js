@@ -71,7 +71,7 @@ const Address = ({ prefix, btnText, isRequired }) => {
         isRequired={isRequired}
       />
       {formState.values.eligibility == "yes" && (
-        <Question text="Congratulations, you are eligible for this service." isRequired={false} />
+        <Question text="Congratulations. Click continue to apply." isRequired={false} />
       )}
     </>
   );

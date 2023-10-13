@@ -62,6 +62,7 @@ const Address = ({ prefix, btnText, orderNo, addresses, setAddresses }) => {
           loading={loading}
           prefix={prefix}
           isRequired={true}
+          disab={true}
         />
       )}
       {addresses.length && !addressSelectedOrManual ? (

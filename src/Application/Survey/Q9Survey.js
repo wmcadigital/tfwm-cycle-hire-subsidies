@@ -13,47 +13,47 @@ import { required } from "../../common/validation";
 const Q9Survey = () => {
   const stateApi = useFormState();
 
-  const q19error =
+  const q15error =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q19
+      ? stateApi.errors?.formData.SurveyData.q15
       : null;
 
-  const q20error =
+  const q16error =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q20
+      ? stateApi.errors?.formData.SurveyData.q16
       : null;
 
-  const q21error =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q21
-      : null;
+  // const q21error =
+  //   stateApi.submitFailed && stateApi.hasValidationErrors
+  //     ? stateApi.errors?.formData.SurveyData.q21
+  //     : null;
 
-  const q22error1 =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q22.GoOutOnFootUnaided
-      : null;
+  // const q22error1 =
+  //   stateApi.submitFailed && stateApi.hasValidationErrors
+  //     ? stateApi.errors?.formData.SurveyData.q22.GoOutOnFootUnaided
+  //     : null;
 
-  const q22error2 =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q22.RideABicycle
-      : null;
+  // const q22error2 =
+  //   stateApi.submitFailed && stateApi.hasValidationErrors
+  //     ? stateApi.errors?.formData.SurveyData.q22.RideABicycle
+  //     : null;
 
-  const q22error3 =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q22.TravelOnLocalBusesTrainsTrams
-      : null;
+  // const q22error3 =
+  //   stateApi.submitFailed && stateApi.hasValidationErrors
+  //     ? stateApi.errors?.formData.SurveyData.q22.TravelOnLocalBusesTrainsTrams
+  //     : null;
 
-  const q22error4 =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q22.GetInOrOutOfACar
-      : null;
+  // const q22error4 =
+  //   stateApi.submitFailed && stateApi.hasValidationErrors
+  //     ? stateApi.errors?.formData.SurveyData.q22.GetInOrOutOfACar
+  //     : null;
 
-  const dropdownOptions = [
-    { value: "Yes, always", label: "Yes, always" },
-    { value: "Yes, sometimes", label: "Yes, sometimes" },
-    { value: "No", label: "No" },
-    { value: "Prefer not to say", label: "Prefer not to say" },
-  ];
+  // const dropdownOptions = [
+  //   { value: "Yes, always", label: "Yes, always" },
+  //   { value: "Yes, sometimes", label: "Yes, sometimes" },
+  //   { value: "No", label: "No" },
+  //   { value: "Prefer not to say", label: "Prefer not to say" },
+  // ];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -66,90 +66,90 @@ const Q9Survey = () => {
         sectionName="LACF Survey"
       />
       <Question text="About You" isRequired={true} />
-      <p>Q19 - How is your health in general? *</p>
-      <RadioGroup error={q19error}>
-        <FieldError text={q19error} />
+      <p>Q15 - How is your health in general? *</p>
+      <RadioGroup error={q15error}>
+        <FieldError text={q15error} />
         <RadioButton
           key={1}
           label="Very good"
           validation={required}
           value="Very good"
-          fieldName="formData.SurveyData.q19"
+          fieldName="formData.SurveyData.q15"
         />
         <RadioButton
           key={2}
           label="Good"
           validation={required}
           value="Good"
-          fieldName="formData.SurveyData.q19"
+          fieldName="formData.SurveyData.q15"
         />
         <RadioButton
           key={3}
           label="Fair"
           validation={required}
           value="Fair"
-          fieldName="formData.SurveyData.q19"
+          fieldName="formData.SurveyData.q15"
         />
         <RadioButton
           key={4}
           label="Bad"
           validation={required}
           value="Bad"
-          fieldName="formData.SurveyData.q19"
+          fieldName="formData.SurveyData.q15"
         />
         <RadioButton
           key={5}
           label="Very bad"
           validation={required}
           value="Very bad"
-          fieldName="formData.SurveyData.q19"
+          fieldName="formData.SurveyData.q15"
         />
         <RadioButton
           key={6}
           label="Don’t know/unsure"
           validation={required}
           value="Don’t know/unsure"
-          fieldName="formData.SurveyData.q19"
+          fieldName="formData.SurveyData.q15"
         />
         <RadioButton
           key={7}
           label="Prefer not to say"
           validation={required}
           value="Prefer not to say"
-          fieldName="formData.SurveyData.q19"
+          fieldName="formData.SurveyData.q15"
         />
       </RadioGroup>
 
       <p>
-        Q20 - Do you have any physical or mental health conditions or illnesses
+        Q16 - Do you have any physical or mental health conditions or illnesses
         lasting or expected to last 12 months or more? *
       </p>
-      <RadioGroup error={q20error}>
-        <FieldError text={q20error} />
+      <RadioGroup error={q16error}>
+        <FieldError text={q16error} />
         <RadioButton
           key={1}
           label="Yes"
           validation={required}
           value="Yes"
-          fieldName="formData.SurveyData.q20"
+          fieldName="formData.SurveyData.q16"
         />
         <RadioButton
           key={2}
           label="No"
           validation={required}
           value="No"
-          fieldName="formData.SurveyData.q20"
+          fieldName="formData.SurveyData.q16"
         />
         <RadioButton
           key={3}
           label="Prefer not to say"
           validation={required}
           value="Prefer not to say"
-          fieldName="formData.SurveyData.q20"
+          fieldName="formData.SurveyData.q16"
         />
       </RadioGroup>
 
-      <p>
+      {/* <p>
         Q21 - Does the condition or illness you mentioned in Q20 reduce your
         ability to carry out day-to-day activities? *
       </p>
@@ -216,7 +216,7 @@ const Q9Survey = () => {
         label="Get in or out of a car"
         options={dropdownOptions}
         validation={required}
-      />
+      /> */}
     </FormSection>
   );
 };

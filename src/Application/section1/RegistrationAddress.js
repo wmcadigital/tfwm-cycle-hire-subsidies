@@ -27,6 +27,7 @@ const RegistrationAddress = ({
         addresses={registrationAddresses}
         setAddresses={setRegistrationAddresses}
         isRequired={true}
+        disab={true}
       />
     </FormSection>
   );

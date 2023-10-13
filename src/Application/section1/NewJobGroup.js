@@ -27,7 +27,7 @@ const NewJobGroup = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="Are you starting a new job?" />
+      <Question text="Are you starting a new job? *" isRequired={true} />
       <RadioGroup error={error}>
         <FieldError text={error} />
         {Object.keys(DisabilityTypes).map((IsStartingANewJob, index) => (
