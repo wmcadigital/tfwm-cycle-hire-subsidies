@@ -1,0 +1,27 @@
+{
+    "routes": [
+        {
+            "route": "/",
+            "redirect": "/foobar"
+        },
+        {
+            "route": "/form",
+            "redirect": "/form"
+        },
+        {
+            "route": "/outsideWmca",
+            "redirect": "/outsideWmca"
+        },
+        {
+            "route": "/success",
+            "redirect": "/success"
+        },
+        {
+            "route": "/error",
+            "redirect": "/error"
+        }
+    ],
+    "navigationFallback": {
+        "rewrite": "/"
+    }
+}
