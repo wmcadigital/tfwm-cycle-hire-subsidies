@@ -15,28 +15,28 @@ const Q7Q8Q9Q10Survey = () => {
   const formValues = stateApi.values;
   const formApi = useForm();
 
-  const q7error =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q7
-      : null;
-
   const q8error =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.q8
+      ? stateApi.errors?.formData.SurveyData.q8
       : null;
 
-  const q8berror =
+  const q9error =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q8b
+      ? stateApi.errors?.q9
+      : null;
+
+  const q9berror =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q9b
       : null;
       
   // copy q8 value to survey data
   useEffect(() => {
     formApi.mutators.setFormAttribute(
-      "formData.SurveyData.q8",
-      stateApi.values.q8
+      "formData.SurveyData.q9",
+      stateApi.values.q9
     );
-  }, [formApi.mutators, stateApi.values.q8]);
+  }, [formApi.mutators, stateApi.values.q9]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -50,100 +50,100 @@ const Q7Q8Q9Q10Survey = () => {
       />
 
       <Question text="Safety and Confidence" isRequired={true} />
-      <p>Q7 - Currently, how would you rate your cycling skills? *</p>
-      <RadioGroup error={q7error}>
-        <FieldError text={q7error} />
+      <p>Q8 - Currently, how would you rate your cycling skills? *</p>
+      <RadioGroup error={q8error}>
+        <FieldError text={q8error} />
         <RadioButton
           key={1}
           label="Good"
           validation={required}
           value="Good"
-          fieldName="formData.SurveyData.q7"
+          fieldName="formData.SurveyData.q8"
         />
         <RadioButton
           key={2}
           label="Moderate"
           validation={required}
           value="Moderate"
-          fieldName="formData.SurveyData.q7"
+          fieldName="formData.SurveyData.q8"
         />
         <RadioButton
           key={3}
           label="Poor"
           validation={required}
           value="Poor"
-          fieldName="formData.SurveyData.q7"
+          fieldName="formData.SurveyData.q8"
         />
         <RadioButton
           key={5}
           label="Don't know/unsure"
           validation={required}
           value="Don't know/unsure"
-          fieldName="formData.SurveyData.q7"
+          fieldName="formData.SurveyData.q8"
         />
       </RadioGroup>
 
       <p>
-        Q8 - Currently, how safe do you feel cycling on roads in your local
+        Q9 - Currently, how safe do you feel cycling on roads in your local
         area? *
       </p>
-      <RadioGroup error={q8error}>
-        <FieldError text={q8error} />
+      <RadioGroup error={q9error}>
+        <FieldError text={q9error} />
         <RadioButton
           key={1}
           label="Very safe"
           validation={required}
           value="Very safe"
-          fieldName="q8"
+          fieldName="q9"
         />
         <RadioButton
           key={2}
           label="Safe"
           validation={required}
           value="Safe"
-          fieldName="q8"
+          fieldName="q9"
         />
         <RadioButton
           key={3}
           label="Not very safe"
           validation={required}
           value="Not very safe"
-          fieldName="q8"
+          fieldName="q9"
         />
         <RadioButton
           key={4}
           label="Not at all safe"
           validation={required}
           value="Not at all safe"
-          fieldName="q8"
+          fieldName="q9"
         />
         <RadioButton
           key={5}
           label="Don't know/unsure"
           validation={required}
           value="Don't know/unsure"
-          fieldName="q8"
+          fieldName="q9"
         />
       </RadioGroup>
-      {formValues.q8 === "Not very safe" ||
-      formValues.q8 === "Not at all safe" ? (
+      {formValues.q9 === "Not very safe" ||
+      formValues.q9 === "Not at all safe" ? (
         <TextInput
-          fieldName="formData.SurveyData.q8b"
-          label="Q8b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?"
+          fieldName="formData.SurveyData.q9b"
+          label="Q9b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?"
           validation={required}
-          error={q8berror}
+          error={q9berror}
           isRequired={true}
         />
       ) : null}
       <TextInput
-        fieldName="formData.SurveyData.q9"
-        label="Q9 - If you have any comments or suggestions on how your feeling of safety could be improved when
+        fieldName="formData.SurveyData.q10"
+        label="Q10 - If you have any comments or suggestions on how your feeling of safety could be improved when
         cycling on roads in your local area please provide more detail below:"
       />
 
       <TextInput
-        fieldName="formData.SurveyData.q10"
-        label="Q10 - If you have any comments or suggestions on how your feeling of safety could be improved
+        fieldName="formData.SurveyData.q11"
+        label="Q11 - If you have any comments or suggestions on how your feeling of safety could be improved
         when cycling on roads in your local area please provide more detail below:"
       />
 
