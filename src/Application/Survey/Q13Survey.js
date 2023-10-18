@@ -37,9 +37,9 @@ const Q13Survey = () => {
       <Question text="About You" isRequired={true} />
       <TextInput
         fieldName="formData.PostCode"
-        label="Q13 - What is your home postcode?"
+        label="Q15 - What is your home postcode?"
         validation={required}
-        disabled="disabled"
+        disabled="true"
       />
     </FormSection>
   );

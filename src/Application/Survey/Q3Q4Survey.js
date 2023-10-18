@@ -28,23 +28,28 @@ const Q3Q4Survey = () => {
       : null;
 
   const q4error =
+      stateApi.submitFailed && stateApi.hasValidationErrors
+        ? stateApi.errors?.formData.SurveyData.q4
+        : null;
+
+  const q5error =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q4.PlaceOfWork
+      ? stateApi.errors?.formData.SurveyData.q5.PlaceOfWork
       : null;
 
-  const q4error1 =
+  const q5error1 =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q4.PlaceOfEducation
+      ? stateApi.errors?.formData.SurveyData.q5.PlaceOfEducation
       : null;
 
-  const q4error2 =
+  const q5error2 =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q4.ExerciseOrRecreation
+      ? stateApi.errors?.formData.SurveyData.q5.ExerciseOrRecreation
       : null;
 
-  const q4error3 =
+  const q5error3 =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q4.OtherReasons
+      ? stateApi.errors?.formData.SurveyData.q5.OtherReasons
       : null;
 
   useEffect(() => {
@@ -105,37 +110,79 @@ const Q3Q4Survey = () => {
       </RadioGroup>
 
       <p>
-        Q4 - On average, how often would you say you walk for at least 10
+        Q4 - On average, how much time do you spend e-scooter per week? *
+      </p>
+      <RadioGroup error={q4error}>
+        <FieldError text={q4error} />
+        <RadioButton
+          key={1}
+          label="Two or more hours per week"
+          validation={required}
+          value="Two or more hours per week"
+          fieldName="formData.SurveyData.q4"
+        />
+        <RadioButton
+          key={2}
+          label="Between one and two hours per week"
+          validation={required}
+          value="Between one and two hours per week"
+          fieldName="formData.SurveyData.q4"
+        />
+        <RadioButton
+          key={3}
+          label="Between 30 minutes and one hour per week"
+          validation={required}
+          value="Between 30 minutes and one hour per week"
+          fieldName="formData.SurveyData.q4"
+        />
+        <RadioButton
+          key={4}
+          label="Less than 30 minutes per week"
+          validation={required}
+          value="Less than 30 minutes per week"
+          fieldName="formData.SurveyData.q4"
+        />
+        <RadioButton
+          key={5}
+          label="Don't know/unsure"
+          validation={required}
+          value="Don't know/unsure"
+          fieldName="formData.SurveyData.q4"
+        />
+      </RadioGroup>
+
+      <p>
+        Q5 - On average, how often would you say you e-scooter for at least 10
         minutes as part of your journey, for each of the following reasons:
       </p>
 
       <Dropdown
-        fieldName="formData.SurveyData.q4.PlaceOfWork"
-        error={q4error}
+        fieldName="formData.SurveyData.q5.PlaceOfWork"
+        error={q5error}
         label="To go to/from your place of work"
         options={dropdownOptions}
         validation={required}
         isRequired={true}
       />
       <Dropdown
-        fieldName="formData.SurveyData.q4.PlaceOfEducation"
-        error={q4error1}
+        fieldName="formData.SurveyData.q5.PlaceOfEducation"
+        error={q5error1}
         label="To go to/from your place of education (e.g. school, college, or university)"
         options={dropdownOptions}
         validation={required}
         isRequired={true}
       />
       <Dropdown
-        fieldName="formData.SurveyData.q4.ExerciseOrRecreation"
-        error={q4error2}
+        fieldName="formData.SurveyData.q5.ExerciseOrRecreation"
+        error={q5error2}
         label="To do exercise or for recreation"
         options={dropdownOptions}
         validation={required}
         isRequired={true}
       />
       <Dropdown
-        fieldName="formData.SurveyData.q4.OtherReasons"
-        error={q4error3}
+        fieldName="formData.SurveyData.q5.OtherReasons"
+        error={q5error3}
         label="For other reasons"
         options={dropdownOptions}
         validation={required}

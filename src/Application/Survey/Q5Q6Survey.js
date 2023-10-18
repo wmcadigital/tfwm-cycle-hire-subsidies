@@ -24,15 +24,15 @@ const Q5Q6Survey = () => {
 
   const error =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q5.CarOrVan
+      ? stateApi.errors?.formData.SurveyData.q6.CarOrVan
       : null;
 
   const error1 =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q5.MotorcycleOrMoped
+      ? stateApi.errors?.formData.SurveyData.q6.MotorcycleOrMoped
       : null;
 
-  const q6Error =
+  const q7Error =
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.selectQ7
       : null;
@@ -49,12 +49,12 @@ const Q5Q6Survey = () => {
       />
       <Question text="Vehicle ownership" isRequired={true} />
       <p>
-        Q5 - How many vehicles does your household own or have continuous use of
+        Q6 - How many vehicles does your household own or have continuous use of
         at present? *
       </p>
 
       <Dropdown
-        fieldName="formData.SurveyData.q5.CarOrVan"
+        fieldName="formData.SurveyData.q6.CarOrVan"
         error={error}
         label="Car or van"
         options={dropdownOptions}
@@ -62,7 +62,7 @@ const Q5Q6Survey = () => {
         isRequired={true}
       />
       <Dropdown
-        fieldName="formData.SurveyData.q5.MotorcycleOrMoped"
+        fieldName="formData.SurveyData.q6.MotorcycleOrMoped"
         error={error1}
         label="Motorcycle or moped"
         options={dropdownOptions}
@@ -70,17 +70,17 @@ const Q5Q6Survey = () => {
         isRequired={true}
       />
       <p>
-        Q6 - Do you own or have use of any of the following? (this could include
+        Q7 - Do you own or have use of any of the following? (this could include
         vehicles that you own, hire or use that belong to someone else [e.g. a
         family member or friend). *
       </p>
-      <CheckboxContainer error={q6Error}>
-        <FieldError text={q6Error} />
+      <CheckboxContainer error={q7Error}>
+        <FieldError text={q7Error} />
         {Object.keys(options).map((option) => (
           <Checkbox
             key={options[option]}
             label={options[option]}
-            fieldName={`q6.${option}`}
+            fieldName={`q7.${option}`}
           />
         ))}
       </CheckboxContainer>
