@@ -54,7 +54,7 @@ const Header = ({ heading }) => {
                 <img
                   className="wmnds-header__logo"
                   alt="Transport for West Midlands logo"
-                  src="https://unpkg.com/wmn-design-system@2.4.0/build/img/logo.svg"
+                  src="https://unpkg.com/wmn-design-system@2.2.0/build/img/logo.svg"
                 />
               </a>
             </div>
