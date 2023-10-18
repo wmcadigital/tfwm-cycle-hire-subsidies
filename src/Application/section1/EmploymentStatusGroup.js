@@ -64,7 +64,7 @@ const EmploymentStatusGroup = () => {
 
   const q17berror =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q17b
+      ? stateApi.errors?.formData.SurveyData.q19b
       : null;
 
   // copy q17 value to survey data
@@ -81,7 +81,7 @@ const EmploymentStatusGroup = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="What is your employment status? *" isRequired={true} />
+      <Question text="Q19 - What is your employment status? *" isRequired={true} />
       <RadioGroup error={error}>
         <FieldError text={error} />
         {Object.keys(EmploymentStatusTypes).map((Employmentstatus, index) => (
@@ -90,16 +90,16 @@ const EmploymentStatusGroup = () => {
             label={EmploymentStatusTypes[Employmentstatus].radioLabel}
             validation={required}
             value={EmploymentStatusTypes[Employmentstatus].radioLabel}
-            fieldName="q17"
+            fieldName="q19"
           />
         ))}
       </RadioGroup>
-      {formValues.q17 === "Other" ? (
+      {formValues.q19 === "Other" ? (
         <TextInput
-          fieldName="formData.SurveyData.q17b"
-          label="Q8b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?"
+          fieldName="formData.SurveyData.q19b"
+          label="Q19b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?"
           validation={required}
-          error={q17berror}
+          error={q19berror}
           isRequired={true}
         />
       ) : null}

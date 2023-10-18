@@ -38,7 +38,7 @@ const EthnicGroup = ({ setEthnicGroup, setGoToPage }) => {
       />
       <Question text={question} />
       <p>
-        Q14 - How would you describe your ethnic group? Choose one option that
+        Q16 - How would you describe your ethnic group? Choose one option that
         best describes your ethnic group or background
       </p>
       <RadioGroup error={error}>
