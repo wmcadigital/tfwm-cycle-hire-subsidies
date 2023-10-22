@@ -110,7 +110,7 @@ const Q3Q4Survey = () => {
       </RadioGroup>
 
       <p>
-        Q4 - On average, how much time do you spend e-scooter per week? *
+        Q4 - On average, how much time do you spend using an e-scooter per week? *
       </p>
       <RadioGroup error={q4error}>
         <FieldError text={q4error} />

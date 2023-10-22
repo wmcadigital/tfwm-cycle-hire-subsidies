@@ -46,7 +46,7 @@ const BreadCrumb = ({ currentPageName }) => (
             href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/cycling-in-the-west-midlands/cycling-for-everyone/cycle-hire-apply-for-free-minutes/"
             className="wmnds-breadcrumb__link"
           >
-            Cycle Hire - apply for free minutes
+            Hire - apply for free minutes
           </a>
         </li>
         <li className="wmnds-breadcrumb__list-item">
