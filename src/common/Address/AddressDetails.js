@@ -66,14 +66,15 @@ const AddressDetails = ({ prefix, addresses }) => {
         defaultValue={matchingAddress["line_3"]}
         containerClass="hide"
       />
-      {/* <TextInput
+      <TextInput
         fieldName={`${prefix}.District`}
         label="Town or city"
         defaultValue={matchingAddress["post_town"]}
         validation={required}
         error={townOrCityError}
         isRequired={true}
-      /> */}
+        containerClass="hide"
+      />
       <Dropdown
         fieldName={`${prefix}.District`}
         // error={error}
