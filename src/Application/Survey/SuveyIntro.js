@@ -11,7 +11,7 @@ const SurveyIntro = () => {
       <h2>Cycling for Everyone Cycle and scoot activity survey.</h2>
       <p>
         Thank you for choosing to participate in Cycling for Everyone - Cycle
-        and scoot. Before you participate in the cycle hire scheme, Transport
+        and scoot. Before you participate in the scheme, Transport
         for West Midlands would like to ask you some questions about your
         current travel and the journeys that you typically make.
       </p>
@@ -28,7 +28,7 @@ const SurveyIntro = () => {
       </p>
       <p>
         If you decide not to take part in this survey, please close the window
-        before submitting. This will cancel your application for Cycle for
+        before submitting. This will cancel your application for Cycling for
         Everyone.
       </p>
       <h3>Consent</h3>

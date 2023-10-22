@@ -2,9 +2,19 @@ import PropTypes from "prop-types";
 import { useFormState } from "react-final-form";
 
 import TextInput from "../TextInput";
+import Dropdown from "../../common/Dropdown";
 import { required, postCode, composeValidators } from "../validation";
 
 const validatePostCode = composeValidators(required, postCode);
+
+const whereOptions = [
+  { value: "Birmingham", label: "Birmingham" },
+  { value: "Coventry", label: "Coventry" },
+  { value: "Dudley", label: "Dudley" },
+  { value: "Sandwell", label: "Sandwell" },
+  { value: "Solihull", label: "Solihull" },
+  { value: "Walsall", label: "Walsall" },
+];
 
 const AddressDetails = ({ prefix, addresses }) => {
   const formState = useFormState();
@@ -56,12 +66,21 @@ const AddressDetails = ({ prefix, addresses }) => {
         defaultValue={matchingAddress["line_3"]}
         containerClass="hide"
       />
-      <TextInput
+      {/* <TextInput
         fieldName={`${prefix}.District`}
         label="Town or city"
         defaultValue={matchingAddress["post_town"]}
         validation={required}
         error={townOrCityError}
+        isRequired={true}
+      /> */}
+      <Dropdown
+        fieldName={`${prefix}.District`}
+        // error={error}
+        label="Town or city"
+        options={whereOptions}
+        defaultValue={matchingAddress["post_town"]}
+        validation={required}
         isRequired={true}
       />
       <TextInput

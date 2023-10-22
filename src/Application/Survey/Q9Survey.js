@@ -13,14 +13,14 @@ import { required } from "../../common/validation";
 const Q9Survey = () => {
   const stateApi = useFormState();
 
+  const q16error =
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q16
+      : null;
+
   const q17error =
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q17
-      : null;
-
-  const q18error =
-    stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q18
       : null;
 
   // const q21error =
@@ -66,86 +66,86 @@ const Q9Survey = () => {
         sectionName="LACF Survey"
       />
       <Question text="About You" isRequired={true} />
-      <p>Q17 - How is your health in general? *</p>
-      <RadioGroup error={q17error}>
-        <FieldError text={q17error} />
+      <p>Q16 - How is your health in general? *</p>
+      <RadioGroup error={q16error}>
+        <FieldError text={q16error} />
         <RadioButton
           key={1}
           label="Very good"
           validation={required}
           value="Very good"
-          fieldName="formData.SurveyData.q17"
+          fieldName="formData.SurveyData.q16"
         />
         <RadioButton
           key={2}
           label="Good"
           validation={required}
           value="Good"
-          fieldName="formData.SurveyData.q17"
+          fieldName="formData.SurveyData.q16"
         />
         <RadioButton
           key={3}
           label="Fair"
           validation={required}
           value="Fair"
-          fieldName="formData.SurveyData.q17"
+          fieldName="formData.SurveyData.q16"
         />
         <RadioButton
           key={4}
           label="Bad"
           validation={required}
           value="Bad"
-          fieldName="formData.SurveyData.q17"
+          fieldName="formData.SurveyData.q16"
         />
         <RadioButton
           key={5}
           label="Very bad"
           validation={required}
           value="Very bad"
-          fieldName="formData.SurveyData.q17"
+          fieldName="formData.SurveyData.q16"
         />
         <RadioButton
           key={6}
           label="Don’t know/unsure"
           validation={required}
           value="Don’t know/unsure"
-          fieldName="formData.SurveyData.q17"
+          fieldName="formData.SurveyData.q16"
         />
         <RadioButton
           key={7}
           label="Prefer not to say"
           validation={required}
           value="Prefer not to say"
-          fieldName="formData.SurveyData.q17"
+          fieldName="formData.SurveyData.q16"
         />
       </RadioGroup>
 
       <p>
-        Q18 - Do you have any physical or mental health conditions or illnesses
+        Q17 - Do you have any physical or mental health conditions or illnesses
         lasting or expected to last 12 months or more? *
       </p>
-      <RadioGroup error={q18error}>
-        <FieldError text={q18error} />
+      <RadioGroup error={q17error}>
+        <FieldError text={q17error} />
         <RadioButton
           key={1}
           label="Yes"
           validation={required}
           value="Yes"
-          fieldName="formData.SurveyData.q18"
+          fieldName="formData.SurveyData.q17"
         />
         <RadioButton
           key={2}
           label="No"
           validation={required}
           value="No"
-          fieldName="formData.SurveyData.q18"
+          fieldName="formData.SurveyData.q17"
         />
         <RadioButton
           key={3}
           label="Prefer not to say"
           validation={required}
           value="Prefer not to say"
-          fieldName="formData.SurveyData.q18"
+          fieldName="formData.SurveyData.q17"
         />
       </RadioGroup>
 

@@ -141,11 +141,11 @@ const Q7Q8Q9Q10Survey = () => {
         cycling on roads in your local area please provide more detail below:"
       />
 
-      <TextInput
+      {/* <TextInput
         fieldName="formData.SurveyData.q11"
         label="Q11 - If you have any comments or suggestions on how your feeling of safety could be improved
         when cycling on roads in your local area please provide more detail below:"
-      />
+      /> */}
 
       {/* <p>
         Q11 - And how confident do you feel about cycling on roads in your local
