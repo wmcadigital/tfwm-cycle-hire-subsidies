@@ -62,18 +62,18 @@ const EmploymentStatusGroup = () => {
       ? stateApi.errors?.formData.Employmentstatus
       : null;
 
-  const q17berror =
+  const q18berror =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.formData.SurveyData.q19b
+      ? stateApi.errors?.formData.SurveyData.q18b
       : null;
 
   // copy q17 value to survey data
   useEffect(() => {
     formApi.mutators.setFormAttribute(
-      "formData.SurveyData.q17",
-      stateApi.values.q17
+      "formData.SurveyData.q18",
+      stateApi.values.q18
     );
-  }, [formApi.mutators, stateApi.values.q17]);
+  }, [formApi.mutators, stateApi.values.q18]);
 
   return (
     <FormSection>
@@ -81,7 +81,7 @@ const EmploymentStatusGroup = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="Q19 - What is your employment status? *" isRequired={true} />
+      <Question text="Q18 - What is your employment status? *" isRequired={true} />
       <RadioGroup error={error}>
         <FieldError text={error} />
         {Object.keys(EmploymentStatusTypes).map((Employmentstatus, index) => (
@@ -90,16 +90,16 @@ const EmploymentStatusGroup = () => {
             label={EmploymentStatusTypes[Employmentstatus].radioLabel}
             validation={required}
             value={EmploymentStatusTypes[Employmentstatus].radioLabel}
-            fieldName="q19"
+            fieldName="q18"
           />
         ))}
       </RadioGroup>
       {formValues.q19 === "Other" ? (
         <TextInput
-          fieldName="formData.SurveyData.q19b"
-          label="Q19b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?"
+          fieldName="formData.SurveyData.q18b"
+          label="Q18b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?"
           validation={required}
-          error={q19berror}
+          error={q18berror}
           isRequired={true}
         />
       ) : null}

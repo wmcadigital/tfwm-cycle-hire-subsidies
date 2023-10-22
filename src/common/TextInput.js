@@ -42,7 +42,7 @@ TextInput.propTypes = {
   error: PropTypes.string,
   containerClass: PropTypes.string,
   defaultValue: PropTypes.string,
-  isRequired: PropTypes.bool,
+  isRequired: PropTypes.string,
   disab: PropTypes.bool,
 };
 

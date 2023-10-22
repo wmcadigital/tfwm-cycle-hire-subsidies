@@ -38,7 +38,7 @@ const WhereDropdown = () => {
 
   const error =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.q12
+      ? stateApi.errors?.q11
       : null;
 
   // const errorOther =
@@ -49,8 +49,8 @@ const WhereDropdown = () => {
   // copy q12 value to survey data
   useEffect(() => {
     formApi.mutators.setFormAttribute(
-      "formData.SurveyData.q12",
-      stateApi.values.q12
+      "formData.SurveyData.q11",
+      stateApi.values.q11
     );
   }, [formApi.mutators, stateApi.values.q12]);
 
@@ -61,21 +61,21 @@ const WhereDropdown = () => {
         sectionName="About you"
       />
       <Question
-        text="Q12 - Where did you hear about this scheme?"
+        text="Q11 - Where did you hear about this scheme?"
         isRequired={true}
       />
       <Dropdown
-        fieldName="q12"
+        fieldName="q11"
         error={error}
         label="Select one option"
         options={whereOptions}
         validation={required}
         isRequired={true}
       />
-      {formValues.q12 === "Other" ? (
+      {formValues.q11 === "Other" ? (
         <TextInput
-          fieldName="formData.SurveyData.q12b"
-          label="Q12b - Please provide more details eg location, website:"
+          fieldName="formData.SurveyData.q11b"
+          label="Q11b - Please provide more details eg location, website:"
           validation={required}
           // error={errorOther}
           isRequired={true}
