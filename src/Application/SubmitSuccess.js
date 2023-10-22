@@ -54,7 +54,7 @@ const SubmitSuccess = () => {
                   folder before contacting us.
                 </p>
                 <p>
-                  If you haven’t received an e-mail, contact Ticketing Services:
+                  If you haven’t received an e-mail, contact Customer Services:
                 </p>
                 <ul>
                   <li>
