@@ -17,7 +17,7 @@ const SubmitError = () => {
     <>
       <Header heading="Apply for support with West Midlands cycle and scooter hire costs" />
       <div className="wmnds-container">
-        <BreadCrumb currentPageName="Apply for free cycle hire" />
+        <BreadCrumb currentPageName="Apply for Go Cycle and Scoot" />
         <div className="wmnds-container-alerts-sign-up">
           <div className="wmnds-grid">
             <div className="wmnds-col-1 wmnds-col-sm-2-3">

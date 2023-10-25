@@ -20,7 +20,7 @@ const SubmitSuccess = () => {
     <>
       <Header heading="Apply for support with West Midlands cycle and scooter hire costs" />
       <div className="wmnds-container">
-        <BreadCrumb currentPageName="Apply for free cycle hire" />
+        <BreadCrumb currentPageName="Apply for Go Cycle and Scoot" />
         <div className="wmnds-grid">
           <div className=" wmnds-col-1 wmnds-col-md-2-3">
             <div className="wmnds-col-1 wmnds-m-b-xl">
@@ -40,21 +40,16 @@ const SubmitSuccess = () => {
               <h2>What happens next</h2>
               <div className="wmnds-m-b-lg">
                 <p>
-                  Step 1: You’ll receive an email to confirm we have received
-                  your application.
+                  Step 1: You’ll receive an email to confirm we have received your application. 
                 </p>
                 <p>
-                  Step 2: You’ll receive an email within two working days,
-                  Monday to Friday telling you your application has been
-                  assessed and giving you an introduction to West Midlands Cycle
-                  Hire.
+                  Step 2: You’ll receive an email within two working days, Monday to Friday telling you your application has been assessed and giving you an introduction to Cycling for Everyone Go Cycle and Scoot.
                 </p>
                 <p>
-                  If you haven’t received an e-mail, please check your spam
-                  folder before contacting us.
+                  If you haven’t received an e-mail, please check your spam folder before contacting us. 
                 </p>
                 <p>
-                  If you haven’t received an e-mail, contact Customer Services:
+                  If you still haven’t received an e-mail, contact Customer Services: 
                 </p>
                 <ul>
                   <li>
