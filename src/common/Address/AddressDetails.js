@@ -14,6 +14,7 @@ const whereOptions = [
   { value: "Sandwell", label: "Sandwell" },
   { value: "Solihull", label: "Solihull" },
   { value: "Walsall", label: "Walsall" },
+  { value: "Wolverhampton", label: "Wolverhampton" },
 ];
 
 const AddressDetails = ({ prefix, addresses }) => {

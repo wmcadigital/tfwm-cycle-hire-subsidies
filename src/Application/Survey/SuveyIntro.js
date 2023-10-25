@@ -8,16 +8,16 @@ const SurveyIntro = () => {
         sectionPosition="Section 2 of 2"
         sectionName="LACF Survey"
       />
-      <h2>Cycling for Everyone Cycle and scoot activity survey.</h2>
+      <h2>Cycling for Everyone Cycle and Scoot activity survey.</h2>
       <p>
         Thank you for choosing to participate in Cycling for Everyone - Cycle
-        and scoot. Before you participate in the scheme, Transport
+        and Scoot. Before you participate in the scheme, Transport
         for West Midlands would like to ask you some questions about your
         current travel and the journeys that you typically make.
       </p>
       <p>
         This information will be extremely useful in helping us to understand
-        the impact of Cycling for Everyone cycle and scoot on those who have
+        the impact of Cycling for Everyone cycle and Scoot on those who have
         taken part.
       </p>
       <p>

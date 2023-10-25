@@ -152,8 +152,7 @@ const Q3Q4Survey = () => {
       </RadioGroup>
 
       <p>
-        Q5 - On average, how often would you say you e-scooter for at least 10
-        minutes as part of your journey, for each of the following reasons:
+        Q5 - On average, how often would you say you use an e-scooter for at least 10 minutes as part of your journey, for each of the following reasons:
       </p>
 
       <Dropdown
