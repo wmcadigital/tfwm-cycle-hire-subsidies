@@ -220,7 +220,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <>
               Agree to the{" "}
               <a
-                href="https://www.wmca.org.uk/policies"
+                href="https://www.tfwm.org.uk/terms-and-conditions/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -235,7 +235,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <>
               Agree to the{" "}
               <a
-                href="https://www.wmca.org.uk/policies"
+                href="https://www.tfwm.org.uk/policies/"
                 target="_blank"
                 rel="noreferrer"
               >
