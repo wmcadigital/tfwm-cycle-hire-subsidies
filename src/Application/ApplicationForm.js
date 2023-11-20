@@ -62,7 +62,7 @@ const ApplicationForm = () => {
           goToPage={goToPage}
           setGoToPage={setGoToPage}
         >
-          {/* <EligibilityCheck />
+          <EligibilityCheck />
           <RegistrationName />
           <DateOfBirth validate={validateDateOfBirth} />
           <RegistrationAddress
@@ -81,7 +81,7 @@ const ApplicationForm = () => {
           <Q1Survey />
           <Q2Survey />
           <Q3Q4Survey />
-          <Q5Q6Survey /> */}
+          <Q5Q6Survey />
           <Q7Q8Q9Q10Survey />
           <WhereDropdown />
           <Q11Q12Survey />
