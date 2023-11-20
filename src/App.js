@@ -16,8 +16,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AppEnd />} />
-        <Route path="/form" element={<ApplicationForm />} />
+        {/* <Route path="/" element={<AppEnd />} /> */}
+        <Route path="/" element={<ApplicationForm />} />
         <Route path="/outsideWmca" element={<OutsideWmca />} />
         <Route path="/success" element={<SubmitSuccess />} />
         <Route path="/error" element={<SubmitError />} />
