@@ -80,7 +80,7 @@ const FormWizard = ({
     const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
       setLoading(true);
-      (async () => {
+     await (async () => {
         const rawResponse = await fetch(
           "https://cyclewise-dev-api.azure-api.net/cyclewise/submit-form",
           {
@@ -175,7 +175,9 @@ const FormWizard = ({
                 )}
                 {isLastPage && (
                   <button
-                    className="wmnds-btn wmnds-btn--start"
+                  className={`wmnds-btn wmnds-btn--start ${
+                    (loading) && "wmnds-btn--disabled"
+                  }`}
                     type="submit"
                     disabled={loading}
                   >
