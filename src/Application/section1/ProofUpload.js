@@ -11,7 +11,7 @@ const ProofUpload = () => {
         sectionPosition="Section 1 of 2"
         sectionName="About you"
       />
-      <Question text="Upload proof of your income or benefits and address" />
+      <Question text="Upload proof of your income or benefits or proof of being a full time student" />
       <p>Your proof must include:</p>
       <ul>
         <li>your name</li>
@@ -29,6 +29,11 @@ const ProofUpload = () => {
         <li>student income assessed support letter</li>
         <li>other income assessed benefit</li>
       </ul>
+      <p>Proof of being a full time student:</p>
+      <ul>
+        <li><a href="https://www.tfwm.org.uk/swift-and-tickets/discounts-and-free-travel-passes/discounts-for-students/supporting-documents-for-students/" target="_blank" rel="noreferrer">View supporting documents (new tab)</a></li>
+      </ul>
+
       <p>Your proof can be a screenshot of an email or a photo of a letter.</p>
 
       <p>Files must be jpeg, png or pdf file format</p>

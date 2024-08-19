@@ -75,7 +75,7 @@ const CheckAnswers = ({ setGoToPage }) => {
           ) : (
             ""
           )}
-          {formValues.Disability ? (
+          {/* {formValues.Disability ? (
             <CheckAnswerRow
               label="Disabilities"
               value={`${
@@ -89,7 +89,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             />
           ) : (
             ""
-          )}
+          )} */}
           {formValues.Employmentstatus ? (
             <CheckAnswerRow
               label="Employment Status"
@@ -132,7 +132,7 @@ const CheckAnswers = ({ setGoToPage }) => {
           ) : (
             ""
           )}
-          {formValues.ReferredbyMedicalService ? (
+          {/* {formValues.ReferredbyMedicalService ? (
             <CheckAnswerRow
               label="Medical Service Referral"
               value={`${
@@ -148,7 +148,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             />
           ) : (
             ""
-          )}
+          )} */}
           {formValues.WhereDidYouHearAboutTheScheme ? (
             <CheckAnswerRow
               label="Hear About us"
