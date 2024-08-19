@@ -9,7 +9,8 @@ import FieldError from "../../common/FieldError";
 import { required } from "../../common/validation";
 
 const BenefitTypes = {
-  no: { radioLabel: "No", detailLabel: "no" },
+  noEmployed: { radioLabel: "No - Employed and earn under £30,000", detailLabel: "No - Employed and earn under £30,000" },
+  noStudent: { radioLabel: "No - I'm a full time Student", detailLabel: "No - I'm a full time Student" },
   yesUniversalCredit: {
     radioLabel: "Yes - Universal Credit",
     detailLabel: "Yes - Universal Credit",
