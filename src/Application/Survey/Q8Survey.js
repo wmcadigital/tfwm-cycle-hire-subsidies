@@ -22,12 +22,12 @@ const Q8Survey = () => {
       : null;
 
   // copy q16 value to survey data
-  useEffect(() => {
-    formApi.mutators.setFormAttribute(
-      "formData.SurveyData.q16",
-      stateApi.values.q16
-    );
-  }, [formApi.mutators]);
+  // useEffect(() => {
+  //   formApi.mutators.setFormAttribute(
+  //     "formData.SurveyData.q16",
+  //     stateApi.values.q16
+  //   );
+  // }, [formApi.mutators, stateApi.values.q16]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,7 +37,7 @@ const Q8Survey = () => {
     <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
-        sectionName="LACF Survey"
+        sectionName="Survey"
       />
       <Question text="About You" isRequired={true} />
       <p>

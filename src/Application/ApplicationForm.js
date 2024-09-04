@@ -12,12 +12,12 @@ import RegistrationName from "./section1/RegistrationName";
 import DateOfBirth from "./section1/DateOfBirth";
 import EmailAddress from "./section1/EmailAddress";
 import RegistrationAddress from "./section1/RegistrationAddress";
-import DisabilityGroup from "./section1/DisabilityGroup";
+// import DisabilityGroup from "./section1/DisabilityGroup";
 import EmploymentStatusGroup from "./section1/EmploymentStatusGroup";
 import NewJobGroup from "./section1/NewJobGroup";
 import BenefitsGroup from "./section1/BenefitsGroup";
 import ProofUpload from "./section1/ProofUpload";
-import MedicalServiceGroup from "./section1/MedicalServiceGroup";
+// import MedicalServiceGroup from "./section1/MedicalServiceGroup";
 import WhereDropdown from "./section1/WhereDropdown";
 
 // Survey
@@ -54,7 +54,7 @@ const ApplicationForm = () => {
 
   return (
     <>
-      <Header heading="Apply for support with West Midlands cycle and scooter hire costs" />
+      <Header heading="Apply for support with West Midlands cycle hire costs" />
       <FormContentWrapper>
         <FormWizard
           onSubmit={() => {}}
@@ -72,11 +72,11 @@ const ApplicationForm = () => {
             validate={addressIdPresent("formData")}
           />
           <EmailAddress />
-          <DisabilityGroup />
+          {/* <DisabilityGroup /> */}
           <NewJobGroup />
           <BenefitsGroup />
           <ProofUpload />
-          <MedicalServiceGroup />
+          {/* <MedicalServiceGroup /> */}
           <SurveyIntro />
           <Q1Survey />
           <Q2Survey />

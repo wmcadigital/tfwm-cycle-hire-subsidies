@@ -65,7 +65,7 @@ const Q4Survey = () => {
     <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
-        sectionName="LACF Survey"
+        sectionName="Survey"
       />
       <Question text="Your current travel" isRequired={true} />
       <p>

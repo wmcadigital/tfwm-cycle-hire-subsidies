@@ -46,7 +46,7 @@ const Q11Q12Survey = () => {
     <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
-        sectionName="LACF Survey"
+        sectionName="Survey"
       />
       <Question text="About You" isRequired={true} />
       <p>Q12 - Are you: *</p>
@@ -93,64 +93,57 @@ const Q11Q12Survey = () => {
       <p>Q13 - Which of these age groups do you belong to? *</p>
       <RadioGroup error={q13error}>
         <FieldError text={q13error} />
-        {/* <RadioButton
+        <RadioButton
           key={1}
-          label="14 – 15"
+          label="16"
           validation={required}
-          value="14 – 15"
-          fieldName="formData.SurveyData.q12"
-        /> */}
+          value="16"
+          fieldName="formData.SurveyData.q13"
+        />
         <RadioButton
           key={2}
-          label="16 – 17"
+          label="17 - 24"
           validation={required}
-          value="16 – 17"
+          value="17 - 24"
           fieldName="formData.SurveyData.q13"
         />
         <RadioButton
           key={3}
-          label="18 – 24"
+          label="25 - 34"
           validation={required}
-          value="18 – 24"
+          value="25 - 34"
           fieldName="formData.SurveyData.q13"
         />
         <RadioButton
           key={4}
-          label="25 – 34"
+          label="35 - 44"
           validation={required}
-          value="25 – 34"
+          value="35 - 44"
           fieldName="formData.SurveyData.q13"
         />
         <RadioButton
           key={5}
-          label="35 – 44"
+          label="45 - 54"
           validation={required}
-          value="35 – 44"
+          value="45 - 54"
           fieldName="formData.SurveyData.q13"
         />
         <RadioButton
           key={6}
-          label="45 – 54"
+          label="55 - 60"
           validation={required}
-          value="45 – 54"
+          value="55 - 60"
           fieldName="formData.SurveyData.q13"
         />
         <RadioButton
           key={7}
-          label="55 – 64"
+          label="60+"
           validation={required}
-          value="55 – 64"
-          fieldName="formData.SurveyData.q13"
-        />
-        <RadioButton
-          key={8}
-          label="65+"
-          validation={required}
-          value="65+"
+          value="60+"
           fieldName="formData.SurveyData.q13"
         />{" "}
         <RadioButton
-          key={9}
+          key={8}
           label="Prefer not to say"
           validation={required}
           value="Prefer not to say"

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useFormState } from "react-final-form";
+import { useFormState, useForm } from "react-final-form";
 
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
@@ -12,6 +12,7 @@ import { required } from "../../common/validation";
 
 const Q9Survey = () => {
   const stateApi = useFormState();
+  const formApi = useForm();
 
   const q16error =
     stateApi.submitFailed && stateApi.hasValidationErrors
@@ -59,11 +60,19 @@ const Q9Survey = () => {
     window.scrollTo(0, 0);
   }, []);
 
+    // copy ethnic group q15 value to survey data
+    useEffect(() => {
+      formApi.mutators.setFormAttribute(
+        "formData.SurveyData.q15",
+        stateApi.values.formData.Ethnicity
+      );
+    }, [formApi.mutators, stateApi.values.formData.Ethnicity]);
+
   return (
     <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
-        sectionName="LACF Survey"
+        sectionName="Survey"
       />
       <Question text="About You" isRequired={true} />
       <p>Q16 - How is your health in general? *</p>

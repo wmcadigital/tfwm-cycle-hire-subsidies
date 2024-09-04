@@ -30,11 +30,19 @@ const EthnicGroup = ({ setEthnicGroup, setGoToPage }) => {
     }
   }, [formValues.ethnicity]);
 
+  // copy postcode to q14 value to survey data
+  useEffect(() => {
+    formApi.mutators.setFormAttribute(
+      "formData.SurveyData.q14",
+      stateApi.values.formData.PostCode
+    );
+  }, [formApi.mutators, stateApi.values.formData.PostCode]);
+
   return (
     <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
-        sectionName="LACF Survey"
+        sectionName="Survey"
       />
       <Question text={question} />
       <p>

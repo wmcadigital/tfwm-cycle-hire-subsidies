@@ -45,7 +45,7 @@ const Q5Q6Survey = () => {
     <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
-        sectionName="LACF Survey"
+        sectionName="Survey"
       />
       <Question text="Vehicle ownership" isRequired={true} />
       <p>
@@ -80,7 +80,7 @@ const Q5Q6Survey = () => {
           <Checkbox
             key={options[option]}
             label={options[option]}
-            fieldName={`q7.${option}`}
+            fieldName={`formData.SurveyData.q7.${option}`}
           />
         ))}
       </CheckboxContainer>

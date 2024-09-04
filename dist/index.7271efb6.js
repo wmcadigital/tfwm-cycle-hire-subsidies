@@ -1080,7 +1080,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"fdOAw","./Application/ApplicationForm":"cdJEi","./Application/section1/OutsideWmca":"eWxzz","./Application/SubmitSuccess":"7VxbA","./Application/SubmitError":"clwVI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-ga":"4j2TN"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"fdOAw","react-ga":"4j2TN","./Application/ApplicationForm":"cdJEi","./Application/section1/OutsideWmca":"eWxzz","./Application/SubmitSuccess":"7VxbA","./Application/SubmitError":"clwVI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
 
@@ -26855,325 +26855,315 @@ function _renderMatches(matches, parentMatches) {
     return _renderMatches(matches);
 }
 
-},{"history":"iE5Zp","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cdJEi":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$27e7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$27e7.prelude(module);
-
-try {
+},{"history":"iE5Zp","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4j2TN":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _react = require("react"); // Layout
-var _formContentWrapper = require("../common/FormContentWrapper");
-var _formContentWrapperDefault = parcelHelpers.interopDefault(_formContentWrapper);
-var _header = require("../common/Header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
-var _formWizard = require("../common/FormWizard"); // Main form
-var _formWizardDefault = parcelHelpers.interopDefault(_formWizard);
-var _eligibilityCheck = require("./section1/EligibilityCheck");
-var _eligibilityCheckDefault = parcelHelpers.interopDefault(_eligibilityCheck);
-var _registrationName = require("./section1/RegistrationName");
-var _registrationNameDefault = parcelHelpers.interopDefault(_registrationName);
-var _dateOfBirth = require("./section1/DateOfBirth");
-var _dateOfBirthDefault = parcelHelpers.interopDefault(_dateOfBirth);
-var _emailAddress = require("./section1/EmailAddress");
-var _emailAddressDefault = parcelHelpers.interopDefault(_emailAddress);
-var _registrationAddress = require("./section1/RegistrationAddress");
-var _registrationAddressDefault = parcelHelpers.interopDefault(_registrationAddress);
-var _disabilityGroup = require("./section1/DisabilityGroup");
-var _disabilityGroupDefault = parcelHelpers.interopDefault(_disabilityGroup);
-var _employmentStatusGroup = require("./section1/EmploymentStatusGroup");
-var _employmentStatusGroupDefault = parcelHelpers.interopDefault(_employmentStatusGroup);
-var _newJobGroup = require("./section1/NewJobGroup");
-var _newJobGroupDefault = parcelHelpers.interopDefault(_newJobGroup);
-var _benefitsGroup = require("./section1/BenefitsGroup");
-var _benefitsGroupDefault = parcelHelpers.interopDefault(_benefitsGroup);
-var _proofUpload = require("./section1/ProofUpload");
-var _proofUploadDefault = parcelHelpers.interopDefault(_proofUpload);
-var _medicalServiceGroup = require("./section1/MedicalServiceGroup");
-var _medicalServiceGroupDefault = parcelHelpers.interopDefault(_medicalServiceGroup);
-var _whereDropdown = require("./section1/WhereDropdown"); // Survey
-var _whereDropdownDefault = parcelHelpers.interopDefault(_whereDropdown);
-var _suveyIntro = require("./Survey/SuveyIntro");
-var _suveyIntroDefault = parcelHelpers.interopDefault(_suveyIntro);
-var _q1Survey = require("./Survey/Q1Survey");
-var _q1SurveyDefault = parcelHelpers.interopDefault(_q1Survey);
-var _q2Survey = require("./Survey/Q2Survey");
-var _q2SurveyDefault = parcelHelpers.interopDefault(_q2Survey);
-var _q3Q4Survey = require("./Survey/Q3Q4Survey");
-var _q3Q4SurveyDefault = parcelHelpers.interopDefault(_q3Q4Survey);
-var _q5Q6Survey = require("./Survey/Q5Q6Survey");
-var _q5Q6SurveyDefault = parcelHelpers.interopDefault(_q5Q6Survey);
-var _q7Q8Q9Q10Survey = require("./Survey/Q7Q8Q9Q10Survey");
-var _q7Q8Q9Q10SurveyDefault = parcelHelpers.interopDefault(_q7Q8Q9Q10Survey);
-var _q8Survey = require("./Survey/Q8Survey");
-var _q8SurveyDefault = parcelHelpers.interopDefault(_q8Survey);
-var _q9Survey = require("./Survey/Q9Survey");
-var _q9SurveyDefault = parcelHelpers.interopDefault(_q9Survey);
-var _q11Q12Survey = require("./Survey/Q11Q12Survey");
-var _q11Q12SurveyDefault = parcelHelpers.interopDefault(_q11Q12Survey);
-var _q13Survey = require("./Survey/Q13Survey");
-var _q13SurveyDefault = parcelHelpers.interopDefault(_q13Survey);
-var _ethnicGroup = require("./Survey/EthnicGroup");
-var _ethnicGroupDefault = parcelHelpers.interopDefault(_ethnicGroup);
-var _specificEthnicGroup = require("./Survey/SpecificEthnicGroup");
-var _specificEthnicGroupDefault = parcelHelpers.interopDefault(_specificEthnicGroup);
-var _checkAnswers = require("./CheckAnswers");
-var _checkAnswersDefault = parcelHelpers.interopDefault(_checkAnswers);
-var _validation = require("./validation");
-var _s = $RefreshSig$();
-const ApplicationForm = ()=>{
-    _s();
-    const location = _reactRouterDom.useLocation();
-    const [registrationAddresses, setRegistrationAddresses] = _react.useState([]);
-    const [ethnicGroup, setEthnicGroup] = _react.useState(null);
-    const [goToPage, setGoToPage] = _react.useState(null);
-    _react.useEffect(()=>{
-        setGoToPage(location?.state?.orderNo);
-    }, [
-        location?.state?.orderNo
-    ]);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_headerDefault.default, {
-                heading: "Apply for support with West Midlands Cycle Hire costs"
-            }, void 0, false, {
-                fileName: "src/Application/ApplicationForm.js",
-                lineNumber: 45,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formContentWrapperDefault.default, {
-                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formWizardDefault.default, {
-                    onSubmit: ()=>{},
-                    initialValues: location?.state?.formValues,
-                    goToPage: goToPage,
-                    setGoToPage: setGoToPage,
-                    children: [
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_eligibilityCheckDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 48,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registrationNameDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 49,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dateOfBirthDefault.default, {
-                            validate: _validation.validateDateOfBirth
-                        }, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 50,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registrationAddressDefault.default, {
-                            orderNo: 2,
-                            registrationAddresses: registrationAddresses,
-                            setRegistrationAddresses: setRegistrationAddresses,
-                            validate: _validation.addressIdPresent("formData")
-                        }, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 51,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_emailAddressDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 52,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_disabilityGroupDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 53,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_newJobGroupDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 54,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_benefitsGroupDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 55,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_proofUploadDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 56,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_medicalServiceGroupDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 57,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_suveyIntroDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 58,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q1SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 59,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q2SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 60,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q3Q4SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 61,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q5Q6SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 62,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q7Q8Q9Q10SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 63,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_whereDropdownDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 64,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q11Q12SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 65,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q13SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 66,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_ethnicGroupDefault.default, {
-                            setEthnicGroup: setEthnicGroup,
-                            setGoToPage: setGoToPage
-                        }, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 67,
-                            columnNumber: 11
-                        }, undefined),
-                        ethnicGroup !== "preferNotToSay" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_specificEthnicGroupDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 68,
-                            columnNumber: 47
-                        }, undefined) : undefined,
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q9SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 69,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_employmentStatusGroupDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 70,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q8SurveyDefault.default, {}, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 71,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswersDefault.default, {
-                            setGoToPage: setGoToPage,
-                            validate: _validation.validateCheckAnswers
-                        }, void 0, false, {
-                            fileName: "src/Application/ApplicationForm.js",
-                            lineNumber: 72,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Application/ApplicationForm.js",
-                    lineNumber: 47,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Application/ApplicationForm.js",
-                lineNumber: 46,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true);
-};
-_s(ApplicationForm, "zQREOiqrw6QPXh79B3mrCdINsMg=", false, function() {
-    return [
-        _reactRouterDom.useLocation
-    ];
-});
-_c = ApplicationForm;
-exports.default = ApplicationForm;
-var _c;
-$RefreshReg$(_c, "ApplicationForm");
-
-  $parcel$ReactRefreshHelpers$27e7.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
+parcelHelpers.export(exports, "initialize", ()=>initialize
+);
+parcelHelpers.export(exports, "addTrackers", ()=>addTrackers
+);
+parcelHelpers.export(exports, "ga", ()=>ga
+);
+parcelHelpers.export(exports, "set", ()=>set
+);
+parcelHelpers.export(exports, "send", ()=>send
+);
+parcelHelpers.export(exports, "pageview", ()=>pageview
+);
+parcelHelpers.export(exports, "modalview", ()=>modalview
+);
+parcelHelpers.export(exports, "timing", ()=>timing
+);
+parcelHelpers.export(exports, "event", ()=>event
+);
+parcelHelpers.export(exports, "exception", ()=>exception
+);
+parcelHelpers.export(exports, "plugin", ()=>plugin
+);
+parcelHelpers.export(exports, "outboundLink", ()=>outboundLink
+);
+parcelHelpers.export(exports, "testModeAPI", ()=>testModeAPI
+);
+parcelHelpers.export(exports, "OutboundLink", ()=>OutboundLink
+);
+var _outboundLink = require("./components/OutboundLink");
+var _outboundLinkDefault = parcelHelpers.interopDefault(_outboundLink);
+var _core = require("./core");
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        enumerableOnly && (symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        })), keys.push.apply(keys, symbols);
+    }
+    return keys;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"fdOAw","react":"21dqq","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/FormWizard":"iUhmL","./section1/EligibilityCheck":"fewp0","./section1/RegistrationName":"gXGlw","./section1/DateOfBirth":"5xRL3","./section1/EmailAddress":"2RxlZ","./section1/RegistrationAddress":"4BRaX","./section1/DisabilityGroup":"8xBrw","./section1/EmploymentStatusGroup":"h9xpk","./section1/NewJobGroup":"hl18Y","./section1/BenefitsGroup":"cOwEI","./section1/ProofUpload":"dQdVT","./section1/MedicalServiceGroup":"1HmNw","./section1/WhereDropdown":"jOUHd","./Survey/SuveyIntro":"bZGlR","./Survey/Q1Survey":"dwEwy","./Survey/Q2Survey":"3luse","./Survey/Q8Survey":"3wkcB","./Survey/Q9Survey":"7vdnY","./Survey/EthnicGroup":"94VVT","./Survey/SpecificEthnicGroup":"8Qgap","./CheckAnswers":"7scGv","./validation":"lA1h2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Survey/Q3Q4Survey":"3VimS","./Survey/Q5Q6Survey":"4PBID","./Survey/Q7Q8Q9Q10Survey":"15gSW","./Survey/Q11Q12Survey":"66NQt","./Survey/Q13Survey":"gAWIL"}],"21BDb":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2865 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2865.prelude(module);
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = null != arguments[i] ? arguments[i] : {};
+        i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+var initialize = _core.initialize;
+var addTrackers = _core.addTrackers;
+var ga = _core.ga;
+var set = _core.set;
+var send = _core.send;
+var pageview = _core.pageview;
+var modalview = _core.modalview;
+var timing = _core.timing;
+var event = _core.event;
+var exception = _core.exception;
+var plugin = _core.plugin;
+var outboundLink = _core.outboundLink;
+var testModeAPI = _core.testModeAPI;
+_outboundLinkDefault.default.origTrackLink = _outboundLinkDefault.default.trackLink;
+_outboundLinkDefault.default.trackLink = _core.outboundLink;
+var OutboundLink = _outboundLinkDefault.default;
+exports.default = _objectSpread(_objectSpread({}, _core), {}, {
+    OutboundLink: OutboundLink
+});
 
-try {
+},{"./components/OutboundLink":"eNaA4","./core":"lPL7j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eNaA4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
+parcelHelpers.export(exports, "default", ()=>OutboundLink
+);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-var _breadCrumb = require("../common/BreadCrumb");
-var _breadCrumbDefault = parcelHelpers.interopDefault(_breadCrumb);
-const FormContentWrapper = ({ children  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_breadCrumbDefault.default, {
-                currentPageName: "Apply for free cycle hire"
-            }, void 0, false, {
-                fileName: "src/common/FormContentWrapper.js",
-                lineNumber: 7,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("main", {
-                className: "wmnds-container wmnds-container--main wmnds-p-b-lg wmnds-grid",
-                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "wmnds-col-1 wmnds-col-md-2-3",
-                    children: children
-                }, void 0, false, {
-                    fileName: "src/common/FormContentWrapper.js",
-                    lineNumber: 9,
-                    columnNumber: 7
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/common/FormContentWrapper.js",
-                lineNumber: 8,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true)
-;
-_c = FormContentWrapper;
-FormContentWrapper.propTypes = {
-    children: _propTypesDefault.default.node
-};
-exports.default = FormContentWrapper;
-var _c;
-$RefreshReg$(_c, "FormContentWrapper");
-
-  $parcel$ReactRefreshHelpers$2865.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
+var _warn = require("../utils/console/warn");
+var _warnDefault = parcelHelpers.interopDefault(_warn);
+function _typeof(obj1) {
+    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(obj) {
+        return typeof obj;
+    } : function(obj) {
+        return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    }, _typeof(obj1);
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","../common/BreadCrumb":"4KMVD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wKI2":[function(require,module,exports) {
+var _excluded = [
+    "to",
+    "target"
+];
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        enumerableOnly && (symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        })), keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = null != arguments[i] ? arguments[i] : {};
+        i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _objectWithoutProperties(source, excluded) {
+    if (source == null) return {};
+    var target = _objectWithoutPropertiesLoose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    Object.defineProperty(Constructor, "prototype", {
+        writable: false
+    });
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    Object.defineProperty(subClass, "prototype", {
+        writable: false
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o1, p1) {
+    _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+        o.__proto__ = p;
+        return o;
+    };
+    return _setPrototypeOf(o1, p1);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    else if (call !== void 0) throw new TypeError("Derived constructors may only return object or undefined");
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o2) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
+        return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return _getPrototypeOf(o2);
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+var NEWTAB = '_blank';
+var MIDDLECLICK = 1;
+var OutboundLink = /*#__PURE__*/ function(_Component) {
+    _inherits(OutboundLink1, _Component);
+    var _super = _createSuper(OutboundLink1);
+    function OutboundLink1() {
+        var _this;
+        _classCallCheck(this, OutboundLink1);
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        _this = _super.call.apply(_super, [
+            this
+        ].concat(args));
+        _defineProperty(_assertThisInitialized(_this), "handleClick", function(event) {
+            var _this$props = _this.props, target = _this$props.target, eventLabel = _this$props.eventLabel, to = _this$props.to, onClick = _this$props.onClick, trackerNames = _this$props.trackerNames;
+            var eventMeta = {
+                label: eventLabel
+            };
+            var sameTarget = target !== NEWTAB;
+            var normalClick = !(event.ctrlKey || event.shiftKey || event.metaKey || event.button === MIDDLECLICK);
+            if (sameTarget && normalClick) {
+                event.preventDefault();
+                OutboundLink1.trackLink(eventMeta, function() {
+                    window.location.href = to;
+                }, trackerNames);
+            } else OutboundLink1.trackLink(eventMeta, function() {}, trackerNames);
+            if (onClick) onClick(event);
+        });
+        return _this;
+    }
+    _createClass(OutboundLink1, [
+        {
+            key: "render",
+            value: function render() {
+                var _this$props2 = this.props, href = _this$props2.to, target = _this$props2.target, oldProps = _objectWithoutProperties(_this$props2, _excluded);
+                var props = _objectSpread(_objectSpread({}, oldProps), {}, {
+                    target: target,
+                    href: href,
+                    onClick: this.handleClick
+                });
+                if (target === NEWTAB) props.rel = "".concat(props.rel ? props.rel : '', " noopener noreferrer").trim();
+                delete props.eventLabel;
+                delete props.trackerNames;
+                return /*#__PURE__*/ _reactDefault.default.createElement('a', props);
+            }
+        }
+    ]);
+    return OutboundLink1;
+}(_react.Component);
+_defineProperty(OutboundLink, "trackLink", function() {
+    _warnDefault.default('ga tracking not enabled');
+});
+OutboundLink.propTypes = {
+    eventLabel: _propTypesDefault.default.string.isRequired,
+    target: _propTypesDefault.default.string,
+    to: _propTypesDefault.default.string,
+    onClick: _propTypesDefault.default.func,
+    trackerNames: _propTypesDefault.default.arrayOf(_propTypesDefault.default.string)
+};
+OutboundLink.defaultProps = {
+    target: null,
+    to: null,
+    onClick: null,
+    trackerNames: null
+};
+
+},{"react":"21dqq","prop-types":"7wKI2","../utils/console/warn":"5WjYM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7wKI2":[function(require,module,exports) {
 var ReactIs = require('react-is');
 // By explicitly using `prop-types` you are opting into new development behavior.
 // http://fb.me/prop-types-in-prod
@@ -27913,7 +27903,1009 @@ printWarning = function(text) {
 };
 module.exports = checkPropTypes;
 
-},{"./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf"}],"4KMVD":[function(require,module,exports) {
+},{"./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf"}],"5WjYM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function warn(s) {
+    console.warn('[react-ga]', s);
+}
+exports.default = warn;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lPL7j":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addTrackers", ()=>addTrackers
+);
+parcelHelpers.export(exports, "initialize", ()=>initialize
+);
+/**
+ * ga:
+ * Returns the original GA object.
+ */ parcelHelpers.export(exports, "ga", ()=>ga
+);
+/**
+ * set:
+ * GA tracker set method
+ * @param {Object} fieldsObject - a field/value pair or a group of field/value pairs on the tracker
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ */ parcelHelpers.export(exports, "set", ()=>set
+);
+/**
+ * send:
+ * Clone of the low level `ga.send` method
+ * WARNING: No validations will be applied to this
+ * @param  {Object} fieldObject - field object for tracking different analytics
+ * @param  {Array} trackerNames - trackers to send the command to
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ */ parcelHelpers.export(exports, "send", ()=>send
+);
+/**
+ * pageview:
+ * Basic GA pageview tracking
+ * @param  {String} path - the current page page e.g. '/about'
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ * @param {String} title - (optional) the page title e. g. 'My Website'
+ */ parcelHelpers.export(exports, "pageview", ()=>pageview
+);
+/**
+ * modalview:
+ * a proxy to basic GA pageview tracking to consistently track
+ * modal views that are an equivalent UX to a traditional pageview
+ * @param  {String} modalName e.g. 'add-or-edit-club'
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ */ parcelHelpers.export(exports, "modalview", ()=>modalview
+);
+/**
+ * timing:
+ * GA timing
+ * @param args.category {String} required
+ * @param args.variable {String} required
+ * @param args.value  {Int}  required
+ * @param args.label  {String} required
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ */ parcelHelpers.export(exports, "timing", ()=>timing
+);
+/**
+ * event:
+ * GA event tracking
+ * @param args.category {String} required
+ * @param args.action {String} required
+ * @param args.label {String} optional
+ * @param args.value {Int} optional
+ * @param args.nonInteraction {boolean} optional
+ * @param args.transport {string} optional
+ * @param {{action: string, category: string}} trackerNames - (optional) a list of extra trackers to run the command on
+ */ parcelHelpers.export(exports, "event", ()=>event
+);
+/**
+ * exception:
+ * GA exception tracking
+ * @param args.description {String} optional
+ * @param args.fatal {boolean} optional
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ */ parcelHelpers.export(exports, "exception", ()=>exception
+);
+parcelHelpers.export(exports, "plugin", ()=>plugin
+);
+/**
+ * outboundLink:
+ * GA outboundLink tracking
+ * @param args.label {String} e.g. url, or 'Create an Account'
+ * @param {function} hitCallback - Called after processing a hit.
+ */ parcelHelpers.export(exports, "outboundLink", ()=>outboundLink
+);
+parcelHelpers.export(exports, "testModeAPI", ()=>testModeAPI
+);
+/**
+ * React Google Analytics Module
+ *
+ * @package react-ga
+ * @author  Adam Lofting <adam@mozillafoundation.org>
+ *          Atul Varma <atul@mozillafoundation.org>
+ */ /**
+ * Utilities
+ */ var _format = require("./utils/format");
+var _formatDefault = parcelHelpers.interopDefault(_format);
+var _removeLeadingSlash = require("./utils/removeLeadingSlash");
+var _removeLeadingSlashDefault = parcelHelpers.interopDefault(_removeLeadingSlash);
+var _trim = require("./utils/trim");
+var _trimDefault = parcelHelpers.interopDefault(_trim);
+var _loadGA = require("./utils/loadGA");
+var _loadGADefault = parcelHelpers.interopDefault(_loadGA);
+var _warn = require("./utils/console/warn");
+var _warnDefault = parcelHelpers.interopDefault(_warn);
+var _log = require("./utils/console/log");
+var _logDefault = parcelHelpers.interopDefault(_log);
+var _testModeAPI = require("./utils/testModeAPI");
+var _testModeAPIDefault = parcelHelpers.interopDefault(_testModeAPI);
+var _excluded = [
+    "category",
+    "action",
+    "label",
+    "value",
+    "nonInteraction",
+    "transport"
+];
+function _objectWithoutProperties(source, excluded) {
+    if (source == null) return {};
+    var target = _objectWithoutPropertiesLoose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        enumerableOnly && (symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        })), keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = null != arguments[i] ? arguments[i] : {};
+        i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+function _typeof(obj1) {
+    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(obj) {
+        return typeof obj;
+    } : function(obj) {
+        return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    }, _typeof(obj1);
+}
+function _toConsumableArray(arr) {
+    return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
+function _nonIterableSpread() {
+    throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+function _unsupportedIterableToArray(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(o);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+function _iterableToArray(iter) {
+    if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+}
+function _arrayWithoutHoles(arr) {
+    if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+}
+function _arrayLikeToArray(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+    for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
+    return arr2;
+}
+var _isNotBrowser = typeof window === 'undefined' || typeof document === 'undefined';
+var _debug = false;
+var _titleCase = true;
+var _testMode = false;
+var _alwaysSendToDefaultTracker = true;
+var _redactEmail = true;
+var internalGa = function internalGa() {
+    var _window;
+    if (_testMode) return _testModeAPIDefault.default.ga.apply(_testModeAPIDefault.default, arguments);
+    if (_isNotBrowser) return false;
+    if (!window.ga) return _warnDefault.default('ReactGA.initialize must be called first or GoogleAnalytics should be loaded manually');
+    return (_window = window).ga.apply(_window, arguments);
+};
+function _format1(s) {
+    return _formatDefault.default(s, _titleCase, _redactEmail);
+}
+function _gaCommand(trackerNames) {
+    for(var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++)args[_key - 1] = arguments[_key];
+    var command = args[0];
+    if (typeof internalGa === 'function') {
+        if (typeof command !== 'string') {
+            _warnDefault.default('ga command must be a string');
+            return;
+        }
+        if (_alwaysSendToDefaultTracker || !Array.isArray(trackerNames)) internalGa.apply(void 0, args);
+        if (Array.isArray(trackerNames)) trackerNames.forEach(function(name) {
+            internalGa.apply(void 0, _toConsumableArray([
+                "".concat(name, ".").concat(command)
+            ].concat(args.slice(1))));
+        });
+    }
+}
+function _initialize(gaTrackingID, options) {
+    if (!gaTrackingID) {
+        _warnDefault.default('gaTrackingID is required in initialize()');
+        return;
+    }
+    if (options) {
+        if (options.debug && options.debug === true) _debug = true;
+        if (options.titleCase === false) _titleCase = false;
+        if (options.redactEmail === false) _redactEmail = false;
+        if (options.useExistingGa) return;
+    }
+    if (options && options.gaOptions) internalGa('create', gaTrackingID, options.gaOptions);
+    else internalGa('create', gaTrackingID, 'auto');
+}
+function addTrackers(configsOrTrackingId, options) {
+    if (Array.isArray(configsOrTrackingId)) configsOrTrackingId.forEach(function(config) {
+        if (_typeof(config) !== 'object') {
+            _warnDefault.default('All configs must be an object');
+            return;
+        }
+        _initialize(config.trackingId, config);
+    });
+    else _initialize(configsOrTrackingId, options);
+    return true;
+}
+function initialize(configsOrTrackingId, options) {
+    if (options && options.testMode === true) _testMode = true;
+    else {
+        if (_isNotBrowser) return;
+        if (!options || options.standardImplementation !== true) _loadGADefault.default(options);
+    }
+    _alwaysSendToDefaultTracker = options && typeof options.alwaysSendToDefaultTracker === 'boolean' ? options.alwaysSendToDefaultTracker : true;
+    addTrackers(configsOrTrackingId, options);
+}
+function ga() {
+    for(var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++)args[_key2] = arguments[_key2];
+    if (args.length > 0) {
+        internalGa.apply(void 0, args);
+        if (_debug) {
+            _logDefault.default("called ga('arguments');");
+            _logDefault.default("with arguments: ".concat(JSON.stringify(args)));
+        }
+    }
+    return window.ga;
+}
+function set(fieldsObject, trackerNames) {
+    if (!fieldsObject) {
+        _warnDefault.default('`fieldsObject` is required in .set()');
+        return;
+    }
+    if (_typeof(fieldsObject) !== 'object') {
+        _warnDefault.default('Expected `fieldsObject` arg to be an Object');
+        return;
+    }
+    if (Object.keys(fieldsObject).length === 0) _warnDefault.default('empty `fieldsObject` given to .set()');
+    _gaCommand(trackerNames, 'set', fieldsObject);
+    if (_debug) {
+        _logDefault.default("called ga('set', fieldsObject);");
+        _logDefault.default("with fieldsObject: ".concat(JSON.stringify(fieldsObject)));
+    }
+}
+function send(fieldObject, trackerNames) {
+    _gaCommand(trackerNames, 'send', fieldObject);
+    if (_debug) {
+        _logDefault.default("called ga('send', fieldObject);");
+        _logDefault.default("with fieldObject: ".concat(JSON.stringify(fieldObject)));
+        _logDefault.default("with trackers: ".concat(JSON.stringify(trackerNames)));
+    }
+}
+function pageview(rawPath, trackerNames, title) {
+    if (!rawPath) {
+        _warnDefault.default('path is required in .pageview()');
+        return;
+    }
+    var path = _trimDefault.default(rawPath);
+    if (path === '') {
+        _warnDefault.default('path cannot be an empty string in .pageview()');
+        return;
+    }
+    var extraFields = {};
+    if (title) extraFields.title = title;
+    if (typeof ga === 'function') {
+        _gaCommand(trackerNames, 'send', _objectSpread({
+            hitType: 'pageview',
+            page: path
+        }, extraFields));
+        if (_debug) {
+            _logDefault.default("called ga('send', 'pageview', path);");
+            var extraLog = '';
+            if (title) extraLog = " and title: ".concat(title);
+            _logDefault.default("with path: ".concat(path).concat(extraLog));
+        }
+    }
+}
+function modalview(rawModalName, trackerNames) {
+    if (!rawModalName) {
+        _warnDefault.default('modalName is required in .modalview(modalName)');
+        return;
+    }
+    var modalName = _removeLeadingSlashDefault.default(_trimDefault.default(rawModalName));
+    if (modalName === '') {
+        _warnDefault.default('modalName cannot be an empty string or a single / in .modalview()');
+        return;
+    }
+    if (typeof ga === 'function') {
+        var path = "/modal/".concat(modalName);
+        _gaCommand(trackerNames, 'send', 'pageview', path);
+        if (_debug) {
+            _logDefault.default("called ga('send', 'pageview', path);");
+            _logDefault.default("with path: ".concat(path));
+        }
+    }
+}
+function timing() {
+    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {}, category = _ref.category, variable = _ref.variable, value = _ref.value, label = _ref.label;
+    var trackerNames = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : undefined;
+    if (typeof ga === 'function') {
+        if (!category || !variable || typeof value !== 'number') {
+            _warnDefault.default("args.category, args.variable AND args.value are required in timing() AND args.value has to be a number");
+            return;
+        } // Required Fields
+        var fieldObject = {
+            hitType: 'timing',
+            timingCategory: _format1(category),
+            timingVar: _format1(variable),
+            timingValue: value
+        };
+        if (label) fieldObject.timingLabel = _format1(label);
+        send(fieldObject, trackerNames);
+    }
+}
+function event() {
+    var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {}, category = _ref2.category, action = _ref2.action, label = _ref2.label, value = _ref2.value, nonInteraction = _ref2.nonInteraction, transport = _ref2.transport, args = _objectWithoutProperties(_ref2, _excluded);
+    var trackerNames = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : undefined;
+    if (typeof ga === 'function') {
+        // Simple Validation
+        if (!category || !action) {
+            _warnDefault.default('args.category AND args.action are required in event()');
+            return;
+        } // Required Fields
+        var fieldObject = {
+            hitType: 'event',
+            eventCategory: _format1(category),
+            eventAction: _format1(action)
+        }; // Optional Fields
+        if (label) fieldObject.eventLabel = _format1(label);
+        if (typeof value !== 'undefined') {
+            if (typeof value !== 'number') _warnDefault.default('Expected `args.value` arg to be a Number.');
+            else fieldObject.eventValue = value;
+        }
+        if (typeof nonInteraction !== 'undefined') {
+            if (typeof nonInteraction !== 'boolean') _warnDefault.default('`args.nonInteraction` must be a boolean.');
+            else fieldObject.nonInteraction = nonInteraction;
+        }
+        if (typeof transport !== 'undefined') {
+            if (typeof transport !== 'string') _warnDefault.default('`args.transport` must be a string.');
+            else {
+                if ([
+                    'beacon',
+                    'xhr',
+                    'image'
+                ].indexOf(transport) === -1) _warnDefault.default('`args.transport` must be either one of these values: `beacon`, `xhr` or `image`');
+                fieldObject.transport = transport;
+            }
+        }
+        Object.keys(args).filter(function(key) {
+            return key.substr(0, 9) === 'dimension';
+        }).forEach(function(key) {
+            fieldObject[key] = args[key];
+        });
+        Object.keys(args).filter(function(key) {
+            return key.substr(0, 6) === 'metric';
+        }).forEach(function(key) {
+            fieldObject[key] = args[key];
+        }); // Send to GA
+        send(fieldObject, trackerNames);
+    }
+}
+function exception(_ref3, trackerNames) {
+    var description = _ref3.description, fatal = _ref3.fatal;
+    if (typeof ga === 'function') {
+        // Required Fields
+        var fieldObject = {
+            hitType: 'exception'
+        }; // Optional Fields
+        if (description) fieldObject.exDescription = _format1(description);
+        if (typeof fatal !== 'undefined') {
+            if (typeof fatal !== 'boolean') _warnDefault.default('`args.fatal` must be a boolean.');
+            else fieldObject.exFatal = fatal;
+        } // Send to GA
+        send(fieldObject, trackerNames);
+    }
+}
+var plugin = {
+    /**
+   * require:
+   * GA requires a plugin
+   * @param name {String} e.g. 'ecommerce' or 'myplugin'
+   * @param options {Object} optional e.g {path: '/log', debug: true}
+   * @param trackerName {String} optional e.g 'trackerName'
+   */ require: function require(rawName, options, trackerName) {
+        if (typeof ga === 'function') {
+            // Required Fields
+            if (!rawName) {
+                _warnDefault.default('`name` is required in .require()');
+                return;
+            }
+            var name = _trimDefault.default(rawName);
+            if (name === '') {
+                _warnDefault.default('`name` cannot be an empty string in .require()');
+                return;
+            }
+            var requireString = trackerName ? "".concat(trackerName, ".require") : 'require'; // Optional Fields
+            if (options) {
+                if (_typeof(options) !== 'object') {
+                    _warnDefault.default('Expected `options` arg to be an Object');
+                    return;
+                }
+                if (Object.keys(options).length === 0) _warnDefault.default('Empty `options` given to .require()');
+                ga(requireString, name, options);
+                if (_debug) _logDefault.default("called ga('require', '".concat(name, "', ").concat(JSON.stringify(options)));
+            } else {
+                ga(requireString, name);
+                if (_debug) _logDefault.default("called ga('require', '".concat(name, "');"));
+            }
+        }
+    },
+    /**
+   * execute:
+   * GA execute action for plugin
+   * Takes variable number of arguments
+   * @param pluginName {String} e.g. 'ecommerce' or 'myplugin'
+   * @param action {String} e.g. 'addItem' or 'myCustomAction'
+   * @param actionType {String} optional e.g. 'detail'
+   * @param payload {Object} optional e.g { id: '1x5e', name : 'My product to track' }
+   */ execute: function execute(pluginName, action) {
+        var payload;
+        var actionType;
+        for(var _len3 = arguments.length, args = new Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++)args[_key3 - 2] = arguments[_key3];
+        if (args.length === 1) payload = args[0];
+        else {
+            actionType = args[0];
+            payload = args[1];
+        }
+        if (typeof ga === 'function') {
+            if (typeof pluginName !== 'string') _warnDefault.default('Expected `pluginName` arg to be a String.');
+            else if (typeof action !== 'string') _warnDefault.default('Expected `action` arg to be a String.');
+            else {
+                var command = "".concat(pluginName, ":").concat(action);
+                payload = payload || null;
+                if (actionType && payload) {
+                    ga(command, actionType, payload);
+                    if (_debug) {
+                        _logDefault.default("called ga('".concat(command, "');"));
+                        _logDefault.default("actionType: \"".concat(actionType, "\" with payload: ").concat(JSON.stringify(payload)));
+                    }
+                } else if (payload) {
+                    ga(command, payload);
+                    if (_debug) {
+                        _logDefault.default("called ga('".concat(command, "');"));
+                        _logDefault.default("with payload: ".concat(JSON.stringify(payload)));
+                    }
+                } else {
+                    ga(command);
+                    if (_debug) _logDefault.default("called ga('".concat(command, "');"));
+                }
+            }
+        }
+    }
+};
+function outboundLink(args, hitCallback, trackerNames) {
+    if (typeof hitCallback !== 'function') {
+        _warnDefault.default('hitCallback function is required');
+        return;
+    }
+    if (typeof ga === 'function') {
+        // Simple Validation
+        if (!args || !args.label) {
+            _warnDefault.default('args.label is required in outboundLink()');
+            return;
+        } // Required Fields
+        var fieldObject = {
+            hitType: 'event',
+            eventCategory: 'Outbound',
+            eventAction: 'Click',
+            eventLabel: _format1(args.label)
+        };
+        var safetyCallbackCalled = false;
+        var safetyCallback = function safetyCallback() {
+            // This prevents a delayed response from GA
+            // causing hitCallback from being fired twice
+            safetyCallbackCalled = true;
+            hitCallback();
+        }; // Using a timeout to ensure the execution of critical application code
+        // in the case when the GA server might be down
+        // or an ad blocker prevents sending the data
+        // register safety net timeout:
+        var t = setTimeout(safetyCallback, 250);
+        var clearableCallbackForGA = function clearableCallbackForGA() {
+            clearTimeout(t);
+            if (!safetyCallbackCalled) hitCallback();
+        };
+        fieldObject.hitCallback = clearableCallbackForGA; // Send to GA
+        send(fieldObject, trackerNames);
+    } else // if ga is not defined, return the callback so the application
+    // continues to work as expected
+    setTimeout(hitCallback, 0);
+}
+var testModeAPI = _testModeAPIDefault.default;
+exports.default = {
+    initialize: initialize,
+    ga: ga,
+    set: set,
+    send: send,
+    pageview: pageview,
+    modalview: modalview,
+    timing: timing,
+    event: event,
+    exception: exception,
+    plugin: plugin,
+    outboundLink: outboundLink,
+    testModeAPI: _testModeAPIDefault.default
+};
+
+},{"./utils/format":"chaOv","./utils/removeLeadingSlash":"zmQjJ","./utils/trim":"hqny9","./utils/loadGA":"fJsKe","./utils/console/warn":"5WjYM","./utils/console/log":"7ddtj","./utils/testModeAPI":"heMX3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"chaOv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _redactEmail = require("./redactEmail");
+var _redactEmailDefault = parcelHelpers.interopDefault(_redactEmail);
+var _toTitleCase = require("./toTitleCase");
+var _toTitleCaseDefault = parcelHelpers.interopDefault(_toTitleCase);
+function format() {
+    var s = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+    var titleCase = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    var redactingEmail = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+    var _str = s || '';
+    if (titleCase) _str = _toTitleCaseDefault.default(s);
+    if (redactingEmail) _str = _redactEmailDefault.default(_str);
+    return _str;
+}
+exports.default = format;
+
+},{"./redactEmail":"4jaAM","./toTitleCase":"2OCdz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4jaAM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _warn = require("./console/warn");
+var _warnDefault = parcelHelpers.interopDefault(_warn);
+var _mightBeEmail = require("./mightBeEmail");
+var _mightBeEmailDefault = parcelHelpers.interopDefault(_mightBeEmail);
+var redacted = 'REDACTED (Potential Email Address)';
+function redactEmail(string) {
+    if (_mightBeEmailDefault.default(string)) {
+        _warnDefault.default('This arg looks like an email address, redacting.');
+        return redacted;
+    }
+    return string;
+}
+exports.default = redactEmail;
+
+},{"./console/warn":"5WjYM","./mightBeEmail":"3VU93","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3VU93":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function mightBeEmail(s) {
+    // There's no point trying to validate rfc822 fully, just look for ...@...
+    return typeof s === 'string' && s.indexOf('@') !== -1;
+}
+exports.default = mightBeEmail;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2OCdz":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * To Title Case 2.1 - http://individed.com/code/to-title-case/
+ * Copyright 2008-2013 David Gouch. Licensed under the MIT License.
+ * https://github.com/gouch/to-title-case
+ */ var _trim = require("./trim");
+var _trimDefault = parcelHelpers.interopDefault(_trim);
+var smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|vs?\.?|via)$/i; // test
+function toTitleCase(string) {
+    return _trimDefault.default(string).replace(/[A-Za-z0-9\u00C0-\u00FF]+[^\s-]*/g, function(match, index, title) {
+        if (index > 0 && index + match.length !== title.length && match.search(smallWords) > -1 && title.charAt(index - 2) !== ':' && (title.charAt(index + match.length) !== '-' || title.charAt(index - 1) === '-') && title.charAt(index - 1).search(/[^\s-]/) < 0) return match.toLowerCase();
+        if (match.substr(1).search(/[A-Z]|\../) > -1) return match;
+        return match.charAt(0).toUpperCase() + match.substr(1);
+    });
+}
+exports.default = toTitleCase;
+
+},{"./trim":"hqny9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hqny9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function trim(s) {
+    return s && s.toString().replace(/^\s+|\s+$/g, '');
+}
+exports.default = trim;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"zmQjJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function removeLeadingSlash(string) {
+    if (string.substring(0, 1) === '/') return string.substring(1);
+    return string;
+}
+exports.default = removeLeadingSlash;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fJsKe":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var isLoaded = false;
+exports.default = function(options) {
+    if (isLoaded) return;
+    isLoaded = true;
+    var gaAddress = 'https://www.google-analytics.com/analytics.js';
+    if (options && options.gaAddress) gaAddress = options.gaAddress;
+    else if (options && options.debug) gaAddress = 'https://www.google-analytics.com/analytics_debug.js';
+    var onerror = options && options.onerror; // https://developers.google.com/analytics/devguides/collection/analyticsjs/
+    /* eslint-disable */ (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments);
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        a.onerror = onerror;
+        m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', gaAddress, 'ga');
+/* eslint-enable */ };
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7ddtj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function log(s) {
+    console.info('[react-ga]', s);
+}
+exports.default = log;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"heMX3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "gaCalls", ()=>gaCalls
+);
+var gaCalls = [];
+exports.default = {
+    calls: gaCalls,
+    ga: function ga() {
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        gaCalls.push([].concat(args));
+    },
+    resetCalls: function resetCalls() {
+        gaCalls.length = 0;
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cdJEi":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$27e7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$27e7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _react = require("react"); // Layout
+var _formContentWrapper = require("../common/FormContentWrapper");
+var _formContentWrapperDefault = parcelHelpers.interopDefault(_formContentWrapper);
+var _header = require("../common/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _formWizard = require("../common/FormWizard"); // Main form
+var _formWizardDefault = parcelHelpers.interopDefault(_formWizard);
+var _eligibilityCheck = require("./section1/EligibilityCheck");
+var _eligibilityCheckDefault = parcelHelpers.interopDefault(_eligibilityCheck);
+var _registrationName = require("./section1/RegistrationName");
+var _registrationNameDefault = parcelHelpers.interopDefault(_registrationName);
+var _dateOfBirth = require("./section1/DateOfBirth");
+var _dateOfBirthDefault = parcelHelpers.interopDefault(_dateOfBirth);
+var _emailAddress = require("./section1/EmailAddress");
+var _emailAddressDefault = parcelHelpers.interopDefault(_emailAddress);
+var _registrationAddress = require("./section1/RegistrationAddress"); // import DisabilityGroup from "./section1/DisabilityGroup";
+var _registrationAddressDefault = parcelHelpers.interopDefault(_registrationAddress);
+var _employmentStatusGroup = require("./section1/EmploymentStatusGroup");
+var _employmentStatusGroupDefault = parcelHelpers.interopDefault(_employmentStatusGroup);
+var _newJobGroup = require("./section1/NewJobGroup");
+var _newJobGroupDefault = parcelHelpers.interopDefault(_newJobGroup);
+var _benefitsGroup = require("./section1/BenefitsGroup");
+var _benefitsGroupDefault = parcelHelpers.interopDefault(_benefitsGroup);
+var _proofUpload = require("./section1/ProofUpload"); // import MedicalServiceGroup from "./section1/MedicalServiceGroup";
+var _proofUploadDefault = parcelHelpers.interopDefault(_proofUpload);
+var _whereDropdown = require("./section1/WhereDropdown"); // Survey
+var _whereDropdownDefault = parcelHelpers.interopDefault(_whereDropdown);
+var _suveyIntro = require("./Survey/SuveyIntro");
+var _suveyIntroDefault = parcelHelpers.interopDefault(_suveyIntro);
+var _q1Survey = require("./Survey/Q1Survey");
+var _q1SurveyDefault = parcelHelpers.interopDefault(_q1Survey);
+var _q2Survey = require("./Survey/Q2Survey");
+var _q2SurveyDefault = parcelHelpers.interopDefault(_q2Survey);
+var _q3Q4Survey = require("./Survey/Q3Q4Survey");
+var _q3Q4SurveyDefault = parcelHelpers.interopDefault(_q3Q4Survey);
+var _q5Q6Survey = require("./Survey/Q5Q6Survey");
+var _q5Q6SurveyDefault = parcelHelpers.interopDefault(_q5Q6Survey);
+var _q7Q8Q9Q10Survey = require("./Survey/Q7Q8Q9Q10Survey");
+var _q7Q8Q9Q10SurveyDefault = parcelHelpers.interopDefault(_q7Q8Q9Q10Survey);
+var _q8Survey = require("./Survey/Q8Survey");
+var _q8SurveyDefault = parcelHelpers.interopDefault(_q8Survey);
+var _q9Survey = require("./Survey/Q9Survey");
+var _q9SurveyDefault = parcelHelpers.interopDefault(_q9Survey);
+var _q11Q12Survey = require("./Survey/Q11Q12Survey");
+var _q11Q12SurveyDefault = parcelHelpers.interopDefault(_q11Q12Survey);
+var _q13Survey = require("./Survey/Q13Survey");
+var _q13SurveyDefault = parcelHelpers.interopDefault(_q13Survey);
+var _ethnicGroup = require("./Survey/EthnicGroup");
+var _ethnicGroupDefault = parcelHelpers.interopDefault(_ethnicGroup);
+var _specificEthnicGroup = require("./Survey/SpecificEthnicGroup");
+var _specificEthnicGroupDefault = parcelHelpers.interopDefault(_specificEthnicGroup);
+var _checkAnswers = require("./CheckAnswers");
+var _checkAnswersDefault = parcelHelpers.interopDefault(_checkAnswers);
+var _validation = require("./validation");
+var _s = $RefreshSig$();
+const ApplicationForm = ()=>{
+    _s();
+    const location = _reactRouterDom.useLocation();
+    const [registrationAddresses, setRegistrationAddresses] = _react.useState([]);
+    const [ethnicGroup, setEthnicGroup] = _react.useState(null);
+    const [goToPage, setGoToPage] = _react.useState(null);
+    _react.useEffect(()=>{
+        setGoToPage(location?.state?.orderNo);
+    }, [
+        location?.state?.orderNo
+    ]);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_headerDefault.default, {
+                heading: "Apply for support with West Midlands cycle hire costs"
+            }, void 0, false, {
+                fileName: "src/Application/ApplicationForm.js",
+                lineNumber: 45,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formContentWrapperDefault.default, {
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formWizardDefault.default, {
+                    onSubmit: ()=>{},
+                    initialValues: location?.state?.formValues,
+                    goToPage: goToPage,
+                    setGoToPage: setGoToPage,
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_eligibilityCheckDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 48,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registrationNameDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 49,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dateOfBirthDefault.default, {
+                            validate: _validation.validateDateOfBirth
+                        }, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 50,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registrationAddressDefault.default, {
+                            orderNo: 2,
+                            registrationAddresses: registrationAddresses,
+                            setRegistrationAddresses: setRegistrationAddresses,
+                            validate: _validation.addressIdPresent("formData")
+                        }, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 51,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_emailAddressDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 52,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_newJobGroupDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 56,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_benefitsGroupDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 57,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_proofUploadDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 58,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_suveyIntroDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 62,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q1SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 63,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q2SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 64,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q3Q4SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 65,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q5Q6SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 66,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q7Q8Q9Q10SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 67,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_whereDropdownDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 68,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q11Q12SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 69,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q13SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 70,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_ethnicGroupDefault.default, {
+                            setEthnicGroup: setEthnicGroup,
+                            setGoToPage: setGoToPage
+                        }, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 71,
+                            columnNumber: 11
+                        }, undefined),
+                        ethnicGroup !== "preferNotToSay" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_specificEthnicGroupDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 72,
+                            columnNumber: 47
+                        }, undefined) : undefined,
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q9SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 73,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_employmentStatusGroupDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 74,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_q8SurveyDefault.default, {}, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 75,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswersDefault.default, {
+                            setGoToPage: setGoToPage,
+                            validate: _validation.validateCheckAnswers
+                        }, void 0, false, {
+                            fileName: "src/Application/ApplicationForm.js",
+                            lineNumber: 76,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Application/ApplicationForm.js",
+                    lineNumber: 47,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Application/ApplicationForm.js",
+                lineNumber: 46,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_s(ApplicationForm, "zQREOiqrw6QPXh79B3mrCdINsMg=", false, function() {
+    return [
+        _reactRouterDom.useLocation
+    ];
+});
+_c = ApplicationForm;
+exports.default = ApplicationForm;
+var _c;
+$RefreshReg$(_c, "ApplicationForm");
+
+  $parcel$ReactRefreshHelpers$27e7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"fdOAw","react":"21dqq","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/FormWizard":"iUhmL","./section1/EligibilityCheck":"fewp0","./section1/RegistrationName":"gXGlw","./section1/DateOfBirth":"5xRL3","./section1/EmailAddress":"2RxlZ","./section1/RegistrationAddress":"4BRaX","./section1/EmploymentStatusGroup":"h9xpk","./section1/NewJobGroup":"hl18Y","./section1/BenefitsGroup":"cOwEI","./section1/ProofUpload":"dQdVT","./section1/WhereDropdown":"jOUHd","./Survey/SuveyIntro":"bZGlR","./Survey/Q1Survey":"dwEwy","./Survey/Q2Survey":"3luse","./Survey/Q3Q4Survey":"3VimS","./Survey/Q5Q6Survey":"4PBID","./Survey/Q7Q8Q9Q10Survey":"15gSW","./Survey/Q8Survey":"3wkcB","./Survey/Q9Survey":"7vdnY","./Survey/Q11Q12Survey":"66NQt","./Survey/Q13Survey":"gAWIL","./Survey/EthnicGroup":"94VVT","./Survey/SpecificEthnicGroup":"8Qgap","./CheckAnswers":"7scGv","./validation":"lA1h2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"21BDb":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2865 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2865.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _breadCrumb = require("../common/BreadCrumb");
+var _breadCrumbDefault = parcelHelpers.interopDefault(_breadCrumb);
+const FormContentWrapper = ({ children  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_breadCrumbDefault.default, {
+                currentPageName: "Apply for Go Cycle"
+            }, void 0, false, {
+                fileName: "src/common/FormContentWrapper.js",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("main", {
+                className: "wmnds-container wmnds-container--main wmnds-p-b-lg wmnds-grid",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "wmnds-col-1 wmnds-col-md-2-3",
+                    children: children
+                }, void 0, false, {
+                    fileName: "src/common/FormContentWrapper.js",
+                    lineNumber: 9,
+                    columnNumber: 7
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/common/FormContentWrapper.js",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true)
+;
+_c = FormContentWrapper;
+FormContentWrapper.propTypes = {
+    children: _propTypesDefault.default.node
+};
+exports.default = FormContentWrapper;
+var _c;
+$RefreshReg$(_c, "FormContentWrapper");
+
+  $parcel$ReactRefreshHelpers$2865.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","../common/BreadCrumb":"4KMVD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4KMVD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3f2b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28018,7 +29010,7 @@ const BreadCrumb = ({ currentPageName  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("
                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
                             href: "https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/cycling-in-the-west-midlands/cycling-for-everyone/cycle-hire-apply-for-free-minutes/",
                             className: "wmnds-breadcrumb__link",
-                            children: "Cycle Hire - apply for free minutes"
+                            children: "Hire - apply for free minutes"
                         }, void 0, false, {
                             fileName: "src/common/BreadCrumb.js",
                             lineNumber: 34,
@@ -28304,7 +29296,7 @@ const Header = ({ heading  })=>{
                                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("img", {
                                             className: "wmnds-header__logo",
                                             alt: "Transport for West Midlands logo",
-                                            src: "https://unpkg.com/wmn-design-system@2.4.0/build/img/logo.svg"
+                                            src: "https://unpkg.com/wmn-design-system@2.2.0/build/img/logo.svg"
                                         }, void 0, false, {
                                             fileName: "src/common/Header.js",
                                             lineNumber: 38,
@@ -28438,7 +29430,7 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
         const isLastPage = page === _react.Children.count(filteredChildren) - 1;
         if (isLastPage) {
             setLoading(true);
-            (async ()=>{
+            await (async ()=>{
                 const rawResponse = await fetch("https://cyclewise-dev-api.azure-api.net/cyclewise/submit-form", {
                     method: "POST",
                     headers: {
@@ -28478,17 +29470,17 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                         children: `< Back`
                     }, void 0, false, {
                         fileName: "src/common/FormWizard.js",
-                        lineNumber: 120,
+                        lineNumber: 118,
                         columnNumber: 24
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/common/FormWizard.js",
-                    lineNumber: 119,
+                    lineNumber: 117,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/common/FormWizard.js",
-                lineNumber: 118,
+                lineNumber: 116,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -28517,7 +29509,7 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                                             children: "Continue"
                                         }, void 0, false, {
                                             fileName: "src/common/FormWizard.js",
-                                            lineNumber: 138,
+                                            lineNumber: 136,
                                             columnNumber: 33
                                         }, undefined),
                                         !isLastPage1 && !isFirstPage && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -28528,11 +29520,11 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                                             children: "Continue"
                                         }, void 0, false, {
                                             fileName: "src/common/FormWizard.js",
-                                            lineNumber: 142,
+                                            lineNumber: 140,
                                             columnNumber: 49
                                         }, undefined),
                                         isLastPage1 && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
-                                            className: "wmnds-btn wmnds-btn--start",
+                                            className: `wmnds-btn wmnds-btn--start ${loading && "wmnds-btn--disabled"}`,
                                             type: "submit",
                                             disabled: loading,
                                             children: [
@@ -28545,12 +29537,12 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                                                         className: "wmnds-loader__content"
                                                     }, void 0, false, {
                                                         fileName: "src/common/FormWizard.js",
-                                                        lineNumber: 149,
+                                                        lineNumber: 147,
                                                         columnNumber: 25
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/common/FormWizard.js",
-                                                    lineNumber: 148,
+                                                    lineNumber: 146,
                                                     columnNumber: 32
                                                 }, undefined) : /*#__PURE__*/ _jsxDevRuntime.jsxDEV("svg", {
                                                     className: "wmnds-btn__icon wmnds-btn__icon--right ",
@@ -28559,24 +29551,24 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                                                         href: "#wmnds-general-chevron-right"
                                                     }, void 0, false, {
                                                         fileName: "src/common/FormWizard.js",
-                                                        lineNumber: 151,
+                                                        lineNumber: 149,
                                                         columnNumber: 25
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/common/FormWizard.js",
-                                                    lineNumber: 150,
+                                                    lineNumber: 148,
                                                     columnNumber: 32
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/common/FormWizard.js",
-                                            lineNumber: 146,
+                                            lineNumber: 144,
                                             columnNumber: 32
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/common/FormWizard.js",
-                                    lineNumber: 137,
+                                    lineNumber: 135,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -28588,28 +29580,28 @@ const FormWizard = ({ initialValues , children , onSubmit , goToPage , setGoToPa
                                         children: JSON.stringify(values, 0, 2)
                                     }, void 0, false, {
                                         fileName: "src/common/FormWizard.js",
-                                        lineNumber: 160,
+                                        lineNumber: 158,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/common/FormWizard.js",
-                                    lineNumber: 156,
+                                    lineNumber: 154,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/common/FormWizard.js",
-                            lineNumber: 135,
+                            lineNumber: 133,
                             columnNumber: 15
                         }, undefined)
                 }, void 0, false, {
                     fileName: "src/common/FormWizard.js",
-                    lineNumber: 124,
+                    lineNumber: 122,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/common/FormWizard.js",
-                lineNumber: 123,
+                lineNumber: 121,
                 columnNumber: 7
             }, undefined)
         ]
@@ -28643,7 +29635,22 @@ $RefreshReg$(_c, "FormWizard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","prop-types":"7wKI2","react-final-form":"cgn4o","./ButtonLink":"bUlD6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-ga":"4j2TN","../Application/useAnalyticsEventTracker":"c7B2Z"}],"cgn4o":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","react-ga":"4j2TN","../Application/useAnalyticsEventTracker":"c7B2Z","prop-types":"7wKI2","react-final-form":"cgn4o","./ButtonLink":"bUlD6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"c7B2Z":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _reactGa = require("react-ga");
+var _reactGaDefault = parcelHelpers.interopDefault(_reactGa);
+const useAnalyticsEventTracker = (category, action, label)=>{
+    // console.log("GA event:", category, ":", action, ":", label);
+    _reactGaDefault.default.event({
+        category: category,
+        action: action,
+        label: label
+    });
+};
+exports.default = useAnalyticsEventTracker;
+
+},{"react-ga":"4j2TN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cgn4o":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Field", ()=>Field
@@ -30410,1028 +31417,7 @@ $RefreshReg$(_c, "ButtonLink");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4j2TN":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "initialize", ()=>initialize
-);
-parcelHelpers.export(exports, "addTrackers", ()=>addTrackers
-);
-parcelHelpers.export(exports, "ga", ()=>ga
-);
-parcelHelpers.export(exports, "set", ()=>set
-);
-parcelHelpers.export(exports, "send", ()=>send
-);
-parcelHelpers.export(exports, "pageview", ()=>pageview
-);
-parcelHelpers.export(exports, "modalview", ()=>modalview
-);
-parcelHelpers.export(exports, "timing", ()=>timing
-);
-parcelHelpers.export(exports, "event", ()=>event
-);
-parcelHelpers.export(exports, "exception", ()=>exception
-);
-parcelHelpers.export(exports, "plugin", ()=>plugin
-);
-parcelHelpers.export(exports, "outboundLink", ()=>outboundLink
-);
-parcelHelpers.export(exports, "testModeAPI", ()=>testModeAPI
-);
-parcelHelpers.export(exports, "OutboundLink", ()=>OutboundLink
-);
-var _outboundLink = require("./components/OutboundLink");
-var _outboundLinkDefault = parcelHelpers.interopDefault(_outboundLink);
-var _core = require("./core");
-function ownKeys(object, enumerableOnly) {
-    var keys = Object.keys(object);
-    if (Object.getOwnPropertySymbols) {
-        var symbols = Object.getOwnPropertySymbols(object);
-        enumerableOnly && (symbols = symbols.filter(function(sym) {
-            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-        })), keys.push.apply(keys, symbols);
-    }
-    return keys;
-}
-function _objectSpread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = null != arguments[i] ? arguments[i] : {};
-        i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
-            _defineProperty(target, key, source[key]);
-        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function(key) {
-            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-        });
-    }
-    return target;
-}
-function _defineProperty(obj, key, value) {
-    if (key in obj) Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-    });
-    else obj[key] = value;
-    return obj;
-}
-var initialize = _core.initialize;
-var addTrackers = _core.addTrackers;
-var ga = _core.ga;
-var set = _core.set;
-var send = _core.send;
-var pageview = _core.pageview;
-var modalview = _core.modalview;
-var timing = _core.timing;
-var event = _core.event;
-var exception = _core.exception;
-var plugin = _core.plugin;
-var outboundLink = _core.outboundLink;
-var testModeAPI = _core.testModeAPI;
-_outboundLinkDefault.default.origTrackLink = _outboundLinkDefault.default.trackLink;
-_outboundLinkDefault.default.trackLink = _core.outboundLink;
-var OutboundLink = _outboundLinkDefault.default;
-exports.default = _objectSpread(_objectSpread({}, _core), {}, {
-    OutboundLink: OutboundLink
-});
-
-},{"./components/OutboundLink":"eNaA4","./core":"lPL7j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eNaA4":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>OutboundLink
-);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _propTypes = require("prop-types");
-var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-var _warn = require("../utils/console/warn");
-var _warnDefault = parcelHelpers.interopDefault(_warn);
-function _typeof(obj1) {
-    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(obj) {
-        return typeof obj;
-    } : function(obj) {
-        return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    }, _typeof(obj1);
-}
-var _excluded = [
-    "to",
-    "target"
-];
-function ownKeys(object, enumerableOnly) {
-    var keys = Object.keys(object);
-    if (Object.getOwnPropertySymbols) {
-        var symbols = Object.getOwnPropertySymbols(object);
-        enumerableOnly && (symbols = symbols.filter(function(sym) {
-            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-        })), keys.push.apply(keys, symbols);
-    }
-    return keys;
-}
-function _objectSpread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = null != arguments[i] ? arguments[i] : {};
-        i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
-            _defineProperty(target, key, source[key]);
-        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function(key) {
-            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-        });
-    }
-    return target;
-}
-function _objectWithoutProperties(source, excluded) {
-    if (source == null) return {};
-    var target = _objectWithoutPropertiesLoose(source, excluded);
-    var key, i;
-    if (Object.getOwnPropertySymbols) {
-        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-        for(i = 0; i < sourceSymbolKeys.length; i++){
-            key = sourceSymbolKeys[i];
-            if (excluded.indexOf(key) >= 0) continue;
-            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-            target[key] = source[key];
-        }
-    }
-    return target;
-}
-function _objectWithoutPropertiesLoose(source, excluded) {
-    if (source == null) return {};
-    var target = {};
-    var sourceKeys = Object.keys(source);
-    var key, i;
-    for(i = 0; i < sourceKeys.length; i++){
-        key = sourceKeys[i];
-        if (excluded.indexOf(key) >= 0) continue;
-        target[key] = source[key];
-    }
-    return target;
-}
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
-}
-function _defineProperties(target, props) {
-    for(var i = 0; i < props.length; i++){
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor) descriptor.writable = true;
-        Object.defineProperty(target, descriptor.key, descriptor);
-    }
-}
-function _createClass(Constructor, protoProps, staticProps) {
-    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) _defineProperties(Constructor, staticProps);
-    Object.defineProperty(Constructor, "prototype", {
-        writable: false
-    });
-    return Constructor;
-}
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
-    subClass.prototype = Object.create(superClass && superClass.prototype, {
-        constructor: {
-            value: subClass,
-            writable: true,
-            configurable: true
-        }
-    });
-    Object.defineProperty(subClass, "prototype", {
-        writable: false
-    });
-    if (superClass) _setPrototypeOf(subClass, superClass);
-}
-function _setPrototypeOf(o1, p1) {
-    _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-        o.__proto__ = p;
-        return o;
-    };
-    return _setPrototypeOf(o1, p1);
-}
-function _createSuper(Derived) {
-    var hasNativeReflectConstruct = _isNativeReflectConstruct();
-    return function _createSuperInternal() {
-        var Super = _getPrototypeOf(Derived), result;
-        if (hasNativeReflectConstruct) {
-            var NewTarget = _getPrototypeOf(this).constructor;
-            result = Reflect.construct(Super, arguments, NewTarget);
-        } else result = Super.apply(this, arguments);
-        return _possibleConstructorReturn(this, result);
-    };
-}
-function _possibleConstructorReturn(self, call) {
-    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
-    else if (call !== void 0) throw new TypeError("Derived constructors may only return object or undefined");
-    return _assertThisInitialized(self);
-}
-function _assertThisInitialized(self) {
-    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    return self;
-}
-function _isNativeReflectConstruct() {
-    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-    if (Reflect.construct.sham) return false;
-    if (typeof Proxy === "function") return true;
-    try {
-        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}));
-        return true;
-    } catch (e) {
-        return false;
-    }
-}
-function _getPrototypeOf(o2) {
-    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
-        return o.__proto__ || Object.getPrototypeOf(o);
-    };
-    return _getPrototypeOf(o2);
-}
-function _defineProperty(obj, key, value) {
-    if (key in obj) Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-    });
-    else obj[key] = value;
-    return obj;
-}
-var NEWTAB = '_blank';
-var MIDDLECLICK = 1;
-var OutboundLink = /*#__PURE__*/ function(_Component) {
-    _inherits(OutboundLink1, _Component);
-    var _super = _createSuper(OutboundLink1);
-    function OutboundLink1() {
-        var _this;
-        _classCallCheck(this, OutboundLink1);
-        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
-        _this = _super.call.apply(_super, [
-            this
-        ].concat(args));
-        _defineProperty(_assertThisInitialized(_this), "handleClick", function(event) {
-            var _this$props = _this.props, target = _this$props.target, eventLabel = _this$props.eventLabel, to = _this$props.to, onClick = _this$props.onClick, trackerNames = _this$props.trackerNames;
-            var eventMeta = {
-                label: eventLabel
-            };
-            var sameTarget = target !== NEWTAB;
-            var normalClick = !(event.ctrlKey || event.shiftKey || event.metaKey || event.button === MIDDLECLICK);
-            if (sameTarget && normalClick) {
-                event.preventDefault();
-                OutboundLink1.trackLink(eventMeta, function() {
-                    window.location.href = to;
-                }, trackerNames);
-            } else OutboundLink1.trackLink(eventMeta, function() {}, trackerNames);
-            if (onClick) onClick(event);
-        });
-        return _this;
-    }
-    _createClass(OutboundLink1, [
-        {
-            key: "render",
-            value: function render() {
-                var _this$props2 = this.props, href = _this$props2.to, target = _this$props2.target, oldProps = _objectWithoutProperties(_this$props2, _excluded);
-                var props = _objectSpread(_objectSpread({}, oldProps), {}, {
-                    target: target,
-                    href: href,
-                    onClick: this.handleClick
-                });
-                if (target === NEWTAB) props.rel = "".concat(props.rel ? props.rel : '', " noopener noreferrer").trim();
-                delete props.eventLabel;
-                delete props.trackerNames;
-                return /*#__PURE__*/ _reactDefault.default.createElement('a', props);
-            }
-        }
-    ]);
-    return OutboundLink1;
-}(_react.Component);
-_defineProperty(OutboundLink, "trackLink", function() {
-    _warnDefault.default('ga tracking not enabled');
-});
-OutboundLink.propTypes = {
-    eventLabel: _propTypesDefault.default.string.isRequired,
-    target: _propTypesDefault.default.string,
-    to: _propTypesDefault.default.string,
-    onClick: _propTypesDefault.default.func,
-    trackerNames: _propTypesDefault.default.arrayOf(_propTypesDefault.default.string)
-};
-OutboundLink.defaultProps = {
-    target: null,
-    to: null,
-    onClick: null,
-    trackerNames: null
-};
-
-},{"react":"21dqq","prop-types":"7wKI2","../utils/console/warn":"5WjYM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5WjYM":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-function warn(s) {
-    console.warn('[react-ga]', s);
-}
-exports.default = warn;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lPL7j":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "addTrackers", ()=>addTrackers
-);
-parcelHelpers.export(exports, "initialize", ()=>initialize
-);
-/**
- * ga:
- * Returns the original GA object.
- */ parcelHelpers.export(exports, "ga", ()=>ga
-);
-/**
- * set:
- * GA tracker set method
- * @param {Object} fieldsObject - a field/value pair or a group of field/value pairs on the tracker
- * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
- */ parcelHelpers.export(exports, "set", ()=>set
-);
-/**
- * send:
- * Clone of the low level `ga.send` method
- * WARNING: No validations will be applied to this
- * @param  {Object} fieldObject - field object for tracking different analytics
- * @param  {Array} trackerNames - trackers to send the command to
- * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
- */ parcelHelpers.export(exports, "send", ()=>send
-);
-/**
- * pageview:
- * Basic GA pageview tracking
- * @param  {String} path - the current page page e.g. '/about'
- * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
- * @param {String} title - (optional) the page title e. g. 'My Website'
- */ parcelHelpers.export(exports, "pageview", ()=>pageview
-);
-/**
- * modalview:
- * a proxy to basic GA pageview tracking to consistently track
- * modal views that are an equivalent UX to a traditional pageview
- * @param  {String} modalName e.g. 'add-or-edit-club'
- * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
- */ parcelHelpers.export(exports, "modalview", ()=>modalview
-);
-/**
- * timing:
- * GA timing
- * @param args.category {String} required
- * @param args.variable {String} required
- * @param args.value  {Int}  required
- * @param args.label  {String} required
- * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
- */ parcelHelpers.export(exports, "timing", ()=>timing
-);
-/**
- * event:
- * GA event tracking
- * @param args.category {String} required
- * @param args.action {String} required
- * @param args.label {String} optional
- * @param args.value {Int} optional
- * @param args.nonInteraction {boolean} optional
- * @param args.transport {string} optional
- * @param {{action: string, category: string}} trackerNames - (optional) a list of extra trackers to run the command on
- */ parcelHelpers.export(exports, "event", ()=>event
-);
-/**
- * exception:
- * GA exception tracking
- * @param args.description {String} optional
- * @param args.fatal {boolean} optional
- * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
- */ parcelHelpers.export(exports, "exception", ()=>exception
-);
-parcelHelpers.export(exports, "plugin", ()=>plugin
-);
-/**
- * outboundLink:
- * GA outboundLink tracking
- * @param args.label {String} e.g. url, or 'Create an Account'
- * @param {function} hitCallback - Called after processing a hit.
- */ parcelHelpers.export(exports, "outboundLink", ()=>outboundLink
-);
-parcelHelpers.export(exports, "testModeAPI", ()=>testModeAPI
-);
-/**
- * React Google Analytics Module
- *
- * @package react-ga
- * @author  Adam Lofting <adam@mozillafoundation.org>
- *          Atul Varma <atul@mozillafoundation.org>
- */ /**
- * Utilities
- */ var _format = require("./utils/format");
-var _formatDefault = parcelHelpers.interopDefault(_format);
-var _removeLeadingSlash = require("./utils/removeLeadingSlash");
-var _removeLeadingSlashDefault = parcelHelpers.interopDefault(_removeLeadingSlash);
-var _trim = require("./utils/trim");
-var _trimDefault = parcelHelpers.interopDefault(_trim);
-var _loadGA = require("./utils/loadGA");
-var _loadGADefault = parcelHelpers.interopDefault(_loadGA);
-var _warn = require("./utils/console/warn");
-var _warnDefault = parcelHelpers.interopDefault(_warn);
-var _log = require("./utils/console/log");
-var _logDefault = parcelHelpers.interopDefault(_log);
-var _testModeAPI = require("./utils/testModeAPI");
-var _testModeAPIDefault = parcelHelpers.interopDefault(_testModeAPI);
-var _excluded = [
-    "category",
-    "action",
-    "label",
-    "value",
-    "nonInteraction",
-    "transport"
-];
-function _objectWithoutProperties(source, excluded) {
-    if (source == null) return {};
-    var target = _objectWithoutPropertiesLoose(source, excluded);
-    var key, i;
-    if (Object.getOwnPropertySymbols) {
-        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-        for(i = 0; i < sourceSymbolKeys.length; i++){
-            key = sourceSymbolKeys[i];
-            if (excluded.indexOf(key) >= 0) continue;
-            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-            target[key] = source[key];
-        }
-    }
-    return target;
-}
-function _objectWithoutPropertiesLoose(source, excluded) {
-    if (source == null) return {};
-    var target = {};
-    var sourceKeys = Object.keys(source);
-    var key, i;
-    for(i = 0; i < sourceKeys.length; i++){
-        key = sourceKeys[i];
-        if (excluded.indexOf(key) >= 0) continue;
-        target[key] = source[key];
-    }
-    return target;
-}
-function ownKeys(object, enumerableOnly) {
-    var keys = Object.keys(object);
-    if (Object.getOwnPropertySymbols) {
-        var symbols = Object.getOwnPropertySymbols(object);
-        enumerableOnly && (symbols = symbols.filter(function(sym) {
-            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-        })), keys.push.apply(keys, symbols);
-    }
-    return keys;
-}
-function _objectSpread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = null != arguments[i] ? arguments[i] : {};
-        i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
-            _defineProperty(target, key, source[key]);
-        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function(key) {
-            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-        });
-    }
-    return target;
-}
-function _defineProperty(obj, key, value) {
-    if (key in obj) Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-    });
-    else obj[key] = value;
-    return obj;
-}
-function _typeof(obj1) {
-    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(obj) {
-        return typeof obj;
-    } : function(obj) {
-        return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    }, _typeof(obj1);
-}
-function _toConsumableArray(arr) {
-    return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
-}
-function _nonIterableSpread() {
-    throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-function _unsupportedIterableToArray(o, minLen) {
-    if (!o) return;
-    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-    var n = Object.prototype.toString.call(o).slice(8, -1);
-    if (n === "Object" && o.constructor) n = o.constructor.name;
-    if (n === "Map" || n === "Set") return Array.from(o);
-    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-}
-function _iterableToArray(iter) {
-    if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
-}
-function _arrayWithoutHoles(arr) {
-    if (Array.isArray(arr)) return _arrayLikeToArray(arr);
-}
-function _arrayLikeToArray(arr, len) {
-    if (len == null || len > arr.length) len = arr.length;
-    for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
-    return arr2;
-}
-var _isNotBrowser = typeof window === 'undefined' || typeof document === 'undefined';
-var _debug = false;
-var _titleCase = true;
-var _testMode = false;
-var _alwaysSendToDefaultTracker = true;
-var _redactEmail = true;
-var internalGa = function internalGa() {
-    var _window;
-    if (_testMode) return _testModeAPIDefault.default.ga.apply(_testModeAPIDefault.default, arguments);
-    if (_isNotBrowser) return false;
-    if (!window.ga) return _warnDefault.default('ReactGA.initialize must be called first or GoogleAnalytics should be loaded manually');
-    return (_window = window).ga.apply(_window, arguments);
-};
-function _format1(s) {
-    return _formatDefault.default(s, _titleCase, _redactEmail);
-}
-function _gaCommand(trackerNames) {
-    for(var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++)args[_key - 1] = arguments[_key];
-    var command = args[0];
-    if (typeof internalGa === 'function') {
-        if (typeof command !== 'string') {
-            _warnDefault.default('ga command must be a string');
-            return;
-        }
-        if (_alwaysSendToDefaultTracker || !Array.isArray(trackerNames)) internalGa.apply(void 0, args);
-        if (Array.isArray(trackerNames)) trackerNames.forEach(function(name) {
-            internalGa.apply(void 0, _toConsumableArray([
-                "".concat(name, ".").concat(command)
-            ].concat(args.slice(1))));
-        });
-    }
-}
-function _initialize(gaTrackingID, options) {
-    if (!gaTrackingID) {
-        _warnDefault.default('gaTrackingID is required in initialize()');
-        return;
-    }
-    if (options) {
-        if (options.debug && options.debug === true) _debug = true;
-        if (options.titleCase === false) _titleCase = false;
-        if (options.redactEmail === false) _redactEmail = false;
-        if (options.useExistingGa) return;
-    }
-    if (options && options.gaOptions) internalGa('create', gaTrackingID, options.gaOptions);
-    else internalGa('create', gaTrackingID, 'auto');
-}
-function addTrackers(configsOrTrackingId, options) {
-    if (Array.isArray(configsOrTrackingId)) configsOrTrackingId.forEach(function(config) {
-        if (_typeof(config) !== 'object') {
-            _warnDefault.default('All configs must be an object');
-            return;
-        }
-        _initialize(config.trackingId, config);
-    });
-    else _initialize(configsOrTrackingId, options);
-    return true;
-}
-function initialize(configsOrTrackingId, options) {
-    if (options && options.testMode === true) _testMode = true;
-    else {
-        if (_isNotBrowser) return;
-        if (!options || options.standardImplementation !== true) _loadGADefault.default(options);
-    }
-    _alwaysSendToDefaultTracker = options && typeof options.alwaysSendToDefaultTracker === 'boolean' ? options.alwaysSendToDefaultTracker : true;
-    addTrackers(configsOrTrackingId, options);
-}
-function ga() {
-    for(var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++)args[_key2] = arguments[_key2];
-    if (args.length > 0) {
-        internalGa.apply(void 0, args);
-        if (_debug) {
-            _logDefault.default("called ga('arguments');");
-            _logDefault.default("with arguments: ".concat(JSON.stringify(args)));
-        }
-    }
-    return window.ga;
-}
-function set(fieldsObject, trackerNames) {
-    if (!fieldsObject) {
-        _warnDefault.default('`fieldsObject` is required in .set()');
-        return;
-    }
-    if (_typeof(fieldsObject) !== 'object') {
-        _warnDefault.default('Expected `fieldsObject` arg to be an Object');
-        return;
-    }
-    if (Object.keys(fieldsObject).length === 0) _warnDefault.default('empty `fieldsObject` given to .set()');
-    _gaCommand(trackerNames, 'set', fieldsObject);
-    if (_debug) {
-        _logDefault.default("called ga('set', fieldsObject);");
-        _logDefault.default("with fieldsObject: ".concat(JSON.stringify(fieldsObject)));
-    }
-}
-function send(fieldObject, trackerNames) {
-    _gaCommand(trackerNames, 'send', fieldObject);
-    if (_debug) {
-        _logDefault.default("called ga('send', fieldObject);");
-        _logDefault.default("with fieldObject: ".concat(JSON.stringify(fieldObject)));
-        _logDefault.default("with trackers: ".concat(JSON.stringify(trackerNames)));
-    }
-}
-function pageview(rawPath, trackerNames, title) {
-    if (!rawPath) {
-        _warnDefault.default('path is required in .pageview()');
-        return;
-    }
-    var path = _trimDefault.default(rawPath);
-    if (path === '') {
-        _warnDefault.default('path cannot be an empty string in .pageview()');
-        return;
-    }
-    var extraFields = {};
-    if (title) extraFields.title = title;
-    if (typeof ga === 'function') {
-        _gaCommand(trackerNames, 'send', _objectSpread({
-            hitType: 'pageview',
-            page: path
-        }, extraFields));
-        if (_debug) {
-            _logDefault.default("called ga('send', 'pageview', path);");
-            var extraLog = '';
-            if (title) extraLog = " and title: ".concat(title);
-            _logDefault.default("with path: ".concat(path).concat(extraLog));
-        }
-    }
-}
-function modalview(rawModalName, trackerNames) {
-    if (!rawModalName) {
-        _warnDefault.default('modalName is required in .modalview(modalName)');
-        return;
-    }
-    var modalName = _removeLeadingSlashDefault.default(_trimDefault.default(rawModalName));
-    if (modalName === '') {
-        _warnDefault.default('modalName cannot be an empty string or a single / in .modalview()');
-        return;
-    }
-    if (typeof ga === 'function') {
-        var path = "/modal/".concat(modalName);
-        _gaCommand(trackerNames, 'send', 'pageview', path);
-        if (_debug) {
-            _logDefault.default("called ga('send', 'pageview', path);");
-            _logDefault.default("with path: ".concat(path));
-        }
-    }
-}
-function timing() {
-    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {}, category = _ref.category, variable = _ref.variable, value = _ref.value, label = _ref.label;
-    var trackerNames = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : undefined;
-    if (typeof ga === 'function') {
-        if (!category || !variable || typeof value !== 'number') {
-            _warnDefault.default("args.category, args.variable AND args.value are required in timing() AND args.value has to be a number");
-            return;
-        } // Required Fields
-        var fieldObject = {
-            hitType: 'timing',
-            timingCategory: _format1(category),
-            timingVar: _format1(variable),
-            timingValue: value
-        };
-        if (label) fieldObject.timingLabel = _format1(label);
-        send(fieldObject, trackerNames);
-    }
-}
-function event() {
-    var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {}, category = _ref2.category, action = _ref2.action, label = _ref2.label, value = _ref2.value, nonInteraction = _ref2.nonInteraction, transport = _ref2.transport, args = _objectWithoutProperties(_ref2, _excluded);
-    var trackerNames = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : undefined;
-    if (typeof ga === 'function') {
-        // Simple Validation
-        if (!category || !action) {
-            _warnDefault.default('args.category AND args.action are required in event()');
-            return;
-        } // Required Fields
-        var fieldObject = {
-            hitType: 'event',
-            eventCategory: _format1(category),
-            eventAction: _format1(action)
-        }; // Optional Fields
-        if (label) fieldObject.eventLabel = _format1(label);
-        if (typeof value !== 'undefined') {
-            if (typeof value !== 'number') _warnDefault.default('Expected `args.value` arg to be a Number.');
-            else fieldObject.eventValue = value;
-        }
-        if (typeof nonInteraction !== 'undefined') {
-            if (typeof nonInteraction !== 'boolean') _warnDefault.default('`args.nonInteraction` must be a boolean.');
-            else fieldObject.nonInteraction = nonInteraction;
-        }
-        if (typeof transport !== 'undefined') {
-            if (typeof transport !== 'string') _warnDefault.default('`args.transport` must be a string.');
-            else {
-                if ([
-                    'beacon',
-                    'xhr',
-                    'image'
-                ].indexOf(transport) === -1) _warnDefault.default('`args.transport` must be either one of these values: `beacon`, `xhr` or `image`');
-                fieldObject.transport = transport;
-            }
-        }
-        Object.keys(args).filter(function(key) {
-            return key.substr(0, 9) === 'dimension';
-        }).forEach(function(key) {
-            fieldObject[key] = args[key];
-        });
-        Object.keys(args).filter(function(key) {
-            return key.substr(0, 6) === 'metric';
-        }).forEach(function(key) {
-            fieldObject[key] = args[key];
-        }); // Send to GA
-        send(fieldObject, trackerNames);
-    }
-}
-function exception(_ref3, trackerNames) {
-    var description = _ref3.description, fatal = _ref3.fatal;
-    if (typeof ga === 'function') {
-        // Required Fields
-        var fieldObject = {
-            hitType: 'exception'
-        }; // Optional Fields
-        if (description) fieldObject.exDescription = _format1(description);
-        if (typeof fatal !== 'undefined') {
-            if (typeof fatal !== 'boolean') _warnDefault.default('`args.fatal` must be a boolean.');
-            else fieldObject.exFatal = fatal;
-        } // Send to GA
-        send(fieldObject, trackerNames);
-    }
-}
-var plugin = {
-    /**
-   * require:
-   * GA requires a plugin
-   * @param name {String} e.g. 'ecommerce' or 'myplugin'
-   * @param options {Object} optional e.g {path: '/log', debug: true}
-   * @param trackerName {String} optional e.g 'trackerName'
-   */ require: function require(rawName, options, trackerName) {
-        if (typeof ga === 'function') {
-            // Required Fields
-            if (!rawName) {
-                _warnDefault.default('`name` is required in .require()');
-                return;
-            }
-            var name = _trimDefault.default(rawName);
-            if (name === '') {
-                _warnDefault.default('`name` cannot be an empty string in .require()');
-                return;
-            }
-            var requireString = trackerName ? "".concat(trackerName, ".require") : 'require'; // Optional Fields
-            if (options) {
-                if (_typeof(options) !== 'object') {
-                    _warnDefault.default('Expected `options` arg to be an Object');
-                    return;
-                }
-                if (Object.keys(options).length === 0) _warnDefault.default('Empty `options` given to .require()');
-                ga(requireString, name, options);
-                if (_debug) _logDefault.default("called ga('require', '".concat(name, "', ").concat(JSON.stringify(options)));
-            } else {
-                ga(requireString, name);
-                if (_debug) _logDefault.default("called ga('require', '".concat(name, "');"));
-            }
-        }
-    },
-    /**
-   * execute:
-   * GA execute action for plugin
-   * Takes variable number of arguments
-   * @param pluginName {String} e.g. 'ecommerce' or 'myplugin'
-   * @param action {String} e.g. 'addItem' or 'myCustomAction'
-   * @param actionType {String} optional e.g. 'detail'
-   * @param payload {Object} optional e.g { id: '1x5e', name : 'My product to track' }
-   */ execute: function execute(pluginName, action) {
-        var payload;
-        var actionType;
-        for(var _len3 = arguments.length, args = new Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++)args[_key3 - 2] = arguments[_key3];
-        if (args.length === 1) payload = args[0];
-        else {
-            actionType = args[0];
-            payload = args[1];
-        }
-        if (typeof ga === 'function') {
-            if (typeof pluginName !== 'string') _warnDefault.default('Expected `pluginName` arg to be a String.');
-            else if (typeof action !== 'string') _warnDefault.default('Expected `action` arg to be a String.');
-            else {
-                var command = "".concat(pluginName, ":").concat(action);
-                payload = payload || null;
-                if (actionType && payload) {
-                    ga(command, actionType, payload);
-                    if (_debug) {
-                        _logDefault.default("called ga('".concat(command, "');"));
-                        _logDefault.default("actionType: \"".concat(actionType, "\" with payload: ").concat(JSON.stringify(payload)));
-                    }
-                } else if (payload) {
-                    ga(command, payload);
-                    if (_debug) {
-                        _logDefault.default("called ga('".concat(command, "');"));
-                        _logDefault.default("with payload: ".concat(JSON.stringify(payload)));
-                    }
-                } else {
-                    ga(command);
-                    if (_debug) _logDefault.default("called ga('".concat(command, "');"));
-                }
-            }
-        }
-    }
-};
-function outboundLink(args, hitCallback, trackerNames) {
-    if (typeof hitCallback !== 'function') {
-        _warnDefault.default('hitCallback function is required');
-        return;
-    }
-    if (typeof ga === 'function') {
-        // Simple Validation
-        if (!args || !args.label) {
-            _warnDefault.default('args.label is required in outboundLink()');
-            return;
-        } // Required Fields
-        var fieldObject = {
-            hitType: 'event',
-            eventCategory: 'Outbound',
-            eventAction: 'Click',
-            eventLabel: _format1(args.label)
-        };
-        var safetyCallbackCalled = false;
-        var safetyCallback = function safetyCallback() {
-            // This prevents a delayed response from GA
-            // causing hitCallback from being fired twice
-            safetyCallbackCalled = true;
-            hitCallback();
-        }; // Using a timeout to ensure the execution of critical application code
-        // in the case when the GA server might be down
-        // or an ad blocker prevents sending the data
-        // register safety net timeout:
-        var t = setTimeout(safetyCallback, 250);
-        var clearableCallbackForGA = function clearableCallbackForGA() {
-            clearTimeout(t);
-            if (!safetyCallbackCalled) hitCallback();
-        };
-        fieldObject.hitCallback = clearableCallbackForGA; // Send to GA
-        send(fieldObject, trackerNames);
-    } else // if ga is not defined, return the callback so the application
-    // continues to work as expected
-    setTimeout(hitCallback, 0);
-}
-var testModeAPI = _testModeAPIDefault.default;
-exports.default = {
-    initialize: initialize,
-    ga: ga,
-    set: set,
-    send: send,
-    pageview: pageview,
-    modalview: modalview,
-    timing: timing,
-    event: event,
-    exception: exception,
-    plugin: plugin,
-    outboundLink: outboundLink,
-    testModeAPI: _testModeAPIDefault.default
-};
-
-},{"./utils/format":"chaOv","./utils/removeLeadingSlash":"zmQjJ","./utils/trim":"hqny9","./utils/loadGA":"fJsKe","./utils/console/warn":"5WjYM","./utils/console/log":"7ddtj","./utils/testModeAPI":"heMX3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"chaOv":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _redactEmail = require("./redactEmail");
-var _redactEmailDefault = parcelHelpers.interopDefault(_redactEmail);
-var _toTitleCase = require("./toTitleCase");
-var _toTitleCaseDefault = parcelHelpers.interopDefault(_toTitleCase);
-function format() {
-    var s = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-    var titleCase = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-    var redactingEmail = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-    var _str = s || '';
-    if (titleCase) _str = _toTitleCaseDefault.default(s);
-    if (redactingEmail) _str = _redactEmailDefault.default(_str);
-    return _str;
-}
-exports.default = format;
-
-},{"./redactEmail":"4jaAM","./toTitleCase":"2OCdz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4jaAM":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _warn = require("./console/warn");
-var _warnDefault = parcelHelpers.interopDefault(_warn);
-var _mightBeEmail = require("./mightBeEmail");
-var _mightBeEmailDefault = parcelHelpers.interopDefault(_mightBeEmail);
-var redacted = 'REDACTED (Potential Email Address)';
-function redactEmail(string) {
-    if (_mightBeEmailDefault.default(string)) {
-        _warnDefault.default('This arg looks like an email address, redacting.');
-        return redacted;
-    }
-    return string;
-}
-exports.default = redactEmail;
-
-},{"./console/warn":"5WjYM","./mightBeEmail":"3VU93","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3VU93":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-function mightBeEmail(s) {
-    // There's no point trying to validate rfc822 fully, just look for ...@...
-    return typeof s === 'string' && s.indexOf('@') !== -1;
-}
-exports.default = mightBeEmail;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2OCdz":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-/**
- * To Title Case 2.1 - http://individed.com/code/to-title-case/
- * Copyright 2008-2013 David Gouch. Licensed under the MIT License.
- * https://github.com/gouch/to-title-case
- */ var _trim = require("./trim");
-var _trimDefault = parcelHelpers.interopDefault(_trim);
-var smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|vs?\.?|via)$/i; // test
-function toTitleCase(string) {
-    return _trimDefault.default(string).replace(/[A-Za-z0-9\u00C0-\u00FF]+[^\s-]*/g, function(match, index, title) {
-        if (index > 0 && index + match.length !== title.length && match.search(smallWords) > -1 && title.charAt(index - 2) !== ':' && (title.charAt(index + match.length) !== '-' || title.charAt(index - 1) === '-') && title.charAt(index - 1).search(/[^\s-]/) < 0) return match.toLowerCase();
-        if (match.substr(1).search(/[A-Z]|\../) > -1) return match;
-        return match.charAt(0).toUpperCase() + match.substr(1);
-    });
-}
-exports.default = toTitleCase;
-
-},{"./trim":"hqny9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hqny9":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-function trim(s) {
-    return s && s.toString().replace(/^\s+|\s+$/g, '');
-}
-exports.default = trim;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"zmQjJ":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-function removeLeadingSlash(string) {
-    if (string.substring(0, 1) === '/') return string.substring(1);
-    return string;
-}
-exports.default = removeLeadingSlash;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fJsKe":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var isLoaded = false;
-exports.default = function(options) {
-    if (isLoaded) return;
-    isLoaded = true;
-    var gaAddress = 'https://www.google-analytics.com/analytics.js';
-    if (options && options.gaAddress) gaAddress = options.gaAddress;
-    else if (options && options.debug) gaAddress = 'https://www.google-analytics.com/analytics_debug.js';
-    var onerror = options && options.onerror; // https://developers.google.com/analytics/devguides/collection/analyticsjs/
-    /* eslint-disable */ (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments);
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        a.onerror = onerror;
-        m.parentNode.insertBefore(a, m);
-    })(window, document, 'script', gaAddress, 'ga');
-/* eslint-enable */ };
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7ddtj":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-function log(s) {
-    console.info('[react-ga]', s);
-}
-exports.default = log;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"heMX3":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "gaCalls", ()=>gaCalls
-);
-var gaCalls = [];
-exports.default = {
-    calls: gaCalls,
-    ga: function ga() {
-        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
-        gaCalls.push([].concat(args));
-    },
-    resetCalls: function resetCalls() {
-        gaCalls.length = 0;
-    }
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"c7B2Z":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _reactGa = require("react-ga");
-var _reactGaDefault = parcelHelpers.interopDefault(_reactGa);
-const useAnalyticsEventTracker = (category, action, label)=>{
-    // console.log("GA event:", category, ":", action, ":", label);
-    _reactGaDefault.default.event({
-        category: category,
-        action: action,
-        label: label
-    });
-};
-exports.default = useAnalyticsEventTracker;
-
-},{"react-ga":"4j2TN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fewp0":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fewp0":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8c0b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32020,7 +32006,7 @@ TextInput.propTypes = {
     error: _propTypesDefault.default.string,
     containerClass: _propTypesDefault.default.string,
     defaultValue: _propTypesDefault.default.string,
-    isRequired: _propTypesDefault.default.bool,
+    isRequired: _propTypesDefault.default.string,
     disab: _propTypesDefault.default.bool
 };
 TextInput.defaultProps = {
@@ -32583,7 +32569,8 @@ const RegistrationAddress = ({ orderNo , registrationAddresses , setRegistration
                 orderNo: orderNo,
                 addresses: registrationAddresses,
                 setAddresses: setRegistrationAddresses,
-                isRequired: true
+                isRequired: true,
+                disab: true
             }, void 0, false, {
                 fileName: "src/Application/section1/RegistrationAddress.js",
                 lineNumber: 16,
@@ -33120,9 +33107,41 @@ var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 var _reactFinalForm = require("react-final-form");
 var _textInput = require("../TextInput");
 var _textInputDefault = parcelHelpers.interopDefault(_textInput);
+var _dropdown = require("../../common/Dropdown");
+var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
 var _validation = require("../validation");
 var _s = $RefreshSig$();
 const validatePostCode = _validation.composeValidators(_validation.required, _validation.postCode);
+const whereOptions = [
+    {
+        value: "Birmingham",
+        label: "Birmingham"
+    },
+    {
+        value: "Coventry",
+        label: "Coventry"
+    },
+    {
+        value: "Dudley",
+        label: "Dudley"
+    },
+    {
+        value: "Sandwell",
+        label: "Sandwell"
+    },
+    {
+        value: "Solihull",
+        label: "Solihull"
+    },
+    {
+        value: "Walsall",
+        label: "Walsall"
+    },
+    {
+        value: "Wolverhampton",
+        label: "Wolverhampton"
+    }
+];
 const AddressDetails = ({ prefix , addresses  })=>{
     _s();
     const formState = _reactFinalForm.useFormState();
@@ -33151,7 +33170,7 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
-                lineNumber: 28,
+                lineNumber: 51,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -33161,7 +33180,7 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 isRequired: false
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
-                lineNumber: 29,
+                lineNumber: 52,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -33170,7 +33189,7 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 containerClass: "hide"
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
-                lineNumber: 30,
+                lineNumber: 53,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -33179,10 +33198,23 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 defaultValue: matchingAddress["post_town"],
                 validation: _validation.required,
                 error: townOrCityError,
+                isRequired: true,
+                containerClass: "hide"
+            }, void 0, false, {
+                fileName: "src/common/Address/AddressDetails.js",
+                lineNumber: 54,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: `${prefix}.District`,
+                label: "Town or city",
+                options: whereOptions,
+                defaultValue: matchingAddress["post_town"],
+                validation: _validation.required,
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
-                lineNumber: 31,
+                lineNumber: 55,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -33194,7 +33226,7 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
-                lineNumber: 32,
+                lineNumber: 57,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -33207,7 +33239,7 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 disab: true
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
-                lineNumber: 33,
+                lineNumber: 58,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -33216,7 +33248,7 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 containerClass: "hide"
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
-                lineNumber: 34,
+                lineNumber: 59,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -33225,7 +33257,7 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 containerClass: "hide"
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
-                lineNumber: 35,
+                lineNumber: 60,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -33234,7 +33266,7 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 containerClass: "hide"
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
-                lineNumber: 36,
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -33243,7 +33275,7 @@ const AddressDetails = ({ prefix , addresses  })=>{
                 containerClass: "hide"
             }, void 0, false, {
                 fileName: "src/common/Address/AddressDetails.js",
-                lineNumber: 37,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined)
         ]
@@ -33271,7 +33303,7 @@ $RefreshReg$(_c, "AddressDetails");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react-final-form":"cgn4o","../TextInput":"7jGrs","../validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6xVDe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react-final-form":"cgn4o","../TextInput":"7jGrs","../../common/Dropdown":"hdw8v","../validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6xVDe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const addressEndPointBase = "https://apis.networkwestmidlands.com/Addresses/AddressByPostcode/";
@@ -33297,11 +33329,11 @@ const fetchEligibility = async (postCode)=>{
 };
 exports.default = fetchEligibility;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8xBrw":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0d62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"h9xpk":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4399 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0d62.prelude(module);
+$parcel$ReactRefreshHelpers$4399.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -33325,22 +33357,64 @@ var _fieldError = require("../../common/FieldError");
 var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
 var _validation = require("../../common/validation");
 var _s = $RefreshSig$();
-const DisabilityGroup = ()=>{
+const EmploymentStatusTypes = {
+    fullTimeEmployment: {
+        radioLabel: "Full-time paid employment",
+        detailLabel: "Full-time paid employment"
+    },
+    partTimeEmployment: {
+        radioLabel: "Part-time paid employment",
+        detailLabel: "Part-time paid employment"
+    },
+    fullTimeSelfEmployment: {
+        radioLabel: "Full-time self-employment",
+        detailLabel: "Full-time self-employment"
+    },
+    partTimeSelfEmployment: {
+        radioLabel: "Part-time self-employment",
+        detailLabel: "Part-time self-employment"
+    },
+    unemployed: {
+        radioLabel: "Unemployed",
+        detailLabel: "Unemployed"
+    },
+    retired: {
+        radioLabel: "Retired",
+        detailLabel: "Retired"
+    },
+    looking: {
+        radioLabel: "Looking after the home or family",
+        detailLabel: "Looking after the home or family"
+    },
+    student: {
+        radioLabel: "Full-time student",
+        detailLabel: "Full-time student"
+    },
+    tempSick: {
+        radioLabel: "Temporarily sick or disabled",
+        detailLabel: "Temporarily sick or disabled"
+    },
+    longSick: {
+        radioLabel: "Long term sick or disabled",
+        detailLabel: "Long term sick or disabled"
+    },
+    other: {
+        radioLabel: "Other",
+        detailLabel: "Other"
+    } // preferNotToSay: {
+};
+const EmploymentStatusGroup = ()=>{
     _s();
     const stateApi = _reactFinalForm.useFormState();
     const formValues = stateApi.values;
     const formApi = _reactFinalForm.useForm();
-    const error = stateApi.submitFailed ? stateApi.errors?.DisabilityQ : null;
-    const DisabilityTypeError = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.DisabilityType : null;
+    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.Employmentstatus : null;
+    const q18berror = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q18b : null; // copy q18 value to survey data
     _react.useEffect(()=>{
-        if (formValues.DisabilityQ) {
-            if (formValues.DisabilityQ === "yes" && formValues.DisabilityType !== null) formApi.mutators.setFormAttribute("formData.Disability", "Yes: " + formValues.DisabilityType);
-            else formApi.mutators.setFormAttribute("formData.Disability", "None");
-        }
+        formApi.mutators.setFormAttribute("formData.SurveyData.q18", stateApi.values.q18);
     }, [
         formApi.mutators,
-        formValues.DisabilityQ,
-        formValues.DisabilityType
+        stateApi.values.q18
     ]);
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
         children: [
@@ -33348,16 +33422,16 @@ const DisabilityGroup = ()=>{
                 sectionPosition: "Section 1 of 2",
                 sectionName: "About you"
             }, void 0, false, {
-                fileName: "src/Application/section1/DisabilityGroup.js",
-                lineNumber: 28,
+                fileName: "src/Application/section1/EmploymentStatusGroup.js",
+                lineNumber: 73,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Do you have a disability? *",
+                text: "Q18 - What is your employment status? *",
                 isRequired: true
             }, void 0, false, {
-                fileName: "src/Application/section1/DisabilityGroup.js",
-                lineNumber: 29,
+                fileName: "src/Application/section1/EmploymentStatusGroup.js",
+                lineNumber: 74,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
@@ -33366,77 +33440,57 @@ const DisabilityGroup = ()=>{
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
                         text: error
                     }, void 0, false, {
-                        fileName: "src/Application/section1/DisabilityGroup.js",
-                        lineNumber: 31,
+                        fileName: "src/Application/section1/EmploymentStatusGroup.js",
+                        lineNumber: 76,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Yes",
-                        validation: _validation.required,
-                        value: "yes",
-                        fieldName: "DisabilityQ",
-                        isRequired: true
-                    }, 1, false, {
-                        fileName: "src/Application/section1/DisabilityGroup.js",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, undefined),
-                    formValues.DisabilityQ === "yes" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                        label: "What is your disability?",
-                        fieldName: "DisabilityType",
-                        validation: _validation.required,
-                        error: DisabilityTypeError,
-                        isRequired: true
-                    }, void 0, false, {
-                        fileName: "src/Application/section1/DisabilityGroup.js",
-                        lineNumber: 33,
-                        columnNumber: 45
-                    }, undefined) : null,
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "No",
-                        validation: _validation.required,
-                        value: "no",
-                        fieldName: "DisabilityQ"
-                    }, 2, false, {
-                        fileName: "src/Application/section1/DisabilityGroup.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Prefer not to say",
-                        validation: _validation.required,
-                        value: "prefer not to say",
-                        fieldName: "DisabilityQ"
-                    }, 3, false, {
-                        fileName: "src/Application/section1/DisabilityGroup.js",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, undefined)
+                    Object.keys(EmploymentStatusTypes).map((Employmentstatus, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                            label: EmploymentStatusTypes[Employmentstatus].radioLabel,
+                            validation: _validation.required,
+                            value: EmploymentStatusTypes[Employmentstatus].radioLabel,
+                            fieldName: "q18"
+                        }, index, false, {
+                            fileName: "src/Application/section1/EmploymentStatusGroup.js",
+                            lineNumber: 77,
+                            columnNumber: 78
+                        }, undefined)
+                    )
                 ]
             }, void 0, true, {
-                fileName: "src/Application/section1/DisabilityGroup.js",
-                lineNumber: 30,
+                fileName: "src/Application/section1/EmploymentStatusGroup.js",
+                lineNumber: 75,
                 columnNumber: 7
-            }, undefined)
+            }, undefined),
+            formValues.q19 === "Other" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q18b",
+                label: "Q18b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?",
+                validation: _validation.required,
+                error: q18berror,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/section1/EmploymentStatusGroup.js",
+                lineNumber: 79,
+                columnNumber: 37
+            }, undefined) : null
         ]
     }, void 0, true, {
-        fileName: "src/Application/section1/DisabilityGroup.js",
-        lineNumber: 27,
+        fileName: "src/Application/section1/EmploymentStatusGroup.js",
+        lineNumber: 72,
         columnNumber: 10
     }, undefined);
 };
-_s(DisabilityGroup, "sdE+Z4nklBNhskHU5PHmdhalm40=", false, function() {
+_s(EmploymentStatusGroup, "sdE+Z4nklBNhskHU5PHmdhalm40=", false, function() {
     return [
         _reactFinalForm.useFormState,
         _reactFinalForm.useForm
     ];
 });
-_c = DisabilityGroup;
-exports.default = DisabilityGroup;
+_c = EmploymentStatusGroup;
+exports.default = EmploymentStatusGroup;
 var _c;
-$RefreshReg$(_c, "DisabilityGroup");
+$RefreshReg$(_c, "EmploymentStatusGroup");
 
-  $parcel$ReactRefreshHelpers$0d62.postlude(module);
+  $parcel$ReactRefreshHelpers$4399.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -33543,173 +33597,7 @@ $RefreshReg$(_c, "RadioButton");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"h9xpk":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4399 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4399.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _radioGroup = require("../../common/RadioGroup");
-var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _radioButton = require("../../common/RadioButton");
-var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
-var _textInput = require("../../common/TextInput");
-var _textInputDefault = parcelHelpers.interopDefault(_textInput);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const EmploymentStatusTypes = {
-    fullTimeEmployment: {
-        radioLabel: "Full-time paid employment",
-        detailLabel: "Full-time paid employment"
-    },
-    partTimeEmployment: {
-        radioLabel: "Part-time paid employment",
-        detailLabel: "Part-time paid employment"
-    },
-    fullTimeSelfEmployment: {
-        radioLabel: "Full-time self-employment",
-        detailLabel: "Full-time self-employment"
-    },
-    partTimeSelfEmployment: {
-        radioLabel: "Part-time self-employment",
-        detailLabel: "Part-time self-employment"
-    },
-    unemployed: {
-        radioLabel: "Unemployed",
-        detailLabel: "Unemployed"
-    },
-    retired: {
-        radioLabel: "Retired",
-        detailLabel: "Retired"
-    },
-    looking: {
-        radioLabel: "Looking after the home or family",
-        detailLabel: "Looking after the home or family"
-    },
-    student: {
-        radioLabel: "Full-time student",
-        detailLabel: "Full-time student"
-    },
-    tempSick: {
-        radioLabel: "Temporarily sick or disabled",
-        detailLabel: "Temporarily sick or disabled"
-    },
-    longSick: {
-        radioLabel: "Long term sick or disabled",
-        detailLabel: "Long term sick or disabled"
-    },
-    other: {
-        radioLabel: "Other",
-        detailLabel: "Other"
-    } // preferNotToSay: {
-};
-const EmploymentStatusGroup = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const formValues = stateApi.values;
-    const formApi = _reactFinalForm.useForm();
-    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.Employmentstatus : null;
-    const q17berror = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q17b : null; // copy q17 value to survey data
-    _react.useEffect(()=>{
-        formApi.mutators.setFormAttribute("formData.SurveyData.q17", stateApi.values.q17);
-    }, [
-        formApi.mutators,
-        stateApi.values.q17
-    ]);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 1 of 2",
-                sectionName: "About you"
-            }, void 0, false, {
-                fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                lineNumber: 73,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "What is your employment status? *",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                lineNumber: 74,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: error
-                    }, void 0, false, {
-                        fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                        lineNumber: 76,
-                        columnNumber: 9
-                    }, undefined),
-                    Object.keys(EmploymentStatusTypes).map((Employmentstatus, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                            label: EmploymentStatusTypes[Employmentstatus].radioLabel,
-                            validation: _validation.required,
-                            value: EmploymentStatusTypes[Employmentstatus].radioLabel,
-                            fieldName: "q17"
-                        }, index, false, {
-                            fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                            lineNumber: 77,
-                            columnNumber: 78
-                        }, undefined)
-                    )
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                lineNumber: 75,
-                columnNumber: 7
-            }, undefined),
-            formValues.q17 === "Other" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q17b",
-                label: "Q8b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?",
-                validation: _validation.required,
-                error: q17berror,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/section1/EmploymentStatusGroup.js",
-                lineNumber: 79,
-                columnNumber: 37
-            }, undefined) : null
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/section1/EmploymentStatusGroup.js",
-        lineNumber: 72,
-        columnNumber: 10
-    }, undefined);
-};
-_s(EmploymentStatusGroup, "sdE+Z4nklBNhskHU5PHmdhalm40=", false, function() {
-    return [
-        _reactFinalForm.useFormState,
-        _reactFinalForm.useForm
-    ];
-});
-_c = EmploymentStatusGroup;
-exports.default = EmploymentStatusGroup;
-var _c;
-$RefreshReg$(_c, "EmploymentStatusGroup");
-
-  $parcel$ReactRefreshHelpers$4399.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/RadioGroup":"ejgLk","../../common/Question":"7HVc9","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../../common/TextInput":"7jGrs"}],"hl18Y":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hl18Y":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1efc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -33841,9 +33729,13 @@ var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
 var _validation = require("../../common/validation");
 var _s = $RefreshSig$();
 const BenefitTypes = {
-    no: {
-        radioLabel: "No",
-        detailLabel: "no"
+    noEmployed: {
+        radioLabel: "No - Employed and earn under £30,000",
+        detailLabel: "No - Employed and earn under £30,000"
+    },
+    noStudent: {
+        radioLabel: "No - I'm a full time Student",
+        detailLabel: "No - I'm a full time Student"
     },
     yesUniversalCredit: {
         radioLabel: "Yes - Universal Credit",
@@ -33885,7 +33777,7 @@ const BenefitsGroup = ()=>{
                 sectionName: "About you"
             }, void 0, false, {
                 fileName: "src/Application/section1/BenefitsGroup.js",
-                lineNumber: 48,
+                lineNumber: 52,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
@@ -33893,7 +33785,7 @@ const BenefitsGroup = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/BenefitsGroup.js",
-                lineNumber: 49,
+                lineNumber: 53,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
@@ -33903,7 +33795,7 @@ const BenefitsGroup = ()=>{
                         text: error
                     }, void 0, false, {
                         fileName: "src/Application/section1/BenefitsGroup.js",
-                        lineNumber: 51,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, undefined),
                     Object.keys(BenefitTypes).map((BenefitType, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
@@ -33913,20 +33805,20 @@ const BenefitsGroup = ()=>{
                             fieldName: "formData.BenefitType"
                         }, index, false, {
                             fileName: "src/Application/section1/BenefitsGroup.js",
-                            lineNumber: 52,
+                            lineNumber: 56,
                             columnNumber: 64
                         }, undefined)
                     )
                 ]
             }, void 0, true, {
                 fileName: "src/Application/section1/BenefitsGroup.js",
-                lineNumber: 50,
+                lineNumber: 54,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Application/section1/BenefitsGroup.js",
-        lineNumber: 47,
+        lineNumber: 51,
         columnNumber: 10
     }, undefined);
 };
@@ -33976,7 +33868,7 @@ const ProofUpload = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Upload proof of your income or benefits and address"
+                text: "Upload proof of your income or benefits or proof of being a full time student"
             }, void 0, false, {
                 fileName: "src/Application/section1/ProofUpload.js",
                 lineNumber: 10,
@@ -34090,17 +33982,46 @@ const ProofUpload = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Your proof can be a screenshot of an email or a photo of a letter."
+                children: "Proof of being a full time student:"
             }, void 0, false, {
                 fileName: "src/Application/section1/ProofUpload.js",
                 lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ul", {
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                        href: "https://www.tfwm.org.uk/swift-and-tickets/discounts-and-free-travel-passes/discounts-for-students/supporting-documents-for-students/",
+                        target: "_blank",
+                        rel: "noreferrer",
+                        children: "View supporting documents (new tab)"
+                    }, void 0, false, {
+                        fileName: "src/Application/section1/ProofUpload.js",
+                        lineNumber: 30,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/Application/section1/ProofUpload.js",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Application/section1/ProofUpload.js",
+                lineNumber: 29,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Your proof can be a screenshot of an email or a photo of a letter."
+            }, void 0, false, {
+                fileName: "src/Application/section1/ProofUpload.js",
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                 children: "Files must be jpeg, png or pdf file format"
             }, void 0, false, {
                 fileName: "src/Application/section1/ProofUpload.js",
-                lineNumber: 30,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fileFieldDefault.default, {
@@ -34108,7 +34029,7 @@ const ProofUpload = ()=>{
                 validation: _validation.required
             }, void 0, false, {
                 fileName: "src/Application/section1/ProofUpload.js",
-                lineNumber: 31,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined)
         ]
@@ -36122,120 +36043,10 @@ exports.default = function(file, acceptedFiles) {
 };
 
 },{}],"45Mpd":[function(require,module,exports) {
-module.exports["fileUploadLabelFocused"] = `GBpK7W_fileUploadLabelFocused`;
 module.exports["fileUpload"] = `GBpK7W_fileUpload`;
+module.exports["fileUploadLabelFocused"] = `GBpK7W_fileUploadLabelFocused`;
 
-},{}],"1HmNw":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1797 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1797.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _radioGroup = require("../../common/RadioGroup");
-var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _radioButton = require("../../common/RadioButton");
-var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const DisabilityTypes = {
-    yes: {
-        radioLabel: "Yes",
-        detailLabel: "yes"
-    },
-    no: {
-        radioLabel: "No",
-        detailLabel: "no"
-    },
-    prefer: {
-        radioLabel: "Prefer not to say",
-        detailLabel: "Prefer not to say"
-    }
-};
-const MedicalServiceGroup = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.ReferredbyMedicalService : null;
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 1 of 2",
-                sectionName: "About you"
-            }, void 0, false, {
-                fileName: "src/Application/section1/MedicalServiceGroup.js",
-                lineNumber: 28,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Were you referred by a medical service? For example a GP or link worker *",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/section1/MedicalServiceGroup.js",
-                lineNumber: 29,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: error
-                    }, void 0, false, {
-                        fileName: "src/Application/section1/MedicalServiceGroup.js",
-                        lineNumber: 31,
-                        columnNumber: 9
-                    }, undefined),
-                    Object.keys(DisabilityTypes).map((ReferredbyMedicalService, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                            label: DisabilityTypes[ReferredbyMedicalService].radioLabel,
-                            validation: _validation.required,
-                            value: ReferredbyMedicalService,
-                            fieldName: "formData.ReferredbyMedicalService"
-                        }, index, false, {
-                            fileName: "src/Application/section1/MedicalServiceGroup.js",
-                            lineNumber: 32,
-                            columnNumber: 80
-                        }, undefined)
-                    )
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/section1/MedicalServiceGroup.js",
-                lineNumber: 30,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/section1/MedicalServiceGroup.js",
-        lineNumber: 27,
-        columnNumber: 10
-    }, undefined);
-};
-_s(MedicalServiceGroup, "ctm9ui0AD13+E/drNHXH99A0tz8=", false, function() {
-    return [
-        _reactFinalForm.useFormState
-    ];
-});
-_c = MedicalServiceGroup;
-exports.default = MedicalServiceGroup;
-var _c;
-$RefreshReg$(_c, "MedicalServiceGroup");
-
-  $parcel$ReactRefreshHelpers$1797.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/RadioGroup":"ejgLk","../../common/Question":"7HVc9","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jOUHd":[function(require,module,exports) {
+},{}],"jOUHd":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc3a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36322,14 +36133,17 @@ const WhereDropdown = ()=>{
     const stateApi = _reactFinalForm.useFormState();
     const formValues = stateApi.values;
     const formApi = _reactFinalForm.useForm();
-    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.Q10 : null;
-    const errorOther = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.Q10b : null; // copy q8 value to survey data
-    _react.useEffect(()=>{
-        formApi.mutators.setFormAttribute("formData.SurveyData.q10", stateApi.values.q10);
-    }, [
-        formApi.mutators,
-        stateApi.values.q10
-    ]);
+    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q11 : null; // const errorOther =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q12b
+    //     : null;
+    // copy q12 value to survey data
+    // useEffect(() => {
+    //   formApi.mutators.setFormAttribute(
+    //     "formData.SurveyData.q11",
+    //     stateApi.values.q11
+    //   );
+    // }, [formApi.mutators, stateApi.values.q12]);
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
@@ -36337,19 +36151,19 @@ const WhereDropdown = ()=>{
                 sectionName: "About you"
             }, void 0, false, {
                 fileName: "src/Application/section1/WhereDropdown.js",
-                lineNumber: 64,
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Where did you hear about this scheme?",
+                text: "Q11 - Where did you hear about this scheme?",
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/WhereDropdown.js",
-                lineNumber: 65,
+                lineNumber: 71,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "q10",
+                fieldName: "formData.SurveyData.q11",
                 error: error,
                 label: "Select one option",
                 options: whereOptions,
@@ -36357,28 +36171,27 @@ const WhereDropdown = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/WhereDropdown.js",
-                lineNumber: 66,
+                lineNumber: 72,
                 columnNumber: 7
             }, undefined),
-            formValues.q10 === "Other" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q10b",
-                label: "Q10b - Please provide more details eg location, website:",
+            formValues.SurveyData?.q11 === "Other" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q15Other",
+                label: "Q11b - Please provide more details eg location, website:",
                 validation: _validation.required,
-                error: errorOther,
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/section1/WhereDropdown.js",
-                lineNumber: 67,
-                columnNumber: 37
+                lineNumber: 73,
+                columnNumber: 49
             }, undefined) : null
         ]
     }, void 0, true, {
         fileName: "src/Application/section1/WhereDropdown.js",
-        lineNumber: 63,
+        lineNumber: 69,
         columnNumber: 10
     }, undefined);
 };
-_s(WhereDropdown, "sdE+Z4nklBNhskHU5PHmdhalm40=", false, function() {
+_s(WhereDropdown, "M0dtDQsKj0OkNSXorRMQbPGnYj8=", false, function() {
     return [
         _reactFinalForm.useFormState,
         _reactFinalForm.useForm
@@ -36394,7 +36207,7 @@ $RefreshReg$(_c, "WhereDropdown");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../../common/TextInput":"7jGrs"}],"bZGlR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/TextInput":"7jGrs","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bZGlR":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f1ff = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36413,31 +36226,31 @@ const SurveyIntro = ()=>{
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
                 sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
+                sectionName: "Survey"
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
                 lineNumber: 6,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
-                children: "Cycling for Everyone Cycle and scoot activity survey."
+                children: "Cycling for Everyone activity survey."
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
                 lineNumber: 7,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Thank you for choosing to participate in Cycling for Everyone - Cycle and scoot. Before you participate in the cycle hire scheme, Transport for West Midlands would like to ask you some questions about your current travel and the journeys that you typically make."
+                children: "Thank you for choosing to participate in Cycling for Everyone. Before you participate in the scheme, Transport for West Midlands would like to ask you some questions about your current travel and the journeys that you typically make."
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
                 lineNumber: 8,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "This information will be extremely useful in helping us to understand the impact of Cycling for Everyone cycle and scoot on those who have taken part."
+                children: "This information will be extremely useful in helping us to understand the impact of Cycling for Everyone on those who have taken part."
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
-                lineNumber: 14,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
@@ -36448,35 +36261,35 @@ const SurveyIntro = ()=>{
                         children: "win one prize of \xa350 in Amazon Vouchers"
                     }, void 0, false, {
                         fileName: "src/Application/Survey/SuveyIntro.js",
-                        lineNumber: 22,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, undefined),
                     ". The closing date for entries is the last day of the month you applied."
                 ]
             }, void 0, true, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "If you decide not to take part in this survey, please close the window before submitting. This will cancel your application for Cycle for Everyone."
+                children: "If you decide not to take part in this survey, please close the window before submitting. This will cancel your application for Cycling for Everyone."
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
-                lineNumber: 25,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "Consent"
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
-                lineNumber: 30,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                 children: "We want to ensure that we talk to as many different types of people as possible and therefore would like to ask some questions about you, your travel patterns and lifestyle. Transport for West Midlands (TfWM); part of the West Midland Combined Authority (WMCA) is responsible for any information that you provide us. We ensure that this information will be processed in accordance with data protection legislation."
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
-                lineNumber: 31,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
@@ -36489,21 +36302,21 @@ const SurveyIntro = ()=>{
                         children: "visit our Privacy Policy"
                     }, void 0, false, {
                         fileName: "src/Application/Survey/SuveyIntro.js",
-                        lineNumber: 46,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, undefined),
                     "."
                 ]
             }, void 0, true, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
-                lineNumber: 39,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                 children: "By choosing to continue with this survey, you are giving your informed consent to take part in our research. You understand that you may remove yourself from the study by closing the window before submitting. If you wish to discuss this questionnaire in further detail or you want information on how your data will be collected, stored and used, please email: transportresearch@tfwm.org.uk."
             }, void 0, false, {
                 fileName: "src/Application/Survey/SuveyIntro.js",
-                lineNumber: 51,
+                lineNumber: 50,
                 columnNumber: 7
             }, undefined)
         ]
@@ -36586,7 +36399,7 @@ const Q1Survey = ()=>{
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
                 sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
+                sectionName: "Survey"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q1Survey.js",
                 lineNumber: 39,
@@ -36820,7 +36633,7 @@ const Q2Survey = ()=>{
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
                 sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
+                sectionName: "Survey"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q2Survey.js",
                 lineNumber: 59,
@@ -36919,7 +36732,854 @@ $RefreshReg$(_c, "Q2Survey");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/TextInput":"7jGrs","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3wkcB":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/TextInput":"7jGrs","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3VimS":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c1ae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c1ae.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _radioGroup = require("../../common/RadioGroup");
+var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
+var _radioButton = require("../../common/RadioButton");
+var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
+var _dropdown = require("../../common/Dropdown");
+var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
+var _s = $RefreshSig$();
+const Q3Q4Survey = ()=>{
+    _s();
+    const stateApi = _reactFinalForm.useFormState();
+    const dropdownOptions = [
+        {
+            value: "5 or more days a week",
+            label: "5 or more days a week"
+        },
+        {
+            value: "3 or 4 days a week",
+            label: "3 or 4 days a week"
+        },
+        {
+            value: "1 or 2 days a week",
+            label: "1 or 2 days a week"
+        },
+        {
+            value: "Once or twice a month",
+            label: "Once or twice a month"
+        },
+        {
+            value: "Less than once a month",
+            label: "Less than once a month"
+        },
+        {
+            value: "Never",
+            label: "Never"
+        }
+    ];
+    const q3error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3 : null;
+    const q4error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4 : null;
+    const q5error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q5.PlaceOfWork : null;
+    const q5error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q5.PlaceOfEducation : null;
+    const q5error2 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q5.ExerciseOrRecreation : null;
+    const q5error3 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q5.OtherReasons : null;
+    _react.useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, []);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "Survey"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "Your current travel",
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 44,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q3 - On average, how much time do you spend cycling per week? Please include any casual cycling in your local area, any cycling in the countryside or on cycling routes, cycling to or from work or any competitive cycling. Please do not include any time spent cycling on a static or exercise bike. *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 45,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q3error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q3error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Two or more hours per week",
+                        validation: _validation.required,
+                        value: "Two or more hours per week",
+                        fieldName: "formData.SurveyData.q3"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 54,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Between one and two hours per week",
+                        validation: _validation.required,
+                        value: "Between one and two hours per week",
+                        fieldName: "formData.SurveyData.q3"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 55,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Between 30 minutes and one hour per week",
+                        validation: _validation.required,
+                        value: "Between 30 minutes and one hour per week",
+                        fieldName: "formData.SurveyData.q3"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 56,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Less than 30 minutes per week",
+                        validation: _validation.required,
+                        value: "Less than 30 minutes per week",
+                        fieldName: "formData.SurveyData.q3"
+                    }, 4, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 57,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Don't know/unsure",
+                        validation: _validation.required,
+                        value: "Don't know/unsure",
+                        fieldName: "formData.SurveyData.q3"
+                    }, 5, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 58,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 52,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q4 - On average, how much time do you spend using an e-scooter per week? *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 61,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q4error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q4error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 65,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Two or more hours per week",
+                        validation: _validation.required,
+                        value: "Two or more hours per week",
+                        fieldName: "formData.SurveyData.q4"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 66,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Between one and two hours per week",
+                        validation: _validation.required,
+                        value: "Between one and two hours per week",
+                        fieldName: "formData.SurveyData.q4"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 67,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Between 30 minutes and one hour per week",
+                        validation: _validation.required,
+                        value: "Between 30 minutes and one hour per week",
+                        fieldName: "formData.SurveyData.q4"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 68,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Less than 30 minutes per week",
+                        validation: _validation.required,
+                        value: "Less than 30 minutes per week",
+                        fieldName: "formData.SurveyData.q4"
+                    }, 4, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 69,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Don't know/unsure",
+                        validation: _validation.required,
+                        value: "Don't know/unsure",
+                        fieldName: "formData.SurveyData.q4"
+                    }, 5, false, {
+                        fileName: "src/Application/Survey/Q3Q4Survey.js",
+                        lineNumber: 70,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 64,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q5 - On average, how often would you say you use an e-scooter for at least 10 minutes as part of your journey, for each of the following reasons:"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 73,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q5.PlaceOfWork",
+                error: q5error,
+                label: "To go to/from your place of work",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 77,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q5.PlaceOfEducation",
+                error: q5error1,
+                label: "To go to/from your place of education (e.g. school, college, or university)",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 78,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q5.ExerciseOrRecreation",
+                error: q5error2,
+                label: "To do exercise or for recreation",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 79,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q5.OtherReasons",
+                error: q5error3,
+                label: "For other reasons",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q3Q4Survey.js",
+                lineNumber: 80,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Application/Survey/Q3Q4Survey.js",
+        lineNumber: 42,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Q3Q4Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
+    return [
+        _reactFinalForm.useFormState
+    ];
+});
+_c = Q3Q4Survey;
+exports.default = Q3Q4Survey;
+var _c;
+$RefreshReg$(_c, "Q3Q4Survey");
+
+  $parcel$ReactRefreshHelpers$c1ae.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/Dropdown":"hdw8v","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4PBID":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4fee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4fee.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _dropdown = require("../../common/Dropdown");
+var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
+var _checkbox = require("../../common/Checkbox");
+var _checkboxDefault = parcelHelpers.interopDefault(_checkbox);
+var _checkboxContainer = require("../../common/CheckboxContainer");
+var _checkboxContainerDefault = parcelHelpers.interopDefault(_checkboxContainer);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
+var _q5DropdownOptions = require("./Q5dropdownOptions");
+var _q5DropdownOptionsDefault = parcelHelpers.interopDefault(_q5DropdownOptions);
+var _s = $RefreshSig$();
+const dropdownOptions = [
+    {
+        value: "None",
+        label: "None"
+    },
+    {
+        value: "One",
+        label: "One"
+    },
+    {
+        value: "Two",
+        label: "Two"
+    },
+    {
+        value: "Three or more",
+        label: "Three or more"
+    }
+];
+const Q5Q6Survey = ()=>{
+    _s();
+    const stateApi = _reactFinalForm.useFormState();
+    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q6.CarOrVan : null;
+    const error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q6.MotorcycleOrMoped : null;
+    const q7Error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.selectQ7 : null;
+    _react.useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, []);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "Survey"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 35,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "Vehicle ownership",
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 36,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q6 - How many vehicles does your household own or have continuous use of at present? *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 37,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q6.CarOrVan",
+                error: error,
+                label: "Car or van",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 42,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
+                fieldName: "formData.SurveyData.q6.MotorcycleOrMoped",
+                error: error1,
+                label: "Motorcycle or moped",
+                options: dropdownOptions,
+                validation: _validation.required,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q7 - Do you own or have use of any of the following? (this could include vehicles that you own, hire or use that belong to someone else [e.g. a family member or friend). *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 44,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
+                error: q7Error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q7Error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q5Q6Survey.js",
+                        lineNumber: 50,
+                        columnNumber: 9
+                    }, undefined),
+                    Object.keys(_q5DropdownOptionsDefault.default).map((option)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
+                            label: _q5DropdownOptionsDefault.default[option],
+                            fieldName: `formData.SurveyData.q7.${option}`
+                        }, _q5DropdownOptionsDefault.default[option], false, {
+                            fileName: "src/Application/Survey/Q5Q6Survey.js",
+                            lineNumber: 51,
+                            columnNumber: 45
+                        }, undefined)
+                    )
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q5Q6Survey.js",
+                lineNumber: 49,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Application/Survey/Q5Q6Survey.js",
+        lineNumber: 34,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Q5Q6Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
+    return [
+        _reactFinalForm.useFormState
+    ];
+});
+_c = Q5Q6Survey;
+exports.default = Q5Q6Survey;
+var _c;
+$RefreshReg$(_c, "Q5Q6Survey");
+
+  $parcel$ReactRefreshHelpers$4fee.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/Checkbox":"7IcBJ","../../common/CheckboxContainer":"2miun","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","./Q5dropdownOptions":"lgpMQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7IcBJ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2456 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2456.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactFinalForm = require("react-final-form");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+const Checkbox = ({ fieldName , label  })=>{
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+        className: "wmnds-fe-checkboxes__container",
+        children: [
+            label,
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactFinalForm.Field, {
+                className: `wmnds-fe-checkboxes__input`,
+                name: fieldName,
+                component: "input",
+                type: "checkbox"
+            }, void 0, false, {
+                fileName: "src/common/Checkbox.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                className: "wmnds-fe-checkboxes__checkmark",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("svg", {
+                    className: "wmnds-fe-checkboxes__icon",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("use", {
+                        xlinkHref: "#wmnds-general-checkmark",
+                        href: "#wmnds-general-checkmark"
+                    }, void 0, false, {
+                        fileName: "src/common/Checkbox.js",
+                        lineNumber: 13,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/common/Checkbox.js",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/common/Checkbox.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/common/Checkbox.js",
+        lineNumber: 8,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Checkbox;
+Checkbox.propTypes = {
+    fieldName: _propTypesDefault.default.string.isRequired,
+    label: _propTypesDefault.default.oneOfType([
+        _propTypesDefault.default.string,
+        _propTypesDefault.default.element
+    ])
+};
+exports.default = Checkbox;
+var _c;
+$RefreshReg$(_c, "Checkbox");
+
+  $parcel$ReactRefreshHelpers$2456.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2miun":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a311 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a311.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+const CheckboxContainer = ({ error , description , children  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "wmnds-fe-group",
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: `wmnds-fe-checkboxes ${error && "wmnds-fe-group--error"}`,
+            children: [
+                description && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "wmnds-fe-checkboxes__desc",
+                    children: description
+                }, void 0, false, {
+                    fileName: "src/common/CheckboxContainer.js",
+                    lineNumber: 9,
+                    columnNumber: 23
+                }, undefined),
+                children
+            ]
+        }, void 0, true, {
+            fileName: "src/common/CheckboxContainer.js",
+            lineNumber: 8,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/common/CheckboxContainer.js",
+        lineNumber: 7,
+        columnNumber: 7
+    }, undefined)
+;
+_c = CheckboxContainer;
+CheckboxContainer.propTypes = {
+    error: _propTypesDefault.default.string,
+    description: _propTypesDefault.default.string,
+    children: _propTypesDefault.default.node
+};
+exports.default = CheckboxContainer;
+var _c;
+$RefreshReg$(_c, "CheckboxContainer");
+
+  $parcel$ReactRefreshHelpers$a311.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lgpMQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const Q5dropdownOptions = {
+    bicycle: "Bicycle",
+    ebikeEcycle: "e-bike/e-cycle",
+    adaptedcycle: "Adapted cycle",
+    adaptedebikeecycle: "Adapted e-bike/e-cycle",
+    none: "None of the above"
+};
+exports.default = Q5dropdownOptions;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"15gSW":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5827 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5827.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _radioGroup = require("../../common/RadioGroup");
+var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
+var _radioButton = require("../../common/RadioButton");
+var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
+var _textInput = require("../../common/TextInput");
+var _textInputDefault = parcelHelpers.interopDefault(_textInput);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
+var _s = $RefreshSig$();
+const Q7Q8Q9Q10Survey = ()=>{
+    _s();
+    const stateApi = _reactFinalForm.useFormState();
+    const formValues = stateApi.values;
+    const formApi = _reactFinalForm.useForm();
+    const q8error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q8 : null;
+    const q9error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.q9 : null;
+    const q9berror = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q9b : null; // copy q8 value to survey data
+    _react.useEffect(()=>{
+        formApi.mutators.setFormAttribute("formData.SurveyData.q9", stateApi.values.q9);
+    }, [
+        formApi.mutators,
+        stateApi.values.q9
+    ]);
+    _react.useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, []);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "Survey"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "Safety and Confidence",
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 29,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q8 - Currently, how would you rate your cycling skills? *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q8error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q8error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Good",
+                        validation: _validation.required,
+                        value: "Good",
+                        fieldName: "formData.SurveyData.q8"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Moderate",
+                        validation: _validation.required,
+                        value: "Moderate",
+                        fieldName: "formData.SurveyData.q8"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Poor",
+                        validation: _validation.required,
+                        value: "Poor",
+                        fieldName: "formData.SurveyData.q8"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Don't know/unsure",
+                        validation: _validation.required,
+                        value: "Don't know/unsure",
+                        fieldName: "formData.SurveyData.q8"
+                    }, 5, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q9 - Currently, how safe do you feel cycling on roads in your local area? *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q9error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q9error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Very safe",
+                        validation: _validation.required,
+                        value: "Very safe",
+                        fieldName: "q9"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Safe",
+                        validation: _validation.required,
+                        value: "Safe",
+                        fieldName: "q9"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Not very safe",
+                        validation: _validation.required,
+                        value: "Not very safe",
+                        fieldName: "q9"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Not at all safe",
+                        validation: _validation.required,
+                        value: "Not at all safe",
+                        fieldName: "q9"
+                    }, 4, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 48,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Don't know/unsure",
+                        validation: _validation.required,
+                        value: "Don't know/unsure",
+                        fieldName: "q9"
+                    }, 5, false, {
+                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            formValues.q9 === "Not very safe" || formValues.q9 === "Not at all safe" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q9b",
+                label: "Q9b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?",
+                validation: _validation.required,
+                error: q9berror,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 51,
+                columnNumber: 83
+            }, undefined) : null,
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q10",
+                label: "Q10 - If you have any comments or suggestions on how your feeling of safety could be improved when cycling on roads in your local area please provide more detail below:"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+                lineNumber: 52,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
+        lineNumber: 26,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Q7Q8Q9Q10Survey, "dwjk7yLqRbLDoD5AT9Ln43pRxn8=", false, function() {
+    return [
+        _reactFinalForm.useFormState,
+        _reactFinalForm.useForm
+    ];
+});
+_c = Q7Q8Q9Q10Survey;
+exports.default = Q7Q8Q9Q10Survey;
+var _c;
+$RefreshReg$(_c, "Q7Q8Q9Q10Survey");
+
+  $parcel$ReactRefreshHelpers$5827.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/TextInput":"7jGrs","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3wkcB":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bd52 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36951,12 +37611,13 @@ const Q8Survey = ()=>{
     _s();
     const stateApi = _reactFinalForm.useFormState();
     const formApi = _reactFinalForm.useForm(); // const q17error = stateApi.submitFailed ? stateApi.errors?.DisabilityQ : null;
-    const q19error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q19 : null; // copy q16 value to survey data
-    _react.useEffect(()=>{
-        formApi.mutators.setFormAttribute("formData.SurveyData.q16", stateApi.values.q16);
-    }, [
-        formApi.mutators
-    ]);
+    const q20error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q20 : null; // copy q16 value to survey data
+    // useEffect(() => {
+    //   formApi.mutators.setFormAttribute(
+    //     "formData.SurveyData.q16",
+    //     stateApi.values.q16
+    //   );
+    // }, [formApi.mutators, stateApi.values.q16]);
     _react.useEffect(()=>{
         window.scrollTo(0, 0);
     }, []);
@@ -36964,10 +37625,10 @@ const Q8Survey = ()=>{
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
                 sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
+                sectionName: "Survey"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
-                lineNumber: 25,
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
@@ -36975,14 +37636,14 @@ const Q8Survey = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
-                lineNumber: 26,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q18 - How many people, including yourself, currently live in your household? *"
+                children: "Q19 - How many people, including yourself, currently live in your household? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
-                lineNumber: 27,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -36990,7 +37651,7 @@ const Q8Survey = ()=>{
                 label: "Adults aged 18 or over"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
-                lineNumber: 31,
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -36998,7 +37659,7 @@ const Q8Survey = ()=>{
                 label: "Children aged 16 or 17"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
-                lineNumber: 32,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -37006,7 +37667,7 @@ const Q8Survey = ()=>{
                 label: "Children aged 12 to 15"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
-                lineNumber: 33,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -37014,7 +37675,7 @@ const Q8Survey = ()=>{
                 label: "Children aged 5 to 11"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
-                lineNumber: 34,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
@@ -37022,84 +37683,84 @@ const Q8Survey = ()=>{
                 label: "Children aged 4 or under"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
-                lineNumber: 35,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q19 - What is your estimated household annual income? *"
+                children: "q20 - What is your estimated household annual income? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q8Survey.js",
-                lineNumber: 37,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q19error,
+                error: q20error,
                 children: [
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q19error
+                        text: q20error
                     }, void 0, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 39,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Less than \xa310,000",
                         validation: _validation.required,
                         value: "Less than \xa310,000",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q20"
                     }, 2, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 40,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "\xa310,000\u2013\xa319,999",
                         validation: _validation.required,
                         value: "\xa310,000\u2013\xa319,999",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q20"
                     }, 3, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 41,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "\xa320,000\u2013\xa329,999",
                         validation: _validation.required,
                         value: "\xa320,000\u2013\xa329,999",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q20"
                     }, 4, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 42,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "\xa330,000\u2013\xa339,999",
                         validation: _validation.required,
                         value: "\xa330,000\u2013\xa339,999",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q20"
                     }, 5, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 43,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "\xa340,000\u2013\xa349,999",
                         validation: _validation.required,
                         value: "\xa340,000\u2013\xa349,999",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q20"
                     }, 6, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 44,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "\xa350,000\u2013\xa359,999",
                         validation: _validation.required,
                         value: "\xa350,000\u2013\xa359,999",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q20"
                     }, 7, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 45,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, undefined),
                     " ",
@@ -37107,56 +37768,56 @@ const Q8Survey = ()=>{
                         label: "\xa360,000\u2013\xa374,999",
                         validation: _validation.required,
                         value: "\xa360,000\u2013\xa374,999",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q20"
                     }, 8, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 46,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "\xa375,000\u2013\xa399,999",
                         validation: _validation.required,
                         value: "\xa375,000\u2013\xa399,999",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q20"
                     }, 9, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 47,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "\xa3100,000 or more",
                         validation: _validation.required,
                         value: "\xa3100,000 or more",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q20"
                     }, 10, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 48,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
                         label: "Prefer not to say",
                         validation: _validation.required,
                         value: "Prefer not to say",
-                        fieldName: "formData.SurveyData.q19"
+                        fieldName: "formData.SurveyData.q20"
                     }, 11, false, {
                         fileName: "src/Application/Survey/Q8Survey.js",
-                        lineNumber: 49,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Application/Survey/Q8Survey.js",
-                lineNumber: 38,
+                lineNumber: 41,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Application/Survey/Q8Survey.js",
-        lineNumber: 24,
+        lineNumber: 27,
         columnNumber: 10
     }, undefined);
 };
-_s(Q8Survey, "dwjk7yLqRbLDoD5AT9Ln43pRxn8=", false, function() {
+_s(Q8Survey, "sdE+Z4nklBNhskHU5PHmdhalm40=", false, function() {
     return [
         _reactFinalForm.useFormState,
         _reactFinalForm.useForm
@@ -37192,10 +37853,8 @@ var _question = require("../../common/Question");
 var _questionDefault = parcelHelpers.interopDefault(_question);
 var _radioGroup = require("../../common/RadioGroup");
 var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
-var _radioButton = require("../../common/RadioButton");
+var _radioButton = require("../../common/RadioButton"); // import Dropdown from "../../common/Dropdown";
 var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
-var _dropdown = require("../../common/Dropdown");
-var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
 var _fieldError = require("../../common/FieldError");
 var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
 var _validation = require("../../common/validation");
@@ -37203,8 +37862,9 @@ var _s = $RefreshSig$();
 const Q9Survey = ()=>{
     _s();
     const stateApi = _reactFinalForm.useFormState();
-    const q15error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q15 : null;
-    const q16error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q16 : null; // const q21error =
+    const formApi = _reactFinalForm.useForm();
+    const q16error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q16 : null;
+    const q17error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q17 : null; // const q21error =
     //   stateApi.submitFailed && stateApi.hasValidationErrors
     //     ? stateApi.errors?.formData.SurveyData.q21
     //     : null;
@@ -37232,15 +37892,21 @@ const Q9Survey = ()=>{
     // ];
     _react.useEffect(()=>{
         window.scrollTo(0, 0);
-    }, []);
+    }, []); // copy ethnic group q15 value to survey data
+    _react.useEffect(()=>{
+        formApi.mutators.setFormAttribute("formData.SurveyData.q15", stateApi.values.formData.Ethnicity);
+    }, [
+        formApi.mutators,
+        stateApi.values.formData.Ethnicity
+    ]);
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
                 sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
+                sectionName: "Survey"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 46,
+                lineNumber: 51,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
@@ -37248,107 +37914,14 @@ const Q9Survey = ()=>{
                 isRequired: true
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 47,
+                lineNumber: 52,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q15 - How is your health in general? *"
+                children: "Q16 - How is your health in general? *"
             }, void 0, false, {
                 fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 48,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q15error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q15error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 50,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Very good",
-                        validation: _validation.required,
-                        value: "Very good",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 51,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Good",
-                        validation: _validation.required,
-                        value: "Good",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Fair",
-                        validation: _validation.required,
-                        value: "Fair",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Bad",
-                        validation: _validation.required,
-                        value: "Bad",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 54,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Very bad",
-                        validation: _validation.required,
-                        value: "Very bad",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 55,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Don\u2019t know/unsure",
-                        validation: _validation.required,
-                        value: "Don\u2019t know/unsure",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 6, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 56,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Prefer not to say",
-                        validation: _validation.required,
-                        value: "Prefer not to say",
-                        fieldName: "formData.SurveyData.q15"
-                    }, 7, false, {
-                        fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 57,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 49,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q16 - Do you have any physical or mental health conditions or illnesses lasting or expected to last 12 months or more? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 60,
+                lineNumber: 53,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
@@ -37358,27 +37931,67 @@ const Q9Survey = ()=>{
                         text: q16error
                     }, void 0, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 65,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Yes",
+                        label: "Very good",
                         validation: _validation.required,
-                        value: "Yes",
+                        value: "Very good",
                         fieldName: "formData.SurveyData.q16"
                     }, 1, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 66,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "No",
+                        label: "Good",
                         validation: _validation.required,
-                        value: "No",
+                        value: "Good",
                         fieldName: "formData.SurveyData.q16"
                     }, 2, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 67,
+                        lineNumber: 57,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Fair",
+                        validation: _validation.required,
+                        value: "Fair",
+                        fieldName: "formData.SurveyData.q16"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q9Survey.js",
+                        lineNumber: 58,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Bad",
+                        validation: _validation.required,
+                        value: "Bad",
+                        fieldName: "formData.SurveyData.q16"
+                    }, 4, false, {
+                        fileName: "src/Application/Survey/Q9Survey.js",
+                        lineNumber: 59,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Very bad",
+                        validation: _validation.required,
+                        value: "Very bad",
+                        fieldName: "formData.SurveyData.q16"
+                    }, 5, false, {
+                        fileName: "src/Application/Survey/Q9Survey.js",
+                        lineNumber: 60,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Don\u2019t know/unsure",
+                        validation: _validation.required,
+                        value: "Don\u2019t know/unsure",
+                        fieldName: "formData.SurveyData.q16"
+                    }, 6, false, {
+                        fileName: "src/Application/Survey/Q9Survey.js",
+                        lineNumber: 61,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
@@ -37386,27 +37999,81 @@ const Q9Survey = ()=>{
                         validation: _validation.required,
                         value: "Prefer not to say",
                         fieldName: "formData.SurveyData.q16"
-                    }, 3, false, {
+                    }, 7, false, {
                         fileName: "src/Application/Survey/Q9Survey.js",
-                        lineNumber: 68,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Application/Survey/Q9Survey.js",
-                lineNumber: 64,
+                lineNumber: 54,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q17 - Do you have any physical or mental health conditions or illnesses lasting or expected to last 12 months or more? *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q9Survey.js",
+                lineNumber: 65,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q17error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q17error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q9Survey.js",
+                        lineNumber: 70,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Yes",
+                        validation: _validation.required,
+                        value: "Yes",
+                        fieldName: "formData.SurveyData.q17"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q9Survey.js",
+                        lineNumber: 71,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "No",
+                        validation: _validation.required,
+                        value: "No",
+                        fieldName: "formData.SurveyData.q17"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q9Survey.js",
+                        lineNumber: 72,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Prefer not to say",
+                        validation: _validation.required,
+                        value: "Prefer not to say",
+                        fieldName: "formData.SurveyData.q17"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q9Survey.js",
+                        lineNumber: 73,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q9Survey.js",
+                lineNumber: 69,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Application/Survey/Q9Survey.js",
-        lineNumber: 45,
+        lineNumber: 50,
         columnNumber: 10
     }, undefined);
 };
-_s(Q9Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
+_s(Q9Survey, "dwjk7yLqRbLDoD5AT9Ln43pRxn8=", false, function() {
     return [
-        _reactFinalForm.useFormState
+        _reactFinalForm.useFormState,
+        _reactFinalForm.useForm
     ];
 });
 _c = Q9Survey;
@@ -37419,7 +38086,378 @@ $RefreshReg$(_c, "Q9Survey");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/Dropdown":"hdw8v","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"94VVT":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"66NQt":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b47c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b47c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _radioGroup = require("../../common/RadioGroup");
+var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
+var _radioButton = require("../../common/RadioButton");
+var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
+var _textInput = require("../../common/TextInput");
+var _textInputDefault = parcelHelpers.interopDefault(_textInput);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
+var _s = $RefreshSig$();
+const Q11Q12Survey = ()=>{
+    _s();
+    const stateApi = _reactFinalForm.useFormState();
+    const formValues = stateApi.values;
+    const formApi = _reactFinalForm.useForm();
+    const q12error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.q12 : null;
+    const q12berror = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q12b : null;
+    const q13error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q13 : null;
+    _react.useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, []); // copy q11 value to survey data
+    _react.useEffect(()=>{
+        formApi.mutators.setFormAttribute("formData.SurveyData.q12", stateApi.values.q12);
+    }, [
+        formApi.mutators,
+        stateApi.values.q12
+    ]);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "Survey"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "About You",
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q12 - Are you: *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 29,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q12error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q12error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Male",
+                        validation: _validation.required,
+                        value: "Male",
+                        fieldName: "q12"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Female",
+                        validation: _validation.required,
+                        value: "Female",
+                        fieldName: "q12"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Prefer to self-describe",
+                        validation: _validation.required,
+                        value: "Prefer to self-describe",
+                        fieldName: "q12"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Prefer not to say",
+                        validation: _validation.required,
+                        value: "Prefer not to say",
+                        fieldName: "q12"
+                    }, 4, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            formValues.q12 === "Prefer to self-describe" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.SurveyData.q12b",
+                label: "Q12b - Please self-describe:",
+                validation: _validation.required,
+                error: q12berror,
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 37,
+                columnNumber: 55
+            }, undefined) : null,
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                children: "Q13 - Which of these age groups do you belong to? *"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 38,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
+                error: q13error,
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
+                        text: q13error
+                    }, void 0, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 40,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "16",
+                        validation: _validation.required,
+                        value: "16",
+                        fieldName: "formData.SurveyData.q13"
+                    }, 1, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 41,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "17 - 24",
+                        validation: _validation.required,
+                        value: "17 - 24",
+                        fieldName: "formData.SurveyData.q13"
+                    }, 2, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "25 - 34",
+                        validation: _validation.required,
+                        value: "25 - 34",
+                        fieldName: "formData.SurveyData.q13"
+                    }, 3, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 43,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "35 - 44",
+                        validation: _validation.required,
+                        value: "35 - 44",
+                        fieldName: "formData.SurveyData.q13"
+                    }, 4, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "45 - 54",
+                        validation: _validation.required,
+                        value: "45 - 54",
+                        fieldName: "formData.SurveyData.q13"
+                    }, 5, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "55 - 60",
+                        validation: _validation.required,
+                        value: "55 - 60",
+                        fieldName: "formData.SurveyData.q13"
+                    }, 6, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "60+",
+                        validation: _validation.required,
+                        value: "60+",
+                        fieldName: "formData.SurveyData.q13"
+                    }, 7, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, undefined),
+                    " ",
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
+                        label: "Prefer not to say",
+                        validation: _validation.required,
+                        value: "Prefer not to say",
+                        fieldName: "formData.SurveyData.q13"
+                    }, 8, false, {
+                        fileName: "src/Application/Survey/Q11Q12Survey.js",
+                        lineNumber: 48,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Application/Survey/Q11Q12Survey.js",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Application/Survey/Q11Q12Survey.js",
+        lineNumber: 26,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Q11Q12Survey, "dwjk7yLqRbLDoD5AT9Ln43pRxn8=", false, function() {
+    return [
+        _reactFinalForm.useFormState,
+        _reactFinalForm.useForm
+    ];
+});
+_c = Q11Q12Survey;
+exports.default = Q11Q12Survey;
+var _c;
+$RefreshReg$(_c, "Q11Q12Survey");
+
+  $parcel$ReactRefreshHelpers$b47c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/TextInput":"7jGrs","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gAWIL":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0c86 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0c86.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _textInput = require("../../common/TextInput");
+var _textInputDefault = parcelHelpers.interopDefault(_textInput);
+var _validation = require("../../common/validation");
+var _s = $RefreshSig$();
+const dropdownOptions = [
+    {
+        value: "5 or more days a week",
+        label: "5 or more days a week"
+    },
+    {
+        value: "3 or 4 days a week",
+        label: "3 or 4 days a week"
+    },
+    {
+        value: "1 or 2 days a week",
+        label: "1 or 2 days a week"
+    },
+    {
+        value: "Once or twice a month",
+        label: "Once or twice a month"
+    },
+    {
+        value: "Less than once a month",
+        label: "Less than once a month"
+    },
+    {
+        value: "Never",
+        label: "Never"
+    }
+];
+const Q13Survey = ()=>{
+    _s();
+    const stateApi = _reactFinalForm.useFormState(); // const error =
+    //   stateApi.submitFailed && stateApi.hasValidationErrors
+    //     ? stateApi.errors?.formData.SurveyData.q3.PlaceOfWork
+    //     : null;
+    _react.useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, []);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "Survey"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q13Survey.js",
+                lineNumber: 38,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
+                text: "About You",
+                isRequired: true
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q13Survey.js",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
+                fieldName: "formData.PostCode",
+                label: "Q14 - What is your home postcode?",
+                validation: _validation.required,
+                disab: "true"
+            }, void 0, false, {
+                fileName: "src/Application/Survey/Q13Survey.js",
+                lineNumber: 40,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Application/Survey/Q13Survey.js",
+        lineNumber: 37,
+        columnNumber: 10
+    }, undefined);
+};
+_s(Q13Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
+    return [
+        _reactFinalForm.useFormState
+    ];
+});
+_c = Q13Survey;
+exports.default = Q13Survey;
+var _c;
+$RefreshReg$(_c, "Q13Survey");
+
+  $parcel$ReactRefreshHelpers$0c86.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/TextInput":"7jGrs","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"94VVT":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$811f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37466,29 +38504,35 @@ const EthnicGroup = ({ setEthnicGroup , setGoToPage  })=>{
         }
     }, [
         formValues.ethnicity
+    ]); // copy postcode to q14 value to survey data
+    _react.useEffect(()=>{
+        formApi.mutators.setFormAttribute("formData.SurveyData.q14", stateApi.values.formData.PostCode);
+    }, [
+        formApi.mutators,
+        stateApi.values.formData.PostCode
     ]);
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
                 sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
+                sectionName: "Survey"
             }, void 0, false, {
                 fileName: "src/Application/Survey/EthnicGroup.js",
-                lineNumber: 33,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
                 text: question
             }, void 0, false, {
                 fileName: "src/Application/Survey/EthnicGroup.js",
-                lineNumber: 34,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q14 - How would you describe your ethnic group? Choose one option that best describes your ethnic group or background"
+                children: "Q15 - How would you describe your ethnic group? Choose one option that best describes your ethnic group or background"
             }, void 0, false, {
                 fileName: "src/Application/Survey/EthnicGroup.js",
-                lineNumber: 35,
+                lineNumber: 39,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
@@ -37498,7 +38542,7 @@ const EthnicGroup = ({ setEthnicGroup , setGoToPage  })=>{
                         text: error
                     }, void 0, false, {
                         fileName: "src/Application/Survey/EthnicGroup.js",
-                        lineNumber: 40,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, undefined),
                     Object.keys(_ethnicityDefault.default).map((ethnicity, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
@@ -37508,7 +38552,7 @@ const EthnicGroup = ({ setEthnicGroup , setGoToPage  })=>{
                             fieldName: "ethnicity"
                         }, index, false, {
                             fileName: "src/Application/Survey/EthnicGroup.js",
-                            lineNumber: 41,
+                            lineNumber: 45,
                             columnNumber: 59
                         }, undefined)
                     ),
@@ -37517,7 +38561,7 @@ const EthnicGroup = ({ setEthnicGroup , setGoToPage  })=>{
                         children: "Or"
                     }, void 0, false, {
                         fileName: "src/Application/Survey/EthnicGroup.js",
-                        lineNumber: 42,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
@@ -37527,23 +38571,23 @@ const EthnicGroup = ({ setEthnicGroup , setGoToPage  })=>{
                         fieldName: "ethnicity"
                     }, "preferNotToSay", false, {
                         fileName: "src/Application/Survey/EthnicGroup.js",
-                        lineNumber: 43,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Application/Survey/EthnicGroup.js",
-                lineNumber: 39,
+                lineNumber: 43,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Application/Survey/EthnicGroup.js",
-        lineNumber: 32,
+        lineNumber: 36,
         columnNumber: 10
     }, undefined);
 };
-_s(EthnicGroup, "sdE+Z4nklBNhskHU5PHmdhalm40=", false, function() {
+_s(EthnicGroup, "dwjk7yLqRbLDoD5AT9Ln43pRxn8=", false, function() {
     return [
         _reactFinalForm.useFormState,
         _reactFinalForm.useForm
@@ -37711,7 +38755,7 @@ const SpecificEthnicGroup = ()=>{
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
                 sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
+                sectionName: "Survey"
             }, void 0, false, {
                 fileName: "src/Application/Survey/SpecificEthnicGroup.js",
                 lineNumber: 30,
@@ -37883,78 +38927,51 @@ const CheckAnswers = ({ setGoToPage  })=>{
                             lineNumber: 31,
                             columnNumber: 38
                         }, undefined) : "",
-                        formValues.Disability ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
-                            label: "Disabilities",
-                            value: `${formValues["Disability"].slice(0, 1).toUpperCase() + formValues["Disability"].slice(1, formValues["Disability"].length)}`,
-                            changeValueCallback: ()=>setGoToPage(5)
-                        }, void 0, false, {
-                            fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 32,
-                            columnNumber: 36
-                        }, undefined) : "",
                         formValues.Employmentstatus ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
                             label: "Employment Status",
                             value: `${formValues["Employmentstatus"]}`,
                             changeValueCallback: ()=>setGoToPage(7)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 33,
+                            lineNumber: 49,
                             columnNumber: 42
                         }, undefined) : "",
                         formValues.IsStartingANewJob ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
                             label: "New Job",
                             value: `${formValues["IsStartingANewJob"].slice(0, 1).toUpperCase() + formValues["IsStartingANewJob"].slice(1, formValues["IsStartingANewJob"].length)}`,
-                            changeValueCallback: ()=>setGoToPage(6)
+                            changeValueCallback: ()=>setGoToPage(5)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 34,
+                            lineNumber: 50,
                             columnNumber: 43
                         }, undefined) : "",
                         formValues.BenefitType ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
                             label: "Benefits",
                             value: `${formValues["BenefitType"]}`,
-                            changeValueCallback: ()=>setGoToPage(7)
+                            changeValueCallback: ()=>setGoToPage(6)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 35,
+                            lineNumber: 51,
                             columnNumber: 37
                         }, undefined) : "",
                         formValues.Files ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
                             label: "Proof",
                             value: `${formValues.Files[0].Name}`,
-                            changeValueCallback: ()=>setGoToPage(8)
+                            changeValueCallback: ()=>setGoToPage(7)
                         }, void 0, false, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 36,
+                            lineNumber: 52,
                             columnNumber: 31
-                        }, undefined) : "",
-                        formValues.ReferredbyMedicalService ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
-                            label: "Medical Service Referral",
-                            value: `${formValues["ReferredbyMedicalService"].slice(0, 1).toUpperCase() + formValues["ReferredbyMedicalService"].slice(1, formValues["ReferredbyMedicalService"].length)}`,
-                            changeValueCallback: ()=>setGoToPage(9)
-                        }, void 0, false, {
-                            fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 37,
-                            columnNumber: 50
-                        }, undefined) : "",
-                        formValues.WhereDidYouHearAboutTheScheme ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkAnswerRowDefault.default, {
-                            label: "Hear About us",
-                            value: `${formValues["WhereDidYouHearAboutTheScheme"]}`,
-                            changeValueCallback: ()=>setGoToPage(11)
-                        }, void 0, false, {
-                            fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 38,
-                            columnNumber: 55
                         }, undefined) : "",
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
                             children: [
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
                                     scope: "row",
                                     "data-header": "Header 1",
-                                    children: "LACF Activity Baseline"
+                                    children: "Survey"
                                 }, void 0, false, {
                                     fileName: "src/Application/CheckAnswers.js",
-                                    lineNumber: 40,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
@@ -37962,20 +38979,20 @@ const CheckAnswers = ({ setGoToPage  })=>{
                                     children: "Completed"
                                 }, void 0, false, {
                                     fileName: "src/Application/CheckAnswers.js",
-                                    lineNumber: 43,
+                                    lineNumber: 87,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                     className: "wmnds-text-align-right"
                                 }, void 0, false, {
                                     fileName: "src/Application/CheckAnswers.js",
-                                    lineNumber: 44,
+                                    lineNumber: 88,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Application/CheckAnswers.js",
-                            lineNumber: 39,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, undefined)
                     ]
@@ -37993,14 +39010,14 @@ const CheckAnswers = ({ setGoToPage  })=>{
                 children: "Re-contact"
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 48,
+                lineNumber: 92,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                 children: "We would like to be able to ask you about your experience of participating in Cycling for Everyone at a later date. If you agree, we will ask you for your contact details \u2013 name, email and phone number \u2013 so that we can get in touch. We will keep your contact details securely for a maximum of 18 months after the end of the activity and will not use them for any other purpose."
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 49,
+                lineNumber: 93,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
@@ -38011,19 +39028,19 @@ const CheckAnswers = ({ setGoToPage  })=>{
                     }, void 0, false)
                 }, void 0, false, {
                     fileName: "src/Application/CheckAnswers.js",
-                    lineNumber: 58,
+                    lineNumber: 102,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 57,
+                lineNumber: 101,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "Self-certification"
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 60,
+                lineNumber: 104,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
@@ -38033,7 +39050,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         text: agreeLegalError
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 62,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
@@ -38043,7 +39060,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         }, void 0, false)
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 63,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
@@ -38053,27 +39070,27 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         }, void 0, false)
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 68,
+                        lineNumber: 112,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 61,
+                lineNumber: 105,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "Now send your request"
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 75,
+                lineNumber: 119,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                 children: "By submitting this request you are confirming that, to the best of your knowledge, the details you are providing are correct."
             }, void 0, false, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 76,
+                lineNumber: 120,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
@@ -38083,7 +39100,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         text: agreeSelfCert
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 81,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
@@ -38093,7 +39110,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                                 "Agree to the",
                                 " ",
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
-                                    href: "https://www.wmca.org.uk/policies",
+                                    href: "https://www.tfwm.org.uk/terms-and-conditions/",
                                     target: "_blank",
                                     rel: "noreferrer",
                                     children: "terms and conditions"
@@ -38102,7 +39119,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 82,
+                        lineNumber: 126,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
@@ -38112,7 +39129,7 @@ const CheckAnswers = ({ setGoToPage  })=>{
                                 "Agree to the",
                                 " ",
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
-                                    href: "https://www.wmca.org.uk/policies",
+                                    href: "https://www.tfwm.org.uk/policies/",
                                     target: "_blank",
                                     rel: "noreferrer",
                                     children: "privacy policy"
@@ -38121,13 +39138,13 @@ const CheckAnswers = ({ setGoToPage  })=>{
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "src/Application/CheckAnswers.js",
-                        lineNumber: 88,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Application/CheckAnswers.js",
-                lineNumber: 80,
+                lineNumber: 124,
                 columnNumber: 7
             }, undefined)
         ]
@@ -38152,81 +39169,7 @@ $RefreshReg$(_c, "CheckAnswers");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","prop-types":"7wKI2","../common/Question":"7HVc9","../common/Checkbox":"7IcBJ","../common/FieldError":"4W7oE","../common/Table":"1yGpO","../common/CheckAnswerRow":"ei338","../common/CheckboxContainer":"2miun","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7IcBJ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2456 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2456.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactFinalForm = require("react-final-form");
-var _propTypes = require("prop-types");
-var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-const Checkbox = ({ fieldName , label  })=>{
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
-        className: "wmnds-fe-checkboxes__container",
-        children: [
-            label,
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactFinalForm.Field, {
-                className: `wmnds-fe-checkboxes__input`,
-                name: fieldName,
-                component: "input",
-                type: "checkbox"
-            }, void 0, false, {
-                fileName: "src/common/Checkbox.js",
-                lineNumber: 10,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                className: "wmnds-fe-checkboxes__checkmark",
-                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("svg", {
-                    className: "wmnds-fe-checkboxes__icon",
-                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("use", {
-                        xlinkHref: "#wmnds-general-checkmark",
-                        href: "#wmnds-general-checkmark"
-                    }, void 0, false, {
-                        fileName: "src/common/Checkbox.js",
-                        lineNumber: 13,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/common/Checkbox.js",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/common/Checkbox.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/common/Checkbox.js",
-        lineNumber: 8,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Checkbox;
-Checkbox.propTypes = {
-    fieldName: _propTypesDefault.default.string.isRequired,
-    label: _propTypesDefault.default.oneOfType([
-        _propTypesDefault.default.string,
-        _propTypesDefault.default.element
-    ])
-};
-exports.default = Checkbox;
-var _c;
-$RefreshReg$(_c, "Checkbox");
-
-  $parcel$ReactRefreshHelpers$2456.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1yGpO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","prop-types":"7wKI2","../common/Question":"7HVc9","../common/Checkbox":"7IcBJ","../common/FieldError":"4W7oE","../common/Table":"1yGpO","../common/CheckAnswerRow":"ei338","../common/CheckboxContainer":"2miun","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1yGpO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a144 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38371,59 +39314,6 @@ $RefreshReg$(_c1, "CheckAnswerRow");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2miun":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a311 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a311.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _propTypes = require("prop-types");
-var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-const CheckboxContainer = ({ error , description , children  })=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        className: "wmnds-fe-group",
-        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-            className: `wmnds-fe-checkboxes ${error && "wmnds-fe-group--error"}`,
-            children: [
-                description && /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "wmnds-fe-checkboxes__desc",
-                    children: description
-                }, void 0, false, {
-                    fileName: "src/common/CheckboxContainer.js",
-                    lineNumber: 9,
-                    columnNumber: 23
-                }, undefined),
-                children
-            ]
-        }, void 0, true, {
-            fileName: "src/common/CheckboxContainer.js",
-            lineNumber: 8,
-            columnNumber: 5
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/common/CheckboxContainer.js",
-        lineNumber: 7,
-        columnNumber: 7
-    }, undefined)
-;
-_c = CheckboxContainer;
-CheckboxContainer.propTypes = {
-    error: _propTypesDefault.default.string,
-    description: _propTypesDefault.default.string,
-    children: _propTypesDefault.default.node
-};
-exports.default = CheckboxContainer;
-var _c;
-$RefreshReg$(_c, "CheckboxContainer");
-
-  $parcel$ReactRefreshHelpers$a311.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
 },{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lA1h2":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -38490,1032 +39380,7 @@ const validateQ7 = (values)=>{
  //     return errors;
  //   };
 
-},{"../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3VimS":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c1ae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c1ae.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _radioGroup = require("../../common/RadioGroup");
-var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
-var _radioButton = require("../../common/RadioButton");
-var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
-var _dropdown = require("../../common/Dropdown");
-var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const Q3Q4Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const dropdownOptions = [
-        {
-            value: "5 or more days a week",
-            label: "5 or more days a week"
-        },
-        {
-            value: "3 or 4 days a week",
-            label: "3 or 4 days a week"
-        },
-        {
-            value: "1 or 2 days a week",
-            label: "1 or 2 days a week"
-        },
-        {
-            value: "Once or twice a month",
-            label: "Once or twice a month"
-        },
-        {
-            value: "Less than once a month",
-            label: "Less than once a month"
-        },
-        {
-            value: "Never",
-            label: "Never"
-        }
-    ];
-    const q3error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q3 : null;
-    const q4error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4.PlaceOfWork : null;
-    const q4error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4.PlaceOfEducation : null;
-    const q4error2 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4.ExerciseOrRecreation : null;
-    const q4error3 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q4.OtherReasons : null;
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Q4Survey.js",
-                lineNumber: 42,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Your current travel",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Q4Survey.js",
-                lineNumber: 43,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q3 - On average, how much time do you spend cycling per week? Please include any casual cycling in your local area, any cycling in the countryside or on cycling routes, cycling to or from work or any competitive cycling. Please do not include any time spent cycling on a static or exercise bike. *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Q4Survey.js",
-                lineNumber: 44,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q3error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q3error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q3Q4Survey.js",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Two or more hours per week",
-                        validation: _validation.required,
-                        value: "Two or more hours per week",
-                        fieldName: "formData.SurveyData.q3"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q3Q4Survey.js",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Between one and two hours per week",
-                        validation: _validation.required,
-                        value: "Between one and two hours per week",
-                        fieldName: "formData.SurveyData.q3"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q3Q4Survey.js",
-                        lineNumber: 54,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Between 30 minutes and one hour per week",
-                        validation: _validation.required,
-                        value: "Between 30 minutes and one hour per week",
-                        fieldName: "formData.SurveyData.q3"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q3Q4Survey.js",
-                        lineNumber: 55,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Less than 30 minutes per week",
-                        validation: _validation.required,
-                        value: "Less than 30 minutes per week",
-                        fieldName: "formData.SurveyData.q3"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q3Q4Survey.js",
-                        lineNumber: 56,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Don't know/unsure",
-                        validation: _validation.required,
-                        value: "Don't know/unsure",
-                        fieldName: "formData.SurveyData.q3"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q3Q4Survey.js",
-                        lineNumber: 57,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q3Q4Survey.js",
-                lineNumber: 51,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q4 - On average, how often would you say you walk for at least 10 minutes as part of your journey, for each of the following reasons:"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Q4Survey.js",
-                lineNumber: 60,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q4.PlaceOfWork",
-                error: q4error,
-                label: "To go to/from your place of work",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Q4Survey.js",
-                lineNumber: 65,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q4.PlaceOfEducation",
-                error: q4error1,
-                label: "To go to/from your place of education (e.g. school, college, or university)",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Q4Survey.js",
-                lineNumber: 66,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q4.ExerciseOrRecreation",
-                error: q4error2,
-                label: "To do exercise or for recreation",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Q4Survey.js",
-                lineNumber: 67,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q4.OtherReasons",
-                error: q4error3,
-                label: "For other reasons",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q3Q4Survey.js",
-                lineNumber: 68,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q3Q4Survey.js",
-        lineNumber: 41,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q3Q4Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
-    return [
-        _reactFinalForm.useFormState
-    ];
-});
-_c = Q3Q4Survey;
-exports.default = Q3Q4Survey;
-var _c;
-$RefreshReg$(_c, "Q3Q4Survey");
-
-  $parcel$ReactRefreshHelpers$c1ae.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/Dropdown":"hdw8v","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4PBID":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4fee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4fee.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _dropdown = require("../../common/Dropdown");
-var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
-var _checkbox = require("../../common/Checkbox");
-var _checkboxDefault = parcelHelpers.interopDefault(_checkbox);
-var _checkboxContainer = require("../../common/CheckboxContainer");
-var _checkboxContainerDefault = parcelHelpers.interopDefault(_checkboxContainer);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _q5DropdownOptions = require("./Q5dropdownOptions");
-var _q5DropdownOptionsDefault = parcelHelpers.interopDefault(_q5DropdownOptions);
-var _s = $RefreshSig$();
-const dropdownOptions = [
-    {
-        value: "None",
-        label: "None"
-    },
-    {
-        value: "One",
-        label: "One"
-    },
-    {
-        value: "Two",
-        label: "Two"
-    },
-    {
-        value: "Three or more",
-        label: "Three or more"
-    }
-];
-const Q5Q6Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q5.CarOrVan : null;
-    const error1 = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q5.MotorcycleOrMoped : null;
-    const q6Error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.selectQ7 : null;
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Q6Survey.js",
-                lineNumber: 35,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Vehicle ownership",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Q6Survey.js",
-                lineNumber: 36,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q5 - How many vehicles does your household own or have continuous use of at present? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Q6Survey.js",
-                lineNumber: 37,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q5.CarOrVan",
-                error: error,
-                label: "Car or van",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Q6Survey.js",
-                lineNumber: 42,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_dropdownDefault.default, {
-                fieldName: "formData.SurveyData.q5.MotorcycleOrMoped",
-                error: error1,
-                label: "Motorcycle or moped",
-                options: dropdownOptions,
-                validation: _validation.required,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Q6Survey.js",
-                lineNumber: 43,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q6 - Do you own or have use of any of the following? (this could include vehicles that you own, hire or use that belong to someone else [e.g. a family member or friend). *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q5Q6Survey.js",
-                lineNumber: 44,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxContainerDefault.default, {
-                error: q6Error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q6Error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q5Q6Survey.js",
-                        lineNumber: 50,
-                        columnNumber: 9
-                    }, undefined),
-                    Object.keys(_q5DropdownOptionsDefault.default).map((option)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_checkboxDefault.default, {
-                            label: _q5DropdownOptionsDefault.default[option],
-                            fieldName: `q6.${option}`
-                        }, _q5DropdownOptionsDefault.default[option], false, {
-                            fileName: "src/Application/Survey/Q5Q6Survey.js",
-                            lineNumber: 51,
-                            columnNumber: 45
-                        }, undefined)
-                    )
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q5Q6Survey.js",
-                lineNumber: 49,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q5Q6Survey.js",
-        lineNumber: 34,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q5Q6Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
-    return [
-        _reactFinalForm.useFormState
-    ];
-});
-_c = Q5Q6Survey;
-exports.default = Q5Q6Survey;
-var _c;
-$RefreshReg$(_c, "Q5Q6Survey");
-
-  $parcel$ReactRefreshHelpers$4fee.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/Dropdown":"hdw8v","../../common/Checkbox":"7IcBJ","../../common/CheckboxContainer":"2miun","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","./Q5dropdownOptions":"lgpMQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lgpMQ":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const Q5dropdownOptions = {
-    bicycle: "Bicycle",
-    ebikeEcycle: "e-bike/e-cycle",
-    adaptedcycle: "Adapted cycle",
-    adaptedebikeecycle: "Adapted e-bike/e-cycle",
-    none: "None of the above"
-};
-exports.default = Q5dropdownOptions;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"15gSW":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5827 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5827.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _radioGroup = require("../../common/RadioGroup");
-var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
-var _radioButton = require("../../common/RadioButton");
-var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
-var _textInput = require("../../common/TextInput");
-var _textInputDefault = parcelHelpers.interopDefault(_textInput);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const Q7Q8Q9Q10Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const formValues = stateApi.values;
-    const formApi = _reactFinalForm.useForm();
-    const q7error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q7 : null;
-    const q8error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.q8 : null;
-    const q8berror = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q8b : null; // copy q8 value to survey data
-    _react.useEffect(()=>{
-        formApi.mutators.setFormAttribute("formData.SurveyData.q8", stateApi.values.q8);
-    }, [
-        formApi.mutators,
-        stateApi.values.q8
-    ]);
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                lineNumber: 27,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "Safety and Confidence",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                lineNumber: 29,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q7 - Currently, how would you rate your cycling skills? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                lineNumber: 30,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q7error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q7error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Good",
-                        validation: _validation.required,
-                        value: "Good",
-                        fieldName: "formData.SurveyData.q7"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Moderate",
-                        validation: _validation.required,
-                        value: "Moderate",
-                        fieldName: "formData.SurveyData.q7"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Poor",
-                        validation: _validation.required,
-                        value: "Poor",
-                        fieldName: "formData.SurveyData.q7"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Don't know/unsure",
-                        validation: _validation.required,
-                        value: "Don't know/unsure",
-                        fieldName: "formData.SurveyData.q7"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                lineNumber: 31,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q8 - Currently, how safe do you feel cycling on roads in your local area? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                lineNumber: 39,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q8error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q8error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 44,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Very safe",
-                        validation: _validation.required,
-                        value: "Very safe",
-                        fieldName: "q8"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 45,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Safe",
-                        validation: _validation.required,
-                        value: "Safe",
-                        fieldName: "q8"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 46,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not very safe",
-                        validation: _validation.required,
-                        value: "Not very safe",
-                        fieldName: "q8"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 47,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Not at all safe",
-                        validation: _validation.required,
-                        value: "Not at all safe",
-                        fieldName: "q8"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 48,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Don't know/unsure",
-                        validation: _validation.required,
-                        value: "Don't know/unsure",
-                        fieldName: "q8"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                        lineNumber: 49,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                lineNumber: 43,
-                columnNumber: 7
-            }, undefined),
-            formValues.q8 === "Not very safe" || formValues.q8 === "Not at all safe" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q8b",
-                label: "Q8b - What are the main reasons that you feel not very safe/not at all safe cycling on roads in your local area?",
-                validation: _validation.required,
-                error: q8berror,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                lineNumber: 51,
-                columnNumber: 83
-            }, undefined) : null,
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q9",
-                label: "Q9 - If you have any comments or suggestions on how your feeling of safety could be improved when cycling on roads in your local area please provide more detail below:"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                lineNumber: 52,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q10",
-                label: "Q10 - If you have any comments or suggestions on how your feeling of safety could be improved when cycling on roads in your local area please provide more detail below:"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-                lineNumber: 55,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q7Q8Q9Q10Survey.js",
-        lineNumber: 26,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q7Q8Q9Q10Survey, "dwjk7yLqRbLDoD5AT9Ln43pRxn8=", false, function() {
-    return [
-        _reactFinalForm.useFormState,
-        _reactFinalForm.useForm
-    ];
-});
-_c = Q7Q8Q9Q10Survey;
-exports.default = Q7Q8Q9Q10Survey;
-var _c;
-$RefreshReg$(_c, "Q7Q8Q9Q10Survey");
-
-  $parcel$ReactRefreshHelpers$5827.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/TextInput":"7jGrs","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"66NQt":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b47c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b47c.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _radioGroup = require("../../common/RadioGroup");
-var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
-var _radioButton = require("../../common/RadioButton");
-var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
-var _textInput = require("../../common/TextInput");
-var _textInputDefault = parcelHelpers.interopDefault(_textInput);
-var _fieldError = require("../../common/FieldError");
-var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const Q11Q12Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState();
-    const formValues = stateApi.values;
-    const formApi = _reactFinalForm.useForm();
-    const q11error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q11 : null;
-    const q11berror = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q11b : null;
-    const q12error = stateApi.submitFailed && stateApi.hasValidationErrors ? stateApi.errors?.formData.SurveyData.q12 : null;
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []); // copy q11 value to survey data
-    _react.useEffect(()=>{
-        formApi.mutators.setFormAttribute("formData.SurveyData.q11", stateApi.values.q11);
-    }, [
-        formApi.mutators,
-        stateApi.values.q11
-    ]);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q11Q12Survey.js",
-                lineNumber: 27,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "About You",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q11Q12Survey.js",
-                lineNumber: 28,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q11 - Are you: *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q11Q12Survey.js",
-                lineNumber: 29,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q11error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q11error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 31,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Male",
-                        validation: _validation.required,
-                        value: "Male",
-                        fieldName: "q11"
-                    }, 1, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Female",
-                        validation: _validation.required,
-                        value: "Female",
-                        fieldName: "q11"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Prefer to self-describe",
-                        validation: _validation.required,
-                        value: "Prefer to self-describe",
-                        fieldName: "q11"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Prefer not to say",
-                        validation: _validation.required,
-                        value: "Prefer not to say",
-                        fieldName: "q11"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q11Q12Survey.js",
-                lineNumber: 30,
-                columnNumber: 7
-            }, undefined),
-            formValues.q11 === "Prefer to self-describe" ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.SurveyData.q11b",
-                label: "Q11b - Please self-describe:",
-                validation: _validation.required,
-                error: q11berror,
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q11Q12Survey.js",
-                lineNumber: 37,
-                columnNumber: 55
-            }, undefined) : null,
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                children: "Q12 - Which of these age groups do you belong to? *"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q11Q12Survey.js",
-                lineNumber: 38,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioGroupDefault.default, {
-                error: q12error,
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_fieldErrorDefault.default, {
-                        text: q12error
-                    }, void 0, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 40,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "16 \u2013 17",
-                        validation: _validation.required,
-                        value: "16 \u2013 17",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 2, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 50,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "18 \u2013 24",
-                        validation: _validation.required,
-                        value: "18 \u2013 24",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 3, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 51,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "25 \u2013 34",
-                        validation: _validation.required,
-                        value: "25 \u2013 34",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 4, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "35 \u2013 44",
-                        validation: _validation.required,
-                        value: "35 \u2013 44",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 5, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "45 \u2013 54",
-                        validation: _validation.required,
-                        value: "45 \u2013 54",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 6, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 54,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "55 \u2013 64",
-                        validation: _validation.required,
-                        value: "55 \u2013 64",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 7, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 55,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "65+",
-                        validation: _validation.required,
-                        value: "65+",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 8, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 56,
-                        columnNumber: 9
-                    }, undefined),
-                    " ",
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_radioButtonDefault.default, {
-                        label: "Prefer not to say",
-                        validation: _validation.required,
-                        value: "Prefer not to say",
-                        fieldName: "formData.SurveyData.q12"
-                    }, 9, false, {
-                        fileName: "src/Application/Survey/Q11Q12Survey.js",
-                        lineNumber: 57,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Application/Survey/Q11Q12Survey.js",
-                lineNumber: 39,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q11Q12Survey.js",
-        lineNumber: 26,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q11Q12Survey, "dwjk7yLqRbLDoD5AT9Ln43pRxn8=", false, function() {
-    return [
-        _reactFinalForm.useFormState,
-        _reactFinalForm.useForm
-    ];
-});
-_c = Q11Q12Survey;
-exports.default = Q11Q12Survey;
-var _c;
-$RefreshReg$(_c, "Q11Q12Survey");
-
-  $parcel$ReactRefreshHelpers$b47c.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/TextInput":"7jGrs","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gAWIL":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0c86 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0c86.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactFinalForm = require("react-final-form");
-var _formSection = require("../../common/FormSection");
-var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
-var _progressIndicator = require("../../common/ProgressIndicator");
-var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _question = require("../../common/Question");
-var _questionDefault = parcelHelpers.interopDefault(_question);
-var _textInput = require("../../common/TextInput");
-var _textInputDefault = parcelHelpers.interopDefault(_textInput);
-var _validation = require("../../common/validation");
-var _s = $RefreshSig$();
-const dropdownOptions = [
-    {
-        value: "5 or more days a week",
-        label: "5 or more days a week"
-    },
-    {
-        value: "3 or 4 days a week",
-        label: "3 or 4 days a week"
-    },
-    {
-        value: "1 or 2 days a week",
-        label: "1 or 2 days a week"
-    },
-    {
-        value: "Once or twice a month",
-        label: "Once or twice a month"
-    },
-    {
-        value: "Less than once a month",
-        label: "Less than once a month"
-    },
-    {
-        value: "Never",
-        label: "Never"
-    }
-];
-const Q13Survey = ()=>{
-    _s();
-    const stateApi = _reactFinalForm.useFormState(); // const error =
-    //   stateApi.submitFailed && stateApi.hasValidationErrors
-    //     ? stateApi.errors?.formData.SurveyData.q3.PlaceOfWork
-    //     : null;
-    _react.useEffect(()=>{
-        window.scrollTo(0, 0);
-    }, []);
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_formSectionDefault.default, {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_progressIndicatorDefault.default, {
-                sectionPosition: "Section 2 of 2",
-                sectionName: "LACF Survey"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q13Survey.js",
-                lineNumber: 38,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_questionDefault.default, {
-                text: "About You",
-                isRequired: true
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q13Survey.js",
-                lineNumber: 39,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_textInputDefault.default, {
-                fieldName: "formData.PostCode",
-                label: "Q13 - What is your home postcode?",
-                validation: _validation.required,
-                disabled: "disabled"
-            }, void 0, false, {
-                fileName: "src/Application/Survey/Q13Survey.js",
-                lineNumber: 40,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Application/Survey/Q13Survey.js",
-        lineNumber: 37,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Q13Survey, "0nJiWWr/eb5ieFEEgwFu6B2Ik4I=", false, function() {
-    return [
-        _reactFinalForm.useFormState
-    ];
-});
-_c = Q13Survey;
-exports.default = Q13Survey;
-var _c;
-$RefreshReg$(_c, "Q13Survey");
-
-  $parcel$ReactRefreshHelpers$0c86.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/ProgressIndicator":"iiGPR","../../common/Question":"7HVc9","../../common/TextInput":"7jGrs","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eWxzz":[function(require,module,exports) {
+},{"../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eWxzz":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$797d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39542,14 +39407,14 @@ const OutsideWmca = ()=>{
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_headerDefault.default, {
-                heading: "Apply for support with West Midlands Cycle Hire costs"
+                heading: "Apply for support with West Midlands cycle hire costs"
             }, void 0, false, {
                 fileName: "src/Application/section1/OutsideWmca.js",
                 lineNumber: 11,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_breadCrumbDefault.default, {
-                currentPageName: "Apply for free cycle hire"
+                currentPageName: "Apply for Go Cycle"
             }, void 0, false, {
                 fileName: "src/Application/section1/OutsideWmca.js",
                 lineNumber: 12,
@@ -39597,10 +39462,39 @@ const OutsideWmca = ()=>{
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                                    children: "To be eligible for this service, you must live in an IMD ward 1 or 2 in the West Midlands Combined Authority area."
+                                    children: "You need to live in Birmingham, Coventry, Dudley, Sandwell, Solihull, Walsall or Wolverhampton to qualify."
                                 }, void 0, false, {
                                     fileName: "src/Application/section1/OutsideWmca.js",
                                     lineNumber: 26,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                                    children: [
+                                        "Please visit ",
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                            href: "https://www.wmcyclehire.co.uk/",
+                                            target: "_blank",
+                                            children: "West Midlands Cycle Hire"
+                                        }, void 0, false, {
+                                            fileName: "src/Application/section1/OutsideWmca.js",
+                                            lineNumber: 30,
+                                            columnNumber: 26
+                                        }, undefined),
+                                        " to get a pass and save money on cycle hire or ",
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                            href: "https://beryl.cc/index.php/scheme/west-midlands-e-scooters",
+                                            target: "_blank",
+                                            children: "West Midlands e-scooter"
+                                        }, void 0, false, {
+                                            fileName: "src/Application/section1/OutsideWmca.js",
+                                            lineNumber: 30,
+                                            columnNumber: 158
+                                        }, undefined),
+                                        " to get a pass and save money on e-scooters in Birmingham."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Application/section1/OutsideWmca.js",
+                                    lineNumber: 29,
                                     columnNumber: 13
                                 }, undefined)
                             ]
@@ -39672,7 +39566,7 @@ const SubmitSuccess = ()=>{
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_headerDefault.default, {
-                heading: "Apply for support with West Midlands Cycle Hire costs"
+                heading: "Apply for support with West Midlands cycle hire costs"
             }, void 0, false, {
                 fileName: "src/Application/SubmitSuccess.js",
                 lineNumber: 18,
@@ -39682,7 +39576,7 @@ const SubmitSuccess = ()=>{
                 className: "wmnds-container",
                 children: [
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_breadCrumbDefault.default, {
-                        currentPageName: "Apply for free cycle hire"
+                        currentPageName: "Apply for Go Cycle"
                     }, void 0, false, {
                         fileName: "src/Application/SubmitSuccess.js",
                         lineNumber: 20,
@@ -39744,24 +39638,24 @@ const SubmitSuccess = ()=>{
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                                                    children: "Step 2: You\u2019ll receive an email within two working days, Monday to Friday telling you your application has been assessed and giving you an introduction to West Midlands Cycle Hire."
+                                                    children: "Step 2: You\u2019ll receive an email within two working days, Monday to Friday telling you your application has been assessed and giving you an introduction to Cycling for Everyone Go Cycle and Scoot."
                                                 }, void 0, false, {
                                                     fileName: "src/Application/SubmitSuccess.js",
-                                                    lineNumber: 40,
+                                                    lineNumber: 39,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                                                     children: "If you haven\u2019t received an e-mail, please check your spam folder before contacting us."
                                                 }, void 0, false, {
                                                     fileName: "src/Application/SubmitSuccess.js",
-                                                    lineNumber: 46,
+                                                    lineNumber: 42,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                                                    children: "If you haven\u2019t received an e-mail, contact Ticketing Services:"
+                                                    children: "If you still haven\u2019t received an e-mail, contact Customer Services:"
                                                 }, void 0, false, {
                                                     fileName: "src/Application/SubmitSuccess.js",
-                                                    lineNumber: 50,
+                                                    lineNumber: 45,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ul", {
@@ -39775,33 +39669,33 @@ const SubmitSuccess = ()=>{
                                                                     children: "Contact us"
                                                                 }, void 0, false, {
                                                                     fileName: "src/Application/SubmitSuccess.js",
-                                                                    lineNumber: 56,
+                                                                    lineNumber: 51,
                                                                     columnNumber: 21
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/Application/SubmitSuccess.js",
-                                                            lineNumber: 54,
+                                                            lineNumber: 49,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
                                                             children: "Phone: 0345 303 6760"
                                                         }, void 0, false, {
                                                             fileName: "src/Application/SubmitSuccess.js",
-                                                            lineNumber: 60,
+                                                            lineNumber: 55,
                                                             columnNumber: 19
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Application/SubmitSuccess.js",
-                                                    lineNumber: 53,
+                                                    lineNumber: 48,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                                                     children: "Opening Times:"
                                                 }, void 0, false, {
                                                     fileName: "src/Application/SubmitSuccess.js",
-                                                    lineNumber: 62,
+                                                    lineNumber: 57,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ul", {
@@ -39810,34 +39704,34 @@ const SubmitSuccess = ()=>{
                                                             children: "Mondays, Tuesdays, Thursdays and Fridays, 8am to 6pm"
                                                         }, void 0, false, {
                                                             fileName: "src/Application/SubmitSuccess.js",
-                                                            lineNumber: 64,
+                                                            lineNumber: 59,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
                                                             children: "Wednesdays, 10am to 6pm"
                                                         }, void 0, false, {
                                                             fileName: "src/Application/SubmitSuccess.js",
-                                                            lineNumber: 65,
+                                                            lineNumber: 60,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
                                                             children: "Saturdays, 9am to 1pm"
                                                         }, void 0, false, {
                                                             fileName: "src/Application/SubmitSuccess.js",
-                                                            lineNumber: 66,
+                                                            lineNumber: 61,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
                                                             children: "Sundays and Bank Holidays, Closed"
                                                         }, void 0, false, {
                                                             fileName: "src/Application/SubmitSuccess.js",
-                                                            lineNumber: 67,
+                                                            lineNumber: 62,
                                                             columnNumber: 19
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Application/SubmitSuccess.js",
-                                                    lineNumber: 63,
+                                                    lineNumber: 58,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
@@ -39883,7 +39777,7 @@ $RefreshReg$(_c, "SubmitSuccess");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-ga":"4j2TN"}],"clwVI":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","react-ga":"4j2TN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"clwVI":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$dd0c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39913,7 +39807,7 @@ const SubmitError = ()=>{
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_headerDefault.default, {
-                heading: "Apply for support with West Midlands Cycle Hire costs"
+                heading: "Apply for support with West Midlands cycle hire costs"
             }, void 0, false, {
                 fileName: "src/Application/SubmitError.js",
                 lineNumber: 15,
@@ -39923,7 +39817,7 @@ const SubmitError = ()=>{
                 className: "wmnds-container",
                 children: [
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_breadCrumbDefault.default, {
-                        currentPageName: "Apply for free cycle hire"
+                        currentPageName: "Apply for Go Cycle"
                     }, void 0, false, {
                         fileName: "src/Application/SubmitError.js",
                         lineNumber: 17,
@@ -39937,7 +39831,7 @@ const SubmitError = ()=>{
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                     className: "wmnds-col-1 wmnds-col-sm-2-3",
                                     children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
-                                        children: "Apply for support with West Midlands Cycle Hire costs"
+                                        children: "Apply for support with West Midlands Cycle Hire and Scooter costs"
                                     }, void 0, false, {
                                         fileName: "src/Application/SubmitError.js",
                                         lineNumber: 21,
@@ -40032,6 +39926,6 @@ $RefreshReg$(_c, "SubmitError");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-ga":"4j2TN"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequire4b36")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","react-ga":"4j2TN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","1MduV","2kQhy"], "2kQhy", "parcelRequire4b36")
 
 //# sourceMappingURL=index.7271efb6.js.map
