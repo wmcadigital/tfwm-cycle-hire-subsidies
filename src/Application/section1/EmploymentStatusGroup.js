@@ -67,13 +67,13 @@ const EmploymentStatusGroup = () => {
       ? stateApi.errors?.formData.SurveyData.q18b
       : null;
 
-  // copy q17 value to survey data
-  useEffect(() => {
-    formApi.mutators.setFormAttribute(
-      "formData.SurveyData.q18",
-      stateApi.values.q18
-    );
-  }, [formApi.mutators, stateApi.values.q18]);
+    // copy q18 value to survey data
+    useEffect(() => {
+      formApi.mutators.setFormAttribute(
+        "formData.SurveyData.q18",
+        stateApi.values.q18
+      );
+    }, [formApi.mutators, stateApi.values.q18]);
 
   return (
     <FormSection>

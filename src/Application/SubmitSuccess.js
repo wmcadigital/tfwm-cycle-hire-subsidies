@@ -18,9 +18,9 @@ const SubmitSuccess = () => {
 
   return (
     <>
-      <Header heading="Apply for support with West Midlands cycle and scooter hire costs" />
+      <Header heading="Apply for support with West Midlands cycle hire costs" />
       <div className="wmnds-container">
-        <BreadCrumb currentPageName="Apply for Go Cycle and Scoot" />
+        <BreadCrumb currentPageName="Apply for Go Cycle" />
         <div className="wmnds-grid">
           <div className=" wmnds-col-1 wmnds-col-md-2-3">
             <div className="wmnds-col-1 wmnds-m-b-xl">

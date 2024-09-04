@@ -30,7 +30,7 @@ const Q10Survey = () => {
     <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
-        sectionName="LACF Survey"
+        sectionName="Survey"
       />
       <Question text="About You" isRequired={true} />
       <p>Q23 - Are you: *</p>
