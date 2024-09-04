@@ -44,7 +44,7 @@ const Q7Survey = () => {
     <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
-        sectionName="LACF Survey"
+        sectionName="Survey"
       />
       <Question text="Safety and Confidence" isRequired={true} />
       <p>Q12 - Currently, how safe do you feel walking in your local area? *</p>

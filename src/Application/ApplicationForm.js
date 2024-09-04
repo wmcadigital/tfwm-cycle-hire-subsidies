@@ -54,7 +54,7 @@ const ApplicationForm = () => {
 
   return (
     <>
-      <Header heading="Apply for support with West Midlands cycle and scooter hire costs" />
+      <Header heading="Apply for support with West Midlands cycle hire costs" />
       <FormContentWrapper>
         <FormWizard
           onSubmit={() => {}}

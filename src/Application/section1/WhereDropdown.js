@@ -38,7 +38,7 @@ const WhereDropdown = () => {
 
   const error =
     stateApi.submitFailed && stateApi.hasValidationErrors
-      ? stateApi.errors?.q11
+      ? stateApi.errors?.formData.SurveyData.q11
       : null;
 
   // const errorOther =
@@ -47,12 +47,12 @@ const WhereDropdown = () => {
   //     : null;
 
   // copy q12 value to survey data
-  useEffect(() => {
-    formApi.mutators.setFormAttribute(
-      "formData.SurveyData.q11",
-      stateApi.values.q11
-    );
-  }, [formApi.mutators, stateApi.values.q12]);
+  // useEffect(() => {
+  //   formApi.mutators.setFormAttribute(
+  //     "formData.SurveyData.q11",
+  //     stateApi.values.q11
+  //   );
+  // }, [formApi.mutators, stateApi.values.q12]);
 
   return (
     <FormSection>
@@ -65,16 +65,16 @@ const WhereDropdown = () => {
         isRequired={true}
       />
       <Dropdown
-        fieldName="q11"
+        fieldName="formData.SurveyData.q11"
         error={error}
         label="Select one option"
         options={whereOptions}
         validation={required}
         isRequired={true}
       />
-      {formValues.q11 === "Other" ? (
+      {formValues.SurveyData?.q11 === "Other" ? (
         <TextInput
-          fieldName="formData.SurveyData.q11b"
+          fieldName="formData.SurveyData.q15Other"
           label="Q11b - Please provide more details eg location, website:"
           validation={required}
           // error={errorOther}

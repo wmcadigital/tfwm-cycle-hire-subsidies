@@ -11,8 +11,8 @@ const OutsideWmca = () => {
 
   return (
     <>
-      <Header heading="Apply for support with West Midlands cycle and scooter hire costs" />
-      <BreadCrumb currentPageName="Apply for Go Cycle and Scoot" />
+      <Header heading="Apply for support with West Midlands cycle hire costs" />
+      <BreadCrumb currentPageName="Apply for Go Cycle" />
       <main className="wmnds-container wmnds-container--main wmnds-p-b-lg wmnds-grid">
         <div className="wmnds-col-1 wmnds-col-md-2-3">
           <div className="wmnds-col-1 wmnds-m-b-md">

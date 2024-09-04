@@ -109,7 +109,7 @@ const CheckAnswers = ({ setGoToPage }) => {
                   formValues["IsStartingANewJob"].length
                 )
               }`}
-              changeValueCallback={() => setGoToPage(6)}
+              changeValueCallback={() => setGoToPage(5)}
             />
           ) : (
             ""
@@ -118,7 +118,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Benefits"
               value={`${formValues["BenefitType"]}`}
-              changeValueCallback={() => setGoToPage(7)}
+              changeValueCallback={() => setGoToPage(6)}
             />
           ) : (
             ""
@@ -127,7 +127,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Proof"
               value={`${formValues.Files[0].Name}`}
-              changeValueCallback={() => setGoToPage(8)}
+              changeValueCallback={() => setGoToPage(7)}
             />
           ) : (
             ""
@@ -149,18 +149,18 @@ const CheckAnswers = ({ setGoToPage }) => {
           ) : (
             ""
           )} */}
-          {formValues.WhereDidYouHearAboutTheScheme ? (
+          {/* {formValues.WhereDidYouHearAboutTheScheme ? (
             <CheckAnswerRow
               label="Hear About us"
               value={`${formValues["WhereDidYouHearAboutTheScheme"]}`}
-              changeValueCallback={() => setGoToPage(11)}
+              changeValueCallback={() => setGoToPage(9)}
             />
           ) : (
             ""
-          )}
+          )} */}
           <tr>
             <th scope="row" data-header="Header 1">
-              LACF Activity Baseline
+              Survey
             </th>
             <td data-header="Header 2">Completed</td>
             <td className="wmnds-text-align-right"></td>
