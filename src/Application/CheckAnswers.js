@@ -75,21 +75,6 @@ const CheckAnswers = ({ setGoToPage }) => {
           ) : (
             ""
           )}
-          {/* {formValues.Disability ? (
-            <CheckAnswerRow
-              label="Disabilities"
-              value={`${
-                formValues["Disability"].slice(0, 1).toUpperCase() +
-                formValues["Disability"].slice(
-                  1,
-                  formValues["Disability"].length
-                )
-              }`}
-              changeValueCallback={() => setGoToPage(5)}
-            />
-          ) : (
-            ""
-          )} */}
           {formValues.Employmentstatus ? (
             <CheckAnswerRow
               label="Employment Status"
@@ -126,38 +111,12 @@ const CheckAnswers = ({ setGoToPage }) => {
           {formValues.Files ? (
             <CheckAnswerRow
               label="Proof"
-              value={`${formValues.Files[0].Name}`}
+              value={formValues.Files.map((file) => file.Name).join(", ")}
               changeValueCallback={() => setGoToPage(7)}
             />
           ) : (
             ""
           )}
-          {/* {formValues.ReferredbyMedicalService ? (
-            <CheckAnswerRow
-              label="Medical Service Referral"
-              value={`${
-                formValues["ReferredbyMedicalService"]
-                  .slice(0, 1)
-                  .toUpperCase() +
-                formValues["ReferredbyMedicalService"].slice(
-                  1,
-                  formValues["ReferredbyMedicalService"].length
-                )
-              }`}
-              changeValueCallback={() => setGoToPage(9)}
-            />
-          ) : (
-            ""
-          )} */}
-          {/* {formValues.WhereDidYouHearAboutTheScheme ? (
-            <CheckAnswerRow
-              label="Hear About us"
-              value={`${formValues["WhereDidYouHearAboutTheScheme"]}`}
-              changeValueCallback={() => setGoToPage(9)}
-            />
-          ) : (
-            ""
-          )} */}
           <tr>
             <th scope="row" data-header="Header 1">
               Survey
@@ -250,7 +209,7 @@ const CheckAnswers = ({ setGoToPage }) => {
 };
 
 CheckAnswers.propTypes = {
-  setGoToPage: PropTypes.func,
+  setGoToPage: PropTypes.func.isRequired,
 };
 
 export default CheckAnswers;

@@ -29,65 +29,89 @@ const FileField = ({ name, validation, ...props }) => {
 
 function FileFieldInput({ input, dropZoneProps, ...props }) {
   const stateApi = useFormState();
-  const [isFileInputFocused, setIsFileInputFocused] = useState(false); // This is used to emulate the input focus class on the label
-  const [fileName, setFileName] = useState("no file selected"); // Used to change the name of the input/label button to the users file name
-  const [fileLabel, setFileLabel] = useState("Choose file");
+  const [isFileInputFocused, setIsFileInputFocused] = useState(false);
+  const [fileNames, setFileNames] = useState([]);
+  const [fileLabel, setFileLabel] = useState("Choose files");
   const [fileExists, setFileExists] = useState(false);
   const [fileIcon, setFileIcon] = useState("paperclip");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  // check if there's a validation issue
   const error =
     stateApi.submitFailed && stateApi.hasValidationErrors ? true : false;
 
-  const onDrop = useCallback(
-    (files) => {
-      if (files) {
-        const file = document.querySelector("input[type=file]").files[0];
-        let reader = new FileReader();
-        reader.readAsDataURL(file); // Read file as dataURL
-        reader.onloadend = function () {
-          const fileData = [
-            {
-              Name: files[0].name,
-              Content: reader.result,
-              ContentType: files[0].type,
-            },
-          ];
-          setFileName(files[0].name); // Set file name that the user has chosen (this will display in our label)
-          setFileLabel("Remove file");
+    const onDrop = useCallback(
+      (files) => {
+        if (files.length > 3) {
+          setErrorMessage("You can only upload up to 3 files.");
+          return;
+        }
+        setErrorMessage(""); // Clear any previous error message
+    
+        //console.log("Files dropped:", files); // Log the files array
+    
+        const fileData = files.map((file) => {
+          let reader = new FileReader();
+          reader.readAsDataURL(file);
+          return new Promise((resolve) => {
+            reader.onloadend = () => {
+              console.log("File read:", {
+                Name: file.name,
+                Content: reader.result,
+                ContentType: file.type,
+              }); // Log the file data
+              resolve({
+                Name: file.name,
+                Content: reader.result,
+                ContentType: file.type,
+              });
+            };
+          });
+        });
+    
+        Promise.all(fileData).then((fileDataArray) => {
+          setFileNames(files.map((file) => file.name));
+          setFileLabel("Remove files");
           setFileExists(true);
           setFileIcon("trash");
-          input.onChange(fileData);
-        };
-      }
-    },
-    [input]
-  );
+          input.onChange(fileDataArray);
+        });
+      },
+      [input]
+    );
+    
 
   const { getRootProps, getInputProps, acceptedFiles } = useDropzone({
     onDrop,
     noDrag: true,
     ...dropZoneProps,
     accept: ".jpeg, .jpg, .png, .pdf",
+    multiple: true,
   });
 
-  const files = acceptedFiles.map((file) => (
+  // const files = acceptedFiles.map((file) => (
+  //   <span key={file.path}>
+  //     {file.name} - {file.size} bytes 
+  //   </span>
+  // ));
+
+  const files = acceptedFiles.map((file, index) => (
     <span key={file.path}>
-      {fileName} - {file.size} bytes
+      {file.name} - {file.size} bytes
+      {index < acceptedFiles.length - 1 && ", "}
     </span>
   ));
+  
 
-  // HandleFocus (when user joins input)
   const handleFocus = () => {
-    setIsFileInputFocused(true); // Set input to focus
+    setIsFileInputFocused(true);
   };
 
-  // Handleblur (when user leaves input), set input to unfocus
   const handleBlur = () => setIsFileInputFocused(false);
 
   return (
     <div className={`wmnds-fe-group ${error ? "wmnds-fe-group--error" : ""}`}>
       {error ? <span className="wmnds-fe-error-message">Required</span> : ""}
+      {errorMessage && <span className="wmnds-fe-error-message">{errorMessage}</span>}
       <div {...getRootProps()} className="wmnds-fe-file-upload">
         <input
           type="file"

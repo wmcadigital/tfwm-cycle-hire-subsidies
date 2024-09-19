@@ -10,7 +10,12 @@ import { required } from "../../common/validation";
 
 const BenefitTypes = {
   noEmployed: { radioLabel: "No - Employed and earn under £30,000", detailLabel: "No - Employed and earn under £30,000" },
-  noStudent: { radioLabel: "No - I'm a full time Student", detailLabel: "No - I'm a full time Student" },
+  noStudent: { radioLabel: "No - I'm a full-time Student", detailLabel: "No - I'm a full-time Student" },
+  noIncomeAssessedSupport: { radioLabel: "No - I'm not in education, employment or training and receive income assessed support", detailLabel: "No - I'm not in education, employment or training and receive income assessed support "},
+  yesHousingBenefit: {
+    radioLabel: "Yes - Housing benefit",
+    detailLabel: "Yes - Housing benefit",
+  },
   yesUniversalCredit: {
     radioLabel: "Yes - Universal Credit",
     detailLabel: "Yes - Universal Credit",
@@ -19,26 +24,38 @@ const BenefitTypes = {
     radioLabel: "Yes - Job Seekers Allowance (JSA)",
     detailLabel: "Yes - Job Seekers Allowance (JSA)",
   },
-  yesChildBenefit: {
-    radioLabel: "Yes - Child Benefit",
-    detailLabel: "Yes - Child Benefit",
+  yesCouncilTaxSupport: {
+    radioLabel: "Yes - Council Tax Support",
+    detailLabel: "Yes - Council Tax Support",
   },
-  yesEmploymentSupportAllowance: {
-    radioLabel: "Yes - Employment Support Allowance (ESA)",
-    detailLabel: "Yes - Employment Support Allowance (ESA)",
+  yesIncomeSupport: {
+    radioLabel: "Yes - Income Support",
+    detailLabel: "Yes - Income Support",
   },
-  yesHousingBenefit: {
-    radioLabel: "Yes - Housing Benefit",
-    detailLabel: "Yes - Housing Benefit",
+  yesPensionCredit: {
+    radioLabel: "Yes - Pension Credit",
+    detailLabel: "Yes - Pension Credit",
   },
-  yesOtherIncomeAssessedBenefit: {
-    radioLabel: "Yes - Other income assessed benefit",
-    detailLabel: "Yes - Other income assessed benefit",
+  yesOtherUKIncomeAssessedBenefit: {
+    radioLabel: "Yes - Other UK income assessed benefit ",
+    detailLabel: "Yes - Other UK income assessed benefit ",
   },
-  yesStudentIncomeAssessedSupport: {
-    radioLabel: "Yes - Student income assessed support",
-    detailLabel: "Yes - Student income assessed support",
-  },
+  // yesChildBenefit: {
+  //   radioLabel: "Yes - Child Benefit",
+  //   detailLabel: "Yes - Child Benefit",
+  // },
+  // yesEmploymentSupportAllowance: {
+  //   radioLabel: "Yes - Employment Support Allowance (ESA)",
+  //   detailLabel: "Yes - Employment Support Allowance (ESA)",
+  // },
+  // yesOtherIncomeAssessedBenefit: {
+  //   radioLabel: "Yes - Other income assessed benefit",
+  //   detailLabel: "Yes - Other income assessed benefit",
+  // },
+  // yesStudentIncomeAssessedSupport: {
+  //   radioLabel: "Yes - Student income assessed support",
+  //   detailLabel: "Yes - Student income assessed support",
+  // },
 };
 
 const BenefitsGroup = () => {
