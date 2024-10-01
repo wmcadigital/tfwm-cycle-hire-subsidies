@@ -52,7 +52,7 @@ const DateOfBirth = () => {
         dayFieldName="bdayDay"
         monthFieldName="bdayMonth"
         yearFieldName="bdayYear"
-        label="For example, 3 7 1985"
+        label="For example, 3 7 1985."
         error={error}
       />
     </FormSection>

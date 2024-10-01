@@ -103,7 +103,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Benefits"
               value={`${formValues["BenefitType"]}`}
-              changeValueCallback={() => setGoToPage(6)}
+              changeValueCallback={() => setGoToPage(5)}
             />
           ) : (
             ""
@@ -112,7 +112,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <CheckAnswerRow
               label="Proof"
               value={formValues.Files.map((file) => file.Name).join(", ")}
-              changeValueCallback={() => setGoToPage(7)}
+              changeValueCallback={() => setGoToPage(6)}
             />
           ) : (
             ""
