@@ -73,7 +73,7 @@ const ApplicationForm = () => {
           />
           <EmailAddress />
           {/* <DisabilityGroup /> */}
-          <NewJobGroup />
+          {/* <NewJobGroup /> */}
           <BenefitsGroup />
           <ProofUpload />
           {/* <MedicalServiceGroup /> */}
