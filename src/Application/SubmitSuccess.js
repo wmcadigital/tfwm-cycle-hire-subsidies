@@ -43,7 +43,7 @@ const SubmitSuccess = () => {
                   Step 1: You’ll receive an email to confirm we have received your application. 
                 </p>
                 <p>
-                  Step 2: You’ll receive an email within two working days, Monday to Friday telling you your application has been assessed and giving you an introduction to Cycling for Everyone Go Cycle and Scoot.
+                  Step 2: You’ll receive an email within two working days, Monday to Friday telling you your application has been assessed and giving you an introduction to Cycling for Everyone Go Cycle.
                 </p>
                 <p>
                   If you haven’t received an e-mail, please check your spam folder before contacting us. 
