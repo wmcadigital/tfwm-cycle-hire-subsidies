@@ -21,7 +21,7 @@ const SubmitError = () => {
         <div className="wmnds-container-alerts-sign-up">
           <div className="wmnds-grid">
             <div className="wmnds-col-1 wmnds-col-sm-2-3">
-              <h1>Apply for support with West Midlands Cycle Hire and Scooter costs</h1>
+              <h1>Apply for support with West Midlands Cycle Hire costs</h1>
             </div>
             <div className="wmnds-col-1 wmnds-col-md-3-4 wmnds-col-lg-1-2">
               {/* Error message */}
