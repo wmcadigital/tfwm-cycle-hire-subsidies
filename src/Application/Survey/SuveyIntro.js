@@ -45,12 +45,13 @@ const SurveyIntro = () => {
         part of this study are: Age, Email, telephone number, Postcode, Ethnic
         Background and Disability. We will safely store your personal data for a
         maximum of 18 months. For further information on how we handle
-        information/data, and your information rights{" "}
+        information/data, and your information rights, visit our{" "}
         <a
-          href="www.tfwm.org.uk/policies/privacy-and-cookies-policy"
+          className="wmnds-link"
+          href="https://tfwm.org.uk/policies/privacy-and-cookies-policy"
           target="_blank"
         >
-          visit our Privacy Policy
+          Privacy Policy
         </a>
         .
       </p>
