@@ -14,7 +14,7 @@ import EmailAddress from "./section1/EmailAddress";
 import RegistrationAddress from "./section1/RegistrationAddress";
 // import DisabilityGroup from "./section1/DisabilityGroup";
 import EmploymentStatusGroup from "./section1/EmploymentStatusGroup";
-import NewJobGroup from "./section1/NewJobGroup";
+// import NewJobGroup from "./section1/NewJobGroup";
 import BenefitsGroup from "./section1/BenefitsGroup";
 import ProofUpload from "./section1/ProofUpload";
 // import MedicalServiceGroup from "./section1/MedicalServiceGroup";
