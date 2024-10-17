@@ -19,7 +19,7 @@ const RegistrationName = () => {
       ? stateApi.errors?.formData.LastName
       : null;
 
-  const question = "What is your name";
+  const question = "What is your name?";
   
   useEffect(() => {
     window.scrollTo(0, 0);
