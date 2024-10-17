@@ -5,6 +5,10 @@ import Address from "../../common/Eligibility/Address";
 const EligibilityCheck = () => {
   const question = "Are you eligible?";
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <FormSection>
       <p>Eligibility Checker</p>

@@ -20,6 +20,10 @@ const RegistrationName = () => {
       : null;
 
   const question = "What is your name";
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <FormSection>

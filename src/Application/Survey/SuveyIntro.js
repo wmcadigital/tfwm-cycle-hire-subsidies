@@ -2,6 +2,11 @@ import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
 
 const SurveyIntro = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <FormSection>
       <ProgressIndicator

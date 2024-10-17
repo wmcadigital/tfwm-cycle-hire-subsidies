@@ -18,6 +18,10 @@ const EmailAddress = () => {
       ? stateApi.errors?.formData.EmailAddress
       : null;
 
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <FormSection>
       <ProgressIndicator
