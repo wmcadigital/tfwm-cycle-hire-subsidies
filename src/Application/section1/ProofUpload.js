@@ -5,6 +5,11 @@ import { required } from "../../common/validation";
 import FileField from "../../common/FileField";
 
 const ProofUpload = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <FormSection>
       <ProgressIndicator

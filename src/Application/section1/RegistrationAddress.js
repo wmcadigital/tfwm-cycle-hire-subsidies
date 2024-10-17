@@ -12,6 +12,10 @@ const RegistrationAddress = ({
 }) => {
   const question = "What is your address?";
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <FormSection>
       <ProgressIndicator

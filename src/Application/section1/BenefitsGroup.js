@@ -71,6 +71,11 @@ const BenefitsGroup = () => {
       ? stateApi.errors?.formData.BenefitType
       : null;
 
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
+
   return (
     <FormSection>
       <ProgressIndicator
