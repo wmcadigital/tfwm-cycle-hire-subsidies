@@ -71,7 +71,20 @@ const Address = ({ prefix, btnText, isRequired }) => {
         isRequired={isRequired}
       />
       {formState.values.eligibility == "yes" && (
-        <Question text="Congratulations. Click continue to apply." isRequired={false} />
+        
+        <>
+          <div className="wmnds-msg-summary wmnds-msg-summary--info ">
+          <div className="wmnds-msg-summary__header">
+            <svg className="wmnds-msg-summary__icon">
+              <use xlinkHref="#wmnds-general-info" href="#wmnds-general-info"></use>
+            </svg>
+            <h3 className="wmnds-msg-summary__title">Congratulations</h3>
+          </div>
+          <div className="wmnds-msg-summary__info">
+          You live in an eligible area. Click continue to apply.
+          </div>
+        </div>
+        </>
       )}
     </>
   );

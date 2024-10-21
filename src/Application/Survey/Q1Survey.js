@@ -1,5 +1,5 @@
 import { useFormState } from "react-final-form";
-
+import { useEffect } from "react";
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
 import Question from "../../common/Question";
@@ -55,6 +55,10 @@ const Q1Survey = () => {
       ? stateApi.errors?.formData.SurveyData.q1.WalkFor10Minutes
       : null;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+    
   return (
     <FormSection>
       <ProgressIndicator

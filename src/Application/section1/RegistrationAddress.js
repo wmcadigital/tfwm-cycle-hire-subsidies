@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-
+import { useEffect } from "react";
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
 import Question from "../../common/Question";
@@ -11,6 +11,10 @@ const RegistrationAddress = ({
   setRegistrationAddresses,
 }) => {
   const question = "What is your address?";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <FormSection>

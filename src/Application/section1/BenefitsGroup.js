@@ -1,5 +1,5 @@
 import { useFormState } from "react-final-form";
-
+import { useEffect } from "react";
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
 import RadioGroup from "../../common/RadioGroup";
@@ -70,6 +70,11 @@ const BenefitsGroup = () => {
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.BenefitType
       : null;
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
 
   return (
     <FormSection>

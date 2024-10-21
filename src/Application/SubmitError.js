@@ -15,13 +15,13 @@ const SubmitError = () => {
 
   return (
     <>
-      <Header heading="Apply for support with West Midlands cycle hire costs" />
+      <Header heading="Apply for Go Cycle" />
       <div className="wmnds-container">
         <BreadCrumb currentPageName="Apply for Go Cycle" />
         <div className="wmnds-container-alerts-sign-up">
           <div className="wmnds-grid">
             <div className="wmnds-col-1 wmnds-col-sm-2-3">
-              <h1>Apply for support with West Midlands Cycle Hire costs</h1>
+              <h1>Apply for Go Cycle</h1>
             </div>
             <div className="wmnds-col-1 wmnds-col-md-3-4 wmnds-col-lg-1-2">
               {/* Error message */}

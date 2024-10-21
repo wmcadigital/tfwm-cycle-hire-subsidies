@@ -1,10 +1,11 @@
 import { useFormState } from "react-final-form";
-
+import { useEffect } from "react";
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
 import Question from "../../common/Question";
 import TextInput from "../../common/TextInput";
 import { required, email, composeValidators } from "../../common/validation";
+
 
 const EmailAddress = () => {
   const stateApi = useFormState();
@@ -17,6 +18,10 @@ const EmailAddress = () => {
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.EmailAddress
       : null;
+
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <FormSection>

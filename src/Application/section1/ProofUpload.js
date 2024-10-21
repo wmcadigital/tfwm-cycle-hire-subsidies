@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
 import Question from "../../common/Question";
@@ -5,6 +6,11 @@ import { required } from "../../common/validation";
 import FileField from "../../common/FileField";
 
 const ProofUpload = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <FormSection>
       <ProgressIndicator
