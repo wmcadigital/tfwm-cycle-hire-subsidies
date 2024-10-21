@@ -54,10 +54,14 @@ const WhereDropdown = () => {
   //   );
   // }, [formApi.mutators, stateApi.values.q12]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <FormSection>
       <ProgressIndicator
-        sectionPosition="Section 1 of 2"
+        sectionPosition="Section 2 of 2"
         sectionName="About you"
       />
       <Question
