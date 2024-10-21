@@ -47,32 +47,22 @@ const Q8Survey = () => {
       <TextInput
         fieldName="formData.SurveyData.q19.Adults18OrOver"
         label="Adults aged 18 or over"
-        validation={required}
-        isRequired={true}
       />
       <TextInput
         fieldName="formData.SurveyData.q19.Children16Or17"
         label="Children aged 16 or 17"
-        validation={required}
-        isRequired={true}
       />
       <TextInput
         fieldName="formData.SurveyData.q19.Children12To15"
         label="Children aged 12 to 15"
-        validation={required}
-        isRequired={true}
       />
       <TextInput
         fieldName="formData.SurveyData.q19.Children5To11"
         label="Children aged 5 to 11"
-        validation={required}
-        isRequired={true}
       />
       <TextInput
         fieldName="formData.SurveyData.q19.Children4OrUnder"
         label="Children aged 4 or under"
-        validation={required}
-        isRequired={true}
       />
 
       <p>q20 - What is your estimated household annual income? *</p>
