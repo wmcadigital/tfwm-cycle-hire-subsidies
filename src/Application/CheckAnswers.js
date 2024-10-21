@@ -179,7 +179,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <>
               Agree to the{" "}
               <a
-                href="https://www.tfwm.org.uk/terms-and-conditions/"
+                href="https://www.tfwm.org.uk/terms-and-conditions/cycling-for-everyone-go-cycle/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -194,7 +194,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             <>
               Agree to the{" "}
               <a
-                href="https://www.tfwm.org.uk/policies/"
+                href="https://www.tfwm.org.uk/policies/privacy-and-cookies-policy/"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -1,6 +1,7 @@
 import FormSection from "../../common/FormSection";
 import Question from "../../common/Question";
 import Address from "../../common/Eligibility/Address";
+import { useEffect } from "react";
 
 const EligibilityCheck = () => {
   const question = "Are you eligible?";

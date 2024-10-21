@@ -11,7 +11,7 @@ const OutsideWmca = () => {
 
   return (
     <>
-      <Header heading="Apply for support with West Midlands cycle hire costs" />
+      <Header heading="Apply for Go Cycle" />
       <BreadCrumb currentPageName="Apply for Go Cycle" />
       <main className="wmnds-container wmnds-container--main wmnds-p-b-lg wmnds-grid">
         <div className="wmnds-col-1 wmnds-col-md-2-3">
@@ -29,7 +29,7 @@ const OutsideWmca = () => {
           </div>
           <div className="wmnds-p-lg wmnds-bg-white">
             <p>Eligibility Checker</p>
-            <Question text="Sorry, your postcode is not within our eligible area." />
+            <h2>Sorry, your postcode is not within our eligible area.</h2>
             <p>
             You need to live in Birmingham, Coventry, Dudley, Sandwell, Solihull, Walsall or Wolverhampton to qualify.
             </p>

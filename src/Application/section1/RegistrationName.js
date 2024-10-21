@@ -1,5 +1,5 @@
 import { useFormState } from "react-final-form";
-
+import { useEffect } from "react";
 import { required, name, composeValidators } from "../../common/validation";
 import FormSection from "../../common/FormSection";
 import Question from "../../common/Question";
@@ -19,7 +19,7 @@ const RegistrationName = () => {
       ? stateApi.errors?.formData.LastName
       : null;
 
-  const question = "What is your name";
+  const question = "What is your name?";
   
   useEffect(() => {
     window.scrollTo(0, 0);

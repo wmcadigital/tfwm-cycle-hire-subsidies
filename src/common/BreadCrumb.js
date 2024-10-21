@@ -27,26 +27,26 @@ const BreadCrumb = ({ currentPageName }) => (
         </li>
         <li className="wmnds-breadcrumb__list-item">
           <a
-            href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/cycling-in-the-west-midlands/"
+            href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/cycling-and-walking/"
             className="wmnds-breadcrumb__link"
           >
-            Cycling in the West Midlands
+            Cycling and Walking
           </a>
         </li>
         <li className="wmnds-breadcrumb__list-item">
           <a
-            href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/cycling-in-the-west-midlands/cycling-for-everyone/"
+            href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/cycling-and-walking/cycling-activities/"
             className="wmnds-breadcrumb__link"
           >
-            Cycling for Everyone
+            Cycling Activities
           </a>
         </li>
         <li className="wmnds-breadcrumb__list-item">
           <a
-            href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/cycling-in-the-west-midlands/cycling-for-everyone/cycle-hire-apply-for-free-minutes/"
+            href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/cycling-and-walking/cycling-activities/go-cycle/"
             className="wmnds-breadcrumb__link"
           >
-            Hire - apply for free minutes
+            Go Cycle
           </a>
         </li>
         <li className="wmnds-breadcrumb__list-item">

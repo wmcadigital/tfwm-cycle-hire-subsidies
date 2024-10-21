@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
 
@@ -56,7 +57,7 @@ const SurveyIntro = () => {
           href="https://tfwm.org.uk/policies/privacy-and-cookies-policy"
           target="_blank"
         >
-          Privacy Policy
+        privacy policy
         </a>
         .
       </p>
