@@ -38,6 +38,10 @@ const EthnicGroup = ({ setEthnicGroup, setGoToPage }) => {
     );
   }, [formApi.mutators, stateApi.values.formData.PostCode]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <FormSection>
       <ProgressIndicator

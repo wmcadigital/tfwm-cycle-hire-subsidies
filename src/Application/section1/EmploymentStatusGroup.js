@@ -75,10 +75,14 @@ const EmploymentStatusGroup = () => {
       );
     }, [formApi.mutators, stateApi.values.q18]);
 
+      useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <FormSection>
       <ProgressIndicator
-        sectionPosition="Section 1 of 2"
+        sectionPosition="Section 2 of 2"
         sectionName="About you"
       />
       <Question text="Q18 - What is your employment status? *" isRequired={true} />
