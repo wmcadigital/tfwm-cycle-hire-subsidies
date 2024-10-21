@@ -32,6 +32,10 @@ const CheckAnswers = ({ setGoToPage }) => {
     );
   }, [formApi.mutators, stateApi.values.udprn, stateApi.values.umprn]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <>
       <Question text="Check your answers" />
