@@ -28,6 +28,7 @@ const ProofUpload = () => {
             <li>your name</li>
             <li>your photo</li>
             <li>the name of your college or university</li>
+            <li>either your course or academic year or term end date</li>
           </ul>
           <details className="wmnds-details">
           <summary className="wmnds-link">
