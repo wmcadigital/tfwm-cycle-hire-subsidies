@@ -23,7 +23,7 @@ const ProofUpload = () => {
       {/* <ul>
         <li><a href="https://www.tfwm.org.uk/swift-and-tickets/discounts-and-free-travel-passes/discounts-for-students/supporting-documents-for-students/" target="_blank" rel="noreferrer">View supporting documents (new tab)</a></li>
       </ul> */}
-        <p>A student ID card on its own if it shows all the following:</p>
+        <p>Proof of your address and a student ID card on its own if it shows all the following:</p>
           <ul>
             <li>your name</li>
             <li>your photo</li>
