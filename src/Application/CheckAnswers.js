@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useFormState, useForm } from "react-final-form";
 import PropTypes from "prop-types";
 
@@ -13,7 +13,7 @@ const CheckAnswers = ({ setGoToPage }) => {
   const stateApi = useFormState();
   const formValues = stateApi.values.formData;
   const formApi = useForm();
-
+  const [showSurvey, setShowSurvey] = useState(false);
   const agreeSelfCert = stateApi.submitFailed ? stateApi.errors?.legal : null;
   const agreeLegalError = stateApi.submitFailed ? stateApi.errors?.legal : null;
 
@@ -30,12 +30,17 @@ const CheckAnswers = ({ setGoToPage }) => {
       "formData.Umprn",
       stateApi.values.umprn.toString()
     );
+    // check if url params has nosurvey
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has("nosurvey")) {
+      setShowSurvey(true);
+    }
   }, [formApi.mutators, stateApi.values.udprn, stateApi.values.umprn]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <>
       <Question text="Check your answers" />
@@ -121,13 +126,15 @@ const CheckAnswers = ({ setGoToPage }) => {
           ) : (
             ""
           )}
-          <tr>
-            <th scope="row" data-header="Header 1">
-              Survey
-            </th>
-            <td data-header="Header 2">Completed</td>
-            <td className="wmnds-text-align-right"></td>
-          </tr>
+          {!showSurvey && (
+            <tr>
+              <th scope="row" data-header="Header 1">
+                Survey
+              </th>
+              <td data-header="Header 2">Completed</td>
+              <td className="wmnds-text-align-right"></td>
+            </tr>
+          )}
         </tbody>
       </Table>
       <h3>Re-contact</h3>

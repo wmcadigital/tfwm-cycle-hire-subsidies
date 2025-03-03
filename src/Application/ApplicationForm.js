@@ -45,11 +45,17 @@ const ApplicationForm = () => {
   const location = useLocation();
   const [registrationAddresses, setRegistrationAddresses] = useState([]);
   const [ethnicGroup, setEthnicGroup] = useState(null);
-
   const [goToPage, setGoToPage] = useState(null);
+  const [showSurvey, setShowSurvey] = useState(false);
 
   useEffect(() => {
     setGoToPage(location?.state?.orderNo);
+
+    // check if url params has nosurvey
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('nosurvey')) {
+      setShowSurvey(true);
+    }
   }, [location?.state?.orderNo]);
 
   return (
@@ -77,25 +83,25 @@ const ApplicationForm = () => {
           <BenefitsGroup />
           <ProofUpload />
           {/* <MedicalServiceGroup /> */}
-          <SurveyIntro />
-          <Q1Survey />
-          <Q2Survey />
-          <Q3Q4Survey />
-          <Q5Q6Survey />
-          <Q7Q8Q9Q10Survey />
-          <WhereDropdown />
-          <Q11Q12Survey />
-          <Q13Survey />
-          <EthnicGroup
+          {!showSurvey && <SurveyIntro />}
+          {!showSurvey && <Q1Survey />}
+          {!showSurvey && <Q2Survey />}
+          {!showSurvey && <Q3Q4Survey />}
+          {!showSurvey && <Q5Q6Survey />}
+          {!showSurvey && <Q7Q8Q9Q10Survey />}
+          {!showSurvey && <WhereDropdown />}
+          {!showSurvey && <Q11Q12Survey />}
+          {!showSurvey && <Q13Survey />}
+          {!showSurvey && <EthnicGroup
             setEthnicGroup={setEthnicGroup}
             setGoToPage={setGoToPage}
-          />
-          {ethnicGroup !== "preferNotToSay" ? (
+          />}
+          {!showSurvey && ethnicGroup !== "preferNotToSay" ? (
             <SpecificEthnicGroup />
           ) : undefined}
-          <Q9Survey />
-          <EmploymentStatusGroup />
-          <Q8Survey />
+          {!showSurvey && <Q9Survey />}
+          {!showSurvey && <EmploymentStatusGroup />}
+          {!showSurvey && <Q8Survey />}
           <CheckAnswers
             setGoToPage={setGoToPage}
             validate={validateCheckAnswers}
