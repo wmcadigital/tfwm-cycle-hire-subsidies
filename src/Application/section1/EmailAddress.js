@@ -1,4 +1,4 @@
-import { useFormState } from "react-final-form";
+import { useFormState, useForm } from "react-final-form";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import FormSection from "../../common/FormSection";
@@ -11,6 +11,7 @@ import axios from 'axios';
 const EmailAddress = () => {
   const stateApi = useFormState();
   const navigate = useNavigate();
+  const formApi = useForm();
 
   const formValues = stateApi.values;
   const question = "What is your email address?";
@@ -29,14 +30,14 @@ const EmailAddress = () => {
   const [emailAddress, setEmailAddress] = useState('');
   const [userExists, setUserExists] = useState(false);
   
-  
+  console.log(stateApi);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const checkEmail = async () => {
-    const email = formValues.formData.EmailAddress;
+    const email = formValues?.formData?.EmailAddress;
     console.log(email);
     if (email) {
       try {
@@ -51,17 +52,19 @@ const EmailAddress = () => {
         } else {
           setUserExists(false);
           setEmailAddress(email);
+          formApi.mutators.setFormAttribute("formData.emailAddressHidden", email);
           console.log('user does not exist');
         }
       } catch (error) {
         console.error('Error checking email:', error);
         setUserExists(false);
         setEmailAddress(email);
+        formApi.mutators.setFormAttribute("formData.emailAddressHidden", email);
         console.log('error checking email');
       }
     }
   };
-console.log(formValues)
+
   return (
     <FormSection>
       <ProgressIndicator
@@ -83,7 +86,7 @@ console.log(formValues)
         isRequired={true}
       />
       <TextInput
-        fieldName="formdata.emailAddressHidden"
+        fieldName="formData.emailAddressHidden"
         label="emailAddressHidden"
         validation={required}
         error={errorEmailAddressHidden}
