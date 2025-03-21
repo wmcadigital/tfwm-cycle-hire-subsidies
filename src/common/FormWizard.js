@@ -145,6 +145,7 @@ const FormWizard = ({
               <div>
                 {isFirstPage && (
                   <button
+                    id="form-continue"
                     type="submit"
                     className="wmnds-btn"
                     // onClick={(e) => e.target.blur()}
