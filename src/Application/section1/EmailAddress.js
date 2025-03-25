@@ -29,8 +29,8 @@ const EmailAddress = () => {
 
   const [emailAddress, setEmailAddress] = useState('');
   const [userExists, setUserExists] = useState(false);
-  
-  console.log(stateApi);
+  const [buttonClicked, setButtonClicked] = useState(false);
+  const [errorCheckingEmail, setErrorCheckingEmail] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -38,32 +38,33 @@ const EmailAddress = () => {
 
   const checkEmail = async () => {
     const email = formValues?.formData?.EmailAddress;
-    console.log(email);
     if (email) {
       try {
         const response = await axios.post('https://cyclehire3lnmrzn346l4o.azurewebsites.net/api/ManagementConsoleLink', {
           applicationId: '',
           email: emailAddress
         });
+        setButtonClicked(true);
         if (response.data.message === 'user already exists') {
           setUserExists(true);
           navigate('/registered');
-          console.log('user exists');
         } else {
           setUserExists(false);
           setEmailAddress(email);
           formApi.mutators.setFormAttribute("formData.emailAddressHidden", email);
-          console.log('user does not exist');
         }
+        setErrorCheckingEmail(false);
       } catch (error) {
-        console.error('Error checking email:', error);
         setUserExists(false);
         setEmailAddress(email);
         formApi.mutators.setFormAttribute("formData.emailAddressHidden", email);
-        console.log('error checking email');
+        setErrorCheckingEmail(true);
       }
     }
   };
+
+  useEffect(() => {
+  }, [buttonClicked, userExists, errorCheckingEmail]);
 
   return (
     <FormSection>
@@ -84,6 +85,7 @@ const EmailAddress = () => {
         error={errorEmailAddress}
         validation={composeValidators(required, email)}
         isRequired={true}
+        onChange={(e) => setEmailAddress(e.target.value)}
       />
       <TextInput
         fieldName="formData.emailAddressHidden"
@@ -95,7 +97,23 @@ const EmailAddress = () => {
         isRequired={true}
       />
       {userExists && <p>Email address already registered. You no longer need to re-apply every financial year for GoCycle. You will automatically receive a new code if you are still eligible.</p>}
-      <button type="button" onClick={() => checkEmail()}>Check email</button>
+      <button className="wmnds-btn wmnds-btn--primary" type="button" onClick={() => checkEmail()}>Check email</button>
+      {!userExists && buttonClicked && !errorCheckingEmail && <p>Email address is eligible. You can proceed with your application.</p>}
+      {errorCheckingEmail && 
+        <>
+        <div className="wmnds-m-t-md wmnds-msg-summary wmnds-msg-summary--info ">
+        <div className="wmnds-msg-summary__header">
+          <svg className="wmnds-msg-summary__icon">
+            <use xlinkHref="#wmnds-general-info" href="#wmnds-general-info"></use>
+          </svg>
+          <h3 className="wmnds-msg-summary__title">Not yet registered</h3>
+        </div>
+        <div className="wmnds-msg-summary__info">
+        You are not yet registered. Click continue to register and apply.
+        </div>
+      </div>
+      </>
+      }
     </FormSection>
   );
 };

@@ -30,9 +30,7 @@ const Registered = () => {
           <div className="wmnds-p-lg wmnds-bg-white">
             <p>Registration Checker</p>
             <h2>Email address already registered.</h2>
-            <p>
-            You no longer need to re-apply every financial year for GoCycle. You will automatically receive a new code if you are still eligible.
-            </p>
+            <p>If you have lost your code, you do not need to start a new application. Plese refer to your original registration email.</p>
             <p>
             Alternatively, please visit <a href="https://www.wmcyclehire.co.uk/" target="_blank">West Midlands Cycle Hire</a> to get a pass and save money on cycle hire or <a href="https://beryl.cc/index.php/scheme/west-midlands-e-scooters" target="_blank">West Midlands e-scooter</a> to get a pass and save money on e-scooters in Birmingham.  
             </p>

@@ -62,7 +62,7 @@ const ApplicationForm = () => {
           goToPage={goToPage}
           setGoToPage={setGoToPage}
         >
-          {/*<EligibilityCheck />*/}
+          <EligibilityCheck />
           <EmailAddress />
           <RegistrationName />
           <DateOfBirth validate={validateDateOfBirth} />
