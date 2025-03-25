@@ -63,6 +63,7 @@ const ApplicationForm = () => {
           setGoToPage={setGoToPage}
         >
           <EligibilityCheck />
+          <EmailAddress />
           <RegistrationName />
           <DateOfBirth validate={validateDateOfBirth} />
           <RegistrationAddress
@@ -71,7 +72,6 @@ const ApplicationForm = () => {
             setRegistrationAddresses={setRegistrationAddresses}
             validate={addressIdPresent("formData")}
           />
-          <EmailAddress />
           {/* <DisabilityGroup /> */}
           {/* <NewJobGroup /> */}
           <BenefitsGroup />
