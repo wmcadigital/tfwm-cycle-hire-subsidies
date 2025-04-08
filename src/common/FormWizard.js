@@ -82,14 +82,14 @@ const FormWizard = ({
       setLoading(true);
      await (async () => {
         const rawResponse = await fetch(
-          "https://cyclewise-dev-api.azure-api.net/cyclewise/submit-form",
+          "https://prod-47.uksouth.logic.azure.com:443/workflows/fe931dcbd9614bc7ae9333cd40d1e4a8/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=fO3hNx44OI-665ZYEBwHezJPP_AaelqqpRRcWdUsvd8",
           {
             method: "POST",
             headers: {
               Accept: "*/*",
-              "Content-Type": "text/plain",
-              "Ocp-Apim-Subscription-Key": "31ce5d3186fd43aeb7a9f1dd8a6367ee",
-              "Ocp-Apim-Trace": "true",
+              "Content-Type": "application/json",
+              // "Ocp-Apim-Subscription-Key": "31ce5d3186fd43aeb7a9f1dd8a6367ee",
+              // "Ocp-Apim-Trace": "true",
             },
             body: JSON.stringify(values.formData),
           }
