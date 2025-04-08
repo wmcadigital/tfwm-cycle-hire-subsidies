@@ -30,9 +30,27 @@ const Registered = () => {
           <div className="wmnds-p-lg wmnds-bg-white">
             <p>Registration Checker</p>
             <h2>Email address already registered.</h2>
-            <p>If you have lost your code, you do not need to start a new application. Plese refer to your original registration email.</p>
             <p>
-            Alternatively, please visit <a href="https://www.wmcyclehire.co.uk/" rel="noreferrer" target="_blank">West Midlands Cycle Hire</a> to get a pass and save money on cycle hire or <a href="https://beryl.cc/index.php/scheme/west-midlands-e-scooters" target="_blank">West Midlands e-scooter</a> to get a pass and save money on e-scooters in Birmingham.  
+              If you have lost your code, you do not need to start a new
+              application. Plese refer to your original registration email.
+            </p>
+            <p>
+              Alternatively, please visit{" "}
+              <a
+                href="https://www.wmcyclehire.co.uk/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                West Midlands Cycle Hire
+              </a>{" "}
+              to get a pass and save money on cycle hire or{" "}
+              <a
+                href="https://beryl.cc/index.php/scheme/west-midlands-e-scooters"
+                target="_blank"
+              >
+                West Midlands e-scooter
+              </a>{" "}
+              to get a pass and save money on e-scooters in Birmingham.
             </p>
           </div>
         </div>

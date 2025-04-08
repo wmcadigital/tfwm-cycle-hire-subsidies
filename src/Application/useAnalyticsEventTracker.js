@@ -6,7 +6,7 @@ const useAnalyticsEventTracker = (category, action, label) => {
     category: category,
     action: action,
     label: label,
-  })
-}
+  });
+};
 
 export default useAnalyticsEventTracker;

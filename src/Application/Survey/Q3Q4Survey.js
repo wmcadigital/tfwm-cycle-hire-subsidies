@@ -28,9 +28,9 @@ const Q3Q4Survey = () => {
       : null;
 
   const q4error =
-      stateApi.submitFailed && stateApi.hasValidationErrors
-        ? stateApi.errors?.formData.SurveyData.q4
-        : null;
+    stateApi.submitFailed && stateApi.hasValidationErrors
+      ? stateApi.errors?.formData.SurveyData.q4
+      : null;
 
   const q5error =
     stateApi.submitFailed && stateApi.hasValidationErrors
@@ -110,7 +110,8 @@ const Q3Q4Survey = () => {
       </RadioGroup>
 
       <p>
-        Q4 - On average, how much time do you spend using an e-scooter per week? *
+        Q4 - On average, how much time do you spend using an e-scooter per week?
+        *
       </p>
       <RadioGroup error={q4error}>
         <FieldError text={q4error} />
@@ -152,7 +153,9 @@ const Q3Q4Survey = () => {
       </RadioGroup>
 
       <p>
-        Q5 - On average, how often would you say you use an e-scooter for at least 10 minutes as part of your journey, for each of the following reasons:
+        Q5 - On average, how often would you say you use an e-scooter for at
+        least 10 minutes as part of your journey, for each of the following
+        reasons:
       </p>
 
       <Dropdown

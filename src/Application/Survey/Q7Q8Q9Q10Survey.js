@@ -29,7 +29,7 @@ const Q7Q8Q9Q10Survey = () => {
     stateApi.submitFailed && stateApi.hasValidationErrors
       ? stateApi.errors?.formData.SurveyData.q9b
       : null;
-      
+
   // copy q8 value to survey data
   useEffect(() => {
     formApi.mutators.setFormAttribute(

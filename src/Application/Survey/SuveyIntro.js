@@ -3,11 +3,10 @@ import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
 
 const SurveyIntro = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <FormSection>
       <ProgressIndicator
@@ -16,14 +15,14 @@ const SurveyIntro = () => {
       />
       <h2>Cycling for Everyone activity survey.</h2>
       <p>
-        Thank you for choosing to participate in Cycling for Everyone. Before you participate in the scheme, Transport
-        for West Midlands would like to ask you some questions about your
-        current travel and the journeys that you typically make.
+        Thank you for choosing to participate in Cycling for Everyone. Before
+        you participate in the scheme, Transport for West Midlands would like to
+        ask you some questions about your current travel and the journeys that
+        you typically make.
       </p>
       <p>
         This information will be extremely useful in helping us to understand
-        the impact of Cycling for Everyone on those who have
-        taken part.
+        the impact of Cycling for Everyone on those who have taken part.
       </p>
       <p>
         It should take you no more than 5 minutes to fill in. All completed
@@ -58,7 +57,7 @@ const SurveyIntro = () => {
           target="_blank"
           rel="noreferrer"
         >
-        privacy policy
+          privacy policy
         </a>
         .
       </p>

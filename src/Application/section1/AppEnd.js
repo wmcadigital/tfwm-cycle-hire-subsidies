@@ -7,7 +7,7 @@ const AppEnd = () => {
       <Header heading="Apply for Go Cycle" />
       <FormSection>
         <div className="wmnds-container wmnds-p-t-lg">
-        <p>This promotion has now ended. </p>
+          <p>This promotion has now ended. </p>
         </div>
       </FormSection>
     </>

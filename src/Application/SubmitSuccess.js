@@ -13,8 +13,8 @@ const SubmitSuccess = () => {
       category: "cycle-hire-subsidies",
       action: "form submitted: success",
       label: "CycleHireSubsidies",
-    })
-  })
+    });
+  });
 
   return (
     <>
@@ -40,16 +40,22 @@ const SubmitSuccess = () => {
               <h2>What happens next</h2>
               <div className="wmnds-m-b-lg">
                 <p>
-                  Step 1: You’ll receive an email to confirm we have received your application. 
+                  Step 1: You’ll receive an email to confirm we have received
+                  your application.
                 </p>
                 <p>
-                  Step 2: You’ll receive an email within two working days, Monday to Friday telling you your application has been assessed and giving you an introduction to Cycling for Everyone Go Cycle.
+                  Step 2: You’ll receive an email within two working days,
+                  Monday to Friday telling you your application has been
+                  assessed and giving you an introduction to Cycling for
+                  Everyone Go Cycle.
                 </p>
                 <p>
-                  If you haven’t received an e-mail, please check your spam folder before contacting us. 
+                  If you haven’t received an e-mail, please check your spam
+                  folder before contacting us.
                 </p>
                 <p>
-                  If you still haven’t received an e-mail, contact Customer Services: 
+                  If you still haven’t received an e-mail, contact Customer
+                  Services:
                 </p>
                 <ul>
                   <li>

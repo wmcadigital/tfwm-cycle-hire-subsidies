@@ -6,7 +6,15 @@ import { required, postCode, composeValidators } from "../validation";
 
 const validatePostCode = composeValidators(required, postCode);
 
-const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading, isRequired, disab }) => {
+const PostCodeSearch = ({
+  prefix,
+  error,
+  btnText,
+  getAddresses,
+  loading,
+  isRequired,
+  disab,
+}) => {
   const fieldName = `${prefix}.searchPostCode`;
   const { input } = useField(fieldName);
   const invalid = validatePostCode(input?.value);

@@ -60,13 +60,13 @@ const Q9Survey = () => {
     window.scrollTo(0, 0);
   }, []);
 
-    // copy ethnic group q15 value to survey data
-    useEffect(() => {
-      formApi.mutators.setFormAttribute(
-        "formData.SurveyData.q15",
-        stateApi.values.formData.Ethnicity
-      );
-    }, [formApi.mutators, stateApi.values.formData.Ethnicity]);
+  // copy ethnic group q15 value to survey data
+  useEffect(() => {
+    formApi.mutators.setFormAttribute(
+      "formData.SurveyData.q15",
+      stateApi.values.formData.Ethnicity
+    );
+  }, [formApi.mutators, stateApi.values.formData.Ethnicity]);
 
   return (
     <FormSection>

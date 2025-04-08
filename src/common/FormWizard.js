@@ -38,10 +38,7 @@ const FormWizard = ({
     // Function to work out last changed element in form
     const lastChangedEle = (e) => {
       // Update fields changed array with step number and last changed field name i.e. Step1: CustomerType > Step3: CardNumber
-      setFieldsChanged([
-        ...fieldsChanged,
-        `Step ${page}: ${e.target.name}`,
-      ]);
+      setFieldsChanged([...fieldsChanged, `Step ${page}: ${e.target.name}`]);
     };
     // Listen to changes in form and run above function
     if (form) form.addEventListener("change", lastChangedEle);
@@ -80,20 +77,17 @@ const FormWizard = ({
     const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
       setLoading(true);
-     await (async () => {
-        const rawResponse = await fetch(
-          process.env.REACT_APP_API_ENDPOINT,
-          {
-            method: "POST",
-            headers: {
-              Accept: "*/*",
-              "Content-Type": "text/plain",
-              "Ocp-Apim-Subscription-Key": "31ce5d3186fd43aeb7a9f1dd8a6367ee",
-              "Ocp-Apim-Trace": "true",
-            },
-            body: JSON.stringify(values.formData),
-          }
-        ).catch(function () {
+      await (async () => {
+        const rawResponse = await fetch(process.env.REACT_APP_API_ENDPOINT, {
+          method: "POST",
+          headers: {
+            Accept: "*/*",
+            "Content-Type": "text/plain",
+            "Ocp-Apim-Subscription-Key": "31ce5d3186fd43aeb7a9f1dd8a6367ee",
+            "Ocp-Apim-Trace": "true",
+          },
+          body: JSON.stringify(values.formData),
+        }).catch(function () {
           // if theres an error with the submission show the error page
           navigate("/error", {
             replace: true,
@@ -176,9 +170,9 @@ const FormWizard = ({
                 )}
                 {isLastPage && (
                   <button
-                  className={`wmnds-btn wmnds-btn--start ${
-                    (loading) && "wmnds-btn--disabled"
-                  }`}
+                    className={`wmnds-btn wmnds-btn--start ${
+                      loading && "wmnds-btn--disabled"
+                    }`}
                     type="submit"
                     disabled={loading}
                   >
