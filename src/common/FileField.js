@@ -30,7 +30,7 @@ const FileField = ({ name, validation, ...props }) => {
 function FileFieldInput({ input, dropZoneProps, ...props }) {
   const stateApi = useFormState();
   const [isFileInputFocused, setIsFileInputFocused] = useState(false);
-  const [fileNames, setFileNames] = useState([]);
+  // const [fileNames, setFileNames] = useState([]);
   const [fileLabel, setFileLabel] = useState("Choose files");
   const [fileExists, setFileExists] = useState(false);
   const [fileIcon, setFileIcon] = useState("paperclip");
@@ -69,7 +69,7 @@ function FileFieldInput({ input, dropZoneProps, ...props }) {
         });
     
         Promise.all(fileData).then((fileDataArray) => {
-          setFileNames(files.map((file) => file.name));
+          // setFileNames(files.map((file) => file.name));
           setFileLabel("Remove files");
           setFileExists(true);
           setFileIcon("trash");

@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import PostCodeSearch from "./PostCodeSearch";
 import fetchEligibility from "./api/fetchEligibility";
 import TextInput from "../../common/TextInput";
-import Question from "../../common/Question";
+// import Question from "../../common/Question";
 import { required } from "../../common/validation";
 
 const Address = ({ prefix, btnText, isRequired }) => {

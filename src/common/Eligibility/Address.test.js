@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import FormWrapper from "../FormWrapper";
 import Address from "./Address";
-import fetchAddresses from "./api/fetchAddresses";
+import fetchAddresses from "../Address/api/fetchAddresses";
 
 jest.mock("./api/fetchAddresses");
 

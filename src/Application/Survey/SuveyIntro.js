@@ -56,6 +56,7 @@ const SurveyIntro = () => {
           className="wmnds-link"
           href="https://tfwm.org.uk/policies/privacy-and-cookies-policy"
           target="_blank"
+          rel="noreferrer"
         >
         privacy policy
         </a>
