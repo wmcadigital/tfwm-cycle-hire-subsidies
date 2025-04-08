@@ -5,7 +5,7 @@ import { Field, useFormState } from "react-final-form";
 import { useDropzone } from "react-dropzone";
 
 // Import styles
-import s from "./FileUpload.module.scss";
+import * as s from "./FileUpload.module.scss";
 
 const FileField = ({ name, validation, ...props }) => {
   return (
