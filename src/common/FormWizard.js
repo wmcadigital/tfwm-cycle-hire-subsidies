@@ -38,10 +38,7 @@ const FormWizard = ({
     // Function to work out last changed element in form
     const lastChangedEle = (e) => {
       // Update fields changed array with step number and last changed field name i.e. Step1: CustomerType > Step3: CardNumber
-      setFieldsChanged([
-        ...fieldsChanged,
-        `Step ${page}: ${e.target.name}`,
-      ]);
+      setFieldsChanged([...fieldsChanged, `Step ${page}: ${e.target.name}`]);
     };
     // Listen to changes in form and run above function
     if (form) form.addEventListener("change", lastChangedEle);
@@ -80,7 +77,7 @@ const FormWizard = ({
     const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
       setLoading(true);
-     await (async () => {
+      await (async () => {
         const rawResponse = await fetch(
           "https://cyclewise-dev-api.azure-api.net/cyclewise/submit-form",
           {
@@ -176,9 +173,9 @@ const FormWizard = ({
                 )}
                 {isLastPage && (
                   <button
-                  className={`wmnds-btn wmnds-btn--start ${
-                    (loading) && "wmnds-btn--disabled"
-                  }`}
+                    className={`wmnds-btn wmnds-btn--start ${
+                      loading && "wmnds-btn--disabled"
+                    }`}
                     type="submit"
                     disabled={loading}
                   >

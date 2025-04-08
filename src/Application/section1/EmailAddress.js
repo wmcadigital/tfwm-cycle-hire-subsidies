@@ -6,7 +6,7 @@ import ProgressIndicator from "../../common/ProgressIndicator";
 import Question from "../../common/Question";
 import TextInput from "../../common/TextInput";
 import { required, email, composeValidators } from "../../common/validation";
-import axios from 'axios';
+import axios from "axios";
 
 const EmailAddress = () => {
   const stateApi = useFormState();
@@ -27,7 +27,7 @@ const EmailAddress = () => {
       ? stateApi.errors?.formData.EmailAddressHidden
       : null;
 
-  const [emailAddress, setEmailAddress] = useState('');
+  const [emailAddress, setEmailAddress] = useState("");
   const [userExists, setUserExists] = useState(false);
   const [buttonClicked, setButtonClicked] = useState(false);
   const [errorCheckingEmail, setErrorCheckingEmail] = useState(false);
@@ -40,18 +40,24 @@ const EmailAddress = () => {
     const email = formValues?.formData?.EmailAddress;
     if (email) {
       try {
-        const response = await axios.post('https://cyclehire3lnmrzn346l4o.azurewebsites.net/api/ManagementConsoleLink', {
-          applicationId: '',
-          email: emailAddress
-        });
+        const response = await axios.post(
+          "https://cyclehire3lnmrzn346l4o.azurewebsites.net/api/ManagementConsoleLink",
+          {
+            applicationId: "",
+            email: emailAddress,
+          }
+        );
         setButtonClicked(true);
-        if (response.data.message === 'user already exists') {
+        if (response.data.message === "user already exists") {
           setUserExists(true);
-          navigate('/registered');
+          navigate("/registered");
         } else {
           setUserExists(false);
           setEmailAddress(email);
-          formApi.mutators.setFormAttribute("formData.emailAddressHidden", email);
+          formApi.mutators.setFormAttribute(
+            "formData.emailAddressHidden",
+            email
+          );
         }
         setErrorCheckingEmail(false);
       } catch (error) {
@@ -63,8 +69,7 @@ const EmailAddress = () => {
     }
   };
 
-  useEffect(() => {
-  }, [buttonClicked, userExists, errorCheckingEmail]);
+  useEffect(() => {}, [buttonClicked, userExists, errorCheckingEmail]);
 
   return (
     <FormSection>
@@ -96,24 +101,41 @@ const EmailAddress = () => {
         containerClass="hide"
         isRequired={true}
       />
-      {userExists && <p>Email address already registered. You no longer need to re-apply every financial year for GoCycle. You will automatically receive a new code if you are still eligible.</p>}
-      <button className="wmnds-btn wmnds-btn--primary" type="button" onClick={() => checkEmail()}>Check email</button>
-      {!userExists && buttonClicked && !errorCheckingEmail && <p>Email address is eligible. You can proceed with your application.</p>}
-      {errorCheckingEmail && 
+      {userExists && (
+        <p>
+          Email address already registered. You no longer need to re-apply every
+          financial year for GoCycle. You will automatically receive a new code
+          if you are still eligible.
+        </p>
+      )}
+      <button
+        className="wmnds-btn wmnds-btn--primary"
+        type="button"
+        onClick={() => checkEmail()}
+      >
+        Check email
+      </button>
+      {!userExists && buttonClicked && !errorCheckingEmail && (
+        <p>Email address is eligible. You can proceed with your application.</p>
+      )}
+      {errorCheckingEmail && (
         <>
-        <div className="wmnds-m-t-md wmnds-msg-summary wmnds-msg-summary--info ">
-        <div className="wmnds-msg-summary__header">
-          <svg className="wmnds-msg-summary__icon">
-            <use xlinkHref="#wmnds-general-info" href="#wmnds-general-info"></use>
-          </svg>
-          <h3 className="wmnds-msg-summary__title">Not yet registered</h3>
-        </div>
-        <div className="wmnds-msg-summary__info">
-        You are not yet registered. Click continue to register and apply.
-        </div>
-      </div>
-      </>
-      }
+          <div className="wmnds-m-t-md wmnds-msg-summary wmnds-msg-summary--info ">
+            <div className="wmnds-msg-summary__header">
+              <svg className="wmnds-msg-summary__icon">
+                <use
+                  xlinkHref="#wmnds-general-info"
+                  href="#wmnds-general-info"
+                ></use>
+              </svg>
+              <h3 className="wmnds-msg-summary__title">Not yet registered</h3>
+            </div>
+            <div className="wmnds-msg-summary__info">
+              You are not yet registered. Click continue to register and apply.
+            </div>
+          </div>
+        </>
+      )}
     </FormSection>
   );
 };

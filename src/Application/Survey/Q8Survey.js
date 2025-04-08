@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useFormState, useForm } from "react-final-form";
+import { useFormState } from "react-final-form";
 
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
@@ -12,8 +12,6 @@ import { required } from "../../common/validation";
 
 const Q8Survey = () => {
   const stateApi = useFormState();
-  const formApi = useForm();
-
   // const q17error = stateApi.submitFailed ? stateApi.errors?.DisabilityQ : null;
 
   const q20error =

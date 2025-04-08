@@ -67,15 +67,15 @@ const EmploymentStatusGroup = () => {
       ? stateApi.errors?.formData.SurveyData.q18b
       : null;
 
-    // copy q18 value to survey data
-    useEffect(() => {
-      formApi.mutators.setFormAttribute(
-        "formData.SurveyData.q18",
-        stateApi.values.q18
-      );
-    }, [formApi.mutators, stateApi.values.q18]);
+  // copy q18 value to survey data
+  useEffect(() => {
+    formApi.mutators.setFormAttribute(
+      "formData.SurveyData.q18",
+      stateApi.values.q18
+    );
+  }, [formApi.mutators, stateApi.values.q18]);
 
-      useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -85,7 +85,10 @@ const EmploymentStatusGroup = () => {
         sectionPosition="Section 2 of 2"
         sectionName="About you"
       />
-      <Question text="Q18 - What is your employment status? *" isRequired={true} />
+      <Question
+        text="Q18 - What is your employment status? *"
+        isRequired={true}
+      />
       <RadioGroup error={error}>
         <FieldError text={error} />
         {Object.keys(EmploymentStatusTypes).map((Employmentstatus, index) => (

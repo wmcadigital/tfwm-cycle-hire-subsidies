@@ -36,63 +36,63 @@ export const composeValidators =
       undefined
     );
 
-    export const validateDate = (day, month, year) => {
-      if (numbersOnly(day) || numbersOnly(month) || numbersOnly(year)) {
-        return "Invalid";
-      }
-    
-      const dayInteger = parseInt(day);
-      const monthInteger = parseInt(month);
-      const yearInteger = parseInt(year);
-    
-      if (dayInteger > 31 || dayInteger < 1) {
-        return "Invalid";
-      }
-    
-      if (monthInteger > 12 || monthInteger < 1) {
-        return "Invalid";
-      }
-    
-      if (year.length !== 4 || yearInteger < 1900) {
-        return "Invalid";
-      }
-    
-      const dateToValidate = new Date(year, month - 1, day);
-    
-      if (dateToValidate.getDate() !== dayInteger) {
-        return "Invalid";
-      }
-    
-      return undefined;
-    };
-    
-    export const validateDateOfBirth = (day, month, year) => {
-      const invalidDate = validateDate(day, month, year);
-    
-      if (invalidDate) {
-        return invalidDate;
-      }
-    
-      const dateToValidate = new Date(year, month - 1, day);
-      const now = new Date();
-    
-      const currentDay = now.getDate();
-      const currentMonth = now.getMonth();
-      const currentYear = now.getFullYear();
-      const currentDate = new Date(currentYear, currentMonth, currentDay);
-    
-      if (dateToValidate.getTime() > currentDate.getTime()) {
-        return "Your date of birth must be in the past";
-      }
-    
-      const minAgeDate = new Date(currentYear - 16, currentMonth, currentDay);
-    
-      if (dateToValidate.getTime() > minAgeDate.getTime()) {
-        return "You must be at least 16 years old to apply";
-      }
-    
-      return undefined;
-    };    
+export const validateDate = (day, month, year) => {
+  if (numbersOnly(day) || numbersOnly(month) || numbersOnly(year)) {
+    return "Invalid";
+  }
+
+  const dayInteger = parseInt(day);
+  const monthInteger = parseInt(month);
+  const yearInteger = parseInt(year);
+
+  if (dayInteger > 31 || dayInteger < 1) {
+    return "Invalid";
+  }
+
+  if (monthInteger > 12 || monthInteger < 1) {
+    return "Invalid";
+  }
+
+  if (year.length !== 4 || yearInteger < 1900) {
+    return "Invalid";
+  }
+
+  const dateToValidate = new Date(year, month - 1, day);
+
+  if (dateToValidate.getDate() !== dayInteger) {
+    return "Invalid";
+  }
+
+  return undefined;
+};
+
+export const validateDateOfBirth = (day, month, year) => {
+  const invalidDate = validateDate(day, month, year);
+
+  if (invalidDate) {
+    return invalidDate;
+  }
+
+  const dateToValidate = new Date(year, month - 1, day);
+  const now = new Date();
+
+  const currentDay = now.getDate();
+  const currentMonth = now.getMonth();
+  const currentYear = now.getFullYear();
+  const currentDate = new Date(currentYear, currentMonth, currentDay);
+
+  if (dateToValidate.getTime() > currentDate.getTime()) {
+    return "Your date of birth must be in the past";
+  }
+
+  const minAgeDate = new Date(currentYear - 16, currentMonth, currentDay);
+
+  if (dateToValidate.getTime() > minAgeDate.getTime()) {
+    return "You must be at least 16 years old to apply";
+  }
+
+  return undefined;
+};
 
 export const postCode = (value) => {
   if (value) {

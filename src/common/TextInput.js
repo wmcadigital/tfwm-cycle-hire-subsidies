@@ -11,7 +11,7 @@ const TextInput = ({
   containerClass,
   defaultValue,
   isRequired,
-  disab
+  disab,
 }) => (
   <div
     className={`wmnds-fe-group ${error && "wmnds-fe-group--error"} ${
