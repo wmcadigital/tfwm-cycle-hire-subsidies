@@ -12,8 +12,6 @@ import { required } from "../../common/validation";
 
 const Q8Survey = () => {
   const stateApi = useFormState();
-  // const formApi = useForm();
-
   // const q17error = stateApi.submitFailed ? stateApi.errors?.DisabilityQ : null;
 
   const q20error =

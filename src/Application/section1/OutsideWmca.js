@@ -2,7 +2,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import Header from "../../common/Header";
 import BreadCrumb from "../../common/BreadCrumb";
-// import Question from "../../common/Question";
 import ButtonLink from "../../common/ButtonLink";
 
 const OutsideWmca = () => {

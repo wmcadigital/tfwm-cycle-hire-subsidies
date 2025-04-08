@@ -2,7 +2,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import Header from "../../common/Header";
 import BreadCrumb from "../../common/BreadCrumb";
-// import Question from "../../common/Question";
 import ButtonLink from "../../common/ButtonLink";
 
 const Registered = () => {
@@ -46,6 +45,7 @@ const Registered = () => {
               to get a pass and save money on cycle hire or{" "}
               <a
                 href="https://beryl.cc/index.php/scheme/west-midlands-e-scooters"
+                rel="noreferrer"
                 target="_blank"
               >
                 West Midlands e-scooter
