@@ -79,7 +79,7 @@ const FormWizard = ({
       setLoading(true);
       await (async () => {
         const rawResponse = await fetch(
-          process.env.REACT_APP_API_ENDPOINT,
+          process.env.PARCEL_API_ENDPOINT,
           {
             method: "POST",
             headers: {
