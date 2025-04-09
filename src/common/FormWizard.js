@@ -85,8 +85,6 @@ const FormWizard = ({
             headers: {
               Accept: "*/*",
               "Content-Type": "application/json",
-              // "Ocp-Apim-Subscription-Key": "31ce5d3186fd43aeb7a9f1dd8a6367ee",
-              // "Ocp-Apim-Trace": "true",
             },
             body: JSON.stringify(values.formData),
           }
