@@ -72,14 +72,14 @@ const FormWizard = ({
     return {};
   };
 
-  console.log("API Endpoint:", process.env.PARCEL_API_ENDPOINT || "Not Set");
+  console.log("API Endpoint:", process.env.REACT_APP_API_ENDPOINT || "Not Set");
 
   const handleSubmit = async (values) => {
     const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
       setLoading(true);
       try {
-        const rawResponse = await fetch(process.env.PARCEL_API_ENDPOINT, {
+        const rawResponse = await fetch(process.env.REACT_APP_API_ENDPOINT, {
           method: "POST",
           headers: {
             Accept: "*/*",
