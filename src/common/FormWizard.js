@@ -72,7 +72,8 @@ const FormWizard = ({
     return {};
   };
 
-  console.log("API Endpoint:", process.env.REACT_APP_API_ENDPOINT || "Not Set");
+  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || "Not Set";
+  console.log("API Endpoint:", apiEndpoint);
 
   const handleSubmit = async (values) => {
     const isLastPage = page === Children.count(filteredChildren) - 1;
