@@ -54,11 +54,11 @@ function FileFieldInput({ input, dropZoneProps, ...props }) {
         reader.readAsDataURL(file);
         return new Promise((resolve) => {
           reader.onloadend = () => {
-            console.log("File read:", {
-              Name: file.name,
-              Content: reader.result,
-              ContentType: file.type,
-            }); // Log the file data
+            // console.log("File read:", {
+            //   Name: file.name,
+            //   Content: reader.result,
+            //   ContentType: file.type,
+            // }); // Log the file data
             resolve({
               Name: file.name,
               Content: reader.result,

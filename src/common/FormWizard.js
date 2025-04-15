@@ -72,6 +72,8 @@ const FormWizard = ({
     return {};
   };
 
+  console.log("API Endpoint:", process.env.PARCEL_API_ENDPOINT || "Not Set");
+
   const handleSubmit = async (values) => {
     const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
