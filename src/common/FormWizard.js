@@ -11,7 +11,6 @@ import ButtonLink from "./ButtonLink";
 const FormWizard = ({
   initialValues,
   children,
-  onSubmit,
   goToPage,
   setGoToPage,
 }) => {
@@ -77,33 +76,38 @@ const FormWizard = ({
     const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
       setLoading(true);
-      await (async () => {
-        const rawResponse = await fetch(
-          process.env.PARCEL_API_ENDPOINT,
-          {
-            method: "POST",
-            headers: {
-              Accept: "*/*",
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(values.formData),
-          }
-        ).catch(function () {
-          // if theres an error with the submission show the error page
-          navigate("/error", {
-            replace: true,
-          });
+      try {
+        const rawResponse = await fetch(process.env.PARCEL_API_ENDPOINT, {
+          method: "POST",
+          headers: {
+            Accept: "*/*",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values.formData),
         });
-        // get application number from response
-        // const content = await rawResponse.json();
+
+        if (!rawResponse.ok) {
+          throw new Error("Failed to submit the form");
+        }
+
+        const content = await rawResponse.json(); // Parse the response JSON
+        // console.log("API Response:", content); // Log the response for debugging
+
+        // Navigate to the success page and pass the response data
         navigate("/success", {
           replace: true,
+          state: { apiResponse: content }, // Pass the API response to the success page
         });
-      })();
-      setLoading(false);
-      return onSubmit(values);
+      } catch (error) {
+        // console.error("Error during form submission:", error);
+        navigate("/error", {
+          replace: true,
+        });
+      } finally {
+        setLoading(false);
+      }
     } else {
-      // go to next page
+      // Go to the next page
       next(values);
     }
   };
@@ -134,7 +138,7 @@ const FormWizard = ({
             },
           }}
         >
-          {({ handleSubmit, submitting, values }) => (
+          {({ handleSubmit, values }) => (
             <form onSubmit={handleSubmit}>
               {activePage}
               <div>
