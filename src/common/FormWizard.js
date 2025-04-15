@@ -72,9 +72,6 @@ const FormWizard = ({
     return {};
   };
 
-  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || "Not Set";
-  console.log("API Endpoint:", apiEndpoint);
-
   const handleSubmit = async (values) => {
     const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
@@ -94,7 +91,7 @@ const FormWizard = ({
         }
 
         const content = await rawResponse.json(); // Parse the response JSON
-        console.log("API Response:", content); // Log the response for debugging
+        // console.log("API Response:", content); // Log the response for debugging
 
         // Navigate to the success page and pass the response data
         navigate("/success", {
@@ -102,7 +99,7 @@ const FormWizard = ({
           state: { apiResponse: content }, // Pass the API response to the success page
         });
       } catch (error) {
-        console.error("Error during form submission:", error);
+        // console.error("Error during form submission:", error);
         navigate("/error", {
           replace: true,
         });
