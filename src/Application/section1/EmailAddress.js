@@ -41,7 +41,7 @@ const EmailAddress = () => {
     if (email) {
       try {
         const response = await axios.post(
-          "https://cyclehire3lnmrzn346l4o.azurewebsites.net/api/ManagementConsoleLink",
+          "https://cyclehirelvslj7pmwltf4.azurewebsites.net/api/ManagementConsoleLink",
           {
             applicationId: "",
             email: emailAddress,
