@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import PostCodeSearch from "./PostCodeSearch";
 import fetchEligibility from "./api/fetchEligibility";
 import TextInput from "../../common/TextInput";
-import Question from "../../common/Question";
+// import Question from "../../common/Question";
 import { required } from "../../common/validation";
 
 const Address = ({ prefix, btnText, isRequired }) => {
@@ -71,19 +71,21 @@ const Address = ({ prefix, btnText, isRequired }) => {
         isRequired={isRequired}
       />
       {formState.values.eligibility == "yes" && (
-        
         <>
           <div className="wmnds-msg-summary wmnds-msg-summary--info ">
-          <div className="wmnds-msg-summary__header">
-            <svg className="wmnds-msg-summary__icon">
-              <use xlinkHref="#wmnds-general-info" href="#wmnds-general-info"></use>
-            </svg>
-            <h3 className="wmnds-msg-summary__title">Congratulations</h3>
+            <div className="wmnds-msg-summary__header">
+              <svg className="wmnds-msg-summary__icon">
+                <use
+                  xlinkHref="#wmnds-general-info"
+                  href="#wmnds-general-info"
+                ></use>
+              </svg>
+              <h3 className="wmnds-msg-summary__title">Congratulations</h3>
+            </div>
+            <div className="wmnds-msg-summary__info">
+              You live in an eligible area. Click continue to apply.
+            </div>
           </div>
-          <div className="wmnds-msg-summary__info">
-          You live in an eligible area. Click continue to apply.
-          </div>
-        </div>
         </>
       )}
     </>

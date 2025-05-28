@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useFormState, useForm } from "react-final-form";
+import { useFormState } from "react-final-form";
 
 import FormSection from "../../common/FormSection";
 import ProgressIndicator from "../../common/ProgressIndicator";
@@ -34,7 +34,7 @@ const whereOptions = [
 const WhereDropdown = () => {
   const stateApi = useFormState();
   const formValues = stateApi.values;
-  const formApi = useForm();
+  // const formApi = useForm();
 
   const error =
     stateApi.submitFailed && stateApi.hasValidationErrors
@@ -57,7 +57,7 @@ const WhereDropdown = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <FormSection>
       <ProgressIndicator

@@ -9,9 +9,20 @@ import FieldError from "../../common/FieldError";
 import { required } from "../../common/validation";
 
 const BenefitTypes = {
-  noStudent: { radioLabel: "No - I'm a full-time Student", detailLabel: "No - I'm a full-time Student" },
-  noEmployed: { radioLabel: "No - I'm employed and earn under £30,000", detailLabel: "No - Employed and earn under £30,000" },
-  noIncomeAssessedSupport: { radioLabel: "No – I am attending an organisation supporting me because I’m not in education, employment or training.", detailLabel: "No – I am attending an organisation supporting me because I’m not in education, employment or training."},
+  noStudent: {
+    radioLabel: "No - I'm a full-time Student",
+    detailLabel: "No - I'm a full-time Student",
+  },
+  noEmployed: {
+    radioLabel: "No - I'm employed and earn under £30,000",
+    detailLabel: "No - Employed and earn under £30,000",
+  },
+  noIncomeAssessedSupport: {
+    radioLabel:
+      "No – I am attending an organisation supporting me because I’m not in education, employment or training.",
+    detailLabel:
+      "No – I am attending an organisation supporting me because I’m not in education, employment or training.",
+  },
   // yesStudentOrEmployedBenefits: {radioLabel: "Yes - I am in education, employment or training and receive at least one benefit", detailLabel: "Yes - I am in education, employment or training and receive at least one benefit"},
   yesBenefits: {
     radioLabel: "Yes - I currently receive at least one benefit",
@@ -71,10 +82,9 @@ const BenefitsGroup = () => {
       ? stateApi.errors?.formData.BenefitType
       : null;
 
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
-    
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <FormSection>
@@ -84,26 +94,24 @@ const BenefitsGroup = () => {
       />
       <Question text="Do you receive benefits? *" isRequired={true} />
       <details className="wmnds-details">
-        <summary className="wmnds-link">
-          Help with benefits
-        </summary>
+        <summary className="wmnds-link">Help with benefits</summary>
         <div className="wmnds-details__content">
           <p>Benefits can include any of the following:</p>
-            <ul>
-              <li>Housing benefit</li>
-              <li>Universal Credit</li>
-              <li>Job Seekers Allowance</li>
-              <li>Council Tax Support</li>
-              <li>Income Support</li>
-              <li>Pension Credit</li>
-              <li>Other UK income assessed benefit</li>
-              {/* <li>employment support allowance (ESA)</li>
+          <ul>
+            <li>Housing benefit</li>
+            <li>Universal Credit</li>
+            <li>Job Seekers Allowance</li>
+            <li>Council Tax Support</li>
+            <li>Income Support</li>
+            <li>Pension Credit</li>
+            <li>Other UK income assessed benefit</li>
+            {/* <li>employment support allowance (ESA)</li>
               <li>universal credit</li>
               <li>housing benefit</li>
               <li>job seekers allowance (JSA)</li>
               <li>student income assessed support letter</li>
               <li>other income assessed benefit</li> */}
-            </ul>
+          </ul>
         </div>
       </details>
       <br />

@@ -2,7 +2,11 @@ import PropTypes from "prop-types";
 
 const Question = ({ text, isRequired }) => (
   <>
-    {isRequired && <p className="wmnds-m-t-sm">Fields marked with an asterisk (*) are required.</p>}
+    {isRequired && (
+      <p className="wmnds-m-t-sm">
+        Fields marked with an asterisk (*) are required.
+      </p>
+    )}
     <h2 className="wmnds-fe-question">{text}</h2>
   </>
 );

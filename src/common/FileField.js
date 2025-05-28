@@ -5,7 +5,7 @@ import { Field, useFormState } from "react-final-form";
 import { useDropzone } from "react-dropzone";
 
 // Import styles
-import s from "./FileUpload.module.scss";
+import * as s from "./FileUpload.module.scss";
 
 const FileField = ({ name, validation, ...props }) => {
   return (
@@ -30,7 +30,7 @@ const FileField = ({ name, validation, ...props }) => {
 function FileFieldInput({ input, dropZoneProps, ...props }) {
   const stateApi = useFormState();
   const [isFileInputFocused, setIsFileInputFocused] = useState(false);
-  const [fileNames, setFileNames] = useState([]);
+  // const [fileNames, setFileNames] = useState([]);
   const [fileLabel, setFileLabel] = useState("Choose files");
   const [fileExists, setFileExists] = useState(false);
   const [fileIcon, setFileIcon] = useState("paperclip");
@@ -39,46 +39,45 @@ function FileFieldInput({ input, dropZoneProps, ...props }) {
   const error =
     stateApi.submitFailed && stateApi.hasValidationErrors ? true : false;
 
-    const onDrop = useCallback(
-      (files) => {
-        if (files.length > 3) {
-          setErrorMessage("You can only upload up to 3 files.");
-          return;
-        }
-        setErrorMessage(""); // Clear any previous error message
-    
-        //console.log("Files dropped:", files); // Log the files array
-    
-        const fileData = files.map((file) => {
-          let reader = new FileReader();
-          reader.readAsDataURL(file);
-          return new Promise((resolve) => {
-            reader.onloadend = () => {
-              console.log("File read:", {
-                Name: file.name,
-                Content: reader.result,
-                ContentType: file.type,
-              }); // Log the file data
-              resolve({
-                Name: file.name,
-                Content: reader.result,
-                ContentType: file.type,
-              });
-            };
-          });
+  const onDrop = useCallback(
+    (files) => {
+      if (files.length > 3) {
+        setErrorMessage("You can only upload up to 3 files.");
+        return;
+      }
+      setErrorMessage(""); // Clear any previous error message
+
+      //console.log("Files dropped:", files); // Log the files array
+
+      const fileData = files.map((file) => {
+        let reader = new FileReader();
+        reader.readAsDataURL(file);
+        return new Promise((resolve) => {
+          reader.onloadend = () => {
+            // console.log("File read:", {
+            //   Name: file.name,
+            //   Content: reader.result,
+            //   ContentType: file.type,
+            // }); // Log the file data
+            resolve({
+              Name: file.name,
+              Content: reader.result,
+              ContentType: file.type,
+            });
+          };
         });
-    
-        Promise.all(fileData).then((fileDataArray) => {
-          setFileNames(files.map((file) => file.name));
-          setFileLabel("Remove files");
-          setFileExists(true);
-          setFileIcon("trash");
-          input.onChange(fileDataArray);
-        });
-      },
-      [input]
-    );
-    
+      });
+
+      Promise.all(fileData).then((fileDataArray) => {
+        // setFileNames(files.map((file) => file.name));
+        setFileLabel("Remove files");
+        setFileExists(true);
+        setFileIcon("trash");
+        input.onChange(fileDataArray);
+      });
+    },
+    [input]
+  );
 
   const { getRootProps, getInputProps, acceptedFiles } = useDropzone({
     onDrop,
@@ -90,7 +89,7 @@ function FileFieldInput({ input, dropZoneProps, ...props }) {
 
   // const files = acceptedFiles.map((file) => (
   //   <span key={file.path}>
-  //     {file.name} - {file.size} bytes 
+  //     {file.name} - {file.size} bytes
   //   </span>
   // ));
 
@@ -100,7 +99,6 @@ function FileFieldInput({ input, dropZoneProps, ...props }) {
       {index < acceptedFiles.length - 1 && ", "}
     </span>
   ));
-  
 
   const handleFocus = () => {
     setIsFileInputFocused(true);
@@ -111,7 +109,9 @@ function FileFieldInput({ input, dropZoneProps, ...props }) {
   return (
     <div className={`wmnds-fe-group ${error ? "wmnds-fe-group--error" : ""}`}>
       {error ? <span className="wmnds-fe-error-message">Required</span> : ""}
-      {errorMessage && <span className="wmnds-fe-error-message">{errorMessage}</span>}
+      {errorMessage && (
+        <span className="wmnds-fe-error-message">{errorMessage}</span>
+      )}
       <div {...getRootProps()} className="wmnds-fe-file-upload">
         <input
           type="file"

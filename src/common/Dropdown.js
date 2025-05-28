@@ -3,7 +3,15 @@ import { Field } from "react-final-form";
 
 import FieldError from "./FieldError";
 
-const Dropdown = ({ fieldName, label, prompt, options, validation, error, isRequired }) => {
+const Dropdown = ({
+  fieldName,
+  label,
+  prompt,
+  options,
+  validation,
+  error,
+  isRequired,
+}) => {
   return (
     <div className={`wmnds-fe-group ${error ? "wmnds-fe-group--error" : null}`}>
       <div className="wmnds-fe-dropdown">
