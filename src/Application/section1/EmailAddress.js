@@ -40,14 +40,14 @@ const EmailAddress = () => {
     const email = formValues?.formData?.EmailAddress;
     if (email) {
       try {
-        const response = await axios.post('https://cyclehire3lnmrzn346l4o.azurewebsites.net/api/ManagementConsoleLink', {
+        const response = await axios.post('https://cyclehirelvslj7pmwltf4.azurewebsites.net/api/ManagementConsoleLink', {
           applicationId: '',
           email: emailAddress
         });
         setButtonClicked(true);
         if (response.data.message === 'user already exists') {
           setUserExists(true);
-          navigate('/registered');
+          navigate('/registered', { state: { emailAddress } });
         } else {
           setUserExists(false);
           setEmailAddress(email);
@@ -64,6 +64,9 @@ const EmailAddress = () => {
   };
 
   useEffect(() => {
+    console.log('buttonClicked:', buttonClicked);
+    console.log('userExists:', userExists);
+    console.log('errorCheckingEmail:', errorCheckingEmail);
   }, [buttonClicked, userExists, errorCheckingEmail]);
 
   return (
@@ -102,17 +105,17 @@ const EmailAddress = () => {
       {errorCheckingEmail && 
         <>
         <div className="wmnds-m-t-md wmnds-msg-summary wmnds-msg-summary--info ">
-        <div className="wmnds-msg-summary__header">
-          <svg className="wmnds-msg-summary__icon">
-            <use xlinkHref="#wmnds-general-info" href="#wmnds-general-info"></use>
-          </svg>
-          <h3 className="wmnds-msg-summary__title">Not yet registered</h3>
+          <div className="wmnds-msg-summary__header">
+            <svg className="wmnds-msg-summary__icon">
+              <use xlinkHref="#wmnds-general-info" href="#wmnds-general-info"></use>
+            </svg>
+            <h3 className="wmnds-msg-summary__title">Not yet registered</h3>
+          </div>
+          <div className="wmnds-msg-summary__info">
+            You are not yet registered. Click continue to register and apply.
+          </div>
         </div>
-        <div className="wmnds-msg-summary__info">
-        You are not yet registered. Click continue to register and apply.
-        </div>
-      </div>
-      </>
+        </>
       }
     </FormSection>
   );
