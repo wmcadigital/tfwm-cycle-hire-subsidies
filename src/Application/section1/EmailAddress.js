@@ -32,8 +32,6 @@ const EmailAddress = () => {
   const [loading, setLoading] = useState(false);
   const formState = useFormState();
 
-  console.log("formState", formState);
-
   const [userExists, setUserExists] = useState(false);
   const [buttonClicked, setButtonClicked] = useState(false);
   const [errorCheckingEmail, setErrorCheckingEmail] = useState();
@@ -53,11 +51,11 @@ const EmailAddress = () => {
     if (email) {
       setLoading(true);
       const registered = await fetchEmail(application, email);
-      console.log("registered", registered);
+      // console.log("registered", registered);
       setEmailExists(true);
       // if not eligible send to error page
       if (registered.status !== 200) {
-        console.log("user not registered");
+        // console.log("user not registered");
         formApi.mutators.setFormAttribute("registered", "no");
         setUserExists(false);
         setActiveAccount(false);
@@ -69,7 +67,7 @@ const EmailAddress = () => {
         setLoading(false);
         return;
       } else {
-        console.log("user is registered");
+        // console.log("user is registered");
         setUserExists(true);
         setActiveAccount(true);
         formApi.mutators.setFormAttribute("activeAccount", true);

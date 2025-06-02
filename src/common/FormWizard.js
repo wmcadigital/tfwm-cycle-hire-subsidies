@@ -31,11 +31,8 @@ const FormWizard = ({
     ReactGa.pageview(window.location.host);
   });
 
-  console.log(values);
-
   // This useEffect is used to track form changes and update the fieldsChanged state as the user progresses
   useEffect(() => {
-    console.log(values);
     const form = document.querySelector("form"); // Get DOM node of form
     // Function to work out last changed element in form
     const lastChangedEle = (e) => {
