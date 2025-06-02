@@ -21,6 +21,11 @@ const Address = ({ prefix, btnText, isRequired }) => {
 
   useEffect(() => setErrorPostCode(errorSearchPostcode), [errorSearchPostcode]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    formApi.mutators.setFormAttribute("checkEmail", false); // set checkEmail initial value for use on next step
+  }, [formApi.mutators]);
+
   const errorSearchEligibility = formState.submitFailed
     ? formState.errors?.eligibility
     : null;
@@ -36,19 +41,21 @@ const Address = ({ prefix, btnText, isRequired }) => {
   const navigate = useNavigate();
 
   const getAddresses = async (postCode) => {
-    setLoading(true);
-    const eligibility = await fetchEligibility(postCode);
+    if (postCode) {
+      setLoading(true);
+      const eligibility = await fetchEligibility(postCode);
 
-    // if not eligible send to error page
-    if (eligibility.ResponseCode !== "200") {
-      navigate("/outsideWmca", {
-        state: { formValues: formState.values },
-        replace: true,
-      });
-      return;
-    } else {
-      formApi.mutators.setFormAttribute("eligible", "yes");
-      setLoading(false);
+      // if not eligible send to error page
+      if (eligibility.ResponseCode !== "200") {
+        navigate("/outsideWmca", {
+          state: { formValues: formState.values },
+          replace: true,
+        });
+        return;
+      } else {
+        formApi.mutators.setFormAttribute("eligible", "yes");
+        setLoading(false);
+      }
     }
   };
 

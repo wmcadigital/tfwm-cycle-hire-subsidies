@@ -1,4 +1,4 @@
-import { Field, useField } from "react-final-form";
+import { Field, useField, useForm } from "react-final-form";
 import PropTypes from "prop-types";
 
 import FieldError from "../FieldError";
@@ -7,6 +7,7 @@ import { required, postCode, composeValidators } from "../validation";
 const validatePostCode = composeValidators(required, postCode);
 
 const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading }) => {
+  const formApi = useForm();
   const fieldName = `${prefix}.searchPostCode`;
   const { input } = useField(fieldName);
   const invalid = validatePostCode(input?.value);
@@ -29,7 +30,10 @@ const PostCodeSearch = ({ prefix, error, btnText, getAddresses, loading }) => {
           (invalid || loading) && "wmnds-btn--disabled"
         }`}
         type="button"
-        onClick={() => getAddresses(input?.value)}
+         onClick={() => {
+            formApi.submit();
+            getAddresses(input?.value);
+          }}
       >
         {btnText ? btnText : "Find Address"}
 
