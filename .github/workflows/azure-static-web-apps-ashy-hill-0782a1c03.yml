@@ -33,6 +33,7 @@ jobs:
         env:
           REACT_APP_API_ENDPOINT: ${{ secrets.REACT_APP_API_ENDPOINT }}
           REACT_APP_API_ENDPOINT_MANAGE: ${{ secrets.REACT_APP_API_ENDPOINT_MANAGE }}
+          REACT_APP_API_ENDPOINT_POSTCODE: ${{ secrets.REACT_APP_API_ENDPOINT_POSTCODE }}
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
