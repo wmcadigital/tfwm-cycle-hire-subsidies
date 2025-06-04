@@ -138,7 +138,7 @@ const FormWizard = ({
             },
           }}
         >
-          {({ handleSubmit, values }) => (
+          {({ handleSubmit, values, form }) => (
             <form onSubmit={handleSubmit}>
               {activePage}
               <div>
@@ -146,38 +146,48 @@ const FormWizard = ({
                   <button
                     id="form-continue"
                     type="submit"
-                    className="wmnds-btn"
-                    // onClick={(e) => e.target.blur()}
+                    className={`wmnds-btn${false ? " wmnds-btn--disabled" : ""}`}
                     onClick={useAnalyticsEventTracker.bind(
                       this,
                       "cycle-hire-subsidies",
                       "form started",
                       "true"
                     )}
+                    disabled={false}
                   >
                     Continue
                   </button>
                 )}
                 {!isLastPage && !isFirstPage && (
-                  <button
-                    type="submit"
-                    className="wmnds-btn"
-                    // onClick={(e) => e.target.blur()}
-                    onClick={useAnalyticsEventTracker.bind(
-                      this,
-                      "cycle-hire-subsidies",
-                      "form abandoned",
-                      fieldsChanged
+                  <>
+                    <button
+                      type="submit"
+                      className={`wmnds-btn${values.activeAccount || !values.checkEmail ? " wmnds-btn--disabled" : ""}`}
+                      disabled={values.activeAccount || !values.checkEmail}
+                      onClick={useAnalyticsEventTracker.bind(
+                        this,
+                        "cycle-hire-subsidies",
+                        "form abandoned",
+                        fieldsChanged
+                      )}
+                    >
+                      Continue
+                    </button>
+                    {/* Show Reset Form button only on the 2nd page (page === 1) */}
+                    {page === 1 && (
+                      <button
+                        type="button"
+                        className="wmnds-btn wmnds-btn--secondary wmnds-m-l-md"
+                        onClick={() => form.reset()}
+                      >
+                        Reset Form
+                      </button>
                     )}
-                  >
-                    Continue
-                  </button>
+                  </>
                 )}
                 {isLastPage && (
                   <button
-                    className={`wmnds-btn wmnds-btn--start ${
-                      loading && "wmnds-btn--disabled"
-                    }`}
+                    className={`wmnds-btn wmnds-btn--start${loading ? " wmnds-btn--disabled" : ""}`}
                     type="submit"
                     disabled={loading}
                   >

@@ -1,9 +1,11 @@
 import { Field } from "react-final-form";
 import PropTypes from "prop-types";
 
-const Checkbox = ({ fieldName, label }) => {
+const Checkbox = ({ fieldName, label, containerClass }) => {
   return (
-    <label className="wmnds-fe-checkboxes__container">
+    <label className={`wmnds-fe-checkboxes__container ${
+      containerClass && containerClass
+    }`}>
       {label}
       <Field
         className={`wmnds-fe-checkboxes__input`}
@@ -26,6 +28,7 @@ const Checkbox = ({ fieldName, label }) => {
 Checkbox.propTypes = {
   fieldName: PropTypes.string.isRequired,
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  containerClass: PropTypes.string,
 };
 
 export default Checkbox;

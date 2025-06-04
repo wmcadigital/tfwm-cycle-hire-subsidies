@@ -32,6 +32,9 @@ jobs:
           output_location: "dist" # Built app content directory - optional
         env:
           REACT_APP_API_ENDPOINT: ${{ secrets.REACT_APP_API_ENDPOINT }}
+          REACT_APP_API_ENDPOINT_MANAGE: ${{ secrets.REACT_APP_API_ENDPOINT_MANAGE }}
+          REACT_APP_API_ENDPOINT_POSTCODE: ${{ secrets.REACT_APP_API_ENDPOINT_POSTCODE }}
+          REACT_APP_API_ENDPOINT_ELIGIBILITY: ${{ secrets.REACT_APP_API_ENDPOINT_ELIGIBILITY }}
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
